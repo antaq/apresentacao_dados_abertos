@@ -28,7 +28,8 @@ pelo `index.html`, que escala para a tela e navega por `postMessage`.
 6. Os **dois últimos elementos antes de `</body>`** são, nesta ordem:
    (a) o script de notas do apresentador (seção 7) e (b) o script de navegação (seção 8).
 7. Imagens em `Imagens/` (caminho relativo). Disponíveis: `logo-antaq-branca.png`,
-   `logo-antaq-azul.png`, `favicon-16.png`, `favicon-32.png`, `apple-touch-icon.png`.
+   `logo-antaq-azul.png`, `favicon-16.png`, `favicon-32.png`, `apple-touch-icon.png`,
+   `og-capa.jpg` e a fonte dela, `og-fonte.html` (seção 11).
    **Não há capturas de tela.** Todo slide se sustenta em tipografia, cor e diagrama.
 8. Idioma pt-BR.
 
@@ -402,3 +403,46 @@ Se a especificação não trouxer NOTAS para o slide, escreva uma nota curta e �
 
 A coluna "Vinha de" traz a numeração no deck de 21/09/2026. Ela existe para que quem
 comparar os dois materiais encontre o slide equivalente sem procurar.
+
+## 11. CARTÃO DE COMPARTILHAMENTO (OPEN GRAPH)
+
+Quando o endereço da apresentação é colado no WhatsApp, no Teams ou numa rede social, o
+aplicativo lê as metaetiquetas do `index.html` e mostra um cartão. Sem elas, aparece só o
+endereço cru.
+
+**Arquivos**
+
+| Arquivo | Papel |
+|---|---|
+| `Imagens/og-capa.jpg` | a imagem publicada, 1200x630, JPEG, 121 KB |
+| `Imagens/og-fonte.html` | a página que gera a imagem. Não é publicada como tela |
+
+**Regras da imagem**
+
+- **1200x630 exatos** e **abaixo de 300 KB**. O WhatsApp descarta a prévia de arquivos grandes.
+- JPEG, não PNG: o mesmo cartão em PNG passa de 300 KB.
+- A arte segue o fundo escuro da capa (gradiente `#002244` a `#004488`), com barra dourada
+  à esquerda, logotipo, rótulo, título, régua dourada, subtítulo, data e autoria.
+- `og-fonte.html` tem `* { box-sizing: border-box; }`. Sem isso o `padding` do cartão soma
+  à largura, o conteúdo passa de 1200px e a marca d'água sai do enquadramento.
+
+**Como regerar a imagem**
+
+```bash
+python3 -m http.server 8181          # na pasta acima do deck
+```
+Abrir `http://localhost:8181/Dados-Abertos-Analise-Tecnica/Imagens/og-fonte.html?deck=dados` numa janela de
+**1200x630**, capturar em JPEG com qualidade 88 e salvar como `Imagens/og-capa.jpg`.
+O mesmo arquivo atende aos dois decks: o parâmetro `?deck=` escolhe ícone, título, subtítulo
+e data.
+
+**Metaetiquetas no `index.html`**
+
+Ficam logo depois dos ícones, antes das fontes. São 19, e três detalhes não podem faltar:
+
+- `og:image` com **endereço absoluto em https**. Caminho relativo não funciona.
+- `og:image:width` 1200 e `og:image:height` 630, para o aplicativo reservar o espaço certo.
+- `twitter:card` igual a `summary_large_image`, senão o cartão vem pequeno e cortado.
+
+Depois de publicar, o WhatsApp guarda a prévia em cache por dias. Para conferir uma troca,
+use o depurador do Facebook, que força a releitura, ou acrescente `?v=2` ao endereço.
