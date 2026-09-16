@@ -2,9 +2,11 @@
 
 Situação em: **16/09/2026** · Apresentação marcada para **22/09/2026, às 10h20**
 
-> Não há marcador `[CONFIRMAR]`, `[DATA]` ou `[CAPTURA]` em aberto no deck. O que continua
-> pendente é **fora do HTML**: criar o repositório, publicar a página, e uma divergência de
-> conteúdo que precisa de decisão antes de projetar (seção 3).
+> Não há marcador `[CONFIRMAR]`, `[DATA]` ou `[CAPTURA]` em aberto no deck. A página já está
+> publicada em **https://antaq.github.io/apresentacao_dados_abertos/**, e o código de leitura
+> óptica do slide 13 aponta para ela. O que continua pendente é **uma divergência de conteúdo
+> que precisa de decisão antes de projetar** (seção 3), além das duas falas que não estão em
+> tela nenhuma (seção 2).
 
 ---
 
@@ -12,8 +14,8 @@ Situação em: **16/09/2026** · Apresentação marcada para **22/09/2026, às 1
 
 | Item | Situação |
 |---|---|
-| **Repositório `antaq/apresentacao_dados_abertos`** | ⏳ Ainda não criado. O deck inteiro já aponta para esse endereço: linha de contato do slide 13, código de leitura óptica e README. |
-| **GitHub Pages** | ⏳ Depende do repositório. Ligar em *Deploy from a branch* → `main` → `/ (root)` e, se a página ficar em 404, pedir a primeira compilação à mão com `gh api -X POST repos/antaq/apresentacao_dados_abertos/pages/builds`. Ela não dispara sozinha. |
+| **Repositório `antaq/apresentacao_dados_abertos`** | ✅ Criado e publicado na `main` em 16/09/2026. |
+| **GitHub Pages** | ✅ Ligado em *Deploy from a branch* → `main` → `/ (root)`. Como o Pages já estava ligado antes do primeiro `push`, a compilação disparou sozinha; se num próximo deck a página ficar em 404, o caminho é `gh api -X POST repos/<org>/<repo>/pages/builds`. Página no ar e conferida em 16/09/2026. |
 | **Código de leitura óptica** | ✅ Gerado em 16/09/2026 e conferido por decodificação: aponta para `https://antaq.github.io/apresentacao_dados_abertos/`. Arquivos `Imagens/qr-material-apoio.svg` e `.png`. |
 
 ---
