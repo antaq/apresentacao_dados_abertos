@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Enquadramento genérico não é detalhe de redação</title>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
+<link rel="apple-touch-icon" href="Imagens/apple-touch-icon.png"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+  html { font-size: 26px; }
+  body { margin:0; padding:0; background-color:#f3f4f6; overflow:hidden; font-family:'Open Sans', sans-serif; }
+  .slide-container { width:100vw; height:100vh; position:relative; display:flex; flex-direction:column; background-color:#ffffff; overflow:hidden; }
+  .font-montserrat { font-family:'Montserrat', sans-serif; }
+  .text-brand-primary { color:#003366; } .bg-brand-primary { background-color:#003366; }
+  .text-brand-secondary { color:#0066CC; } .bg-brand-secondary { background-color:#0066CC; }
+
+  .grade { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+  .cartao { background:#F8FAFC; border-radius:18px; padding:30px 34px; display:flex;
+            align-items:center; gap:28px; box-shadow:0 3px 10px rgba(0,0,0,.06); }
+  .cartao-icone { width:82px; height:82px; border-radius:20px; flex-shrink:0; display:flex;
+                  align-items:center; justify-content:center; font-size:36px; }
+  .cartao-txt { font-family:'Montserrat',sans-serif; font-weight:700; font-size:27px;
+                line-height:1.3; color:#374151; }
+
+  .alerta { background:#FEF2F2; border:3px solid #FCA5A5; }
+  .alerta .cartao-txt { color:#7F1D1D; font-weight:800; }
+
+  .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
+</style>
+</head>
+<body>
+<div class="slide-container">
+  <div style="height:12px;background:#003366;width:100%;"></div>
+  <div style="height:6px;background:#0066CC;width:100%;"></div>
+
+  <!-- Cabeçalho -->
+  <div class="flex items-center justify-between px-16 pt-8 pb-3 z-10">
+    <div>
+      <div class="flex items-center gap-3">
+        <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
+        <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:48px; line-height:1.12; letter-spacing:-0.02em;">
+          Enquadramento genérico não é detalhe de redação
+        </h1>
+      </div>
+    </div>
+    <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
+      <i class="fas fa-plug" style="font-size:26px;"></i>
+      <p class="font-montserrat font-bold text-gray-400" style="font-size:19px; letter-spacing:.16em;">DADOS ABERTOS</p>
+    </div>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="flex-1 flex flex-col justify-center px-16 pb-6 z-10 min-h-0">
+    <div class="grade">
+
+      <div class="cartao">
+        <div class="cartao-icone" style="background:#DBEAFE; color:#0066CC;"><i class="fas fa-file-circle-exclamation"></i></div>
+        <p class="cartao-txt">O tipo residual só cabe quando não existe tipo específico. A própria norma diz isso.</p>
+      </div>
+
+      <div class="cartao">
+        <div class="cartao-icone" style="background:#DBEAFE; color:#1D4ED8;"><i class="fas fa-scale-unbalanced"></i></div>
+        <p class="cartao-txt">Tipificação frouxa dificulta a defesa - e defesa dificultada é nulidade em potencial.</p>
+      </div>
+
+      <div class="cartao">
+        <div class="cartao-icone" style="background:#DBEAFE; color:#1E40AF;"><i class="fas fa-rotate-left"></i></div>
+        <p class="cartao-txt">O erro não aparece na revisão da chefia. Aparece no recurso, anos depois.</p>
+      </div>
+
+      <div class="cartao alerta">
+        <div class="cartao-icone" style="background:#FEE2E2; color:#DC2626;"><i class="fas fa-triangle-exclamation"></i></div>
+        <p class="cartao-txt">Enquadramento genérico e descrição fática pobre são as maiores fontes de nulidade no sancionador.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <div class="px-16 pb-6 flex justify-between items-end z-10">
+    <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
+    <p class="text-gray-300 font-mono" style="font-size:18px;">7 / 13</p>
+  </div>
+
+  <div class="bg-marca"><i class="fas fa-triangle-exclamation"></i></div>
+</div>
+
+<div id="notas-apresentador" style="display:none;">
+  <p>Este slide existe para impedir que a sala trate o achado anterior como preciosismo de redação.</p>
+  <p>Comece pelo primeiro cartão, que é o argumento normativo e não admite discussão: o tipo residual traz dentro de si a ressalva "exceto quando a conduta se enquadrar em tipo específico". Usar o genérico quando existe o específico contraria o próprio dispositivo.</p>
+  <p>O segundo e o terceiro cartões são o custo prático. Tipificação frouxa dificulta a defesa, e defesa dificultada é vício. E o erro não é pego na revisão da chefia: ele volta no recurso, às vezes anos depois, quando o processo já custou tempo de todo mundo.</p>
+  <p>O quarto cartão é citação da própria casa, e vale dizer de onde vem: é o que a SFC ensina no curso de introdução à fiscalização. Não é novidade que eu trouxe; é regra que já está escrita e que o dado acabou de medir.</p>
+  <p>Cerca de um minuto e meio. É slide de reforço, não de conteúdo novo. Não abra debate sobre casos concretos aqui: anote e leve para o fim.</p>
+</div>
+<script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
+<script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>
+</body>
+</html>

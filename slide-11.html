@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>A IA acelera o acesso, não substitui a desconfiança</title>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
+<link rel="apple-touch-icon" href="Imagens/apple-touch-icon.png"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+  html { font-size: 26px; }
+  body { margin:0; padding:0; background-color:#f3f4f6; overflow:hidden; font-family:'Open Sans', sans-serif; }
+  .slide-container {
+    width:100vw; height:100vh; position:relative; display:flex; flex-direction:column;
+    background: linear-gradient(135deg, #002244 0%, #003366 50%, #004488 100%);
+    overflow:hidden; color:white;
+  }
+  .font-montserrat { font-family:'Montserrat', sans-serif; }
+  .bg-brand-secondary { background-color:#0066CC; }
+
+  .shape-circle { position:absolute; border-radius:50%; z-index:0; }
+  .shape-1 { width:600px; height:600px; top:-190px; right:-170px; border:60px solid rgba(255,255,255,0.03); }
+  .shape-2 { width:420px; height:420px; bottom:-150px; right:16%; border:40px solid rgba(255,255,255,0.03); }
+  .bg-pattern { background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px); background-size:22px 22px; }
+
+  .frase { font-family:'Montserrat', sans-serif; font-weight:800; font-size:54px; line-height:1.28;
+           color:#FFFFFF; letter-spacing:-0.015em; }
+  .fecho { font-family:'Montserrat', sans-serif; font-weight:900; font-size:52px; line-height:1.26;
+           color:#FFD700; letter-spacing:-0.015em; }
+</style>
+</head>
+<body>
+<div class="slide-container">
+  <!-- Acentos à esquerda -->
+  <div class="absolute left-0 top-0 h-full w-3 z-20" style="background:#FFD700;"></div>
+  <div class="absolute left-3 top-0 h-full w-1 bg-brand-secondary z-20"></div>
+
+  <!-- Fundo decorativo -->
+  <div class="shape-circle shape-1"></div>
+  <div class="shape-circle shape-2"></div>
+  <div class="absolute inset-0 bg-pattern"></div>
+
+  <!-- Marca d'água -->
+  <img src="Imagens/logo-antaq-branca.png" alt="" class="absolute"
+       style="top:54%; left:72%; width:40vw; max-width:600px; transform:translate(-50%,-50%);
+              opacity:0.045; z-index:0; pointer-events:none;" />
+
+  <!-- Ícone decorativo gigante -->
+  <div class="absolute text-white z-0"
+       style="bottom:-70px; right:-50px; font-size:460px; line-height:0; opacity:0.05;">
+    <i class="fas fa-user-check"></i>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="relative z-10 flex-1 flex flex-col justify-center" style="padding-left:130px; padding-right:110px;">
+
+    <i class="fa-solid fa-quote-left" style="color:#FFD700; opacity:.5; font-size:84px; margin-bottom:28px;"></i>
+
+    <p class="frase" style="max-width:1580px;">
+      A IA acelera o acesso. Ela não substitui quem olha para<br/>
+      &ldquo;11.876 multas de valor zero&rdquo; e desconfia.
+    </p>
+
+    <div style="width:120px; height:8px; background:#FFD700; margin:34px 0;"></div>
+
+    <p class="fecho" style="max-width:1580px;">
+      Essa desconfiança é a competência de vocês,<br/>
+      e ela acabou de ficar mais valiosa.
+    </p>
+
+  </div>
+
+  <!-- Rodapé -->
+  <div class="relative z-10 flex justify-between items-end" style="padding:0 110px 30px 130px;">
+    <div>
+      <p class="font-montserrat" style="font-size:18px; color:#BFDBFE; opacity:.75;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
+      <p style="font-size:17px; color:#BFDBFE; opacity:.6;">Fonte: painel Fiscalização da ANTAQ via conector MCP de Dados Abertos da ANTAQ (GPF), em 16 de setembro de 2026.</p>
+    </div>
+    <p class="font-mono" style="font-size:18px; color:#BFDBFE; opacity:.75;">11 / 13</p>
+  </div>
+</div>
+
+<div id="notas-apresentador" style="display:none;">
+  <p>Conclusão do bloco, logo depois do slide mais forte da apresentação. Esta é a resposta ao medo que ninguém verbaliza na sala: o de ser substituído.</p>
+  <p>Diga devagar. A ferramenta acelera o acesso ao dado. Ela não substitui quem olha para onze mil oitocentas e setenta e seis multas de valor zero e desconfia.</p>
+  <p>Vale lembrar em uma frase por que essa desconfiança é justamente de vocês: quem já arquivou processo sem irregularidade sabe, sem pensar, que aquilo não é multa de zero real. Quem só tem a planilha não sabe.</p>
+  <p>E então o fecho, olhando para a plateia: essa desconfiança é a competência de vocês, e ela acabou de ficar mais valiosa. Se você acertar o tom aqui, o resto da apresentação corre sozinho.</p>
+  <p>Pausa antes de avançar.</p>
+</div>
+<script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
+<script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>
+</body>
+</html>

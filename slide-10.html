@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dado aberto não é dado limpo</title>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
+<link rel="apple-touch-icon" href="Imagens/apple-touch-icon.png"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+  html { font-size: 26px; }
+  body { margin:0; padding:0; background-color:#f3f4f6; overflow:hidden; font-family:'Open Sans', sans-serif; }
+  .slide-container { width:100vw; height:100vh; position:relative; display:flex; flex-direction:column; background-color:#ffffff; overflow:hidden; }
+  .font-montserrat { font-family:'Montserrat', sans-serif; }
+  .text-brand-primary { color:#003366; } .bg-brand-primary { background-color:#003366; }
+  .text-brand-secondary { color:#0066CC; } .bg-brand-secondary { background-color:#0066CC; }
+
+  .tabela { width:100%; border-collapse:separate; border-spacing:0; }
+  .tabela thead th { background:#003366; color:#fff; font-family:'Montserrat',sans-serif; font-weight:700;
+    font-size:23px; letter-spacing:.04em; text-transform:uppercase; padding:20px 28px; text-align:left; }
+  .tabela thead th i { margin-right:12px; opacity:.85; }
+  .tabela tbody td { padding:24px 28px; font-size:27px; color:#374151; border-bottom:1px solid #E5E7EB;
+    vertical-align:middle; }
+  .tabela tbody tr:nth-child(even) td { background:#F8FAFC; }
+  .tabela tbody tr:last-child td { border-bottom:none; }
+
+  .grava { font-family:'Courier New', monospace; font-weight:800; font-size:28px; color:#003366;
+    background:#E0F2FE; border-radius:8px; padding:4px 14px; white-space:nowrap; }
+  .qtd { font-family:'Montserrat',sans-serif; font-weight:900; font-size:40px; color:#374151;
+    white-space:nowrap; letter-spacing:-0.5px; }
+  .qtd-alerta { color:#B91C1C; }
+  .mini { display:flex; gap:22px; margin-top:20px; }
+  .mini-cx { flex:1; background:#F8FAFC; border:2px solid #E5E7EB; border-radius:14px;
+    padding:18px 24px; display:flex; align-items:center; gap:18px; }
+  .mini-cx i { color:#0066CC; font-size:30px; flex-shrink:0; }
+  .mini-cx p { font-size:22px; color:#374151; line-height:1.32; }
+
+  .faixa { margin-top:22px; background:#FEF2F2; border:3px solid #FCA5A5; border-left:12px solid #DC2626;
+    border-radius:0 16px 16px 0; padding:24px 36px; display:flex; align-items:center; gap:24px; }
+
+
+  .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
+</style>
+</head>
+<body>
+<div class="slide-container">
+  <div style="height:12px;background:#003366;width:100%;"></div>
+  <div style="height:6px;background:#0066CC;width:100%;"></div>
+
+  <!-- Cabeçalho -->
+  <div class="flex items-center justify-between px-16 pt-7 pb-2 z-10">
+    <div>
+      <div class="flex items-center gap-3">
+        <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
+        <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:48px; line-height:1.12; letter-spacing:-0.02em;">
+          Dado aberto não é dado limpo
+        </h1>
+      </div>
+      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">
+        Demonstração 4 · o que a coluna "Valor da Multa" realmente guarda
+      </p>
+    </div>
+    <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
+      <i class="fas fa-plug" style="font-size:26px;"></i>
+      <p class="font-montserrat font-bold text-gray-400" style="font-size:19px; letter-spacing:.16em;">DADOS ABERTOS</p>
+    </div>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="flex-1 flex flex-col justify-center px-16 pb-4 z-10 min-h-0">
+
+    <div style="border-radius:16px; overflow:hidden; border:1px solid #E5E7EB; box-shadow:0 12px 28px -10px rgba(0,0,0,.18);">
+      <table class="tabela">
+        <thead>
+          <tr>
+            <th style="width:26%;"><i class="fas fa-database"></i>O que a origem grava</th>
+            <th style="width:18%;"><i class="fas fa-list-ol"></i>Registros</th>
+            <th style="width:56%;"><i class="fas fa-circle-question"></i>O que aquilo quer dizer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="grava">1.250,00</span></td>
+            <td><span class="qtd">3.319</span></td>
+            <td>Julgado com decisão de multa. <strong>Só esta linha é dinheiro.</strong></td>
+          </tr>
+          <tr>
+            <td><span class="grava">-</span></td>
+            <td><span class="qtd qtd-alerta">11.876</span></td>
+            <td>Arquivado sem irregularidade. Nenhuma infração foi imputada.</td>
+          </tr>
+          <tr>
+            <td><span class="grava" style="color:#9CA3AF;">(vazia)</span></td>
+            <td><span class="qtd qtd-alerta">4.513</span></td>
+            <td>Houve decisão, e ela não foi multa: advertência, anulação, cassação.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mini">
+      <div class="mini-cx">
+        <i class="fas fa-clone"></i>
+        <p>A linha é uma <strong>infração julgada</strong>, não um processo: 19.708 linhas para 17.505 processos.
+        Contar linhas e chamar de processos infla <strong>12,6%</strong>.</p>
+      </div>
+      <div class="mini-cx">
+        <i class="fas fa-scissors"></i>
+        <p>O detalhe publicado é mais curto que a manchete do próprio painel:
+        faltam 710 registros e <strong>R$ 3.826.426,96</strong>.</p>
+      </div>
+    </div>
+
+    <div class="faixa">
+      <i class="fas fa-triangle-exclamation" style="color:#DC2626; font-size:40px; flex-shrink:0;"></i>
+      <p class="font-montserrat" style="font-size:29px; font-weight:800; color:#7F1D1D; line-height:1.3;">
+        Numa planilha, as duas ausências viram zero, e nasce a frase "16.389 multas de R$ 0,00".
+        Não é erro da IA nem do conector: é o dado como a origem publica.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Rodapé -->
+  <div class="px-16 pb-5 flex justify-between items-end z-10">
+    <div>
+      <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
+      <p class="text-gray-400" style="font-size:17px;">Fonte: painel Fiscalização da ANTAQ, quadro "Base de Dados", via conector MCP de Dados Abertos da ANTAQ (GPF), em 16 de setembro de 2026. Acervo de 2014 a 2026; valores nominais.</p>
+    </div>
+    <p class="text-gray-300 font-mono" style="font-size:18px;">10 / 13</p>
+  </div>
+
+  <div class="bg-marca"><i class="fas fa-broom"></i></div>
+</div>
+
+<div id="notas-apresentador" style="display:none;">
+  <p>Última demonstração do bloco, e a mais importante para quem já foi convidado a "tirar um número rápido" da base.</p>
+  <p>Leia a tabela de cima para baixo. A coluna "Valor da Multa" tem três estados, e só o primeiro é dinheiro. Onze mil oitocentos e setenta e seis linhas trazem um hífen, que significa arquivado sem irregularidade: nenhuma infração foi imputada. Quatro mil quinhentos e treze trazem célula vazia, que significa decisão que não é multa: advertência, anulação, cassação.</p>
+  <p>Pergunte à sala o que acontece quando isso vai para uma planilha. Alguém vai responder antes de você: viram zero. E aí nasce a frase da faixa vermelha, que é falsa em duas camadas ao mesmo tempo.</p>
+  <p>Os dois quadros do meio são o mesmo tipo de armadilha. A linha é uma infração julgada, não um processo: quem conta linhas e diz "processos" erra doze vírgula seis por cento, com o nome certo na tabela. E o detalhe publicado é mais curto que a manchete do próprio painel, em quase quatro milhões de reais.</p>
+  <p>Deixe claro de onde vem esse conhecimento: nada disso está escrito no portal. Foi medido aqui e escrito dentro do conector, para que a ferramenta avise antes de responder. É o mesmo que um fiscal experiente faz quando recebe uma planilha nova.</p>
+  <p>Cerca de quatro minutos. Este slide prepara o 11, que é a conclusão do bloco: quem desconfia do número é vocês.</p>
+</div>
+<script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
+<script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>
+</body>
+</html>

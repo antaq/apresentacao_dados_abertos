@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>O conector de dados abertos da ANTAQ foi feito aqui</title>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
+<link rel="apple-touch-icon" href="Imagens/apple-touch-icon.png"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+  html { font-size: 26px; }
+  body { margin:0; padding:0; background-color:#f3f4f6; overflow:hidden; font-family:'Open Sans', sans-serif; }
+  .slide-container { width:100vw; height:100vh; position:relative; display:flex; flex-direction:column; background-color:#ffffff; overflow:hidden; }
+  .font-montserrat { font-family:'Montserrat', sans-serif; }
+  .text-brand-primary { color:#003366; } .bg-brand-primary { background-color:#003366; }
+  .text-brand-secondary { color:#0066CC; } .bg-brand-secondary { background-color:#0066CC; }
+
+  .lista { display:flex; flex-direction:column; gap:16px; }
+  .item { display:flex; align-items:center; gap:24px; background:#F8FAFC; border-radius:14px;
+          padding:20px 30px; box-shadow:0 2px 8px rgba(0,0,0,.05); }
+  .item-icone { width:60px; height:60px; border-radius:15px; flex-shrink:0; display:flex;
+                align-items:center; justify-content:center; font-size:27px; }
+  .item-txt { font-size:28px; line-height:1.35; color:#374151; }
+
+  .realce { background:#DBEAFE; color:#003366; font-weight:800; border-radius:8px; padding:2px 10px; }
+
+  .fontes { display:flex; flex-wrap:wrap; gap:12px; margin-top:10px; }
+  .fonte-chip { display:inline-flex; align-items:center; gap:10px; background:#EFF6FF; border:2px solid #BFDBFE;
+          border-radius:999px; padding:7px 18px; font-family:'Montserrat',sans-serif; font-weight:700;
+          font-size:20px; color:#1E40AF; }
+
+  .faixa-ancora { margin-top:34px; background:linear-gradient(90deg,#002244 0%,#004488 100%);
+    border-left:12px solid #FFD700; border-radius:0 14px 14px 0; padding:26px 40px;
+    display:flex; align-items:center; gap:24px; }
+  .faixa-ancora p { color:#FFFFFF; font-size:36px; font-weight:800; line-height:1.2;
+    font-family:'Montserrat', sans-serif; }
+
+  .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
+</style>
+</head>
+<body>
+<div class="slide-container">
+  <div style="height:12px;background:#003366;width:100%;"></div>
+  <div style="height:6px;background:#0066CC;width:100%;"></div>
+
+  <!-- Cabeçalho -->
+  <div class="flex items-center justify-between px-16 pt-8 pb-3 z-10">
+    <div>
+      <div class="flex items-center gap-3">
+        <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
+        <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:46px; line-height:1.12; letter-spacing:-0.02em;">
+          O conector de dados abertos da ANTAQ foi feito aqui
+        </h1>
+      </div>
+    </div>
+    <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
+      <i class="fas fa-plug" style="font-size:26px;"></i>
+      <p class="font-montserrat font-bold text-gray-400" style="font-size:19px; letter-spacing:.16em;">DADOS ABERTOS</p>
+    </div>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="flex-1 flex flex-col justify-center px-16 pb-6 z-10 min-h-0">
+    <div class="lista">
+
+      <div class="item" style="border-left:8px solid #94A3B8;">
+        <div class="item-icone" style="background:#DBEAFE; color:#0066CC;"><i class="fas fa-code-branch"></i></div>
+        <p class="item-txt">
+          <span class="realce">MCP é protocolo aberto.</span> Funciona com qualquer ferramenta compatível, de qualquer fornecedor.
+        </p>
+      </div>
+
+      <div class="item" style="border-left:8px solid #3B82F6;">
+        <div class="item-icone" style="background:#DBEAFE; color:#1D4ED8;"><i class="fas fa-screwdriver-wrench"></i></div>
+        <p class="item-txt">
+          Feito dentro da própria Superintendência, <strong style="color:#003366;">sem custo de contratação</strong>.
+        </p>
+      </div>
+
+      <div class="item" style="border-left:8px solid #1D4ED8; align-items:flex-start;">
+        <div class="item-icone" style="background:#DBEAFE; color:#1D4ED8; margin-top:2px;"><i class="fas fa-globe"></i></div>
+        <div>
+          <p class="item-txt">Consome <span class="realce">apenas dado aberto oficial</span>:</p>
+          <div class="fontes">
+            <span class="fonte-chip"><i class="fas fa-chart-column"></i>Painéis públicos da ANTAQ</span>
+            <span class="fonte-chip"><i class="fas fa-scale-balanced"></i>Acervo normativo publicado</span>
+            <span class="fonte-chip"><i class="fas fa-ship"></i>Movimentação e outorgas</span>
+            <span class="fonte-chip"><i class="fas fa-box-open"></i>Dados abertos do setor</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="item" style="border-left:8px solid #003366; background:#F0F9FF; border:3px solid #BAE6FD; border-left:10px solid #003366;">
+        <div class="item-icone" style="background:#003366; color:#FFFFFF;"><i class="fas fa-lock"></i></div>
+        <p class="item-txt" style="font-family:'Montserrat',sans-serif; font-weight:800; color:#003366; font-size:34px;">
+          Nenhum processo em tramitação sai daqui.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Faixa-âncora -->
+    <div class="faixa-ancora">
+      <i class="fas fa-signature" style="color:#FFD700; font-size:40px; flex-shrink:0;"></i>
+      <p>A IA não assina. Quem assina é você - e quem assina responde.</p>
+    </div>
+
+  </div>
+
+  <!-- Rodapé -->
+  <div class="px-16 pb-6 flex justify-between items-end z-10">
+    <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
+    <p class="text-gray-300 font-mono" style="font-size:18px;">5 / 13</p>
+  </div>
+
+  <div class="bg-marca"><i class="fas fa-code-branch"></i></div>
+</div>
+
+<div id="notas-apresentador" style="display:none;">
+  <p>Este slide protege a apresentação da acusação de estar vendendo alguma coisa, e é ainda mais importante aqui do que em outras plateias, porque quem fala é parte da casa. Façam os quatro pontos com calma.</p>
+  <p>Primeiro: MCP é protocolo aberto, não é produto. Funciona com qualquer ferramenta compatível, de qualquer fornecedor. Segundo: foi feito aqui dentro, sem custo de contratação. Se perguntarem de onde vem a competência para isso, a resposta está no Regimento: cabe à GPF definir métodos e rotinas para aumentar a efetividade das ações fiscalizadoras e apoiar o desenvolvimento dos recursos tecnológicos envolvidos na fiscalização (art. 80, VII e IX). Não é sistema da casa nem substitui nenhum: é um método de consulta. Terceiro: só consome dado que a própria Agência já publica, e vale nomear as fontes.</p>
+  <p>O quarto ponto é o que importa a esta sala, e não é o mesmo da versão anterior desta palestra: o conector não enxerga processo em tramitação. Ele lê o painel público, que só tem processo já julgado. Nada do SFIS, nada do SEI, nada em sigilo.</p>
+  <p>Fechem na faixa dourada. Quem esteve ontem já ouviu esta frase, e ela volta uma última vez no slide 12: a IA não assina, quem assina é você, e quem assina responde.</p>
+</div>
+<script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
+<script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>
+</body>
+</html>

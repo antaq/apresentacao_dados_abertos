@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Material e contato</title>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
+<link rel="apple-touch-icon" href="Imagens/apple-touch-icon.png"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+  html { font-size: 26px; }
+  body { margin:0; padding:0; background-color:#f3f4f6; overflow:hidden; font-family:'Open Sans', sans-serif; }
+  .slide-container {
+    width:100vw; height:100vh; position:relative; display:flex; flex-direction:column;
+    background: linear-gradient(135deg, #002244 0%, #003366 50%, #004488 100%);
+    overflow:hidden; color:white;
+  }
+  .font-montserrat { font-family:'Montserrat', sans-serif; }
+  .font-opensans { font-family:'Open Sans', sans-serif; }
+  .bg-brand-secondary { background-color:#0066CC; }
+
+  .thanks-title { font-family:'Montserrat', sans-serif; font-size:88px; font-weight:900;
+    letter-spacing:-3px; line-height:1; color:#FFFFFF; text-shadow:0 4px 12px rgba(0,0,0,0.35); }
+
+  .contact-card { background-color: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 16px; padding: 20px 26px; display: flex; align-items: center;
+    text-decoration: none; color: white; }
+  .contact-icon { width: 52px; height: 52px; border-radius: 13px; display:flex; align-items:center;
+    justify-content:center; font-size: 22px; margin-right: 20px; flex-shrink:0; }
+
+  .qr-caixa { width:250px; height:250px; border-radius:18px; background:#FFFFFF; padding:14px;
+    box-shadow:0 10px 30px -8px rgba(0,0,0,.45); flex-shrink:0; }
+
+  .shape-circle { position:absolute; border-radius:50%; z-index:0; }
+  .shape-1 { width:600px; height:600px; top:-160px; right:-160px; border:60px solid rgba(255,255,255,0.03); }
+  .shape-2 { width:420px; height:420px; bottom:-120px; left:-120px; border:40px solid rgba(255,255,255,0.03); }
+  .bg-pattern { background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px); background-size: 22px 22px; }
+</style>
+</head>
+<body>
+<div class="slide-container">
+
+  <!-- Acentos à esquerda -->
+  <div class="absolute left-0 top-0 h-full w-3 z-20" style="background:#FFD700;"></div>
+  <div class="absolute left-3 top-0 h-full w-1 bg-brand-secondary z-20"></div>
+
+  <!-- Fundo decorativo -->
+  <div class="shape-circle shape-1"></div>
+  <div class="shape-circle shape-2"></div>
+  <div class="absolute inset-0 bg-pattern"></div>
+
+  <!-- Marca d'água -->
+  <img src="Imagens/logo-antaq-azul.png" alt="" class="absolute top-1/2 left-1/2"
+       style="width:48vw; max-width:760px; transform:translate(-50%,-50%); opacity:0.07; z-index:0;
+              pointer-events:none; filter:brightness(0) invert(1);" />
+
+  <!-- Ícone decorativo gigante -->
+  <div class="absolute text-white z-0"
+       style="bottom:-40px; right:-30px; font-size:440px; line-height:0; opacity:0.05;">
+    <i class="fas fa-robot"></i>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="relative z-10 flex-1 flex items-center" style="padding-left:110px; padding-right:96px; padding-top:20px;">
+
+    <div style="flex:1;">
+      <img src="Imagens/logo-antaq-branca.png" alt="Logo ANTAQ" style="height:56px; width:auto; margin-bottom:22px;" />
+
+      <h1 class="thanks-title">OBRIGADO</h1>
+      <div style="width:120px; height:8px; background:#FFD700; margin:20px 0 26px 0;"></div>
+
+      <p class="font-montserrat" style="font-size:36px; font-weight:800; color:#FFD700; margin-bottom:20px;">Material e contato</p>
+
+      <div class="pl-6" style="border-left:4px solid rgba(255,255,255,0.25); display:flex; gap:54px; flex-wrap:wrap;">
+        <div>
+          <p class="font-montserrat" style="font-size:30px; font-weight:800; color:#FFFFFF; line-height:1.25;">
+            Pedro Henrique Soares
+          </p>
+          <p class="font-opensans" style="font-size:21px; color:#BFDBFE; margin-top:8px; line-height:1.35;">
+            Planejamento e Inteligência da Fiscalização
+            <span style="color:#FFD700; font-weight:700;">- GPF</span>
+          </p>
+        </div>
+        <div>
+          <p class="font-montserrat" style="font-size:30px; font-weight:800; color:#FFFFFF; line-height:1.25;">
+            Fábio Queiroz Fonseca
+          </p>
+          <p class="font-opensans" style="font-size:21px; color:#BFDBFE; margin-top:8px; line-height:1.35;">
+            Recursos e de Apoio Técnico
+            <span style="color:#FFD700; font-weight:700;">- GRAT</span>
+          </p>
+        </div>
+      </div>
+      <p class="font-opensans" style="font-size:20px; color:#93C5FD; margin-top:14px; padding-left:26px; line-height:1.35;">
+        Superintendência de Fiscalização e Coordenação das Unidades Regionais - SFC
+      </p>
+
+      <div class="flex flex-col gap-4" style="margin-top:28px; max-width:980px;">
+        <a href="mailto:sfc@antaq.gov.br" class="contact-card">
+          <div class="contact-icon" style="background-color:rgba(0,102,204,0.28); color:#93c5fd;">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="text-left">
+            <p class="font-montserrat" style="font-size:17px; color:#93c5fd; text-transform:uppercase; letter-spacing:.12em; font-weight:700; margin-bottom:6px;">Contato</p>
+            <p class="font-montserrat" style="font-size:28px; font-weight:700; color:#FFFFFF;">sfc@antaq.gov.br</p>
+          </div>
+        </a>
+
+        <a href="https://antaq.github.io/apresentacao_dados_abertos/" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-icon" style="background-color:rgba(0,102,204,0.28); color:#60a5fa;">
+            <i class="fa-solid fa-folder-open"></i>
+          </div>
+          <div class="text-left">
+            <p class="font-montserrat" style="font-size:17px; color:#93c5fd; text-transform:uppercase; letter-spacing:.12em; font-weight:700; margin-bottom:6px;">Material de apoio</p>
+            <p class="font-montserrat" style="font-size:28px; font-weight:700; color:#FFFFFF;">antaq.github.io/apresentacao_dados_abertos</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Código de leitura óptica -->
+    <div style="flex-shrink:0; margin-left:70px; display:flex; flex-direction:column; align-items:center; gap:16px;">
+      <div class="qr-caixa">
+        <img src="Imagens/qr-material-apoio.svg" alt="Código de leitura óptica para o material de apoio" style="width:100%; height:100%; display:block;"/>
+      </div>
+      <p class="font-montserrat" style="font-size:19px; color:#BFDBFE; text-align:center; max-width:260px; line-height:1.35;">
+        Aponte a câmera<br/>para abrir o material
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Rodapé com canais oficiais -->
+  <div class="relative z-10 flex justify-between items-end" style="padding:16px 96px 26px 110px; border-top:1px solid rgba(255,255,255,0.12);">
+    <div class="flex flex-col gap-1" style="color:#BFDBFE; font-size:17px;">
+      <span class="font-montserrat font-semibold uppercase" style="letter-spacing:.1em; color:#DBEAFE; font-size:18px;">Canais oficiais ANTAQ</span>
+      <div class="flex flex-wrap items-center gap-5" style="margin-top:4px;">
+        <a href="https://www.facebook.com/ANTAQ.oficial" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white transition-colors" style="color:#BFDBFE;">
+          <i class="fa-brands fa-facebook"></i><span>ANTAQ.oficial</span>
+        </a>
+        <a href="https://www.instagram.com/antaq_oficial/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white transition-colors" style="color:#BFDBFE;">
+          <i class="fa-brands fa-instagram"></i><span>@antaq_oficial</span>
+        </a>
+        <a href="https://www.youtube.com/c/CanalANTAQ/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white transition-colors" style="color:#BFDBFE;">
+          <i class="fa-brands fa-youtube"></i><span>CanalANTAQ</span>
+        </a>
+        <a href="https://www.linkedin.com/company/antaq" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white transition-colors" style="color:#BFDBFE;">
+          <i class="fa-brands fa-linkedin"></i><span>company/antaq</span>
+        </a>
+        <a href="https://x.com/ANTAQ_oficial" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white transition-colors" style="color:#BFDBFE;">
+          <i class="fa-brands fa-twitter"></i><span>@ANTAQ_oficial</span>
+        </a>
+      </div>
+    </div>
+    <div class="flex items-center gap-5">
+      <p class="font-montserrat" style="font-size:18px; color:#BFDBFE; opacity:.75;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
+      <p class="font-mono" style="font-size:18px; color:#BFDBFE; opacity:.75;">13 / 13</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="notas-apresentador" style="display:none;">
+  <p>Slide de contato e último da apresentação. Deixem-no projetado durante todas as perguntas: é ele que fica na tela enquanto a sala conversa.</p>
+  <p>Peçam que peguem o telefone e apontem a câmera para o código: ele abre esta mesma apresentação, com as notas. Digam o endereço em voz alta também, para quem preferir anotar.</p>
+  <p>Ofereçam o que não está projetado em lugar nenhum: as duas gerências abrem o conector de dados abertos para quem quiser experimentar, e montam a primeira consulta junto com a equipe da unidade que pedir. Sem essa frase, a apresentação termina sem próximo passo.</p>
+  <p>Lembrem também do material de ontem, para quem chegou só hoje: antaq.github.io/apresentacao_ia_sfc traz as regras de uso seguro que este deck só recapitula no slide 2.</p>
+</div>
+<script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
+<script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>
+</body>
+</html>

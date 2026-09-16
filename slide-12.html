@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>O conector acha o dispositivo</title>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
+<link rel="apple-touch-icon" href="Imagens/apple-touch-icon.png"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+  html { font-size: 26px; }
+  body { margin:0; padding:0; background-color:#f3f4f6; overflow:hidden; font-family:'Open Sans', sans-serif; }
+  .slide-container { width:100vw; height:100vh; position:relative; display:flex; flex-direction:column; background-color:#ffffff; overflow:hidden; }
+  .font-montserrat { font-family:'Montserrat', sans-serif; }
+  .text-brand-primary { color:#003366; } .bg-brand-primary { background-color:#003366; }
+  .text-brand-secondary { color:#0066CC; } .bg-brand-secondary { background-color:#0066CC; }
+
+  .item { display:flex; align-items:flex-start; gap:26px; padding:26px 0; }
+  .item + .item { border-top:2px solid #E5E7EB; }
+  .item-marca { width:14px; height:14px; border-radius:50%; background:#003366; flex-shrink:0; margin-top:15px; }
+  .item-txt { font-size:34px; line-height:1.35; color:#374151; }
+  .item-txt strong { color:#003366; font-family:'Montserrat',sans-serif; font-weight:700; }
+
+  .faixa-ancora { margin-top:34px; background:linear-gradient(90deg,#002244 0%,#004488 100%);
+    border-left:12px solid #FFD700; border-radius:0 14px 14px 0; padding:26px 40px;
+    display:flex; align-items:center; gap:24px; }
+  .faixa-ancora p { color:#FFFFFF; font-size:36px; font-weight:800; line-height:1.2;
+    font-family:'Montserrat', sans-serif; }
+
+  .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.03; z-index:0; color:#003366; pointer-events:none; line-height:0; }
+</style>
+</head>
+<body>
+<div class="slide-container">
+  <div style="height:12px;background:#003366;width:100%;"></div>
+  <div style="height:6px;background:#0066CC;width:100%;"></div>
+
+  <!-- Cabeçalho -->
+  <div class="flex items-center justify-between px-16 pt-8 pb-3 z-10">
+    <div>
+      <div class="flex items-center gap-3">
+        <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
+        <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:46px; line-height:1.12; letter-spacing:-0.02em;">
+          O conector acha o dispositivo. Ele não lavra o auto.
+        </h1>
+      </div>
+    </div>
+    <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
+      <i class="fas fa-plug" style="font-size:26px;"></i>
+      <p class="font-montserrat font-bold text-gray-400" style="font-size:19px; letter-spacing:.16em;">DADOS ABERTOS</p>
+    </div>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="flex-1 flex flex-col justify-center px-16 pb-6 z-10 min-h-0">
+
+    <div style="padding-left:6px;">
+
+      <div class="item">
+        <div class="item-marca"></div>
+        <p class="item-txt">
+          Ele reduz o tempo de garimpo. <strong>Não reduz o dever de conferir na fonte primária.</strong>
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="item-marca"></div>
+        <p class="item-txt">
+          O rito continua sendo o da <strong>Resolução ANTAQ nº 3.259/2014</strong>: descrição da conduta, tipificação, contraditório, ampla defesa e decisão fundamentada.
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="item-marca"></div>
+        <p class="item-txt">
+          O que muda é o <strong>ponto de partida</strong>, não o padrão do que sai assinado do processo.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Faixa-âncora -->
+    <div class="faixa-ancora">
+      <i class="fas fa-signature" style="color:#FFD700; font-size:40px; flex-shrink:0;"></i>
+      <p>A IA não assina. Quem assina é você - e quem assina responde.</p>
+    </div>
+
+  </div>
+
+  <!-- Rodapé -->
+  <div class="px-16 pb-6 flex justify-between items-end z-10">
+    <div>
+      <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
+      <p class="text-gray-400" style="font-size:17px;">Fonte: Resolução ANTAQ nº 3.259, de 30 de janeiro de 2014 (procedimento para apuração de infrações e aplicação de penalidades).</p>
+    </div>
+    <p class="text-gray-300 font-mono" style="font-size:18px;">12 / 13</p>
+  </div>
+
+  <div class="bg-marca"><i class="fas fa-gavel"></i></div>
+</div>
+
+<div id="notas-apresentador" style="display:none;">
+  <p>Slide de fechamento do bloco, e é para ser visualmente sóbrio. Nada de animação, nada de número grande. Depois de quatro demonstrações, a plateia precisa de um slide que baixe a temperatura e recoloque a responsabilidade no lugar.</p>
+  <p>O título já entrega a mensagem: o conector acha o dispositivo, ele não lavra o auto. Diga isso e deixe assentar.</p>
+  <p>Reforce que o rito não mudou: a Resolução 3.259 continua valendo inteira, com descrição da conduta, tipificação, contraditório, ampla defesa e decisão fundamentada. O que muda é o ponto de partida, não o padrão do que sai assinado.</p>
+  <p>Se quiser uma frase de ligação com o que ficou dito ontem, use esta: nada do que foi demonstrado aqui exigiu processo em tramitação, dado pessoal ou sigilo. Tudo veio de base pública. Foi de propósito.</p>
+  <p>Esta é a segunda e última vez que a frase âncora aparece nesta apresentação, depois do slide 5, e ela também fechou o encontro de ontem. Diga exatamente igual às outras vezes: a IA não assina, quem assina é você, e quem assina responde. A repetição literal é proposital.</p>
+</div>
+<script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
+<script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>
+</body>
+</html>

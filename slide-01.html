@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dados Abertos da ANTAQ para análise técnica · Capa</title>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
+<link rel="apple-touch-icon" href="Imagens/apple-touch-icon.png"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+  html { font-size: 26px; }
+  body { margin:0; padding:0; overflow:hidden; background-color:#f3f4f6; font-family:'Open Sans', sans-serif; }
+  .slide-container {
+    width:100vw; height:100vh; position:relative;
+    display:flex; flex-direction:column;
+    background: linear-gradient(135deg, #002244 0%, #003366 50%, #004488 100%);
+    overflow:hidden; color:white;
+  }
+  .font-montserrat { font-family:'Montserrat', sans-serif; }
+  .font-opensans { font-family:'Open Sans', sans-serif; }
+  .text-brand-primary { color:#003366; } .bg-brand-primary { background-color:#003366; }
+  .text-brand-secondary { color:#0066CC; } .bg-brand-secondary { background-color:#0066CC; }
+
+  /* Forma diagonal decorativa */
+  .shape-bg {
+    position:absolute; top:0; right:0; width:45%; height:100%;
+    background-color: rgba(255,255,255,0.03);
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+    z-index:1;
+  }
+  .bg-pattern {
+    position:absolute; inset:0; z-index:0;
+    background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  /* Marcador pendente (seção 6.7 do KIT) */
+
+  .capa-link { display:flex; align-items:center; gap:8px; transition:color .2s ease; }
+  .capa-link:hover { color:#ffffff; }
+</style>
+</head>
+<body>
+<div class="slide-container">
+
+  <!-- Textura de fundo e forma diagonal -->
+  <div class="bg-pattern"></div>
+  <div class="shape-bg"></div>
+
+  <!-- Marca d'água -->
+  <img src="Imagens/logo-antaq-azul.png" alt="" class="absolute top-1/2"
+       style="left:80%; width:55vw; max-width:880px; transform:translate(-50%,-50%); opacity:0.08; z-index:2; pointer-events:none; filter:brightness(0) invert(1);" />
+
+  <!-- Ícone decorativo gigante (animado) -->
+  <div id="bg-icon-wrap" class="absolute bottom-0 right-0 text-white z-0" style="font-size:500px; line-height:0; opacity:0.05; transform:translate(18%,18%); transition:opacity 0.7s ease;">
+    <i id="bg-icon" class="fas fa-robot"></i>
+  </div>
+
+  <!-- Barras de acento à esquerda -->
+  <div class="absolute left-0 top-0 h-full w-3 z-20" style="background:#FFD700;"></div>
+  <div class="absolute left-3 top-0 h-full w-1 z-20" style="background:#0066CC;"></div>
+
+  <!-- Cabeçalho institucional -->
+  <div style="position:absolute; top:62px; left:104px; display:flex; align-items:center; gap:20px; z-index:10;">
+    <img src="Imagens/logo-antaq-branca.png" alt="Logo ANTAQ" style="height:54px; width:auto;" />
+    <div style="border-left:1px solid rgba(255,255,255,0.25); padding-left:20px;">
+      <p class="font-montserrat" style="font-size:21px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#BFDBFE; line-height:1.2;">Agência Nacional de Transportes Aquaviários</p>
+      <p class="font-montserrat" style="font-size:18px; font-weight:600; letter-spacing:.10em; text-transform:uppercase; color:#93C5FD; opacity:.85; line-height:1.2; margin-top:5px;">Superintendência de Fiscalização e Coordenação das Unidades Regionais · SFC</p>
+    </div>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="font-montserrat" style="position:relative; z-index:10; display:flex; flex-direction:column; justify-content:center; height:100%; padding-left:104px; padding-right:80px;">
+
+    <!-- Rótulo superior -->
+    <div style="display:flex; align-items:center; gap:16px; margin-bottom:26px;">
+      <div style="width:44px; height:3px; background:#FFD700;"></div>
+      <p style="font-size:22px; font-weight:700; letter-spacing:.30em; text-transform:uppercase; color:#BFDBFE;">Encontro interno · SFC</p>
+    </div>
+
+    <!-- Título -->
+    <div style="display:flex; align-items:center; gap:30px; margin-bottom:26px;">
+      <div style="width:108px; height:108px; border-radius:22px; display:flex; align-items:center; justify-content:center; flex-shrink:0; background:rgba(255,215,0,0.12); border:2px solid rgba(255,215,0,0.45);">
+        <i id="badge-icon" class="fas fa-database" style="font-size:56px; color:#FFD700; transition:opacity 0.7s ease;"></i>
+      </div>
+      <h1 style="font-size:72px; font-weight:900; letter-spacing:-2px; line-height:1.06; color:#FFFFFF;">
+        Dados Abertos da ANTAQ<br/>para <span style="color:#FFD700;">análise técnica</span>
+      </h1>
+    </div>
+
+    <div style="width:120px; height:10px; background:#FFD700; margin-bottom:30px;"></div>
+
+    <!-- Subtítulo -->
+    <div style="padding-left:26px; max-width:1280px; border-left:4px solid rgba(255,255,255,0.28); margin-bottom:34px;">
+      <p class="font-opensans" style="font-size:30px; line-height:1.45; color:#DBEAFE; font-weight:400;">
+        Como a ferramenta alcança o dado oficial da Agência, o que ela <strong style="color:#FFFFFF; font-weight:700;">acha em segundos</strong>, e o que o dado não diz
+      </p>
+    </div>
+
+    <!-- Assinatura e data -->
+    <div style="display:flex; align-items:center; gap:28px; flex-wrap:wrap;">
+      <p class="font-opensans" style="font-size:26px; color:#BFDBFE; font-weight:600;">
+        <i class="fas fa-sitemap" style="color:#FFD700; margin-right:12px;"></i>Gerências GPF e GRAT · SFC/ANTAQ
+      </p>
+      <p class="font-opensans" style="font-size:26px; color:#BFDBFE; font-weight:600;">
+        <i class="fas fa-calendar-day" style="color:#FFD700; margin-right:12px;"></i>22 de setembro de 2026, 10h20
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Rodapé -->
+  <div style="position:absolute; bottom:50px; left:104px; right:80px; z-index:10; display:flex; justify-content:space-between; align-items:flex-end; padding-top:24px; border-top:1px solid rgba(255,255,255,0.15);">
+
+    <div style="display:flex; flex-direction:column; gap:6px; color:#BFDBFE; font-size:18px;">
+      <span class="font-montserrat" style="font-weight:700; text-transform:uppercase; letter-spacing:.12em; color:#DBEAFE; font-size:18px;">Canais oficiais ANTAQ</span>
+      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:22px; margin-top:4px;">
+        <a href="https://www.facebook.com/ANTAQ.oficial" target="_blank" rel="noopener noreferrer" class="capa-link">
+          <i class="fa-brands fa-facebook"></i><span>ANTAQ.oficial</span>
+        </a>
+        <a href="https://www.instagram.com/antaq_oficial/" target="_blank" rel="noopener noreferrer" class="capa-link">
+          <i class="fa-brands fa-instagram"></i><span>@antaq_oficial</span>
+        </a>
+        <a href="https://www.youtube.com/c/CanalANTAQ/" target="_blank" rel="noopener noreferrer" class="capa-link">
+          <i class="fa-brands fa-youtube"></i><span>CanalANTAQ</span>
+        </a>
+        <a href="https://www.linkedin.com/company/antaq" target="_blank" rel="noopener noreferrer" class="capa-link">
+          <i class="fa-brands fa-linkedin"></i><span>company/antaq</span>
+        </a>
+        <a href="https://x.com/ANTAQ_oficial" target="_blank" rel="noopener noreferrer" class="capa-link">
+          <i class="fa-brands fa-twitter"></i><span>@ANTAQ_oficial</span>
+        </a>
+      </div>
+    </div>
+
+    <div style="display:flex; flex-direction:column; align-items:flex-end; gap:12px;">
+      <p class="font-montserrat" style="font-size:18px; color:#BFDBFE; opacity:.75;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
+      <div style="display:flex; align-items:center; gap:14px;">
+        <div style="text-align:right;">
+          <p class="font-montserrat" style="font-size:22px; font-weight:700; color:#FFFFFF; line-height:1.2;">Uso responsável</p>
+          <p class="font-montserrat" style="font-size:18px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#FFD700; line-height:1.2; margin-top:3px;">Administração pública</p>
+        </div>
+        <div style="width:46px; height:46px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:#FFD700; color:#003366;">
+          <i class="fas fa-scale-balanced" style="font-size:20px;"></i>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var icones=['fa-database','fa-chart-column','fa-plug','fa-scale-balanced','fa-magnifying-glass-chart','fa-table','fa-ship','fa-gavel'];
+  var idx=0;
+  var wrap=document.getElementById('bg-icon-wrap');
+  var bgIcon=document.getElementById('bg-icon');
+  var badge=document.getElementById('badge-icon');
+  setInterval(function(){
+    wrap.style.opacity='0';
+    badge.style.opacity='0';
+    setTimeout(function(){
+      idx=(idx+1)%icones.length;
+      bgIcon.className='fas '+icones[idx];
+      badge.className='fas '+icones[idx];
+      wrap.style.opacity='0.05';
+      badge.style.opacity='1';
+    },700);
+  },3000);
+})();
+</script>
+
+<div id="notas-apresentador" style="display:none;">
+  <p><strong>Não comecem pelo assunto.</strong> Fiquem poucos segundos nesta tela, só o tempo de agradecer e de os dois se apresentarem.</p>
+  <p>Esta apresentação é a continuação da de ontem, e vale dizer isso na primeira frase: ontem foi sobre como usar a ferramenta com segurança, hoje é sobre o que ela alcança quando ligada ao dado que a própria Agência publica.</p>
+  <p>Avisem já que quem não esteve ontem não fica para trás: o slide 2 recapitula as quatro regras que importam, em dois minutos.</p>
+  <p>A data está na capa: <strong>22 de setembro de 2026, 10h20</strong>. Comecem de verdade pelo slide 2.</p>
+</div>
+<script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
+<script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>
+</body>
+</html>

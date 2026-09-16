@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>O que ficou dito ontem</title>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
+<link rel="apple-touch-icon" href="Imagens/apple-touch-icon.png"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+  html { font-size: 26px; }
+  body { margin:0; padding:0; background-color:#f3f4f6; overflow:hidden; font-family:'Open Sans', sans-serif; }
+  .slide-container { width:100vw; height:100vh; position:relative; display:flex; flex-direction:column; background-color:#ffffff; overflow:hidden; }
+  .font-montserrat { font-family:'Montserrat', sans-serif; }
+  .text-brand-primary { color:#003366; } .bg-brand-primary { background-color:#003366; }
+  .text-brand-secondary { color:#0066CC; } .bg-brand-secondary { background-color:#0066CC; }
+
+  .lista { display:flex; flex-direction:column; gap:18px; }
+  .item { display:flex; align-items:center; gap:24px; background:#F8FAFC; border-radius:14px;
+          padding:22px 30px; box-shadow:0 2px 8px rgba(0,0,0,.05); }
+  .item-icone { width:60px; height:60px; border-radius:15px; flex-shrink:0; display:flex;
+                align-items:center; justify-content:center; font-size:27px; }
+  .item-txt { font-size:28px; line-height:1.35; color:#374151; }
+  .realce { background:#DBEAFE; color:#003366; font-weight:800; border-radius:8px; padding:2px 10px; }
+
+  .selo { display:inline-flex; align-items:center; gap:14px; background:#EFF6FF; border:2px solid #BFDBFE;
+          border-radius:999px; padding:8px 22px; font-family:'Montserrat',sans-serif; font-weight:700;
+          font-size:20px; color:#1E40AF; margin-left:16px; }
+
+  .faixa { margin-top:28px; background:linear-gradient(90deg,#002244 0%,#004488 100%);
+    border-left:12px solid #FFD700; border-radius:0 14px 14px 0; padding:24px 40px;
+    display:flex; align-items:center; gap:24px; }
+  .faixa p { color:#FFFFFF; font-size:32px; font-weight:800; line-height:1.22;
+    font-family:'Montserrat', sans-serif; }
+
+  .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
+</style>
+</head>
+<body>
+<div class="slide-container">
+  <div style="height:12px;background:#003366;width:100%;"></div>
+  <div style="height:6px;background:#0066CC;width:100%;"></div>
+
+  <!-- Cabeçalho -->
+  <div class="flex items-center justify-between px-16 pt-8 pb-3 z-10">
+    <div>
+      <div class="flex items-center gap-3">
+        <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
+        <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:46px; line-height:1.12; letter-spacing:-0.02em;">
+          O que ficou dito ontem
+        </h1>
+        <span class="selo"><i class="fas fa-rotate-left"></i>21 de setembro</span>
+      </div>
+    </div>
+    <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
+      <i class="fas fa-clock-rotate-left" style="font-size:26px;"></i>
+      <p class="font-montserrat font-bold text-gray-400" style="font-size:19px; letter-spacing:.16em;">ABERTURA</p>
+    </div>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="flex-1 flex flex-col justify-center px-16 pb-6 z-10 min-h-0">
+    <div class="lista">
+
+      <div class="item">
+        <div class="item-icone" style="background:#DBEAFE; color:#0066CC;"><i class="fas fa-user-pen"></i></div>
+        <p class="item-txt">
+          <span class="realce">A IA é revisora, não autora.</span> Quem assina continua respondendo pelo que assinou.
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="item-icone" style="background:#DBEAFE; color:#1D4ED8;"><i class="fas fa-check-double"></i></div>
+        <p class="item-txt">
+          Ela erra exatamente onde é mais convincente: <strong style="color:#003366;">norma, artigo, inciso, processo e valor</strong>. Tudo que tem número, você confere na fonte.
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="item-icone" style="background:#DBEAFE; color:#1E40AF;"><i class="fas fa-user-shield"></i></div>
+        <p class="item-txt">
+          A Agência não tem política de IA, mas <strong style="color:#003366;">a União já publicou orientação</strong>: nada de dado pessoal, sigilo, ação fiscal não deflagrada ou base credenciada.
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="item-icone" style="background:#DBEAFE; color:#003366;"><i class="fas fa-folder-tree"></i></div>
+        <p class="item-txt">
+          Projeto com instruções é a técnica de maior retorno. No conhecimento do projeto, <strong style="color:#003366;">sobe só documento publicado</strong>.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="faixa">
+      <i class="fas fa-forward" style="color:#FFD700; font-size:38px; flex-shrink:0;"></i>
+      <p>Ontem paramos aqui. Hoje é a parte que ficou de fora: o que muda quando a ferramenta alcança o dado oficial da Agência.</p>
+    </div>
+
+  </div>
+
+  <!-- Rodapé -->
+  <div class="px-16 pb-6 flex justify-between items-end z-10">
+    <div>
+      <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
+      <p class="text-gray-400" style="font-size:17px;">Fonte: apresentação "IA no dia a dia da Fiscalização", SFC, 21 de setembro de 2026 (antaq.github.io/apresentacao_ia_sfc).</p>
+    </div>
+    <p class="text-gray-300 font-mono" style="font-size:18px;">2 / 13</p>
+  </div>
+
+  <div class="bg-marca"><i class="fas fa-rotate-left"></i></div>
+</div>
+
+<div id="notas-apresentador" style="display:none;">
+  <p>Slide de ponte, e ele existe por dois motivos. O primeiro: parte desta sala esteve na apresentação de ontem e precisa de retomada curta, não de repetição. O segundo, mais importante: parte da sala <em>não</em> esteve, e essas quatro regras não podem ser tratadas como sabidas.</p>
+  <p>Leia os quatro itens em ritmo rápido, sem abrir nenhum deles. Cerca de dois minutos no total. Se alguém quiser aprofundar, o endereço do material completo está na linha de fonte e volta no último slide.</p>
+  <p>Faça uma pausa no terceiro item, que é o que mais importa para hoje: tudo que vamos demonstrar daqui para frente usa <strong>só dado que a Agência já publica</strong>. Nenhum processo em tramitação, nenhum dado pessoal, nenhum sigilo. Isso não é acaso da demonstração, é condição dela.</p>
+  <p>Feche na faixa dourada e emende direto na divisória. Não abra perguntas aqui: elas cabem melhor depois das demonstrações.</p>
+</div>
+<script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
+<script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>
+</body>
+</html>

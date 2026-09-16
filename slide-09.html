@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>A citação que a base erra, e o conector avisa</title>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
+<link rel="apple-touch-icon" href="Imagens/apple-touch-icon.png"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+  html { font-size: 26px; }
+  body { margin:0; padding:0; background-color:#f3f4f6; overflow:hidden; font-family:'Open Sans', sans-serif; }
+  .slide-container { width:100vw; height:100vh; position:relative; display:flex; flex-direction:column; background-color:#ffffff; overflow:hidden; }
+  .font-montserrat { font-family:'Montserrat', sans-serif; }
+  .text-brand-primary { color:#003366; } .bg-brand-primary { background-color:#003366; }
+  .text-brand-secondary { color:#0066CC; } .bg-brand-secondary { background-color:#0066CC; }
+
+  .instrucao { background:#0F172A; border-radius:14px; padding:24px 32px; display:flex;
+               align-items:flex-start; gap:18px; }
+  .instrucao code { font-family:'Courier New', monospace; font-size:27px; color:#E2E8F0; line-height:1.45; }
+
+
+  .destaque-num { font-family:'Montserrat',sans-serif; font-weight:900; font-size:128px;
+    color:#003366; line-height:1; letter-spacing:-3px; }
+  .destaque-rotulo { font-family:'Montserrat',sans-serif; font-weight:800; font-size:24px;
+    color:#0066CC; text-transform:uppercase; letter-spacing:.14em; }
+
+  .faixa { margin-top:22px; background:#F0F9FF; border:3px solid #BAE6FD; border-radius:16px;
+    padding:22px 34px; display:flex; align-items:center; gap:22px; }
+  .aviso { background:#FEF2F2; border:3px solid #FCA5A5; border-left:10px solid #DC2626;
+    border-radius:14px; padding:26px 34px; display:flex; align-items:flex-start; gap:22px; }
+  .aviso i { color:#DC2626; font-size:38px; flex-shrink:0; margin-top:4px; }
+  .aviso p { font-size:30px; color:#7F1D1D; font-weight:600; line-height:1.32; }
+  .grafia { font-family:'Courier New', monospace; font-weight:800; background:#FECACA;
+    border-radius:6px; padding:1px 9px; }
+
+  .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
+</style>
+</head>
+<body>
+<div class="slide-container">
+  <div style="height:12px;background:#003366;width:100%;"></div>
+  <div style="height:6px;background:#0066CC;width:100%;"></div>
+
+  <!-- Cabeçalho -->
+  <div class="flex items-center justify-between px-16 pt-7 pb-2 z-10">
+    <div>
+      <div class="flex items-center gap-3">
+        <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
+        <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:48px; line-height:1.12; letter-spacing:-0.02em;">
+          A citação que a base erra, e o conector avisa
+        </h1>
+      </div>
+      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">Demonstração 3 · acervo normativo do setor aquaviário</p>
+    </div>
+    <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
+      <i class="fas fa-plug" style="font-size:26px;"></i>
+      <p class="font-montserrat font-bold text-gray-400" style="font-size:19px; letter-spacing:.16em;">DADOS ABERTOS</p>
+    </div>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="flex-1 flex flex-col justify-center px-16 pb-4 z-10 min-h-0" style="gap:26px;">
+
+    <div class="instrucao">
+      <i class="fas fa-terminal" style="color:#7CC0FF; font-size:26px; flex-shrink:0; margin-top:4px;"></i>
+      <code>"Qual dispositivo trata da medida cautelar de interdição? Devolva o texto."</code>
+    </div>
+
+    <div style="display:flex; gap:26px; align-items:stretch;">
+
+      <div style="flex:1.6; display:flex; flex-direction:column; gap:22px;">
+        <div class="aviso">
+          <i class="fas fa-triangle-exclamation"></i>
+          <p>O conector devolve o texto <strong>e o aviso</strong>: o rótulo de artigo da base de origem
+          aponta o dispositivo errado em <strong>68% dos casos</strong>, e o de parágrafo em 98%.</p>
+        </div>
+        <div class="aviso">
+          <i class="fas fa-file-circle-xmark"></i>
+          <p>Nos dois documentos do procedimento sancionador, a extração do arquivo comeu letras:
+          <span class="grafia">instalaçes</span> <span class="grafia">rgãos</span> <span class="grafia">contraditrio</span>.
+          O sentido serve para localizar. <strong>A grafia não serve para transcrever.</strong></p>
+        </div>
+      </div>
+
+      <div style="flex:1; background:#F0F9FF; border:3px solid #BAE6FD; border-radius:18px;
+                  padding:30px 26px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+        <p class="destaque-rotulo" style="text-align:center;">Rótulo de artigo<br/>errado na origem</p>
+        <p class="destaque-num" style="margin-top:12px;">68%</p>
+        <p class="font-montserrat" style="font-size:25px; font-weight:600; color:#4B5563; margin-top:20px; text-align:center; line-height:1.3;">
+          50 documentos<br/>2.530 trechos
+        </p>
+      </div>
+
+    </div>
+
+    <div class="faixa" style="margin-top:0; background:#FFFBEB; border-color:#FDE68A;">
+      <i class="fas fa-scale-balanced" style="color:#B45309; font-size:36px; flex-shrink:0;"></i>
+      <p class="font-montserrat" style="font-size:31px; font-weight:800; color:#92400E; line-height:1.3;">
+        Citação errada é vício de tipificação. A busca localiza o dispositivo; a transcrição vem do diário oficial.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Rodapé -->
+  <div class="px-16 pb-5 flex justify-between items-end z-10">
+    <div>
+      <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
+      <p class="text-gray-400" style="font-size:17px;">Fonte: acervo normativo do setor aquaviário (50 documentos, 2.530 trechos) via conector MCP de Dados Abertos da ANTAQ (GPF), em 16 de setembro de 2026.</p>
+    </div>
+    <p class="text-gray-300 font-mono" style="font-size:18px;">9 / 13</p>
+  </div>
+
+  <div class="bg-marca"><i class="fas fa-file-signature"></i></div>
+</div>
+
+<div id="notas-apresentador" style="display:none;">
+  <p>Terceira demonstração, e é a que mais interessa a quem lavra auto. Comece pelo ganho, rápido: dá para localizar o dispositivo em cinquenta documentos e dois mil e quinhentos trechos em segundos, sem abrir dez arquivos.</p>
+  <p>Mas o assunto do slide não é o ganho. É o que o conector devolve <em>junto</em> com a resposta. Leia os dois cartões vermelhos devagar.</p>
+  <p>O primeiro: a base de origem grava um rótulo dizendo de que artigo é cada trecho, e esse rótulo está errado em sessenta e oito por cento dos casos. Por isso o conector só cita o artigo quando o próprio texto abre com ele. Se a ferramenta tivesse confiado no rótulo, entregaria citação errada com cara de citação certa.</p>
+  <p>O segundo é ainda mais concreto: nos dois documentos que regem o procedimento sancionador, a extração do arquivo comeu letras. Mostre as três palavras na tela. Colar isso num despacho produz erro visível, e a defesa vê antes de você.</p>
+  <p>Feche na faixa amarela e amarre com a segunda regra do slide 2: a busca localiza, o diário oficial transcreve. Essa é a diferença entre usar bem e usar mal. Cerca de três minutos.</p>
+  <p>Se alguém perguntar por que não corrigem a base: é exatamente a pergunta certa, e a resposta é que o conector mede o defeito e avisa, em vez de esconder. Medir o defeito já é um produto.</p>
+</div>
+<script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
+<script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>
+</body>
+</html>

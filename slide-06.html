@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>O enquadramento que mais soma multa é o genérico</title>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
+<link rel="apple-touch-icon" href="Imagens/apple-touch-icon.png"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+  html { font-size: 26px; }
+  body { margin:0; padding:0; background-color:#f3f4f6; overflow:hidden; font-family:'Open Sans', sans-serif; }
+  .slide-container { width:100vw; height:100vh; position:relative; display:flex; flex-direction:column; background-color:#ffffff; overflow:hidden; }
+  .font-montserrat { font-family:'Montserrat', sans-serif; }
+  .text-brand-primary { color:#003366; } .bg-brand-primary { background-color:#003366; }
+  .text-brand-secondary { color:#0066CC; } .bg-brand-secondary { background-color:#0066CC; }
+
+  .instrucao { background:#0F172A; border-radius:14px; padding:26px 34px; display:flex;
+               align-items:center; gap:18px; }
+  .instrucao code { font-family:'Courier New', monospace; font-size:28px; color:#E2E8F0; line-height:1.4; }
+
+  .resultado { background:#FFFFFF; border:4px solid #003366; border-radius:18px; padding:44px 48px;
+               box-shadow:0 14px 30px -14px rgba(0,0,0,.28); }
+  .resultado-rotulo { font-family:'Montserrat',sans-serif; font-weight:800; font-size:20px;
+    color:#0066CC; text-transform:uppercase; letter-spacing:.14em; margin-bottom:14px; }
+  .resultado-txt { font-size:35px; line-height:1.42; color:#1F2937; font-weight:600; }
+  .erro { background:#FEE2E2; color:#B91C1C; font-weight:900; border-radius:8px; padding:2px 12px; }
+  .classificacao { margin-top:16px; font-family:'Montserrat',sans-serif; font-weight:700;
+    font-size:28px; color:#4B5563; }
+
+  .destaque-num { font-family:'Montserrat',sans-serif; font-weight:900; font-size:124px;
+    color:#003366; line-height:1; letter-spacing:-2px; }
+  .destaque-rotulo { font-family:'Montserrat',sans-serif; font-weight:800; font-size:20px;
+    color:#0066CC; text-transform:uppercase; letter-spacing:.14em; }
+
+
+  .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
+</style>
+</head>
+<body>
+<div class="slide-container">
+  <div style="height:12px;background:#003366;width:100%;"></div>
+  <div style="height:6px;background:#0066CC;width:100%;"></div>
+
+  <!-- Cabeçalho -->
+  <div class="flex items-center justify-between px-16 pt-7 pb-2 z-10">
+    <div>
+      <div class="flex items-center gap-3">
+        <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
+        <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:46px; line-height:1.12; letter-spacing:-0.02em;">
+          O enquadramento que mais soma multa é o genérico
+        </h1>
+      </div>
+      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">Demonstração 1 · Res. ANTAQ nº 3.274/2014, art. 32, XXXVIII</p>
+    </div>
+    <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
+      <i class="fas fa-plug" style="font-size:26px;"></i>
+      <p class="font-montserrat font-bold text-gray-400" style="font-size:19px; letter-spacing:.16em;">DADOS ABERTOS</p>
+    </div>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="flex-1 flex flex-col justify-center px-16 pb-4 z-10 min-h-0" style="gap:20px;">
+
+    <!-- Instrução usada -->
+    <div class="instrucao">
+      <i class="fas fa-terminal" style="color:#7CC0FF; font-size:26px; flex-shrink:0;"></i>
+      <code>"Quais enquadramentos mais somam multa nos processos sancionadores da ANTAQ?"</code>
+    </div>
+
+    <!-- Resultado + apoio lateral -->
+    <div style="display:flex; gap:26px; align-items:stretch;">
+
+      <div class="resultado" style="flex:1.75; padding:32px 40px;">
+        <p class="resultado-rotulo">1º lugar &middot; texto oficial da infração</p>
+        <p class="resultado-txt" style="font-size:28px;">
+          &ldquo;não cumprir ou não fazer cumprir as leis, a regulamentação da ANTAQ, o contrato de
+          concessão, o convênio de delegação, o contrato de arrendamento (...),
+          <span class="erro">exceto quando a conduta infracional se enquadrar em tipo específico
+          contemplado nesta norma</span>: multa de até R$ 1.000.000,00&rdquo;
+        </p>
+        <p class="classificacao" style="font-size:25px;">Res. ANTAQ nº 3.274/2014, art. 32, XXXVIII &nbsp;|&nbsp; 281 infrações julgadas</p>
+      </div>
+
+      <!-- Destaque numérico -->
+      <div style="flex:1; background:#F0F9FF; border:3px solid #BAE6FD; border-radius:18px;
+                  padding:28px 30px; display:flex; flex-direction:column;
+                  align-items:center; justify-content:center;">
+        <p class="destaque-rotulo" style="text-align:center;">Soma das multas<br/>nesse único inciso</p>
+        <p class="destaque-num" style="margin-top:14px; font-size:96px;">R$ 18,7</p>
+        <p class="font-montserrat" style="font-size:30px; font-weight:700; color:#003366; margin-top:6px;">milhões</p>
+        <p class="font-montserrat" style="font-size:21px; font-weight:600; color:#4B5563; margin-top:12px; text-align:center;">de R$ 106,4 milhões<br/>em toda a série</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Rodapé -->
+  <div class="px-16 pb-5 flex justify-between items-end z-10">
+    <div>
+      <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
+      <p class="text-gray-400" style="font-size:17px;">Fonte: painel Fiscalização da ANTAQ, quadros "Base de Dados" e "Objeto das Normas", via conector MCP de Dados Abertos da ANTAQ (GPF), em 16 de setembro de 2026. Valores nominais, sem correção.</p>
+    </div>
+    <p class="text-gray-300 font-mono" style="font-size:18px;">6 / 13</p>
+  </div>
+
+  <div class="bg-marca"><i class="fas fa-gavel"></i></div>
+</div>
+
+<div id="notas-apresentador" style="display:none;">
+  <p>Primeira demonstração, e ela é sobre nós. Comece dizendo isso com todas as letras: "não vim mostrar erro de vocês, vim mostrar um número que é da nossa casa e que a gente nunca olhou de frente".</p>
+  <p>Leia o texto do inciso devagar, até o trecho em vermelho. É um tipo <em>residual</em>: ele só cabe quando a conduta não se enquadra em nenhum tipo específico da própria norma. A norma diz isso dentro do próprio dispositivo.</p>
+  <p>Agora dê o número: esse inciso residual é o que mais soma multa em toda a série, dezoito milhões e setecentos mil de um total de cento e seis milhões e quatrocentos mil. Quase um sexto do dinheiro da série está no tipo que deveria ser exceção.</p>
+  <p>Não conclua nada aqui. Deixe a sala concluir. Se alguém disser "mas em muitos casos não existe tipo específico mesmo", concorde: é uma leitura possível, e é exatamente por isso que o dado sozinho não responde. O próximo slide diz por que a pergunta importa.</p>
+  <p>Cuidado com o tom: a sala instruiu esses processos. O achado é da instituição, não de ninguém em particular. Cerca de três minutos.</p>
+</div>
+<script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
+<script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>
+</body>
+</html>

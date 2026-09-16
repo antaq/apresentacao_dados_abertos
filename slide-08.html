@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>O histórico do fiscalizado, antes de autuar</title>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
+<link rel="apple-touch-icon" href="Imagens/apple-touch-icon.png"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+  html { font-size: 26px; }
+  body { margin:0; padding:0; background-color:#f3f4f6; overflow:hidden; font-family:'Open Sans', sans-serif; }
+  .slide-container { width:100vw; height:100vh; position:relative; display:flex; flex-direction:column; background-color:#ffffff; overflow:hidden; }
+  .font-montserrat { font-family:'Montserrat', sans-serif; }
+  .text-brand-primary { color:#003366; } .bg-brand-primary { background-color:#003366; }
+  .text-brand-secondary { color:#0066CC; } .bg-brand-secondary { background-color:#0066CC; }
+
+  .instrucao { background:#0F172A; border-radius:14px; padding:20px 28px; display:flex;
+               align-items:center; gap:18px; }
+  .instrucao code { font-family:'Courier New', monospace; font-size:23px; color:#E2E8F0; line-height:1.4; }
+
+
+  .destaque-num { font-family:'Montserrat',sans-serif; font-weight:900; font-size:86px;
+    color:#003366; line-height:1; letter-spacing:-3px; }
+  .destaque-rotulo { font-family:'Montserrat',sans-serif; font-weight:800; font-size:20px;
+    color:#0066CC; text-transform:uppercase; letter-spacing:.14em; }
+
+  .cadastros { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:18px; }
+  .cadastro { display:inline-flex; align-items:center; gap:10px; background:#003366; color:#fff;
+    border-radius:999px; padding:9px 22px; font-family:'Montserrat',sans-serif; font-weight:700;
+    font-size:22px; }
+
+  .faixa { margin-top:22px; background:#F0F9FF; border:3px solid #BAE6FD; border-radius:16px;
+    padding:22px 34px; display:flex; align-items:center; gap:22px; }
+
+  .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
+</style>
+</head>
+<body>
+<div class="slide-container">
+  <div style="height:12px;background:#003366;width:100%;"></div>
+  <div style="height:6px;background:#0066CC;width:100%;"></div>
+
+  <!-- Cabeçalho -->
+  <div class="flex items-center justify-between px-16 pt-7 pb-2 z-10">
+    <div>
+      <div class="flex items-center gap-3">
+        <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
+        <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:48px; line-height:1.12; letter-spacing:-0.02em;">
+          O histórico do fiscalizado, antes de autuar
+        </h1>
+      </div>
+      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">Demonstração 2 · acervo sancionador de 2014 a 2026</p>
+    </div>
+    <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
+      <i class="fas fa-plug" style="font-size:26px;"></i>
+      <p class="font-montserrat font-bold text-gray-400" style="font-size:19px; letter-spacing:.16em;">DADOS ABERTOS</p>
+    </div>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="flex-1 flex flex-col justify-center px-16 pb-4 z-10 min-h-0" style="gap:20px;">
+
+    <div class="instrucao">
+      <i class="fas fa-terminal" style="color:#7CC0FF; font-size:26px; flex-shrink:0;"></i>
+      <code>"Esta empresa já foi autuada pela ANTAQ? Em quais unidades, por quais infrações e com que desfecho?"</code>
+    </div>
+
+    <div style="display:flex; gap:22px; align-items:stretch;">
+
+      <div style="flex:1; background:#F0F9FF; border:3px solid #BAE6FD; border-radius:18px;
+                  padding:30px 26px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+        <p class="destaque-rotulo">Empresas no acervo</p>
+        <p class="destaque-num" style="margin-top:10px;">2.824</p>
+      </div>
+
+      <div style="flex:1; background:#F0F9FF; border:3px solid #BAE6FD; border-radius:18px;
+                  padding:30px 26px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+        <p class="destaque-rotulo">Processos distintos</p>
+        <p class="destaque-num" style="margin-top:10px;">17.505</p>
+      </div>
+
+      <div style="flex:1; background:#F0F9FF; border:3px solid #BAE6FD; border-radius:18px;
+                  padding:30px 26px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+        <p class="destaque-rotulo">Infrações julgadas</p>
+        <p class="destaque-num" style="margin-top:10px;">19.708</p>
+      </div>
+
+    </div>
+
+    <div class="cadastros" style="justify-content:flex-start; margin-top:0;">
+      <span class="cadastro"><i class="fas fa-building"></i>Por empresa</span>
+      <span class="cadastro"><i class="fas fa-map-location-dot"></i>Por unidade</span>
+      <span class="cadastro"><i class="fas fa-gavel"></i>Por infração</span>
+      <span class="cadastro"><i class="fas fa-flag-checkered"></i>Por tipo de decisão</span>
+      <span class="cadastro"><i class="fas fa-calendar"></i>Por ano</span>
+    </div>
+
+    <div class="faixa">
+      <i class="fas fa-circle-info" style="color:#0066CC; font-size:36px; flex-shrink:0;"></i>
+      <p class="font-montserrat" style="font-size:28px; font-weight:700; color:#003366; line-height:1.3;">
+        Não substitui a consulta ao SFIS, e só alcança processo já julgado. Fica barato o bastante para virar rotina antes de autuar.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Rodapé -->
+  <div class="px-16 pb-5 flex justify-between items-end z-10">
+    <div>
+      <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
+      <p class="text-gray-400" style="font-size:17px;">Fonte: painel Fiscalização da ANTAQ, quadro "Base de Dados", via conector MCP de Dados Abertos da ANTAQ (GPF), em 16 de setembro de 2026.</p>
+    </div>
+    <p class="text-gray-300 font-mono" style="font-size:18px;">8 / 13</p>
+  </div>
+
+  <div class="bg-marca"><i class="fas fa-user-shield"></i></div>
+</div>
+
+<div id="notas-apresentador" style="display:none;">
+  <p>Segunda demonstração. Esta é a que a sala costuma achar mais imediata: o histórico inteiro de uma empresa, por unidade, por infração e por desfecho, em segundos.</p>
+  <p>Se houver rede, rode ao vivo com uma empresa conhecida do setor. Escolha antes e teste antes. Não improvise o nome na hora.</p>
+  <p>Diga para que serve de verdade, que não é curiosidade: reincidência é circunstância que pesa na dosimetria, e hoje levantar isso à mão consome tempo que ninguém tem. O conector não decide nada, ele só reduz o custo de olhar.</p>
+  <p>Faça a ressalva antes que alguém faça por você, e ela está na faixa azul: isto não substitui o SFIS, e o painel só traz processo já julgado. O que está em curso não aparece aqui - e é bom que não apareça.</p>
+  <p>Os três números do meio voltam no slide 10, e ali eles deixam de ser impressionantes e passam a ser uma armadilha. Plante essa semente: "guardem esses dois, dezessete mil e quinhentos e dezenove mil e setecentos".</p>
+</div>
+<script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
+<script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>
+</body>
+</html>
