@@ -32,6 +32,8 @@
   .contact-icon { width: 52px; height: 52px; border-radius: 13px; display:flex; align-items:center;
     justify-content:center; font-size: 22px; margin-right: 20px; flex-shrink:0; }
 
+  .card-endereco { font-family:'Courier New', monospace; font-size:27px; font-weight:700; color:#FFFFFF; }
+
   .qr-caixa { width:250px; height:250px; border-radius:18px; background:#FFFFFF; padding:14px;
     box-shadow:0 10px 30px -8px rgba(0,0,0,.45); flex-shrink:0; }
 
@@ -119,6 +121,16 @@
             <p class="font-montserrat" style="font-size:28px; font-weight:700; color:#FFFFFF;">antaq.github.io/apresentacao_dados_abertos</p>
           </div>
         </a>
+
+        <div class="contact-card">
+          <div class="contact-icon" style="background-color:rgba(255,215,0,0.20); color:#FFD700;">
+            <i class="fa-solid fa-plug"></i>
+          </div>
+          <div class="text-left">
+            <p class="font-montserrat" style="font-size:17px; color:#FDE68A; text-transform:uppercase; letter-spacing:.12em; font-weight:700; margin-bottom:6px;">Endereço do conector</p>
+            <p class="card-endereco">https://antaq.dadosabertos.dev/mcp</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -167,7 +179,8 @@
 <div id="notas-apresentador" style="display:none;">
   <p>Slide de contato e último da apresentação. Deixem-no projetado durante todas as perguntas: é ele que fica na tela enquanto a sala conversa.</p>
   <p>Peçam que peguem o telefone e apontem a câmera para o código: ele abre esta mesma apresentação, com as notas. Digam o endereço em voz alta também, para quem preferir anotar.</p>
-  <p>Ofereçam o que não está projetado em lugar nenhum: as duas gerências abrem o conector de dados abertos para quem quiser experimentar, e montam a primeira consulta junto com a equipe da unidade que pedir. Sem essa frase, a apresentação termina sem próximo passo.</p>
+  <p>Ofereçam o que não está projetado em lugar nenhum: as duas gerências montam a primeira consulta junto com a equipe da unidade que pedir. Sem essa frase, a apresentação termina sem próximo passo.</p>
+  <p>Apontem para o terceiro cartão e leiam o endereço devagar, porque é ele que transforma a oferta em algo que a pessoa faz sozinha na mesa dela: o conector é público e atende em <em>antaq.dadosabertos.dev barra mcp</em>. Basta apontar para lá qualquer ferramenta compatível com MCP. Não cliquem no endereço na hora, porque o que abre no navegador é a resposta crua do servidor, e não uma página.</p>
   <p>Lembrem também do material de ontem, para quem chegou só hoje: antaq.github.io/apresentacao_ia_sfc traz as regras de uso seguro que este deck só recapitula no slide 2.</p>
 </div>
 <script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>

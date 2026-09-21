@@ -19,9 +19,9 @@
   .text-brand-primary { color:#003366; } .bg-brand-primary { background-color:#003366; }
   .text-brand-secondary { color:#0066CC; } .bg-brand-secondary { background-color:#0066CC; }
 
-  .lista { display:flex; flex-direction:column; gap:16px; }
+  .lista { display:flex; flex-direction:column; gap:13px; }
   .item { display:flex; align-items:center; gap:24px; background:#F8FAFC; border-radius:14px;
-          padding:20px 30px; box-shadow:0 2px 8px rgba(0,0,0,.05); }
+          padding:17px 30px; box-shadow:0 2px 8px rgba(0,0,0,.05); }
   .item-icone { width:60px; height:60px; border-radius:15px; flex-shrink:0; display:flex;
                 align-items:center; justify-content:center; font-size:27px; }
   .item-txt { font-size:28px; line-height:1.35; color:#374151; }
@@ -33,7 +33,15 @@
           border-radius:999px; padding:7px 18px; font-family:'Montserrat',sans-serif; font-weight:700;
           font-size:20px; color:#1E40AF; }
 
-  .faixa-ancora { margin-top:34px; background:linear-gradient(90deg,#002244 0%,#004488 100%);
+  .endereco { margin-top:18px; display:flex; align-items:center; gap:20px;
+    background:#F0F9FF; border:3px solid #BAE6FD; border-radius:14px; padding:13px 30px; }
+  .endereco i { font-size:28px; color:#0066CC; flex-shrink:0; }
+  .endereco-rot { font-family:'Montserrat',sans-serif; font-weight:800; font-size:19px;
+    text-transform:uppercase; letter-spacing:.13em; color:#0066CC; flex-shrink:0; }
+  .endereco-url { font-family:'Courier New', monospace; font-weight:700; font-size:29px;
+    color:#003366; line-height:1.2; }
+
+  .faixa-ancora { margin-top:20px; background:linear-gradient(90deg,#002244 0%,#004488 100%);
     border-left:12px solid #FFD700; border-radius:0 14px 14px 0; padding:26px 40px;
     display:flex; align-items:center; gap:24px; }
   .faixa-ancora p { color:#FFFFFF; font-size:36px; font-weight:800; line-height:1.2;
@@ -103,6 +111,13 @@
 
     </div>
 
+    <!-- Endereço do conector -->
+    <div class="endereco">
+      <i class="fas fa-plug"></i>
+      <p class="endereco-rot">Endereço do conector</p>
+      <p class="endereco-url">https://antaq.dadosabertos.dev/mcp</p>
+    </div>
+
     <!-- Faixa-âncora -->
     <div class="faixa-ancora">
       <i class="fas fa-signature" style="color:#FFD700; font-size:40px; flex-shrink:0;"></i>
@@ -124,6 +139,7 @@
   <p>Este slide protege a apresentação da acusação de estar vendendo alguma coisa, e é ainda mais importante aqui do que em outras plateias, porque quem fala é parte da casa. Façam os quatro pontos com calma.</p>
   <p>Primeiro: MCP é protocolo aberto, não é produto. Funciona com qualquer ferramenta compatível, de qualquer fornecedor. Segundo: foi feito aqui dentro, sem custo de contratação. Se perguntarem de onde vem a competência para isso, a resposta está no Regimento: cabe à GPF definir métodos e rotinas para aumentar a efetividade das ações fiscalizadoras e apoiar o desenvolvimento dos recursos tecnológicos envolvidos na fiscalização (art. 80, VII e IX). Não é sistema da casa nem substitui nenhum: é um método de consulta. Terceiro: só consome dado que a própria Agência já publica, e vale nomear as fontes.</p>
   <p>O quarto ponto é o que importa a esta sala, e não é o mesmo da versão anterior desta palestra: o conector não enxerga processo em tramitação. Ele lê o painel público, que só tem processo já julgado. Nada do SFIS, nada do SEI, nada em sigilo.</p>
+  <p>Antes da faixa dourada, leiam o endereço em voz alta: o conector fica em <em>antaq.dadosabertos.dev barra mcp</em>. Digam que ele é público e que qualquer ferramenta compatível se conecta ali, sem instalação e sem pedir acesso a ninguém. Quem quiser anotar, este é o momento; o endereço volta no último slide.</p>
   <p>Fechem na faixa dourada. Quem esteve ontem já ouviu esta frase, e ela volta uma última vez no slide 12: a IA não assina, quem assina é você, e quem assina responde.</p>
 </div>
 <script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>

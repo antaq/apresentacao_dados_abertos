@@ -24,7 +24,7 @@ Situação em: **16/09/2026** · Apresentação marcada para **22/09/2026, às 1
 
 | Slide | O que precisa ser dito em voz alta |
 |---|---|
-| **13** | A oferta de abrir o **conector de Dados Abertos** para quem quiser experimentar. Sem essa frase, a apresentação termina sem próximo passo. |
+| **13** | A oferta de montar a primeira consulta junto com a equipe da unidade que pedir. O endereço do conector passou a estar projetado no terceiro cartão desde 21/09/2026, mas a oferta de acompanhar continua sem estar em tela. Sem essa frase, a apresentação termina sem próximo passo. |
 | **2** | Que quem não esteve no dia 21 não fica para trás, e que o material completo daquele dia está no endereço da linha de fonte. |
 
 ---
@@ -36,7 +36,7 @@ Situação em: **16/09/2026** · Apresentação marcada para **22/09/2026, às 1
 | **Slides 5 e 9** | ⚠️ **Divergência aberta.** O slide 5 diz que o conector "consome apenas dado aberto oficial", e o chip fala em "acervo normativo publicado". Mas o acervo consultado pelo conector (50 documentos, 2.530 trechos, citado no slide 9) inclui **8 Manuais de Fiscalização e Ordens de Serviço da SFC**, que a própria apresentação de 21/09 classifica como documentos internos não publicados. Ou se retiram esses 8 do acervo, ou o slide 5 muda de redação. Não projetar antes de resolver. |
 | **Slide 7** | O cartão de alerta é atribuído ao **curso de introdução à fiscalização da SFC**. Conferir a atribuição antes de dizer em voz alta de onde vem. |
 | **Deck inteiro** | Todos os números foram lidos do conector de Dados Abertos em **16/09/2026**, sobre uma captura do painel de **18/08/2026**. Se a apresentação escorregar de data, reconferir: a base é atualizada. |
-| **Demonstração ao vivo** | O conector `dados-antaq` precisa estar acessível na máquina da apresentação. Se a rede cair, o procedimento é narrar o que está projetado; os quatro slides de demonstração se sustentam sozinhos. |
+| **Demonstração ao vivo** | O conector `dados-antaq` atende em `https://antaq.dadosabertos.dev/mcp` e precisa estar acessível da máquina da apresentação, inclusive pela rede da Agência. Confirmar isso antes de subir ao palco, porque o endereço está projetado nos slides 5 e 13 e a sala vai tentar. Se a rede cair, o procedimento é narrar o que está projetado; os quatro slides de demonstração se sustentam sozinhos. |
 
 ---
 

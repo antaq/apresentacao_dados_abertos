@@ -81,6 +81,12 @@ A quarta é a mais importante do deck: ela é sobre o que o dado **não** diz.
 
 ## Antes de apresentar
 
+O endereço do conector está projetado nos slides 5 e 13:
+**`https://antaq.dadosabertos.dev/mcp`**. É público, atende por MCP e serve a qualquer
+ferramenta compatível. Confirme que ele responde da máquina e da rede onde a apresentação
+vai rodar, porque a sala vai tentar. Se o endereço mudar, os dois slides mudam juntos, e a
+seção 5 do [`KIT.md`](KIT.md) registra o que precisa ser trocado.
+
 Leia o [`PENDENCIAS.md`](PENDENCIAS.md). Os números do deck foram lidos do conector em
 **16/09/2026**, sobre uma captura do painel de **18/08/2026**; se a data da apresentação
 escorregar, reconfira, porque a base é atualizada.

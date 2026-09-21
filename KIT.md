@@ -203,6 +203,12 @@ Fontes canônicas desta apresentação (use exatamente):
   `Fonte: apresentação "IA no dia a dia da Fiscalização", SFC, 21 de setembro de 2026 (antaq.github.io/apresentacao_ia_sfc).`
 - Roteiro (slide 3): `Fonte: tempo estimado no roteiro desta apresentação (GPF e GRAT/SFC).`
 
+**Endereço do conector (slides 5 e 13):** `https://antaq.dadosabertos.dev/mcp`. É público e
+aparece projetado nos dois slides, em `'Courier New', monospace`, sempre com o `https://`,
+porque a plateia copia isso para a configuração da própria ferramenta. No slide 13 ele é um
+cartão **sem link**: clicar abre a resposta crua do servidor no projetor, e não uma página.
+Endereço trocado em 21/09/2026; se mudar de novo, os dois slides mudam juntos.
+
 > Regra que não muda: **todo número projetado tem linha de fonte**. Neste deck, que é todo
 > sobre número, a linha de fonte também registra que os valores são nominais, sem correção.
 
@@ -391,7 +397,7 @@ Se a especificação não trouxer NOTAS para o slide, escreva uma nota curta e �
 | 2 | L3 | O que ficou dito ontem (recapitulação) | ABERTURA | novo |
 | 3 | L10 | Divisória bloco 1 (18 min) | — | 28 |
 | 4 | L4 | A diferença que um conector faz | DADOS ABERTOS | 29 |
-| 5 | L3 | O conector de Dados Abertos da ANTAQ + faixa-âncora | DADOS ABERTOS | 30 |
+| 5 | L3 | O conector de Dados Abertos da ANTAQ, endereço + faixa-âncora | DADOS ABERTOS | 30 |
 | 6 | L6+L8 | Demonstração 1: o enquadramento genérico | DADOS ABERTOS | 31 |
 | 7 | L3 | Enquadramento genérico não é detalhe de redação | DADOS ABERTOS | 32 |
 | 8 | L6+L8 | Demonstração 2: o histórico do fiscalizado | DADOS ABERTOS | 33 |
@@ -399,7 +405,7 @@ Se a especificação não trouxer NOTAS para o slide, escreva uma nota curta e �
 | 10 | L5 | Demonstração 4: dado aberto não é dado limpo | DADOS ABERTOS | 35 |
 | 11 | L2 | Conclusão do bloco | — | 36 |
 | 12 | L3 | Enquadramento honesto + faixa-âncora | DADOS ABERTOS | 37 |
-| 13 | L11 | Contato, material e código de leitura óptica | — | 41 |
+| 13 | L11 | Contato, material, endereço do conector e código de leitura óptica | — | 41 |
 
 A coluna "Vinha de" traz a numeração no deck de 21/09/2026. Ela existe para que quem
 comparar os dois materiais encontre o slide equivalente sem procurar.

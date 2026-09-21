@@ -1,4 +1,4 @@
-# Notas do apresentador — Dados Abertos da ANTAQ para análise técnica
+# Notas do apresentador — Utilização de Dados Abertos da ANTAQ para Análise Técnica
 
 Gerado a partir dos blocos ocultos `#notas-apresentador` de cada slide.
 Não edite este arquivo: edite o slide e gere de novo.
@@ -44,6 +44,7 @@ Não edite este arquivo: edite o slide e gere de novo.
 - Este slide protege a apresentação da acusação de estar vendendo alguma coisa, e é ainda mais importante aqui do que em outras plateias, porque quem fala é parte da casa. Façam os quatro pontos com calma.
 - Primeiro: MCP é protocolo aberto, não é produto. Funciona com qualquer ferramenta compatível, de qualquer fornecedor. Segundo: foi feito aqui dentro, sem custo de contratação. Se perguntarem de onde vem a competência para isso, a resposta está no Regimento: cabe à GPF definir métodos e rotinas para aumentar a efetividade das ações fiscalizadoras e apoiar o desenvolvimento dos recursos tecnológicos envolvidos na fiscalização (art. 80, VII e IX). Não é sistema da casa nem substitui nenhum: é um método de consulta. Terceiro: só consome dado que a própria Agência já publica, e vale nomear as fontes.
 - O quarto ponto é o que importa a esta sala, e não é o mesmo da versão anterior desta palestra: o conector não enxerga processo em tramitação. Ele lê o painel público, que só tem processo já julgado. Nada do SFIS, nada do SEI, nada em sigilo.
+- Antes da faixa dourada, leiam o endereço em voz alta: o conector fica em *antaq.dadosabertos.dev barra mcp*. Digam que ele é público e que qualquer ferramenta compatível se conecta ali, sem instalação e sem pedir acesso a ninguém. Quem quiser anotar, este é o momento; o endereço volta no último slide.
 - Fechem na faixa dourada. Quem esteve ontem já ouviu esta frase, e ela volta uma última vez no slide 12: a IA não assina, quem assina é você, e quem assina responde.
 
 ### Slide 6 — O enquadramento que mais soma multa é o genérico
@@ -112,5 +113,6 @@ Não edite este arquivo: edite o slide e gere de novo.
 
 - Slide de contato e último da apresentação. Deixem-no projetado durante todas as perguntas: é ele que fica na tela enquanto a sala conversa.
 - Peçam que peguem o telefone e apontem a câmera para o código: ele abre esta mesma apresentação, com as notas. Digam o endereço em voz alta também, para quem preferir anotar.
-- Ofereçam o que não está projetado em lugar nenhum: as duas gerências abrem o conector de dados abertos para quem quiser experimentar, e montam a primeira consulta junto com a equipe da unidade que pedir. Sem essa frase, a apresentação termina sem próximo passo.
+- Ofereçam o que não está projetado em lugar nenhum: as duas gerências montam a primeira consulta junto com a equipe da unidade que pedir. Sem essa frase, a apresentação termina sem próximo passo.
+- Apontem para o terceiro cartão e leiam o endereço devagar, porque é ele que transforma a oferta em algo que a pessoa faz sozinha na mesa dela: o conector é público e atende em *antaq.dadosabertos.dev barra mcp*. Basta apontar para lá qualquer ferramenta compatível com MCP. Não cliquem no endereço na hora, porque o que abre no navegador é a resposta crua do servidor, e não uma página.
 - Lembrem também do material de ontem, para quem chegou só hoje: antaq.github.io/apresentacao_ia_sfc traz as regras de uso seguro que este deck só recapitula no slide 2.
