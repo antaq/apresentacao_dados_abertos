@@ -195,19 +195,32 @@ Logo abaixo do texto-base do rodapé, em 17px, `#9CA3AF`:
 
 Fontes canônicas desta apresentação (use exatamente):
 - Painel de Fiscalização (slides 6, 8, 10, 11):
-  `Fonte: painel Fiscalização da ANTAQ, quadro "Base de Dados", via conector MCP de Dados Abertos da ANTAQ (GPF), em 16 de setembro de 2026.`
+  `Fonte: painel Fiscalização da ANTAQ, quadro "Base de Dados", via conector MCP independente, em 16 de setembro de 2026.`
 - Acervo normativo (slide 9):
-  `Fonte: acervo normativo do setor aquaviário (50 documentos, 2.530 trechos) via conector MCP de Dados Abertos da ANTAQ (GPF), em 16 de setembro de 2026.`
+  `Fonte: acervo normativo do setor aquaviário (50 documentos, 2.530 trechos) via conector MCP independente, em 16 de setembro de 2026.`
 - Procedimento sancionador (slide 12): `Fonte: Resolução ANTAQ nº 3.259, de 30 de janeiro de 2014.`
 - Recapitulação do encontro anterior (slide 2):
   `Fonte: apresentação "IA no dia a dia da Fiscalização", SFC, 21 de setembro de 2026 (antaq.github.io/apresentacao_ia_sfc).`
 - Roteiro (slide 3): `Fonte: tempo estimado no roteiro desta apresentação (GPF e GRAT/SFC).`
 
-**Endereço do conector (slides 5 e 13):** `https://antaq.dadosabertos.dev/mcp`. É público e
-aparece projetado nos dois slides, em `'Courier New', monospace`, sempre com o `https://`,
-porque a plateia copia isso para a configuração da própria ferramenta. No slide 13 ele é um
-cartão **sem link**: clicar abre a resposta crua do servidor no projetor, e não uma página.
+**Endereço do conector (slides 5 e 13):** `https://antaq.dadosabertos.dev/mcp`. Aparece
+projetado nos dois slides, em `'Courier New', monospace`, sempre com o `https://`, porque a
+plateia copia isso para a configuração da própria ferramenta. No slide 13 ele é um cartão
+**sem link**: clicar abre a resposta crua do servidor no projetor, e não uma página.
 Endereço trocado em 21/09/2026; se mudar de novo, os dois slides mudam juntos.
+
+> **Autoria do conector, e é regra de escrita deste deck.** O conector é **projeto pessoal do
+> apresentador**, feito com recurso próprio e sem fins lucrativos. A ANTAQ não contratou, não
+> desenvolveu, não homologou e não mantém. O que é da Agência é o **dado**, que é publicado;
+> a ferramenta não é. Por isso, em texto projetado:
+> - **nunca** escrever "conector da ANTAQ", "feito aqui dentro", "feito na Superintendência",
+>   "sem custo de contratação" nem atribuição a GPF, GRAT ou SFC;
+> - nas linhas de fonte, a forma canônica é **`via conector MCP independente`**;
+> - o domínio `dadosabertos.dev` **não** é domínio da Agência, e isso é dito junto com o
+>   endereço, nos slides 5 e 13.
+>
+> Corrigido em 21/09/2026: até então o slide 5 dizia "feito dentro da própria Superintendência"
+> e cinco linhas de fonte atribuíam o conector à GPF.
 
 > Regra que não muda: **todo número projetado tem linha de fonte**. Neste deck, que é todo
 > sobre número, a linha de fonte também registra que os valores são nominais, sem correção.
@@ -397,7 +410,7 @@ Se a especificação não trouxer NOTAS para o slide, escreva uma nota curta e �
 | 2 | L3 | O que ficou dito ontem (recapitulação) | ABERTURA | novo |
 | 3 | L10 | Divisória bloco 1 (18 min) | — | 28 |
 | 4 | L4 | A diferença que um conector faz | DADOS ABERTOS | 29 |
-| 5 | L3 | O conector de Dados Abertos da ANTAQ, endereço + faixa-âncora | DADOS ABERTOS | 30 |
+| 5 | L3 | O conector não é um sistema da ANTAQ, endereço + faixa-âncora | DADOS ABERTOS | 30 |
 | 6 | L6+L8 | Demonstração 1: o enquadramento genérico | DADOS ABERTOS | 31 |
 | 7 | L3 | Enquadramento genérico não é detalhe de redação | DADOS ABERTOS | 32 |
 | 8 | L6+L8 | Demonstração 2: o histórico do fiscalizado | DADOS ABERTOS | 33 |

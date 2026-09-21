@@ -81,8 +81,13 @@ A quarta é a mais importante do deck: ela é sobre o que o dado **não** diz.
 
 ## Antes de apresentar
 
-O endereço do conector está projetado nos slides 5 e 13:
-**`https://antaq.dadosabertos.dev/mcp`**. É público, atende por MCP e serve a qualquer
+O conector é **projeto pessoal do apresentador**, com recurso próprio e sem fins lucrativos,
+sobre dados que a ANTAQ publica. Não foi contratado, desenvolvido nem homologado pela
+Agência, e o slide 5 declara isso em tela. A seção 5 do [`KIT.md`](KIT.md) traz a regra de
+escrita que mantém essa distinção em todo texto projetado.
+
+O endereço está projetado nos slides 5 e 13:
+**`https://antaq.dadosabertos.dev/mcp`**. Atende por MCP e serve a qualquer
 ferramenta compatível. Confirme que ele responde da máquina e da rede onde a apresentação
 vai rodar, porque a sala vai tentar. Se o endereço mudar, os dois slides mudam juntos, e a
 seção 5 do [`KIT.md`](KIT.md) registra o que precisa ser trocado.

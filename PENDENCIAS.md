@@ -34,6 +34,7 @@ Situação em: **16/09/2026** · Apresentação marcada para **22/09/2026, às 1
 | Onde | O quê |
 |---|---|
 | **Slides 5 e 9** | ⚠️ **Divergência aberta.** O slide 5 diz que o conector "consome apenas dado aberto oficial", e o chip fala em "acervo normativo publicado". Mas o acervo consultado pelo conector (50 documentos, 2.530 trechos, citado no slide 9) inclui **8 Manuais de Fiscalização e Ordens de Serviço da SFC**, que a própria apresentação de 21/09 classifica como documentos internos não publicados. Ou se retiram esses 8 do acervo, ou o slide 5 muda de redação. Não projetar antes de resolver. |
+| **Slide 5** | O conector é **projeto pessoal do apresentador**, com recurso próprio e sem fins lucrativos, e o slide agora declara isso. Confirmar que a declaração está redigida como você quer dizer em voz alta, porque ela é lida por colegas num evento oficial da Superintendência e é ela que separa o método da pessoa. Ver também a divergência 4. |
 | **Slide 7** | O cartão de alerta é atribuído ao **curso de introdução à fiscalização da SFC**. Conferir a atribuição antes de dizer em voz alta de onde vem. |
 | **Deck inteiro** | Todos os números foram lidos do conector de Dados Abertos em **16/09/2026**, sobre uma captura do painel de **18/08/2026**. Se a apresentação escorregar de data, reconferir: a base é atualizada. |
 | **Demonstração ao vivo** | O conector `dados-antaq` atende em `https://antaq.dadosabertos.dev/mcp` e precisa estar acessível da máquina da apresentação, inclusive pela rede da Agência. Confirmar isso antes de subir ao palco, porque o endereço está projetado nos slides 5 e 13 e a sala vai tentar. Se a rede cair, o procedimento é narrar o que está projetado; os quatro slides de demonstração se sustentam sozinhos. |
@@ -41,6 +42,25 @@ Situação em: **16/09/2026** · Apresentação marcada para **22/09/2026, às 1
 ---
 
 ## 4. Divergências registradas
+
+
+> **Correção de 21/09/2026, e é a mais sensível deste deck.** Até esta data o deck
+> apresentava o conector como produto institucional: o slide 5 se chamava "O conector de
+> dados abertos da ANTAQ foi feito aqui", dizia "feito dentro da própria Superintendência,
+> sem custo de contratação", e cinco linhas de fonte o atribuíam à GPF. Estava errado. O
+> conector é **projeto pessoal do apresentador**, com recurso próprio, sem fins lucrativos,
+> usando dados que a ANTAQ publica. O slide 5 virou declaração de interesse, as linhas de
+> fonte passaram a dizer "via conector MCP independente", e a regra de escrita está na
+> seção 5 do KIT.
+>
+> **O que isso reabre, e precisa de decisão antes de 22/09:** a divergência do acervo
+> (item 1 abaixo, e seção 3) deixa de ser só uma imprecisão de redação. Se os 8 Manuais de
+> Fiscalização e Ordens de Serviço da SFC realmente estão no acervo consultado pelo
+> conector, então documentos que a apresentação de 21/09 classifica como **internos, que não
+> podem ser enviados a ferramenta de IA**, estão num serviço particular, hospedado fora da
+> Agência, cujo endereço esta apresentação projeta e convida a sala a usar. Isso não é
+> problema de redação de slide: é questão de tratamento de informação, e a resposta não é
+> ajustar o texto. Resolver o acervo antes de projetar os slides 5, 9 e 13.
 
 1. **O deck nasceu de um bloco.** Os slides 4 a 12 eram o bloco 4 de "IA no dia a dia da
    Fiscalização" (21/09/2026) e foram movidos para cá sem mudança de conteúdo, só de

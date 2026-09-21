@@ -39,12 +39,14 @@ Não edite este arquivo: edite o slide e gere de novo.
 - Deixe claro que é o mesmo painel público que já está na Central de Painéis, e que qualquer pessoa da sala pode abrir no navegador. O conector não dá acesso novo a nada: ele só torna a consulta barata.
 - Não gaste mais de um minuto. As quatro demonstrações que vêm a seguir é que sustentam o argumento.
 
-### Slide 5 — O conector de dados abertos da ANTAQ foi feito aqui
+### Slide 5 — O conector não é um sistema da ANTAQ
 
-- Este slide protege a apresentação da acusação de estar vendendo alguma coisa, e é ainda mais importante aqui do que em outras plateias, porque quem fala é parte da casa. Façam os quatro pontos com calma.
-- Primeiro: MCP é protocolo aberto, não é produto. Funciona com qualquer ferramenta compatível, de qualquer fornecedor. Segundo: foi feito aqui dentro, sem custo de contratação. Se perguntarem de onde vem a competência para isso, a resposta está no Regimento: cabe à GPF definir métodos e rotinas para aumentar a efetividade das ações fiscalizadoras e apoiar o desenvolvimento dos recursos tecnológicos envolvidos na fiscalização (art. 80, VII e IX). Não é sistema da casa nem substitui nenhum: é um método de consulta. Terceiro: só consome dado que a própria Agência já publica, e vale nomear as fontes.
-- O quarto ponto é o que importa a esta sala, e não é o mesmo da versão anterior desta palestra: o conector não enxerga processo em tramitação. Ele lê o painel público, que só tem processo já julgado. Nada do SFIS, nada do SEI, nada em sigilo.
-- Antes da faixa dourada, leiam o endereço em voz alta: o conector fica em *antaq.dadosabertos.dev barra mcp*. Digam que ele é público e que qualquer ferramenta compatível se conecta ali, sem instalação e sem pedir acesso a ninguém. Quem quiser anotar, este é o momento; o endereço volta no último slide.
+- Este é o slide da declaração de interesse, e ele existe para que ninguém saia da sala com a impressão errada. Não o apressem, e não o suavizem: é ele que protege vocês.
+- Primeiro: MCP é protocolo aberto, não é produto. Funciona com qualquer ferramenta compatível, de qualquer fornecedor.
+- Segundo, e é o ponto que não pode ser contornado: **o conector é um projeto pessoal de quem está falando**, feito com recurso próprio, sem fins lucrativos e fora do expediente. A ANTAQ não contratou, não desenvolveu, não homologou e não mantém. Não é sistema da casa, não substitui nenhum, e usá-lo não é recomendação institucional. Digam isso com todas as letras, mesmo que soe repetitivo, porque a plateia é composta de colegas e o mal-entendido aqui é caro. Se perguntarem por que então está sendo apresentado num evento da Superintendência, a resposta honesta é: porque o método interessa ao trabalho de vocês, e porque a alternativa, que é usar sem saber de onde vem, é pior.
+- Terceiro: o que é da ANTAQ é o dado, não a ferramenta. Ele só consome o que a Agência já publica, e vale nomear as fontes.
+- O quarto ponto é o que importa a esta sala, e é o que torna o terceiro suportável: o conector não enxerga processo em tramitação. Ele lê o painel público, que só tem processo já julgado. Nada do SFIS, nada do SEI, nada em sigilo.
+- Antes da faixa dourada, leiam o endereço em voz alta: o conector fica em *antaq.dadosabertos.dev barra mcp*. É um endereço particular, não é domínio da Agência, e isso deve ser dito junto com o endereço, não depois. Qualquer ferramenta compatível se conecta ali, sem instalação. Quem quiser anotar, este é o momento; o endereço volta no último slide.
 - Fechem na faixa dourada. Quem esteve ontem já ouviu esta frase, e ela volta uma última vez no slide 12: a IA não assina, quem assina é você, e quem assina responde.
 
 ### Slide 6 — O enquadramento que mais soma multa é o genérico
@@ -86,7 +88,7 @@ Não edite este arquivo: edite o slide e gere de novo.
 - Leia a tabela de cima para baixo. A coluna "Valor da Multa" tem três estados, e só o primeiro é dinheiro. Onze mil oitocentos e setenta e seis linhas trazem um hífen, que significa arquivado sem irregularidade: nenhuma infração foi imputada. Quatro mil quinhentos e treze trazem célula vazia, que significa decisão que não é multa: advertência, anulação, cassação.
 - Pergunte à sala o que acontece quando isso vai para uma planilha. Alguém vai responder antes de você: viram zero. E aí nasce a frase da faixa vermelha, que é falsa em duas camadas ao mesmo tempo.
 - Os dois quadros do meio são o mesmo tipo de armadilha. A linha é uma infração julgada, não um processo: quem conta linhas e diz "processos" erra doze vírgula seis por cento, com o nome certo na tabela. E o detalhe publicado é mais curto que a manchete do próprio painel, em quase quatro milhões de reais.
-- Deixe claro de onde vem esse conhecimento: nada disso está escrito no portal. Foi medido aqui e escrito dentro do conector, para que a ferramenta avise antes de responder. É o mesmo que um fiscal experiente faz quando recebe uma planilha nova.
+- Deixe claro de onde vem esse conhecimento: nada disso está escrito no portal. Foi medido contra a base publicada e escrito dentro do próprio conector, para que a ferramenta avise antes de responder. É o mesmo que um fiscal experiente faz quando recebe uma planilha nova. E é uma aferição particular, não uma validação da Agência: quem for usar o número numa peça confere na origem.
 - Cerca de quatro minutos. Este slide prepara o 11, que é a conclusão do bloco: quem desconfia do número é vocês.
 
 ### Slide 11 — A IA acelera o acesso, não substitui a desconfiança
@@ -113,6 +115,6 @@ Não edite este arquivo: edite o slide e gere de novo.
 
 - Slide de contato e último da apresentação. Deixem-no projetado durante todas as perguntas: é ele que fica na tela enquanto a sala conversa.
 - Peçam que peguem o telefone e apontem a câmera para o código: ele abre esta mesma apresentação, com as notas. Digam o endereço em voz alta também, para quem preferir anotar.
-- Ofereçam o que não está projetado em lugar nenhum: as duas gerências montam a primeira consulta junto com a equipe da unidade que pedir. Sem essa frase, a apresentação termina sem próximo passo.
-- Apontem para o terceiro cartão e leiam o endereço devagar, porque é ele que transforma a oferta em algo que a pessoa faz sozinha na mesa dela: o conector é público e atende em *antaq.dadosabertos.dev barra mcp*. Basta apontar para lá qualquer ferramenta compatível com MCP. Não cliquem no endereço na hora, porque o que abre no navegador é a resposta crua do servidor, e não uma página.
+- Ofereçam o que não está projetado em lugar nenhum: quem quiser experimentar monta a primeira consulta junto com vocês, na mesa da unidade que pedir. Deixem claro que é ajuda entre colegas, e não suporte de um sistema da casa, porque o conector é projeto pessoal, como foi dito no slide 5. Sem essa frase, a apresentação termina sem próximo passo.
+- Apontem para o terceiro cartão e leiam o endereço devagar, porque é ele que transforma a oferta em algo que a pessoa faz sozinha na mesa dela: o conector atende em *antaq.dadosabertos.dev barra mcp*. Repitam aqui, em uma frase, o que o slide 5 já disse: endereço particular, projeto pessoal, não é domínio nem sistema da Agência. Basta apontar para lá qualquer ferramenta compatível com MCP. Não cliquem no endereço na hora, porque o que abre no navegador é a resposta crua do servidor, e não uma página.
 - Lembrem também do material de ontem, para quem chegou só hoje: antaq.github.io/apresentacao_ia_sfc traz as regras de uso seguro que este deck só recapitula no slide 2.
