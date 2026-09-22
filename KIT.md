@@ -486,7 +486,7 @@ Se a especificação não trouxer NOTAS para o slide, escreva uma nota curta e �
 | 10 | L6+L8 | Caso 3: sobre-estadia, de 14 para 72 acórdãos por ano | DADOS ABERTOS | novo |
 | 11 | L6+L8 | Caso 4: onze tetos na forma genérica, um na específica | DADOS ABERTOS | novo |
 | 12 | L6+6.1 | Caso 5: a maior carteira não é a de maior valor | DADOS ABERTOS | novo |
-| 13 | L2 | Conclusão do bloco: transparência no papel, ou funcionando | sem tag | 36 |
+| 13 | L2 | Conclusão do bloco: transparência ativa se mede em esforço | sem tag | 36 |
 | 14 | L6+L4 | Demonstração ao vivo: o panorama do art. 34 da Res. 62/2021, em PDF | DADOS ABERTOS | novo |
 | 15 | L6+6.8 | Traga a pergunta da sua unidade, com faixa-âncora | DADOS ABERTOS | 37 |
 | 16 | L11 | Contato, material, endereço do conector e código de leitura óptica | sem tag | 41 |

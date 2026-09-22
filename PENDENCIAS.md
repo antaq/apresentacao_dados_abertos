@@ -145,11 +145,16 @@ mais sem próximo passo em tela.
    (slide 5 virou 7, slide 12 virou 15). O componente está documentado na seção 6.12 do
    `KIT.md`.
 
-13. **O fecho do slide de impacto mudou duas vezes em 22/09/2026.** A frase "A IA acelera o
-   acesso. Ela não substitui quem olha" saiu por não dizer nada; a substituta, "o dado
-   responde", saiu por ser rasa. O slide 13 ficou com a provocação em branco, "dado público
-   que ninguém consegue usar é transparência no papel", e o fecho em dourado, "hoje o dado
-   sai do papel, e quem tira é quem pergunta".
+13. **O slide de impacto foi reescrito três vezes em 22/09/2026.** A frase "A IA acelera o
+   acesso. Ela não substitui quem olha" saiu por não dizer nada; "o dado responde" saiu por
+   ser rasa; "hoje o dado sai do papel" ficou boa, mas não dizia de onde vem o ganho. O
+   slide 13 ficou com três camadas: a provocação em branco ("dado público que ninguém
+   consegue usar é transparência no papel"), a linha de atrito ("baixar a base, limpar,
+   cruzar, conferir: cada camada entre a pergunta e a resposta é alcance que se perde") e o
+   fecho em dourado ("transparência ativa se mede em esforço, e hoje o esforço é uma
+   pergunta"). O argumento passou a ser o do pedido: publicar painel que exige download,
+   tratamento e cruzamento não completa a transparência ativa; o que a completa é o menor
+   esforço até o melhor resultado.
 
 14. **O slide de encerramento passou a trazer um nome só em 22/09/2026.** A pedido do
    apresentador, ficou apenas Pedro Henrique Soares no bloco de contato. O `README.md`

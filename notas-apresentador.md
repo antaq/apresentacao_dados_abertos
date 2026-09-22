@@ -106,14 +106,15 @@ Não edite este arquivo: edite o slide e gere de novo.
 - Digam isso com todas as letras, porque a sala vai ler como ranking: não é ranking de desempenho. O valor depende do tipo de infração e do porte do autuado, não do esforço da unidade.
 - Agora a armadilha, em duas partes. A primeira: uma linha é uma infração, não um processo. São dezenove mil setecentas e setenta e uma linhas para dezessete mil quinhentos e sessenta e sete processos, doze e meio por cento a mais. Quem conta linhas e chama de processo já errou o tamanho da carteira.
 - A segunda é a que vale a apresentação inteira: onze mil novecentas e vinte e seis linhas trazem hífen, que é arquivado sem irregularidade, e outras quatro mil quinhentas e vinte e cinco vêm vazias, que é decisão sem multa. Numa planilha as duas viram zero, e nascem dezesseis mil multas de zero real que não existem.
-- Guardem esse número: dezesseis mil multas que não existem, num painel que está no ar há anos. É por isso que o próximo slide diz que dado publicado só vira transparência quando alguém sabe lê-lo. Cerca de dois minutos e meio.
+- Guardem esse número: dezesseis mil multas que não existem, num painel que está no ar há anos. É por isso que o próximo slide diz que transparência ativa se mede em esforço: publicar é o começo, e o que completa é encurtar o caminho até a resposta. Cerca de dois minutos e meio.
 
-### Slide 13 · Transparência que passa a funcionar
+### Slide 13 · Transparência ativa se mede em esforço
 
 - Conclusão do bloco, e é o slide em que se muda o tom. Os cinco casos foram sobre cuidado; este é sobre para que serve o cuidado. Diga devagar, e deixe a primeira frase respirar antes de completar.
 - A primeira frase é uma provocação, e ela é sobre a Agência, não sobre a ferramenta: dado público que ninguém consegue usar é transparência no papel. A ANTAQ publica há mais de vinte anos, e nada do que foi mostrado hoje é conteúdo novo. São os mesmos painéis que já estão no ar. O que faltava não era publicação, era alcance.
-- Aí vem o fecho, e é ele que dá sentido ao bloco inteiro: hoje o dado sai do papel, e quem tira é quem pergunta. Não é a ferramenta que tira; é a pergunta de alguém que sabe o que procurar. Diga a última linha olhando para a sala, porque ela é sobre as pessoas que estão ali.
-- Se quiser reforçar, cabe uma frase: cada uma das cinco armadilhas de hoje era invisível para quem só tem a planilha, e imediata para quem já fez o trabalho. É essa diferença que transforma dado publicado em transparência de verdade.
+- A linha do meio é o argumento, e ela é sobre atrito: baixar a base, limpar, cruzar, conferir. Cada uma dessas camadas parece técnica, mas é política de transparência: quanto mais camadas entre a pergunta e a resposta, menos gente chega até o fim. O painel que só responde a quem sabe montar planilha está publicado, e mesmo assim não alcança.
+- Aí vem o fecho, e é ele que dá sentido ao bloco inteiro: transparência ativa se mede em esforço, e hoje o esforço é uma pergunta. Publicar é o começo da obrigação, não o fim dela; o que a completa é encurtar o caminho até a resposta. Diga a última linha olhando para a sala, porque quem encurta esse caminho é quem está ali.
+- Se quiser reforçar, cabe uma frase: cada uma das cinco armadilhas de hoje era invisível para quem só tem a planilha, e imediata para quem já fez o trabalho. Encurtar o caminho não dispensa quem sabe ler, faz o contrário: libera o tempo dessa pessoa para a parte que só ela faz.
 - Pausa antes de avançar. O próximo slide é ao vivo.
 
 ### Slide 14 · O panorama de um artigo, ao vivo
