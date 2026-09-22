@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Enquadramento genérico não é detalhe de redação</title>
+<title>A empresa inteira em uma pergunta</title>
 <link rel="icon" href="favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
@@ -19,18 +19,40 @@
   .text-brand-primary { color:#003366; } .bg-brand-primary { background-color:#003366; }
   .text-brand-secondary { color:#0066CC; } .bg-brand-secondary { background-color:#0066CC; }
 
-  .grade { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
-  .cartao { background:#F8FAFC; border-radius:18px; padding:30px 34px; display:flex;
-            align-items:center; gap:28px; box-shadow:0 3px 10px rgba(0,0,0,.06); }
-  .cartao-icone { width:82px; height:82px; border-radius:20px; flex-shrink:0; display:flex;
-                  align-items:center; justify-content:center; font-size:36px; }
-  .cartao-txt { font-family:'Montserrat',sans-serif; font-weight:700; font-size:27px;
-                line-height:1.3; color:#374151; }
+  /* Instrução digitada (KIT 6.2) */
+  .instrucao { background:#0F172A; border-radius:14px; padding:22px 32px; display:flex;
+               align-items:center; gap:18px; }
+  .instrucao i { color:#7CC0FF; font-size:26px; flex-shrink:0; }
+  .instrucao code { font-family:'Courier New', monospace; font-size:27px; color:#E2E8F0; line-height:1.35; }
 
-  .alerta { background:#FEF2F2; border:3px solid #FCA5A5; }
-  .alerta .cartao-txt { color:#7F1D1D; font-weight:800; }
+  /* Faixa de armadilha (KIT 6.6) */
+  .faixa { background:#FEF2F2; border:3px solid #FCA5A5; border-left:12px solid #DC2626;
+    border-radius:0 16px 16px 0; padding:18px 32px; display:flex; align-items:center; gap:22px; }
+  .faixa-rotulo { font-family:'Montserrat',sans-serif; font-weight:800; font-size:19px; color:#B91C1C;
+    text-transform:uppercase; letter-spacing:.06em; line-height:1.2; flex-shrink:0; white-space:nowrap;
+    border-right:2px solid #FCA5A5; padding-right:22px; }
+  .faixa p { font-size:23px; color:#7F1D1D; line-height:1.32; font-weight:600; }
 
   .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
+
+  .empresa { display:flex; align-items:center; gap:18px; padding:14px 26px; border-radius:14px;
+             background:#F0F9FF; border:2px solid #BAE6FD; }
+  .empresa i { font-size:28px; color:#0066CC; flex-shrink:0; }
+  .empresa .nome { font-family:'Montserrat',sans-serif; font-weight:800; font-size:27px; color:#003366; }
+  .empresa .local { font-size:22px; color:#6B7280; }
+
+  .cartoes { display:flex; gap:22px; align-items:stretch; }
+  .cartao { flex:1; background:#FFFFFF; border:2px solid #E2E8F0; border-top:8px solid #0066CC;
+            border-radius:0 0 16px 16px; padding:22px 24px 18px 24px; display:flex; flex-direction:column;
+            box-shadow:0 6px 18px -10px rgba(0,0,0,.2); }
+  .cartao .num { font-family:'Montserrat',sans-serif; font-weight:900; font-size:62px; color:#003366;
+                 line-height:1; letter-spacing:-2px; }
+  .cartao .rot { font-family:'Montserrat',sans-serif; font-weight:700; font-size:23px; color:#0066CC;
+                 line-height:1.22; margin-top:8px; }
+  .cartao .sub { font-size:20px; color:#4B5563; line-height:1.34; margin-top:12px; }
+  .cartao .origem { font-family:'Montserrat',sans-serif; font-weight:800; font-size:16px; color:#0066CC;
+                    text-transform:uppercase; letter-spacing:.1em; margin-top:auto; padding-top:16px;
+                    border-top:1px solid #E5E7EB; }
 </style>
 </head>
 <body>
@@ -39,14 +61,15 @@
   <div style="height:6px;background:#0066CC;width:100%;"></div>
 
   <!-- Cabeçalho -->
-  <div class="flex items-center justify-between px-16 pt-8 pb-3 z-10">
+  <div class="flex items-center justify-between px-16 pt-7 pb-2 z-10">
     <div>
       <div class="flex items-center gap-3">
         <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
-        <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:48px; line-height:1.12; letter-spacing:-0.02em;">
-          Enquadramento genérico não é detalhe de redação
+        <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:46px; line-height:1.12; letter-spacing:-0.02em;">
+          A empresa inteira em uma pergunta
         </h1>
       </div>
+      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">Caso 2 · Navegação · outorgas, frota e fiscalização, cruzadas pelo CNPJ</p>
     </div>
     <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
       <i class="fas fa-plug" style="font-size:26px;"></i>
@@ -55,47 +78,76 @@
   </div>
 
   <!-- Conteúdo -->
-  <div class="flex-1 flex flex-col justify-center px-16 pb-6 z-10 min-h-0">
-    <div class="grade">
+  <div class="flex-1 flex flex-col justify-center px-16 pb-4 z-10 min-h-0" style="gap:18px;">
 
+    <!-- Instrução usada -->
+    <div class="instrucao">
+      <i class="fas fa-keyboard"></i>
+      <code>O que a ANTAQ publica sobre o CNPJ 02.709.449/0001-59: outorgas, frota e fiscalizações?</code>
+    </div>
+
+    <!-- Empresa consultada -->
+    <div class="empresa">
+      <i class="fas fa-building"></i>
+      <span class="nome">PETROBRAS TRANSPORTE S.A - TRANSPETRO</span>
+      <span class="local">Rio de Janeiro/RJ</span>
+    </div>
+
+    <!-- O que volta -->
+    <div class="cartoes">
       <div class="cartao">
-        <div class="cartao-icone" style="background:#DBEAFE; color:#0066CC;"><i class="fas fa-file-circle-exclamation"></i></div>
-        <p class="cartao-txt">O tipo residual só cabe quando não existe tipo específico. A própria norma diz isso.</p>
+        <p class="num">5</p>
+        <p class="rot">outorgas vigentes</p>
+        <p class="sub">Cabotagem e longo curso desde 2004. A mais recente, de apoio marítimo, é de maio de 2026.</p>
+        <p class="origem">Painel de outorgas</p>
       </div>
-
       <div class="cartao">
-        <div class="cartao-icone" style="background:#DBEAFE; color:#1D4ED8;"><i class="fas fa-scale-unbalanced"></i></div>
-        <p class="cartao-txt">Tipificação frouxa dificulta a defesa - e defesa dificultada é nulidade em potencial.</p>
+        <p class="num">21</p>
+        <p class="rot">anos e 11 meses de outorga contínua</p>
+        <p class="sub">Somar as linhas do painel daria 49 anos: outorgas do mesmo dia cobrem o mesmo tempo.</p>
+        <p class="origem">Calculado pelas datas</p>
       </div>
-
       <div class="cartao">
-        <div class="cartao-icone" style="background:#DBEAFE; color:#1E40AF;"><i class="fas fa-rotate-left"></i></div>
-        <p class="cartao-txt">O erro não aparece na revisão da chefia. Aparece no recurso, anos depois.</p>
+        <p class="num">57</p>
+        <p class="rot">embarcações operadas hoje</p>
+        <p class="sub">18 petroleiros, 6 de gás liquefeito e 33 lanchas, botes, chatas e barcaças.</p>
+        <p class="origem">Painel de frota</p>
       </div>
-
-      <div class="cartao alerta">
-        <div class="cartao-icone" style="background:#FEE2E2; color:#DC2626;"><i class="fas fa-triangle-exclamation"></i></div>
-        <p class="cartao-txt">Enquadramento genérico e descrição fática pobre são as maiores fontes de nulidade no sancionador.</p>
+      <div class="cartao">
+        <p class="num">11</p>
+        <p class="rot">registros no painel de Fiscalização</p>
+        <p class="sub">Com unidade, infração e desfecho de cada um.</p>
+        <p class="origem">Painel de Fiscalização</p>
       </div>
+    </div>
 
+    <!-- Armadilha -->
+    <div class="faixa">
+      <p class="faixa-rotulo">A armadilha</p>
+      <p>A outorga de navegação interior do processo 50300.002696/2014-14 foi extinta em
+      08/08/2016, e o painel ainda diz "Outorga Vigente: Sim". O campo diz Sim em 3.169 de
+      3.169 linhas, e 1.350 delas já estão extintas.</p>
     </div>
   </div>
 
   <!-- Rodapé -->
-  <div class="px-16 pb-6 flex justify-between items-end z-10">
-    <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
-    <p class="text-gray-300 font-mono" style="font-size:18px;">7 / 13</p>
+  <div class="px-16 pb-5 flex justify-between items-end z-10">
+    <div style="max-width:1620px;">
+      <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
+      <p class="text-gray-400" style="font-size:17px;">Fonte: painéis Outorgas de Navegação (quadros de outorgas e de frota) e Fiscalização da ANTAQ, captura de 18/08/2026, via conector MCP independente, em 21 de setembro de 2026. Vigência pela data de extinção.</p>
+    </div>
+    <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">7 / 13</p>
   </div>
 
-  <div class="bg-marca"><i class="fas fa-triangle-exclamation"></i></div>
+  <div class="bg-marca"><i class="fas fa-building-circle-check"></i></div>
 </div>
 
 <div id="notas-apresentador" style="display:none;">
-  <p>Este slide existe para impedir que a sala trate o achado anterior como preciosismo de redação.</p>
-  <p>Comece pelo primeiro cartão, que é o argumento normativo e não admite discussão: o tipo residual traz dentro de si a ressalva "exceto quando a conduta se enquadrar em tipo específico". Usar o genérico quando existe o específico contraria o próprio dispositivo.</p>
-  <p>O segundo e o terceiro cartões são o custo prático. Tipificação frouxa dificulta a defesa, e defesa dificultada é vício. E o erro não é pego na revisão da chefia: ele volta no recurso, às vezes anos depois, quando o processo já custou tempo de todo mundo.</p>
-  <p>O quarto cartão é citação da própria casa, e vale dizer de onde vem: é o que a SFC ensina no curso de introdução à fiscalização. Não é novidade que eu trouxe; é regra que já está escrita e que o dado acabou de medir.</p>
-  <p>Cerca de um minuto e meio. É slide de reforço, não de conteúdo novo. Não abra debate sobre casos concretos aqui: anote e leve para o fim.</p>
+  <p>Segundo caso, e é o que a sala costuma achar mais imediato. Antes de uma fiscalização, alguém abre três painéis e monta uma planilha. Aqui é uma pergunta, pelo CNPJ.</p>
+  <p>A empresa é grande e pública de propósito. Se for rodar ao vivo, usem uma empresa que vocês conheçam e testem antes; não improvisem o nome na hora.</p>
+  <p>O segundo cartão já é uma armadilha, e ela é de conta: cabotagem e longo curso foram outorgadas no mesmo dia, então somar as linhas dá 49 anos. O tempo real de outorga é 21 anos e 11 meses.</p>
+  <p>A faixa vermelha é a armadilha que pode virar erro de fiscalização. O campo "Outorga Vigente" diz Sim em todas as linhas do painel. Quem filtra por ele trata outorga extinta como viva. A vigência tem de sair da data de extinção.</p>
+  <p>O que não aparece aqui: processo em curso. O painel de Fiscalização só traz processo julgado ou arquivado; para o histórico completo, o SFIS continua sendo a fonte. Cerca de três minutos.</p>
 </div>
 <script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
 <script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>

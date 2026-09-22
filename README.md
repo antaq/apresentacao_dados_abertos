@@ -53,19 +53,20 @@ python3 -m http.server 8130
 | Slides | Bloco | Tempo |
 |---|---|---|
 | 1 a 2 | Abertura e recapitulação | 3 min |
-| 3 a 12 | Bloco 1 · Conector e dados abertos | 18 min |
-| 13 | Encerramento | — |
+| 3 a 12 | Bloco 1 · Quatro perguntas da rotina | 18 min |
+| 13 | Encerramento | perguntas |
 
-## As quatro demonstrações
+## Os quatro casos
 
-| Slide | Demonstração | O que ela mostra |
+| Slide | Caso | O que ele mostra |
 |---|---|---|
-| 6 | O enquadramento genérico | Qual dispositivo mais soma multa, e por quê isso é um problema de redação |
-| 8 | O histórico do fiscalizado | Autuações de uma empresa por unidade, infração e desfecho, em segundos |
-| 9 | A citação que a base erra | O conector localiza o dispositivo e avisa onde o rótulo da base está errado |
-| 10 | Dado aberto não é dado limpo | Multa de valor zero, linha que não é processo, e o número que não fecha |
+| 6 | Contratos que vencem | Onze contratos de arrendamento e de adesão vencem até dezembro, em dez portos |
+| 7 | A empresa antes da fiscalização | Outorgas, frota e fiscalizações de um CNPJ em uma pergunta, e o campo de vigência que mente |
+| 8 | O que a Diretoria decide | Acórdãos que citam sobre-estadia passam de 14 para 72 por ano, e o que eles determinam à SFC |
+| 9 | O tipo residual | O enquadramento genérico arquiva quase o dobro da média, e o número grande vem de uma empresa só |
 
-A quarta é a mais importante do deck: ela é sobre o que o dado **não** diz.
+Os quatro seguem o mesmo molde: a pergunta como se digita, a resposta com número e fonte,
+e a armadilha que o dado esconde.
 
 ## Arquivos
 
@@ -93,8 +94,9 @@ vai rodar, porque a sala vai tentar. Se o endereço mudar, os dois slides mudam 
 seção 5 do [`KIT.md`](KIT.md) registra o que precisa ser trocado.
 
 Leia o [`PENDENCIAS.md`](PENDENCIAS.md). Os números do deck foram lidos do conector em
-**16/09/2026**, sobre uma captura do painel de **18/08/2026**; se a data da apresentação
-escorregar, reconfira, porque a base é atualizada.
+**21/09/2026**, sobre uma captura do painel de **18/08/2026** e uma cópia dos atos
+publicados de **27/08/2026**; se a data da apresentação escorregar, reconfira, porque a
+base é atualizada.
 
 ## Publicação (GitHub Pages)
 

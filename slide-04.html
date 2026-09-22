@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>A diferença que um conector faz</title>
+<title>A mesma pergunta, com e sem conector</title>
 <link rel="icon" href="favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
@@ -19,26 +19,50 @@
   .text-brand-primary { color:#003366; } .bg-brand-primary { background-color:#003366; }
   .text-brand-secondary { color:#0066CC; } .bg-brand-secondary { background-color:#0066CC; }
 
-  .comparativo { display:flex; align-items:stretch; gap:34px; }
-  .coluna { flex:1; border-radius:18px; padding:48px 46px; display:flex; flex-direction:column;
-            justify-content:center; align-items:center; text-align:center; }
+  /* Instrução digitada (KIT 6.2) */
+  .instrucao { background:#0F172A; border-radius:14px; padding:22px 32px; display:flex;
+               align-items:center; gap:18px; }
+  .instrucao i { color:#7CC0FF; font-size:26px; flex-shrink:0; }
+  .instrucao code { font-family:'Courier New', monospace; font-size:27px; color:#E2E8F0; line-height:1.35; }
+
+  /* Faixa de armadilha (KIT 6.6) */
+  .faixa { background:#FEF2F2; border:3px solid #FCA5A5; border-left:12px solid #DC2626;
+    border-radius:0 16px 16px 0; padding:18px 32px; display:flex; align-items:center; gap:22px; }
+  .faixa-rotulo { font-family:'Montserrat',sans-serif; font-weight:800; font-size:19px; color:#B91C1C;
+    text-transform:uppercase; letter-spacing:.06em; line-height:1.2; flex-shrink:0; white-space:nowrap;
+    border-right:2px solid #FCA5A5; padding-right:22px; }
+  .faixa p { font-size:23px; color:#7F1D1D; line-height:1.32; font-weight:600; }
+
+  .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
+
+  .comparativo { display:flex; align-items:stretch; gap:30px; }
+  .coluna { flex:1; border-radius:18px; padding:30px 34px; display:flex; flex-direction:column; }
   .coluna-neutra { background:#F8FAFC; border:3px solid #E2E8F0; }
   .coluna-certa  { background:#F0F9FF; border:3px solid #0066CC; box-shadow:0 12px 28px -12px rgba(0,102,204,.35); }
 
-  .pilula { display:inline-flex; align-items:center; gap:14px;
-            font-family:'Montserrat', sans-serif; font-weight:700; font-size:26px;
-            text-transform:uppercase; letter-spacing:.06em; border-radius:999px; padding:11px 30px; }
+  .pilula { display:inline-flex; align-items:center; gap:13px; align-self:flex-start;
+            font-family:'Montserrat', sans-serif; font-weight:700; font-size:24px;
+            text-transform:uppercase; letter-spacing:.06em; border-radius:999px; padding:9px 26px; }
   .pilula-neutra { background:#E2E8F0; color:#475569; }
   .pilula-certa  { background:#003366; color:#FFFFFF; }
 
-  .badge-icone { width:96px; height:96px; border-radius:24px; display:flex; align-items:center;
-                 justify-content:center; font-size:44px; margin:34px 0 30px 0; }
+  .col-titulo { font-family:'Montserrat',sans-serif; font-weight:800; font-size:27px; line-height:1.28;
+                color:#1F2937; margin-top:20px; }
+  .col-txt { font-size:23px; line-height:1.36; color:#4B5563; margin-top:12px; }
 
-  .frase { font-family:'Montserrat', sans-serif; font-weight:800; font-size:42px; line-height:1.3; }
+  .numerao { font-family:'Montserrat',sans-serif; font-weight:900; font-size:96px; color:#003366;
+             letter-spacing:-3px; line-height:1; margin-top:16px; }
+  .numerao-rot { font-family:'Montserrat',sans-serif; font-weight:700; font-size:24px; color:#0066CC;
+                 line-height:1.25; margin-top:6px; }
+  .linha-fonte-col { display:flex; align-items:center; gap:13px; margin-top:18px;
+                     font-size:21px; color:#1E40AF; font-weight:600; line-height:1.3; }
 
-  .seta { display:flex; align-items:center; justify-content:center; flex-shrink:0; width:56px; }
+  .pe-col { display:flex; align-items:flex-start; gap:13px; margin-top:auto; padding-top:20px;
+            font-size:21px; line-height:1.32; }
+  .pe-neutro { color:#64748B; } .pe-neutro i { color:#94A3B8; font-size:23px; margin-top:2px; }
+  .pe-certo  { color:#1F2937; } .pe-certo i  { color:#0066CC; font-size:23px; margin-top:2px; }
 
-  .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
+  .seta { display:flex; align-items:center; justify-content:center; flex-shrink:0; width:52px; }
 </style>
 </head>
 <body>
@@ -47,14 +71,15 @@
   <div style="height:6px;background:#0066CC;width:100%;"></div>
 
   <!-- Cabeçalho -->
-  <div class="flex items-center justify-between px-16 pt-8 pb-3 z-10">
+  <div class="flex items-center justify-between px-16 pt-7 pb-2 z-10">
     <div>
       <div class="flex items-center gap-3">
         <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
-        <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:48px; line-height:1.12; letter-spacing:-0.02em;">
-          A diferença que um conector faz
+        <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:46px; line-height:1.12; letter-spacing:-0.02em;">
+          A mesma pergunta, com e sem conector
         </h1>
       </div>
+      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">O que muda quando a ferramenta lê o painel na hora da pergunta</p>
     </div>
     <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
       <i class="fas fa-plug" style="font-size:26px;"></i>
@@ -63,50 +88,55 @@
   </div>
 
   <!-- Conteúdo -->
-  <div class="flex-1 flex flex-col justify-center px-16 pb-6 z-10 min-h-0">
+  <div class="flex-1 flex flex-col justify-center px-16 pb-4 z-10 min-h-0" style="gap:22px;">
+
+    <!-- Instrução usada -->
+    <div class="instrucao">
+      <i class="fas fa-keyboard"></i>
+      <code>Quanto os portos brasileiros movimentaram em 2025?</code>
+    </div>
+
+    <!-- Comparativo -->
     <div class="comparativo">
 
       <div class="coluna coluna-neutra">
-        <span class="pilula pilula-neutra">Sem conector</span>
-        <div class="badge-icone" style="background:#E2E8F0; color:#64748B;">
-          <i class="fas fa-comment-dots"></i>
-        </div>
-        <p class="frase" style="color:#475569;">
-          A IA sabe falar sobre fiscalização.
-        </p>
+        <span class="pilula pilula-neutra"><i class="fas fa-cloud"></i>Sem conector</span>
+        <p class="col-titulo">Responde com o que leu até a data em que foi treinada.</p>
+        <p class="col-txt">Pode entregar o número de outro ano com a mesma segurança, e sem avisar que ele é de outro ano.</p>
+        <p class="pe-col pe-neutro"><i class="fas fa-circle-xmark"></i><span>Sem fonte consultada, sem data de captura, sem ressalva de leitura.</span></p>
       </div>
 
-      <div class="seta">
-        <i class="fas fa-arrow-right-long" style="font-size:48px; color:#0066CC;"></i>
-      </div>
+      <div class="seta"><i class="fas fa-arrow-right-long" style="font-size:44px; color:#0066CC;"></i></div>
 
       <div class="coluna coluna-certa">
-        <span class="pilula pilula-certa">Com conector</span>
-        <div class="badge-icone" style="background:#DBEAFE; color:#0066CC;">
-          <i class="fas fa-database"></i>
-        </div>
-        <p class="frase" style="color:#003366;">
-          A IA consultou o <span style="background:#DBEAFE; border-radius:8px; padding:2px 12px;">painel de Fiscalização</span> agora e trouxe o dado.
-        </p>
+        <span class="pilula pilula-certa"><i class="fas fa-plug"></i>Com conector</span>
+        <p class="numerao">1.402,7</p>
+        <p class="numerao-rot">milhões de toneladas movimentadas em 2025</p>
+        <p class="linha-fonte-col"><i class="fas fa-database" style="font-size:23px;"></i><span>Estatístico Aquaviário da ANTAQ, captura de 18/08/2026</span></p>
+        <p class="pe-col pe-certo"><i class="fas fa-circle-info"></i><span>E vem com a ressalva: a cabotagem entra duas vezes na movimentação, no embarque e no desembarque.</span></p>
       </div>
 
     </div>
   </div>
 
   <!-- Rodapé -->
-  <div class="px-16 pb-6 flex justify-between items-end z-10">
-    <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
-    <p class="text-gray-300 font-mono" style="font-size:18px;">4 / 13</p>
+  <div class="px-16 pb-5 flex justify-between items-end z-10">
+    <div style="max-width:1620px;">
+      <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
+      <p class="text-gray-400" style="font-size:17px;">Fonte: painel Estatístico Aquaviário da ANTAQ, quadro de movimentação portuária por tipo de navegação, captura de 18/08/2026, via conector MCP independente, em 21 de setembro de 2026.</p>
+    </div>
+    <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">4 / 13</p>
   </div>
 
   <div class="bg-marca"><i class="fas fa-plug"></i></div>
 </div>
 
 <div id="notas-apresentador" style="display:none;">
-  <p>Slide de virada. Até aqui a ferramenta era boa de texto. A partir daqui ela alcança dado oficial.</p>
-  <p>A diferença é simples de dizer e vale repetir com as suas palavras: sem conector, ela fala sobre fiscalização, com base no que leu um dia. Com conector, ela consultou o painel de Fiscalização da Agência agora e trouxe o número.</p>
-  <p>Deixe claro que é o mesmo painel público que já está na Central de Painéis, e que qualquer pessoa da sala pode abrir no navegador. O conector não dá acesso novo a nada: ele só torna a consulta barata.</p>
-  <p>Não gaste mais de um minuto. As quatro demonstrações que vêm a seguir é que sustentam o argumento.</p>
+  <p>Slide de virada. Ontem a ferramenta era boa de texto; a partir daqui ela alcança o dado oficial da Agência.</p>
+  <p>Antes de mostrar a coluna da direita, pergunte à sala: quanto vocês acham que os portos brasileiros movimentaram em 2025? Deixe dois ou três palpites.</p>
+  <p>A coluna da esquerda não é crítica a ferramenta nenhuma: é como elas funcionam. O conhecimento para numa data, e a ferramenta não avisa quando a pergunta passou dessa data. É o que foi dito ontem sobre errar onde é mais convincente.</p>
+  <p>A coluna da direita traz três coisas juntas: o número, a fonte com a data da captura e a ressalva de leitura. É esse trio que vai aparecer nos quatro casos. Se perguntarem pela ressalva: em 2025, a cabotagem movimentou 303,7 milhões de toneladas e transportou 223,0 milhões.</p>
+  <p>É o mesmo painel público da Central de Painéis. O conector não dá acesso a nada novo: ele torna a consulta barata. Cerca de um minuto e meio.</p>
 </div>
 <script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
 <script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>

@@ -1,10 +1,10 @@
-# KIT DE DESIGN — "Dados Abertos da ANTAQ para análise técnica" (SFC · ANTAQ)
+# KIT DE DESIGN · "Dados Abertos da ANTAQ para análise técnica" (SFC · ANTAQ)
 
 Sistema visual EXATO desta apresentação. Deriva do KIT da Trilha Técnica (modelo SisPAT).
 **Referência de ouro:** `../GPFTrilhaTecnico/apresentacao/` (KIT.md + slide-01, 04, 20, 29, 61).
 Onde a especificação de conteúdo divergir deste KIT, **prevalece o KIT**.
 
-Total de arquivos: **13** — `slide-01.html` a `slide-13.html`, em sequência única.
+Total de arquivos: **13**: `slide-01.html` a `slide-13.html`, em sequência única.
 Não há slides de reserva.
 
 Este deck nasceu do bloco 4 da apresentação "IA no dia a dia da Fiscalização"
@@ -36,7 +36,7 @@ pelo `index.html`, que escala para a tela e navega por `postMessage`.
 ## 1.1 REGRAS DE ESCRITA (valem para todo texto visível)
 
 - Português formal da administração pública. Frases curtas.
-- **Proibido o travessão longo (—) e o traço médio (–) em texto corrido.** Use hífen
+- **Proibido o travessão longo (U+2014) e o traço médio (U+2013) em texto corrido.** Use hífen
   simples `-` ou parênteses. (O separador `·` é permitido em rodapés e rótulos.)
 - **Sem estrangeirismos**: "instrução" (não *prompt*), "conector" (não *plugin*),
   "conta" (não *account*), "programa" (não *software*). Exceções consagradas: *prompt*
@@ -108,25 +108,25 @@ tamanho do Tailwind, para tudo que for texto de conteúdo.
 
 | Elemento | Tamanho | Peso |
 |---|---|---|
-| Título de slide de conteúdo (H1) | 44–52px | 700 Montserrat, caixa alta |
-| Subtítulo do header | 26–30px | 500 Open Sans, `#6B7280` |
-| Item de lista (texto principal) | **30–36px** | 600 |
-| Texto de apoio / descrição de item | **24–28px** | 400 |
-| Célula de tabela | **24–28px** | 400/600 |
-| Cabeçalho de tabela | 22–24px | 700 Montserrat, caixa alta |
-| Rótulo de coluna comparativa | 26–30px | 700 Montserrat, caixa alta |
-| Frase de impacto (L2) | **56–84px** | 800/900 Montserrat |
-| Destaque numérico (L8) | 120–190px | 900 Montserrat |
-| Bloco monoespaçado (L6) | 20–23px | 400, `line-height:1.5` |
-| Rodapé | 17–19px | 500 |
-| Legenda / linha de fonte | 17–21px | 400, itálico quando for ressalva |
+| Título de slide de conteúdo (H1) | 44 a 52px | 700 Montserrat, caixa alta |
+| Subtítulo do header | 26 a 30px | 500 Open Sans, `#6B7280` |
+| Item de lista (texto principal) | **30 a 36px** | 600 |
+| Texto de apoio / descrição de item | **24 a 28px** | 400 |
+| Célula de tabela | **24 a 28px** | 400/600 |
+| Cabeçalho de tabela | 22 a 24px | 700 Montserrat, caixa alta |
+| Rótulo de coluna comparativa | 26 a 30px | 700 Montserrat, caixa alta |
+| Frase de impacto (L2) | **56 a 84px** | 800/900 Montserrat |
+| Destaque numérico (L8) | 120 a 190px | 900 Montserrat |
+| Bloco monoespaçado (L6) | 20 a 23px | 400, `line-height:1.5` |
+| Rodapé | 17 a 19px | 500 |
+| Legenda / linha de fonte | 17 a 21px | 400, itálico quando for ressalva |
 
 **Piso absoluto: nenhum texto abaixo de 17px.** Nada de `text-xs`/`text-sm` do Tailwind
 em conteúdo (só no rodapé, e ainda assim com `px` explícito).
 
 ---
 
-## 5. SLIDE DE CONTEÚDO (fundo branco) — estrutura padrão
+## 5. SLIDE DE CONTEÚDO (fundo branco): estrutura padrão
 
 ```html
 <body>
@@ -172,7 +172,7 @@ Se o título for longo, reduza para 44px em vez de quebrar o leiaute.
 | Slides | Tag | Ícone |
 |---|---|---|
 | 2 | `ABERTURA` | `fa-clock-rotate-left` |
-| 4–10, 12 | `DADOS ABERTOS` | `fa-plug` |
+| 4 a 10, 12 | `DADOS ABERTOS` | `fa-plug` |
 
 Slides sem tag: 1, 3, 11 e 13 (capa, divisória, frase L2 e encerramento).
 
@@ -193,15 +193,26 @@ Logo abaixo do texto-base do rodapé, em 17px, `#9CA3AF`:
 <p class="text-gray-400" style="font-size:17px;">Fonte: TEXTO DA FONTE</p>
 ```
 
-Fontes canônicas desta apresentação (use exatamente):
-- Painel de Fiscalização (slides 6, 8, 10, 11):
-  `Fonte: painel Fiscalização da ANTAQ, quadro "Base de Dados", via conector MCP independente, em 16 de setembro de 2026.`
-- Acervo normativo (slide 9):
-  `Fonte: acervo normativo do setor aquaviário (50 documentos, 2.530 trechos) via conector MCP independente, em 16 de setembro de 2026.`
-- Procedimento sancionador (slide 12): `Fonte: Resolução ANTAQ nº 3.259, de 30 de janeiro de 2014.`
+Fontes canônicas desta apresentação (use exatamente). Os números foram lidos em
+**21 de setembro de 2026**, sobre captura dos painéis de **18/08/2026** e cópia dos atos
+publicados de **27/08/2026**; a linha de fonte diz as duas datas.
+
+- Movimentação portuária (slide 4):
+  `Fonte: painel Estatístico Aquaviário da ANTAQ, quadro de movimentação portuária por tipo de navegação, captura de 18/08/2026, via conector MCP independente, em 21 de setembro de 2026.`
+- Contratos de porto público (slide 6):
+  `Fonte: painel Portos Públicos da ANTAQ, quadro "Portos Públicos" (559 contratos), captura de 18/08/2026, via conector MCP independente, em 21 de setembro de 2026. Vencimento pela data de expiração do último instrumento.`
+- Outorgas, frota e fiscalização por CNPJ (slide 7):
+  `Fonte: painéis Outorgas de Navegação (quadros de outorgas e de frota) e Fiscalização da ANTAQ, captura de 18/08/2026, via conector MCP independente, em 21 de setembro de 2026. Vigência pela data de extinção.`
+- Atos publicados (slide 8):
+  `Fonte: atos publicados pela ANTAQ (acervo da Biblioteca), espécie Acórdão, busca textual por "sobre-estadia" em cada ano, cópia de 27/08/2026, via conector MCP independente, em 21 de setembro de 2026.`
+- Painel de Fiscalização (slides 9 e 11):
+  `Fonte: painel Fiscalização da ANTAQ, quadro "Base de Dados", captura de 18/08/2026, via conector MCP independente, em 21 de setembro de 2026.` No slide 9, acrescentar: `Percentuais sobre infrações julgadas, excluídos os arquivados sem irregularidade.`
+- Vários painéis em um só slide (slide 10):
+  `Fonte: painéis Fiscalização, Outorgas de Navegação e Administração Portuária da ANTAQ (captura de 18/08/2026) e atos publicados (cópia de 27/08/2026), via conector MCP independente, em 21 de setembro de 2026.`
 - Recapitulação do encontro anterior (slide 2):
   `Fonte: apresentação "IA no dia a dia da Fiscalização", SFC, 21 de setembro de 2026 (antaq.github.io/apresentacao_ia_sfc).`
 - Roteiro (slide 3): `Fonte: tempo estimado no roteiro desta apresentação (GPF e GRAT/SFC).`
+- **Sem linha de fonte:** slides 1, 5, 12 e 13, porque não exibem número.
 
 **Endereço do conector (slides 5 e 13):** `https://antaq.dadosabertos.dev/mcp`. Aparece
 projetado nos dois slides, em `'Courier New', monospace`, sempre com o `https://`, porque a
@@ -279,7 +290,7 @@ Valor que precisa saltar aos olhos: `font-weight:800; color:#B91C1C`.
 Realce de trecho dentro do bloco: `<span style="color:#FCD34D;font-weight:700;">`.
 Barra de título do bloco (opcional): faixa `#1E293B` com três círculos e o nome do arquivo.
 
-### 6.6 Leiaute L7 (captura de tela) — não usado
+### 6.6 Leiaute L7 (captura de tela): não usado
 
 O deck foi entregue **sem capturas de tela**: os quadros tracejados que ocupavam o lugar
 das imagens foram removidos e o conteúdo redistribuído em largura cheia. O leiaute L7 fica
@@ -298,7 +309,7 @@ marcador hoje:** todos foram preenchidos ou removidos em 5 de agosto de 2026.
 Em fundo escuro: `background:rgba(253,224,71,.14); color:#FDE68A; border-color:#FDE68A;`.
 Marcador dentro de linha de rodapé pode usar 19px.
 
-### 6.8 Faixa-âncora (slides 5 e 12 — idêntica nos dois)
+### 6.8 Faixa-âncora (slides 5 e 12, idêntica nos dois)
 
 ```html
 <div style="margin-top:34px;background:linear-gradient(90deg,#002244 0%,#004488 100%);
@@ -312,7 +323,7 @@ Marcador dentro de linha de rodapé pode usar 19px.
 
 ### 6.9 Destaque numérico (L8)
 
-Número em Montserrat 900, 120–190px, `#003366` (ou `#FFD700` em fundo escuro),
+Número em Montserrat 900, 120 a 190px, `#003366` (ou `#FFD700` em fundo escuro),
 com rótulo em caixa alta 26px acima e explicação 26px abaixo.
 
 ### 6.10 Pílula de passo
@@ -351,7 +362,7 @@ com `filter:brightness(0) invert(1)` a `opacity:.07-.08`.
 opacity:.05`. Padrão de pontos opcional:
 `background-image: radial-gradient(rgba(255,255,255,.05) 1px, transparent 1px); background-size:22px 22px;`
 
-### 7.1 Divisória de bloco (L10) — slide 3
+### 7.1 Divisória de bloco (L10), slide 3
 
 Espelham `../GPFTrilhaTecnico/apresentacao/slide-04.html`:
 rótulo "BLOCO" com barra dourada; número em dourado 188px; título 84px;
@@ -367,11 +378,11 @@ linha-resumo 30px; e, no lugar dos "chips", **uma pílula de tempo estimado**:
 ```
 Mais 3 a 4 "chips" com os pontos do bloco (padrão do slide-04 de referência, 22px).
 
-### 7.2 Frase de impacto em tela cheia (L2) — slide 11
+### 7.2 Frase de impacto em tela cheia (L2), slide 11
 
 Fundo escuro, sem header. Texto centralizado verticalmente, alinhado à esquerda a partir
 de `padding-left:130px`, largura máxima 1560px. Aspas decorativas `fa-quote-left` em
-dourado, `opacity:.5`, 90px. Texto 56–84px, Montserrat 800, `line-height:1.22`.
+dourado, `opacity:.5`, 90px. Texto 56 a 84px, Montserrat 800, `line-height:1.22`.
 Palavra-chave em `#FFD700`. Rodapé escuro (5.3). **Não altere o texto destes slides.**
 
 ---
@@ -406,19 +417,19 @@ Se a especificação não trouxer NOTAS para o slide, escreva uma nota curta e �
 
 | # | Leiaute | Assunto | Tag | Vinha de |
 |---|---|---|---|---|
-| 1 | L1 | Capa | — | novo |
+| 1 | L1 | Capa | sem tag | novo |
 | 2 | L3 | O que ficou dito ontem (recapitulação) | ABERTURA | novo |
-| 3 | L10 | Divisória bloco 1 (18 min) | — | 28 |
-| 4 | L4 | A diferença que um conector faz | DADOS ABERTOS | 29 |
-| 5 | L3 | O conector não é um sistema da ANTAQ, endereço + faixa-âncora | DADOS ABERTOS | 30 |
-| 6 | L6+L8 | Demonstração 1: o enquadramento genérico | DADOS ABERTOS | 31 |
-| 7 | L3 | Enquadramento genérico não é detalhe de redação | DADOS ABERTOS | 32 |
-| 8 | L6+L8 | Demonstração 2: o histórico do fiscalizado | DADOS ABERTOS | 33 |
-| 9 | L6+L8 | Demonstração 3: a citação que a base erra | DADOS ABERTOS | 34 |
-| 10 | L5 | Demonstração 4: dado aberto não é dado limpo | DADOS ABERTOS | 35 |
-| 11 | L2 | Conclusão do bloco | — | 36 |
-| 12 | L3 | Enquadramento honesto + faixa-âncora | DADOS ABERTOS | 37 |
-| 13 | L11 | Contato, material, endereço do conector e código de leitura óptica | — | 41 |
+| 3 | L10 | Divisória bloco 1, Quatro perguntas da rotina (18 min) | sem tag | 28 |
+| 4 | L6+L4 | A mesma pergunta, com e sem conector | DADOS ABERTOS | 29 |
+| 5 | L3 | O conector não é um sistema da ANTAQ, endereço e faixa-âncora | DADOS ABERTOS | 30 |
+| 6 | L6+6.1 | Caso 1: onze contratos vencem até dezembro | DADOS ABERTOS | 31 |
+| 7 | L6+L8 | Caso 2: a empresa inteira em uma pergunta | DADOS ABERTOS | 33 |
+| 8 | L6+L8 | Caso 3: sobre-estadia, de 14 para 72 acórdãos por ano | DADOS ABERTOS | novo |
+| 9 | L6+L8 | Caso 4: o tipo residual arquiva quase o dobro | DADOS ABERTOS | 34 |
+| 10 | L5 | Cinco perguntas antes de usar um número | DADOS ABERTOS | 35 |
+| 11 | L2 | Conclusão do bloco | sem tag | 36 |
+| 12 | 6.1+6.8 | Traga a pergunta da sua unidade, com faixa-âncora | DADOS ABERTOS | 37 |
+| 13 | L11 | Contato, material, endereço do conector e código de leitura óptica | sem tag | 41 |
 
 A coluna "Vinha de" traz a numeração no deck de 21/09/2026. Ela existe para que quem
 comparar os dois materiais encontre o slide equivalente sem procurar.

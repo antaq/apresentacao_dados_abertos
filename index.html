@@ -10,14 +10,14 @@
   <link rel="apple-touch-icon" href="Imagens/apple-touch-icon.png"/>
 
   <!-- Cartao de compartilhamento (WhatsApp, Teams, redes). Fonte da imagem: Imagens/og-fonte.html -->
-  <meta name="description" content="Como a ferramenta alcança o dado oficial da Agência, o que ela acha em segundos, e o que o dado não diz. Encontro interno das Gerências GPF e GRAT, SFC/ANTAQ, 22 de setembro de 2026." />
+  <meta name="description" content="Quatro perguntas da rotina da fiscalização, respondidas com o dado que a Agência publica, e a armadilha de cada resposta. Encontro interno das Gerências GPF e GRAT, SFC/ANTAQ, 22 de setembro de 2026." />
   <meta name="theme-color" content="#003366" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Superintendência de Fiscalização · ANTAQ" />
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:url" content="https://antaq.github.io/apresentacao_dados_abertos/" />
   <meta property="og:title" content="Dados Abertos da ANTAQ para análise técnica" />
-  <meta property="og:description" content="Como a ferramenta alcança o dado oficial da Agência, o que ela acha em segundos, e o que o dado não diz. Encontro interno das Gerências GPF e GRAT, SFC/ANTAQ, 22 de setembro de 2026." />
+  <meta property="og:description" content="Quatro perguntas da rotina da fiscalização, respondidas com o dado que a Agência publica, e a armadilha de cada resposta. Encontro interno das Gerências GPF e GRAT, SFC/ANTAQ, 22 de setembro de 2026." />
   <meta property="og:image" content="https://antaq.github.io/apresentacao_dados_abertos/Imagens/og-capa.jpg" />
   <meta property="og:image:secure_url" content="https://antaq.github.io/apresentacao_dados_abertos/Imagens/og-capa.jpg" />
   <meta property="og:image:type" content="image/jpeg" />
@@ -26,7 +26,7 @@
   <meta property="og:image:alt" content="Cartão da apresentação Dados Abertos da ANTAQ para análise técnica, Gerências GPF e GRAT, SFC/ANTAQ, 22 de setembro de 2026." />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Dados Abertos da ANTAQ para análise técnica" />
-  <meta name="twitter:description" content="Como a ferramenta alcança o dado oficial da Agência, o que ela acha em segundos, e o que o dado não diz. Encontro interno das Gerências GPF e GRAT, SFC/ANTAQ, 22 de setembro de 2026." />
+  <meta name="twitter:description" content="Quatro perguntas da rotina da fiscalização, respondidas com o dado que a Agência publica, e a armadilha de cada resposta. Encontro interno das Gerências GPF e GRAT, SFC/ANTAQ, 22 de setembro de 2026." />
   <meta name="twitter:image" content="https://antaq.github.io/apresentacao_dados_abertos/Imagens/og-capa.jpg" />
   <meta name="twitter:image:alt" content="Cartão da apresentação Dados Abertos da ANTAQ para análise técnica, Gerências GPF e GRAT, SFC/ANTAQ, 22 de setembro de 2026." />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
@@ -218,7 +218,7 @@
     // Blocos: [primeiro, ultimo, rótulo]
     const BLOCOS = [
       [1,  2,  'Abertura'],
-      [3,  12, 'Bloco 1 · Conector e dados abertos'],
+      [3,  12, 'Bloco 1 · Quatro perguntas da rotina'],
       [13, 13, 'Encerramento']
     ];
 
@@ -292,7 +292,7 @@
       const n = i + 1;
       const dot = document.createElement('button');
       dot.addEventListener('click', () => { current = n; render(); });
-      dot.title = `${rotuloPagina(n)} — ${moduleLabel(n)}`;
+      dot.title = `${rotuloPagina(n)} · ${moduleLabel(n)}`;
       dotsContainer.appendChild(dot);
       if (seps.has(n)) {
         const sep = document.createElement('div');
