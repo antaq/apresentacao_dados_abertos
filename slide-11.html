@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Sobre-estadia: de 14 para 72 acórdãos por ano</title>
+<title>A empresa inteira em uma pergunta</title>
 <link rel="icon" href="favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
@@ -28,31 +28,24 @@
 
   .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
 
-  .duplo { display:flex; gap:34px; align-items:stretch; }
+  .empresa { display:flex; align-items:center; gap:18px; padding:20px 30px; border-radius:14px;
+             background:#F0F9FF; border:2px solid #BAE6FD; }
+  .empresa i { font-size:32px; color:#0066CC; flex-shrink:0; }
+  .empresa .nome { font-family:'Montserrat',sans-serif; font-weight:800; font-size:30px; color:#003366; }
+  .empresa .local { font-size:24px; color:#6B7280; }
 
-  .painel-gr { flex:1; background:#F8FAFC; border:2px solid #E2E8F0; border-radius:16px;
-               padding:26px 32px 22px 32px; display:flex; flex-direction:column; }
-  .gr-rotulo { font-family:'Montserrat',sans-serif; font-weight:800; font-size:22px; color:#0066CC;
-               text-transform:uppercase; letter-spacing:.1em; }
-  .grafico { display:flex; align-items:flex-end; justify-content:space-around; gap:20px;
-             margin-top:auto; padding-top:24px; }
-  .col-barra { display:flex; flex-direction:column; align-items:center; }
-  .valor { font-family:'Montserrat',sans-serif; font-weight:900; font-size:38px; color:#003366;
-           line-height:1; margin-bottom:12px; }
-  .barra { width:96px; border-radius:8px 8px 0 0; background:#0066CC; }
-  .barra-topo { background:#003366; }
-  .barra-hachura { background:repeating-linear-gradient(45deg,#0066CC,#0066CC 8px,#7CC0FF 8px,#7CC0FF 16px); }
-  .rot-ano { height:56px; margin-top:10px; display:flex; flex-direction:column; align-items:center; }
-  .ano { font-family:'Montserrat',sans-serif; font-weight:700; font-size:25px; color:#374151; }
-  .obs { font-size:18px; color:#6B7280; margin-top:3px; }
-
-  .painel-ac { flex:1.05; display:flex; flex-direction:column; gap:24px; justify-content:center; }
-  .acordao { background:#FFFFFF; border:2px solid #E2E8F0; border-left:10px solid #003366;
-             border-radius:0 16px 16px 0; padding:28px 32px; }
-  .ac-rot { font-family:'Montserrat',sans-serif; font-weight:800; font-size:22px; color:#0066CC;
-            text-transform:uppercase; letter-spacing:.07em; }
-  .ac-txt { font-size:26px; line-height:1.38; color:#1F2937; margin-top:12px; }
-  .nq { white-space:nowrap; }
+  .cartoes { display:flex; gap:22px; align-items:stretch; }
+  .cartao { flex:1; background:#FFFFFF; border:2px solid #E2E8F0; border-top:8px solid #0066CC;
+            border-radius:0 0 16px 16px; padding:30px 28px 24px 28px; display:flex; flex-direction:column;
+            box-shadow:0 6px 18px -10px rgba(0,0,0,.2); }
+  .cartao .num { font-family:'Montserrat',sans-serif; font-weight:900; font-size:78px; color:#003366;
+                 line-height:1; letter-spacing:-2px; }
+  .cartao .rot { font-family:'Montserrat',sans-serif; font-weight:700; font-size:26px; color:#0066CC;
+                 line-height:1.22; margin-top:10px; }
+  .cartao .sub { font-size:22px; color:#4B5563; line-height:1.38; margin-top:16px; }
+  .cartao .origem { font-family:'Montserrat',sans-serif; font-weight:800; font-size:17px; color:#0066CC;
+                    text-transform:uppercase; letter-spacing:.1em; margin-top:auto; padding-top:20px;
+                    border-top:1px solid #E5E7EB; }
 </style>
 </head>
 <body>
@@ -66,10 +59,10 @@
       <div class="flex items-center gap-3">
         <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
         <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:46px; line-height:1.12; letter-spacing:-0.02em;">
-          Sobre-estadia: de 14 para 72 acórdãos por ano
+          A empresa inteira em uma pergunta
         </h1>
       </div>
-      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">Caso 3 · Decisões da Diretoria · 21.091 atos publicados, com texto integral</p>
+      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">Caso 2 · Navegação · outorgas, frota e fiscalização, cruzadas pelo CNPJ</p>
     </div>
     <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
       <i class="fas fa-plug" style="font-size:26px;"></i>
@@ -83,50 +76,42 @@
     <!-- Instrução usada -->
     <div class="instrucao">
       <i class="fas fa-keyboard"></i>
-      <code>Quantos acórdãos da Diretoria citam sobre-estadia, por ano? O que eles determinam à SFC?</code>
+      <code>O que a ANTAQ publica sobre o CNPJ 02.709.449/0001-59: outorgas, frota e fiscalizações?</code>
     </div>
 
-    <div class="duplo">
+    <!-- Empresa consultada -->
+    <div class="empresa">
+      <i class="fas fa-building"></i>
+      <span class="nome">PETROBRAS TRANSPORTE S.A - TRANSPETRO</span>
+      <span class="local">Rio de Janeiro/RJ</span>
+    </div>
 
-      <!-- Gráfico -->
-      <div class="painel-gr">
-        <p class="gr-rotulo">Acórdãos que citam <span class="nq">sobre-estadia</span></p>
-        <div class="grafico">
-          <div class="col-barra">
-            <span class="valor">14</span>
-            <div class="barra" style="height:64px;"></div>
-            <div class="rot-ano"><span class="ano">2023</span></div>
-          </div>
-          <div class="col-barra">
-            <span class="valor">40</span>
-            <div class="barra" style="height:182px;"></div>
-            <div class="rot-ano"><span class="ano">2024</span></div>
-          </div>
-          <div class="col-barra">
-            <span class="valor">72</span>
-            <div class="barra barra-topo" style="height:327px;"></div>
-            <div class="rot-ano"><span class="ano">2025</span></div>
-          </div>
-          <div class="col-barra">
-            <span class="valor">42</span>
-            <div class="barra barra-hachura" style="height:191px;"></div>
-            <div class="rot-ano"><span class="ano">2026</span><span class="obs">em curso</span></div>
-          </div>
-        </div>
+    <!-- O que volta -->
+    <div class="cartoes">
+      <div class="cartao">
+        <p class="num">5</p>
+        <p class="rot">outorgas vigentes</p>
+        <p class="sub">Cabotagem e longo curso desde 2004. A mais recente, de apoio marítimo, é de maio de 2026.</p>
+        <p class="origem">Painel de outorgas</p>
       </div>
-
-      <!-- O que a Diretoria determina -->
-      <div class="painel-ac">
-        <div class="acordao">
-          <p class="ac-rot">Acórdão nº 698/2025, item 5.4</p>
-          <p class="ac-txt">"determinar à SFC a abertura de processo de fiscalização para apuração do mérito (...)"</p>
-        </div>
-        <div class="acordao">
-          <p class="ac-rot">Acórdão nº 67/2026, item 5.3</p>
-          <p class="ac-txt">Continuidade do banco de dados de denúncias de <span class="nq">sobre-estadia</span> de contêineres, conduzido pela SFC.</p>
-        </div>
+      <div class="cartao">
+        <p class="num">21</p>
+        <p class="rot">anos e 11 meses de outorga contínua</p>
+        <p class="sub">Somar as linhas do painel daria 49 anos: outorgas do mesmo dia cobrem o mesmo tempo.</p>
+        <p class="origem">Calculado pelas datas</p>
       </div>
-
+      <div class="cartao">
+        <p class="num">61</p>
+        <p class="rot">embarcações operadas hoje</p>
+        <p class="sub">18 petroleiros, 6 de gás liquefeito e 37 lanchas, botes, chatas, barcaças e balsas.</p>
+        <p class="origem">Painel de frota</p>
+      </div>
+      <div class="cartao">
+        <p class="num">11</p>
+        <p class="rot">registros no painel de Fiscalização</p>
+        <p class="sub">Com unidade, infração e desfecho de cada um.</p>
+        <p class="origem">Painel de Fiscalização</p>
+      </div>
     </div>
 
   </div>
@@ -135,20 +120,20 @@
   <div class="px-16 pb-5 flex justify-between items-end z-10">
     <div style="max-width:1620px;">
       <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
-      <p class="text-gray-400" style="font-size:17px;">Fonte: atos publicados pela ANTAQ (acervo da Biblioteca, copiado até 27/08/2026), espécie Acórdão, busca por "sobre-estadia" em cada ano, via conector MCP independente, em 22 de setembro de 2026.</p>
+      <p class="text-gray-400" style="font-size:17px;">Fonte: painéis Outorgas de Navegação (quadros de outorgas e de frota) e Fiscalização da ANTAQ, via conector MCP independente, em 22 de setembro de 2026. Vigência pela data de extinção.</p>
     </div>
-    <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">11 / 16</p>
+    <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">11 / 17</p>
   </div>
 
-  <div class="bg-marca"><i class="fas fa-landmark"></i></div>
+  <div class="bg-marca"><i class="fas fa-building-circle-check"></i></div>
 </div>
 
 <div id="notas-apresentador" style="display:none;">
-  <p>Terceiro caso, e ele sai do painel de números. O conector também lê os atos publicados da Agência, com texto integral: 21.091 acórdãos, resoluções, portarias e deliberações, de 2000 até agosto deste ano.</p>
-  <p>Leia o gráfico da esquerda para a direita: 14, 40, 72. Em dois anos, cinco vezes mais acórdãos citando sobre-estadia. E 2026, ano em curso, já passou de 2024 inteiro.</p>
-  <p>Agora os cartões, que é o que interessa a esta sala. Nas cautelares de sobre-estadia, a Diretoria decide o pedido e manda a SFC apurar o mérito. Em fevereiro deste ano, mandou continuar o banco de dados de denúncias conduzido pela SFC. A demanda vem para cá, e está crescendo.</p>
-  <p>Para que serve: antes de instruir a próxima denúncia, ler em minutos o que a Diretoria já decidiu em casos parecidos. A busca acha o acórdão; o texto que vai para a peça vem do documento no SEI.</p>
-  <p><strong>A armadilha não está em tela.</strong> Ela é de contagem: citar não é julgar denúncia. Um acórdão que só menciona o tema também entra. O número mostra a tendência, e é para isso que ele serve aqui. Cerca de dois minutos e meio.</p>
+  <p>Segundo caso, e é o que a sala costuma achar mais imediato. Antes de uma fiscalização, alguém abre três painéis e monta uma planilha. Aqui é uma pergunta, pelo CNPJ.</p>
+  <p>A empresa é grande e pública de propósito. Se for rodar ao vivo, usem uma empresa que vocês conheçam e testem antes; não improvisem o nome na hora.</p>
+  <p>O segundo cartão já é uma armadilha, e ela é de conta: cabotagem e longo curso foram outorgadas no mesmo dia, então somar as linhas dá 49 anos. O tempo real de outorga é 21 anos e 11 meses.</p>
+  <p><strong>A armadilha não está em tela, e é a que pode virar erro de fiscalização.</strong> Digam com o número: a outorga de navegação interior do processo 50300.002696/2014-14 foi extinta em 08/08/2016 e o painel ainda diz "Outorga Vigente: Sim". O campo diz Sim em 3.185 de 3.185 linhas, e 1.362 delas já estão extintas. Quem filtra por ele trata outorga extinta como viva. A vigência tem de sair da data de extinção.</p>
+  <p>O que não aparece aqui: processo em curso. O painel de Fiscalização só traz processo julgado ou arquivado; para o histórico completo, o SFIS continua sendo a fonte. Cerca de três minutos.</p>
 </div>
 <script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
 <script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>

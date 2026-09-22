@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>A empresa inteira em uma pergunta</title>
+<title>Onze contratos vencem até dezembro</title>
 <link rel="icon" href="favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
@@ -28,24 +28,25 @@
 
   .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
 
-  .empresa { display:flex; align-items:center; gap:18px; padding:20px 30px; border-radius:14px;
-             background:#F0F9FF; border:2px solid #BAE6FD; }
-  .empresa i { font-size:32px; color:#0066CC; flex-shrink:0; }
-  .empresa .nome { font-family:'Montserrat',sans-serif; font-weight:800; font-size:30px; color:#003366; }
-  .empresa .local { font-size:24px; color:#6B7280; }
+  .grade { display:flex; gap:26px; align-items:stretch; }
+  .coluna-c { flex:1; display:flex; flex-direction:column; gap:15px; }
 
-  .cartoes { display:flex; gap:22px; align-items:stretch; }
-  .cartao { flex:1; background:#FFFFFF; border:2px solid #E2E8F0; border-top:8px solid #0066CC;
-            border-radius:0 0 16px 16px; padding:30px 28px 24px 28px; display:flex; flex-direction:column;
-            box-shadow:0 6px 18px -10px rgba(0,0,0,.2); }
-  .cartao .num { font-family:'Montserrat',sans-serif; font-weight:900; font-size:78px; color:#003366;
-                 line-height:1; letter-spacing:-2px; }
-  .cartao .rot { font-family:'Montserrat',sans-serif; font-weight:700; font-size:26px; color:#0066CC;
-                 line-height:1.22; margin-top:10px; }
-  .cartao .sub { font-size:22px; color:#4B5563; line-height:1.38; margin-top:16px; }
-  .cartao .origem { font-family:'Montserrat',sans-serif; font-weight:800; font-size:17px; color:#0066CC;
-                    text-transform:uppercase; letter-spacing:.1em; margin-top:auto; padding-top:20px;
-                    border-top:1px solid #E5E7EB; }
+  .linha { display:flex; align-items:center; gap:18px; padding:17px 24px; border-radius:12px;
+           background:#F8FAFC; border:2px solid #E2E8F0; }
+  .linha-destaque { background:#F0F9FF; border:3px solid #0066CC; }
+
+  .data { font-family:'Montserrat',sans-serif; font-weight:900; font-size:28px; color:#003366;
+          width:100px; flex-shrink:0; letter-spacing:-0.5px; }
+  .porto { font-size:26px; color:#1F2937; font-weight:600; flex:1; line-height:1.2; }
+  .tipo { font-family:'Montserrat',sans-serif; font-weight:700; font-size:18px; border-radius:999px;
+          padding:5px 16px; white-space:nowrap; flex-shrink:0;
+          background:#E2E8F0; color:#475569; }
+  .tipo-escura { background:#003366; color:#FFFFFF; }
+
+  .resumo { display:flex; align-items:center; gap:18px; padding:19px 26px; border-radius:12px;
+            background:#003366; color:#FFFFFF; margin-top:auto; }
+  .resumo i { font-size:26px; color:#FFD700; flex-shrink:0; }
+  .resumo p { font-family:'Montserrat',sans-serif; font-weight:800; font-size:25px; line-height:1.25; }
 </style>
 </head>
 <body>
@@ -59,10 +60,10 @@
       <div class="flex items-center gap-3">
         <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
         <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:46px; line-height:1.12; letter-spacing:-0.02em;">
-          A empresa inteira em uma pergunta
+          Onze contratos vencem até dezembro
         </h1>
       </div>
-      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">Caso 2 · Navegação · outorgas, frota e fiscalização, cruzadas pelo CNPJ</p>
+      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">Caso 1 · Portos públicos · o que vence entre hoje e 31 de dezembro</p>
     </div>
     <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
       <i class="fas fa-plug" style="font-size:26px;"></i>
@@ -76,41 +77,73 @@
     <!-- Instrução usada -->
     <div class="instrucao">
       <i class="fas fa-keyboard"></i>
-      <code>O que a ANTAQ publica sobre o CNPJ 02.709.449/0001-59: outorgas, frota e fiscalizações?</code>
+      <code>Quais contratos de porto público vencem entre hoje e 31 de dezembro de 2026?</code>
     </div>
 
-    <!-- Empresa consultada -->
-    <div class="empresa">
-      <i class="fas fa-building"></i>
-      <span class="nome">PETROBRAS TRANSPORTE S.A - TRANSPETRO</span>
-      <span class="local">Rio de Janeiro/RJ</span>
-    </div>
-
-    <!-- O que volta -->
-    <div class="cartoes">
-      <div class="cartao">
-        <p class="num">5</p>
-        <p class="rot">outorgas vigentes</p>
-        <p class="sub">Cabotagem e longo curso desde 2004. A mais recente, de apoio marítimo, é de maio de 2026.</p>
-        <p class="origem">Painel de outorgas</p>
+    <!-- Contratos -->
+    <div class="grade">
+      <div class="coluna-c">
+        <div class="linha">
+          <span class="data">24/09</span>
+          <span class="porto">Fortaleza</span>
+          <span class="tipo">Transição</span>
+        </div>
+        <div class="linha">
+          <span class="data">27/09</span>
+          <span class="porto">Imbituba</span>
+          <span class="tipo">Transição</span>
+        </div>
+        <div class="linha">
+          <span class="data">10/10</span>
+          <span class="porto">Paranaguá</span>
+          <span class="tipo">Transição</span>
+        </div>
+        <div class="linha">
+          <span class="data">13/10</span>
+          <span class="porto">Belém</span>
+          <span class="tipo">Uso temporário</span>
+        </div>
+        <div class="linha">
+          <span class="data">27/10</span>
+          <span class="porto">Salvador</span>
+          <span class="tipo">Transição</span>
+        </div>
+        <div class="linha">
+          <span class="data">03/12</span>
+          <span class="porto">Natal</span>
+          <span class="tipo">Transição</span>
+        </div>
       </div>
-      <div class="cartao">
-        <p class="num">21</p>
-        <p class="rot">anos e 11 meses de outorga contínua</p>
-        <p class="sub">Somar as linhas do painel daria 49 anos: outorgas do mesmo dia cobrem o mesmo tempo.</p>
-        <p class="origem">Calculado pelas datas</p>
-      </div>
-      <div class="cartao">
-        <p class="num">61</p>
-        <p class="rot">embarcações operadas hoje</p>
-        <p class="sub">18 petroleiros, 6 de gás liquefeito e 37 lanchas, botes, chatas, barcaças e balsas.</p>
-        <p class="origem">Painel de frota</p>
-      </div>
-      <div class="cartao">
-        <p class="num">11</p>
-        <p class="rot">registros no painel de Fiscalização</p>
-        <p class="sub">Com unidade, infração e desfecho de cada um.</p>
-        <p class="origem">Painel de Fiscalização</p>
+      <div class="coluna-c">
+        <div class="linha">
+          <span class="data">12/12</span>
+          <span class="porto">Suape</span>
+          <span class="tipo">Uso temporário</span>
+        </div>
+        <div class="linha">
+          <span class="data">12/12</span>
+          <span class="porto">Recife</span>
+          <span class="tipo">Transição</span>
+        </div>
+        <div class="linha linha-destaque">
+          <span class="data">28/12</span>
+          <span class="porto">Aratu</span>
+          <span class="tipo tipo-escura">Arrendamento 31/2001</span>
+        </div>
+        <div class="linha">
+          <span class="data">31/12</span>
+          <span class="porto">Rio Grande</span>
+          <span class="tipo">Passagem</span>
+        </div>
+        <div class="linha linha-destaque">
+          <span class="data">31/12</span>
+          <span class="porto">Rio Grande</span>
+          <span class="tipo tipo-escura">Arrendamento CA-SUPRG 01/96</span>
+        </div>
+        <div class="resumo">
+          <i class="fas fa-calendar-check"></i>
+          <p>11 contratos em 10 portos, 2 deles arrendamentos</p>
+        </div>
       </div>
     </div>
 
@@ -120,20 +153,21 @@
   <div class="px-16 pb-5 flex justify-between items-end z-10">
     <div style="max-width:1620px;">
       <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
-      <p class="text-gray-400" style="font-size:17px;">Fonte: painéis Outorgas de Navegação (quadros de outorgas e de frota) e Fiscalização da ANTAQ, via conector MCP independente, em 22 de setembro de 2026. Vigência pela data de extinção.</p>
+      <p class="text-gray-400" style="font-size:17px;">Fonte: painel Portos Públicos da ANTAQ, quadro "Portos Públicos" (559 contratos), via conector MCP independente, em 22 de setembro de 2026. Vencimento pela data de expiração do último instrumento.</p>
     </div>
-    <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">10 / 16</p>
+    <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">10 / 17</p>
   </div>
 
-  <div class="bg-marca"><i class="fas fa-building-circle-check"></i></div>
+  <div class="bg-marca"><i class="fas fa-file-contract"></i></div>
 </div>
 
 <div id="notas-apresentador" style="display:none;">
-  <p>Segundo caso, e é o que a sala costuma achar mais imediato. Antes de uma fiscalização, alguém abre três painéis e monta uma planilha. Aqui é uma pergunta, pelo CNPJ.</p>
-  <p>A empresa é grande e pública de propósito. Se for rodar ao vivo, usem uma empresa que vocês conheçam e testem antes; não improvisem o nome na hora.</p>
-  <p>O segundo cartão já é uma armadilha, e ela é de conta: cabotagem e longo curso foram outorgadas no mesmo dia, então somar as linhas dá 49 anos. O tempo real de outorga é 21 anos e 11 meses.</p>
-  <p><strong>A armadilha não está em tela, e é a que pode virar erro de fiscalização.</strong> Digam com o número: a outorga de navegação interior do processo 50300.002696/2014-14 foi extinta em 08/08/2016 e o painel ainda diz "Outorga Vigente: Sim". O campo diz Sim em 3.185 de 3.185 linhas, e 1.362 delas já estão extintas. Quem filtra por ele trata outorga extinta como viva. A vigência tem de sair da data de extinção.</p>
-  <p>O que não aparece aqui: processo em curso. O painel de Fiscalização só traz processo julgado ou arquivado; para o histórico completo, o SFIS continua sendo a fonte. Cerca de três minutos.</p>
+  <p>Primeiro caso, e ele abre com uma pergunta para a sala: quantos contratos de porto público vencem até dezembro? Espere um palpite. A resposta é onze, e o primeiro vence em 24 de setembro, depois de amanhã, em Fortaleza.</p>
+  <p>Peça que cada regional procure o seu porto na lista. É nesse momento que a sala deixa de assistir e passa a conferir.</p>
+  <p>Para que serve: os dois cartões em destaque são arrendamentos longos, em Aratu e em Rio Grande, e terminam no fim de dezembro. Instruir a classificação dos bens e a reversibilidade é competência das Gerências e Unidades Regionais (Regimento Interno, art. 84, XII). Saber com cerca de cem dias de antecedência é o que permite programar a vistoria.</p>
+  <p>Se perguntarem pelo ano: no histórico do próprio painel, 2026 concentra 42 vencimentos, contra 12 em 2025 e 9 em 2027.</p>
+  <p><strong>A armadilha não está em tela, e é de vocês dizer em voz alta.</strong> A data é a do último instrumento publicado até a captura do painel: se houve aditivo depois, o painel não sabe. E o quadro de situação do próprio painel classifica só 491 dos 559 contratos. A resposta é ponto de partida; antes de qualquer ofício, confira no processo do contrato.</p>
+  <p>Se a rede permitir, este é o melhor caso para rodar ao vivo. Cerca de três minutos.</p>
 </div>
 <script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
 <script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>

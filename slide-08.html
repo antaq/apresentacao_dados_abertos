@@ -36,11 +36,6 @@
 
   .realce { background:#DBEAFE; color:#003366; font-weight:800; border-radius:8px; padding:2px 10px; }
 
-  .fontes { display:flex; flex-wrap:wrap; gap:10px; margin-top:14px; }
-  .fonte-chip { display:inline-flex; align-items:center; gap:10px; background:#EFF6FF; border:2px solid #BFDBFE;
-          border-radius:999px; padding:8px 18px; font-family:'Montserrat',sans-serif; font-weight:700;
-          font-size:19px; color:#1E40AF; }
-
   .endereco { margin-top:26px; display:flex; align-items:center; gap:30px;
     background:linear-gradient(90deg,#002244 0%,#004488 100%);
     border-left:12px solid #FFD700; border-radius:0 16px 16px 0; padding:32px 44px; }
@@ -101,15 +96,7 @@
 
       <div class="item">
         <div class="item-icone"><i class="fas fa-globe"></i></div>
-        <div>
-          <p class="item-txt">Consome <span class="realce">apenas dado publicado</span> pela ANTAQ e pelo Governo Federal:</p>
-          <div class="fontes">
-            <span class="fonte-chip"><i class="fas fa-chart-column"></i>Painéis públicos da ANTAQ</span>
-            <span class="fonte-chip"><i class="fas fa-ship"></i>Painéis do ONTL (Infra S.A.)</span>
-            <span class="fonte-chip"><i class="fas fa-globe"></i>Comex Stat (MDIC)</span>
-            <span class="fonte-chip"><i class="fas fa-scale-balanced"></i>Atos e normas publicados</span>
-          </div>
-        </div>
+        <p class="item-txt">Consome <span class="realce">apenas dado publicado</span> pela ANTAQ e pelo Governo Federal. Os acervos estão no próximo slide.</p>
       </div>
 
       <div class="item item-forte">
@@ -129,7 +116,7 @@
       </div>
     </div>
 
-    <!-- Frase-âncora, em voz baixa: ela volta inteira no slide 15 -->
+    <!-- Frase-âncora, em voz baixa: ela volta inteira no slide 16 -->
     <div class="frase-ancora">
       <i class="fas fa-signature"></i>
       <p>A IA não assina. Quem assina é você, e quem assina responde.</p>
@@ -140,7 +127,7 @@
   <!-- Rodapé -->
   <div class="px-16 pb-6 flex justify-between items-end z-10">
     <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
-    <p class="text-gray-300 font-mono" style="font-size:18px;">8 / 16</p>
+    <p class="text-gray-300 font-mono" style="font-size:18px;">8 / 17</p>
   </div>
 
   <div class="bg-marca"><i class="fas fa-code-branch"></i></div>
@@ -150,10 +137,10 @@
   <p>Este é o slide da declaração de interesse, e ele existe para que ninguém saia da sala com a impressão errada. Não o apressem, e não o suavizem: é ele que protege vocês.</p>
   <p>Primeiro: MCP é protocolo aberto, não é produto. Funciona com qualquer ferramenta compatível, de qualquer fornecedor.</p>
   <p>Segundo, e é o ponto que não pode ser contornado: <strong>o conector é um projeto pessoal de quem está falando</strong>, feito com recurso próprio, sem fins lucrativos e fora do expediente. A ANTAQ não contratou, não desenvolveu, não homologou e não mantém. Não é sistema da casa, não substitui nenhum, e usá-lo não é recomendação institucional. Digam isso com todas as letras, mesmo que soe repetitivo, porque a plateia é composta de colegas e o mal-entendido aqui é caro. Se perguntarem por que então está sendo apresentado num evento da Superintendência, a resposta honesta é: porque o método interessa ao trabalho de vocês, e porque a alternativa, que é usar sem saber de onde vem, é pior.</p>
-  <p>Terceiro: o que é da ANTAQ é o dado, não a ferramenta. Ele só consome o que é publicado, e vale nomear as fontes: os painéis públicos da Agência, os painéis do ONTL, o Comex Stat do MDIC e os atos e normas publicados.</p>
+  <p>Terceiro: o que é da ANTAQ é o dado, não a ferramenta. Ele só consome o que é publicado. Não listem as fontes aqui, porque o próximo slide abre os quatro acervos um a um, com volume e cadência.</p>
   <p>O quarto ponto é o que importa a esta sala, e é o que torna o terceiro suportável: o conector não enxerga processo em tramitação. Ele lê o painel público, que só tem processo já julgado. Nada do SFIS, nada do SEI, nada em sigilo.</p>
   <p>O endereço é o ponto alto do slide, e é o que a sala vai querer anotar: o conector fica em <em>antaq.dadosabertos.dev barra mcp</em>. Leiam em voz alta, devagar, e digam junto que é um endereço particular, não é domínio da Agência. Isso vai junto com o endereço, nunca depois. Deem alguns segundos de silêncio para quem estiver anotando; o endereço volta no último slide.</p>
-  <p>A frase do rodapé é só um lembrete de ontem, dita em voz baixa e sem parar no slide: a IA não assina, quem assina é você, e quem assina responde. Ela volta inteira, e com peso, no slide 15.</p>
+  <p>A frase do rodapé é só um lembrete de ontem, dita em voz baixa e sem parar no slide: a IA não assina, quem assina é você, e quem assina responde. Ela volta inteira, e com peso, no slide 16.</p>
 </div>
 <script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
 <script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>

@@ -4,11 +4,11 @@ Sistema visual EXATO desta apresentação. Deriva do KIT da Trilha Técnica (mod
 **Referência de ouro:** `../GPFTrilhaTecnico/apresentacao/` (KIT.md + slide-01, 04, 20, 29, 61).
 Onde a especificação de conteúdo divergir deste KIT, **prevalece o KIT**.
 
-Total de arquivos: **16**: `slide-01.html` a `slide-16.html`, em sequência única.
+Total de arquivos: **17**: `slide-01.html` a `slide-17.html`, em sequência única.
 Não há slides de reserva.
 
 Este deck nasceu do bloco 4 da apresentação "IA no dia a dia da Fiscalização"
-(21/09/2026), que virou apresentação própria. Boa parte dos slides 5 a 16 vem de lá,
+(21/09/2026), que virou apresentação própria. Boa parte dos slides 5 a 17 vem de lá,
 renumerada; a coluna "Vinha de" do mapa em 9 diz de onde saiu cada um. O slide 3 é o
 slide 28 daquele deck, trazido inteiro. Os slides 1, 2, 4, 10, 11, 12 e 14 são novos.
 
@@ -64,7 +64,7 @@ pelo `index.html`, que escala para a tela e navega por `postMessage`.
 | Cartão azul claro | `#F0F9FF` + borda `#BAE6FD` | Caixas de destaque |
 | Texto corpo | `#374151` / `#4B5563` | Parágrafos |
 | Texto suave | `#6B7280` / `#9CA3AF` | Legendas e rodapé |
-| Proibição | `#FEE2E2` / borda `#DC2626` / texto `#991B1B` | Vetos do slide 16. **Não é mais usado para armadilha** (ver 6.6) |
+| Proibição | `#FEE2E2` / borda `#DC2626` / texto `#991B1B` | Vetos do slide 17. **Não é mais usado para armadilha** (ver 6.6) |
 | Marcador pendente | `#FEF3C7` / borda tracejada `#D97706` / texto `#92400E` | (não há marcador em aberto no deck) |
 
 Gradiente escuro (capa, divisórias, frases de impacto, encerramento):
@@ -161,7 +161,7 @@ em conteúdo (só no rodapé, e ainda assim com `px` explícito).
       <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
       <!-- linha de fonte, quando o slide exibir números (ver 5.4) -->
     </div>
-    <p class="text-gray-300 font-mono" style="font-size:18px;">NN / 16</p>
+    <p class="text-gray-300 font-mono" style="font-size:18px;">NN / 17</p>
   </div>
 </div>
 ```
@@ -173,14 +173,14 @@ Se o título for longo, reduza para 44px em vez de quebrar o leiaute.
 | Slides | Tag | Ícone |
 |---|---|---|
 | 2 | `ABERTURA` | `fa-clock-rotate-left` |
-| 6 e 8 a 15 | `DADOS ABERTOS` | `fa-plug` |
+| 6 e 8 a 16 | `DADOS ABERTOS` | `fa-plug` |
 
-Slides sem tag: 1, 3, 4, 5, 7 e 16 (capa, os dois de campo de instrução, divisória,
+Slides sem tag: 1, 3, 4, 5, 7 e 17 (capa, os dois de campo de instrução, divisória,
 frase L2 e encerramento).
 
 ### 5.2 Numeração no rodapé
 
-- Slides 2 a 16: `NN / 16` (sem zero à esquerda; use `7 / 16`, `12 / 16`).
+- Slides 2 a 17: `NN / 17` (sem zero à esquerda; use `7 / 17`, `12 / 17`).
 - Capa (slide 1): sem numeração.
 
 ### 5.3 Rodapé de slides escuros
@@ -201,30 +201,32 @@ duas datas coincidem, **a linha de fonte não repete a data de captura**: basta 
 consulta. A exceção é o acervo de atos publicados, que é cópia manual e está congelado em
 **27/08/2026**: ali a data de cópia entra na linha de fonte, porque ela é o teto da contagem.
 
+- Acervo do conector (slide 9), **única linha sem data**, porque o slide é atemporal:
+  `Fonte: medição do acervo do conector MCP independente, sobre dado público servido sem credencial, na forma da Lei 12.527/2011. Tamanho em disco, na base do conector.`
 - Movimentação portuária (slide 6):
   `Fonte: painel Estatístico Aquaviário da ANTAQ, quadro de movimentação portuária por tipo de navegação, via conector MCP independente, em 22 de setembro de 2026.`
-- Contratos de porto público (slide 9):
+- Contratos de porto público (slide 10):
   `Fonte: painel Portos Públicos da ANTAQ, quadro "Portos Públicos" (559 contratos), via conector MCP independente, em 22 de setembro de 2026. Vencimento pela data de expiração do último instrumento.`
-- Outorgas, frota e fiscalização por CNPJ (slide 10):
+- Outorgas, frota e fiscalização por CNPJ (slide 11):
   `Fonte: painéis Outorgas de Navegação (quadros de outorgas e de frota) e Fiscalização da ANTAQ, via conector MCP independente, em 22 de setembro de 2026. Vigência pela data de extinção.`
-- Atos publicados (slide 11), única linha que leva data de cópia:
+- Atos publicados (slide 12), única linha que leva data de cópia:
   `Fonte: atos publicados pela ANTAQ (acervo da Biblioteca, copiado até 27/08/2026), espécie Acórdão, busca por "sobre-estadia" em cada ano, via conector MCP independente, em 22 de setembro de 2026.`
-- Tarifas-teto (slide 12):
+- Tarifas-teto (slide 13):
   `Fonte: painel Administração Portuária da ANTAQ, quadros de tarifas-teto e de tarifas homologadas, via conector MCP independente, em 22 de setembro de 2026. Teto aprovado não é preço cobrado.`
-- Painel de Fiscalização (slide 13):
-  `Fonte: painel Fiscalização da ANTAQ, quadro "Base de Dados", via conector MCP independente, em 22 de setembro de 2026.` No slide 13, acrescentar: `A soma é piso: o painel conta R$ 110,3 milhões.`
-- Demonstração ao vivo, art. 34 da Res. 62/2021 (slide 14), única que cita dois quadros:
+- Painel de Fiscalização (slide 14):
+  `Fonte: painel Fiscalização da ANTAQ, quadro "Base de Dados", via conector MCP independente, em 22 de setembro de 2026.` No slide 14, acrescentar: `A soma é piso: o painel conta R$ 110,3 milhões.`
+- Demonstração ao vivo, art. 34 da Res. 62/2021 (slide 15), única que cita dois quadros:
   `Fonte: painel Fiscalização da ANTAQ, quadros "Base de Dados" e "Objeto das Normas", via conector MCP independente, em 22 de setembro de 2026. Só processo julgado; o que tramita fica fora.`
 - Recapitulação do encontro anterior (slide 2):
   `Fonte: apresentação "IA no dia a dia da Fiscalização", SFC, 21 de setembro de 2026 (antaq.github.io/apresentacao_ia_sfc).`
 - Campo de instrução (slide 3): `Fonte: instrução sugerida no roteiro desta apresentação (GPF e GRAT/SFC), para uso na demonstração.`
 - Instruções da conta (slide 4): `Fonte: campo Instruções para o Claude, em Configurações > Conta, na conta pessoal do apresentador, em 22 de setembro de 2026. Exemplo de uso, não é recomendação da Agência.`
 - Roteiro (slide 5): `Fonte: tempo estimado no roteiro desta apresentação (GPF e GRAT/SFC).`
-- **Sem linha de fonte:** slides 1, 7, 8, 15 e 16, porque não exibem número.
+- **Sem linha de fonte:** slides 1, 7, 8, 16 e 17, porque não exibem número.
 
-**Endereço do conector (slides 8 e 16):** `https://antaq.dadosabertos.dev/mcp`. Aparece
+**Endereço do conector (slides 8 e 17):** `https://antaq.dadosabertos.dev/mcp`. Aparece
 projetado nos dois slides, em `'Courier New', monospace`, sempre com o `https://`, porque a
-plateia copia isso para a configuração da própria ferramenta. No slide 16 ele é um cartão
+plateia copia isso para a configuração da própria ferramenta. No slide 17 ele é um cartão
 **sem link**: clicar abre a resposta crua do servidor no projetor, e não uma página.
 Endereço trocado em 21/09/2026; se mudar de novo, os dois slides mudam juntos.
 
@@ -236,7 +238,7 @@ Endereço trocado em 21/09/2026; se mudar de novo, os dois slides mudam juntos.
 >   "sem custo de contratação" nem atribuição a GPF, GRAT ou SFC;
 > - nas linhas de fonte, a forma canônica é **`via conector MCP independente`**;
 > - o domínio `dadosabertos.dev` **não** é domínio da Agência, e isso é dito junto com o
->   endereço, nos slides 8 e 16. No slide 14 ele reaparece sem o `https://`, como passo da
+>   endereço, nos slides 8 e 17. No slide 15 ele reaparece sem o `https://`, como passo da
 >   demonstração, e não como cartão para copiar.
 >
 > Corrigido em 21/09/2026: até então o slide 8 dizia "feito dentro da própria Superintendência"
@@ -301,14 +303,14 @@ Barra de título do bloco (opcional): faixa `#1E293B` com três círculos e o no
 
 ### 6.6 Faixa vermelha de armadilha: aposentada neste deck
 
-Até 22/09/2026 os slides 9 a 13 traziam a armadilha numa faixa vermelha
+Até 22/09/2026 os cinco slides de caso (hoje 10 a 14) traziam a armadilha numa faixa vermelha
 (`#FEF2F2` / borda `#DC2626`), rotulada "A ARMADILHA" ou "ANTES DE CONCLUIR". **Elas
 foram removidas**: a armadilha passou a ser dita em voz alta, e está escrita na nota do
 apresentador de cada slide. O motivo é de leitura: cinco faixas vermelhas seguidas
 treinavam a plateia a pular o vermelho, e o alerta perdia o efeito justo onde ele importa.
 
 Quando a leitura precisa ficar em tela, use a **faixa escura** (fundo `#003366`, ícone
-`#FFD700`), como nos slides 13 e 14: ela sustenta duas linhas, a manchete em Montserrat
+`#FFD700`), como nos slides 9, 14 e 15: ela sustenta duas linhas, a manchete em Montserrat
 800 e a explicação em `#BAE6FD`.
 
 O **leiaute L7 (captura de tela)** também segue sem uso: o deck foi entregue sem capturas,
@@ -327,7 +329,7 @@ marcador hoje:** todos foram preenchidos ou removidos em 5 de agosto de 2026.
 Em fundo escuro: `background:rgba(253,224,71,.14); color:#FDE68A; border-color:#FDE68A;`.
 Marcador dentro de linha de rodapé pode usar 19px.
 
-### 6.8 Faixa-âncora (slides 8 e 15)
+### 6.8 Faixa-âncora (slides 8 e 16)
 
 ```html
 <div style="margin-top:34px;background:linear-gradient(90deg,#002244 0%,#004488 100%);
@@ -352,7 +354,7 @@ com rótulo em caixa alta 26px acima e explicação 26px abaixo.
   letter-spacing:.06em;">Passo 1</span>
 ```
 
-### 6.11 Item de proibição (slide 16)
+### 6.11 Item de proibição (slide 17)
 
 ```html
 <div style="background:#FEF2F2;border:3px solid #FCA5A5;border-left:10px solid #DC2626;
@@ -361,7 +363,7 @@ com rótulo em caixa alta 26px acima e explicação 26px abaixo.
   <p style="font-size:30px;color:#7F1D1D;font-weight:600;line-height:1.3;">Texto do veto.</p>
 </div>
 ```
-Slides 4, 7, 8, 14 e 16 serão fotografados pela plateia: **contraste alto, texto grande,
+Slides 4, 7, 8, 9, 15 e 17 serão fotografados pela plateia: **contraste alto, texto grande,
 sem elementos decorativos que roubem espaço**.
 
 ### 6.12 Campo de instrução (slides 3 e 4)
@@ -402,6 +404,41 @@ Regras:
 - Fecho em Montserrat 800, 40px, `#FFD700`, precedido de barra dourada de 90x8px.
 - Rótulo acima da caixa (a "sobrancelha"): barra dourada 72x4 e texto 22px `#BFDBFE`,
   caixa alta, `letter-spacing:.3em`.
+
+### 6.13 Tabela de acervo (slide 9)
+
+Grade de seis colunas em larguras fixas, com a coluna de volume elástica. **Larguras
+medidas, não estimadas:** o conteúdo do slide tem 1712px (o `px-16` do Tailwind vale
+104px de cada lado, porque a raiz é 26px), e cada célula tem de caber em **uma linha**,
+senão as alturas ficam desiguais e a leitura por coluna se perde.
+
+```css
+.tab { border:2px solid #E2E8F0; border-radius:14px; overflow:hidden; flex-shrink:0; }
+.t-cab, .t-linha { display:grid;
+  grid-template-columns:330px minmax(0,1fr) 175px 210px 350px 180px; align-items:center; }
+.t-cab { background:#003366; }
+.t-cab p { font-family:'Montserrat',sans-serif; font-weight:700; font-size:20px; color:#FFFFFF;
+           text-transform:uppercase; letter-spacing:.08em; padding:14px 24px; }
+.t-linha { border-top:1px solid #E8EDF3; }
+.t-linha:nth-child(odd) { background:#F8FAFC; }
+.t-linha p { padding:17px 22px; font-size:22px; color:#374151; line-height:1.28; }
+.t-nome { font-family:'Montserrat',sans-serif; font-weight:800; font-size:24px !important; color:#003366 !important; }
+.t-vol b { font-family:'Montserrat',sans-serif; font-weight:800; color:#003366; }
+.t-tam { font-family:'Montserrat',sans-serif; font-weight:800; font-size:23px !important;
+         color:#003366 !important; white-space:nowrap; }
+.t-cad { font-family:'Montserrat',sans-serif; font-weight:700; font-size:20px !important;
+         color:#0066CC !important; text-transform:uppercase; letter-spacing:.06em; }
+```
+
+Regras:
+
+- **O cabeçalho manda na largura mínima.** `CADÊNCIA` pede 173px com o `padding` de 24px,
+  e `TAMANHO` pede 170px: uma coluna de 150px corta a palavra sem avisar, porque a tabela
+  tem `overflow:hidden`.
+- Tamanho em disco sempre com uma casa decimal em GB (`13,4 GB`), e em MB quando fica
+  abaixo de 0,1 GB (`16 MB`), para não projetar `0,02 GB`.
+- Depois de mexer em texto de célula, medir de novo: `[...document.querySelectorAll('.t-linha')]
+  .map(r => r.getBoundingClientRect().height)` tem de devolver o mesmo número quatro vezes.
 
 ---
 
@@ -482,14 +519,15 @@ Se a especificação não trouxer NOTAS para o slide, escreva uma nota curta e �
 | 6 | L6+L4 | A mesma pergunta, com e sem conector | DADOS ABERTOS | 29 |
 | 7 | L2 | Declaração: transparência ativa se mede em esforço | sem tag | 36 |
 | 8 | L3 | O conector não é um sistema da ANTAQ, endereço e faixa-âncora | DADOS ABERTOS | 30 |
-| 9 | L6+6.1 | Caso 1: onze contratos vencem até dezembro | DADOS ABERTOS | 31 |
-| 10 | L6+L8 | Caso 2: a empresa inteira em uma pergunta | DADOS ABERTOS | 33 |
-| 11 | L6+L8 | Caso 3: sobre-estadia, de 14 para 72 acórdãos por ano | DADOS ABERTOS | novo |
-| 12 | L6+L8 | Caso 4: onze tetos na forma genérica, um na específica | DADOS ABERTOS | novo |
-| 13 | L6+6.1 | Caso 5: a maior carteira não é a de maior valor | DADOS ABERTOS | novo |
-| 14 | L6+L4 | Demonstração ao vivo: o panorama do art. 34 da Res. 62/2021, em PDF | DADOS ABERTOS | novo |
-| 15 | L6+6.8 | Traga a pergunta da sua unidade, com faixa-âncora | DADOS ABERTOS | 37 |
-| 16 | L11 | Contato, material, endereço do conector e código de leitura óptica | sem tag | 41 |
+| 9 | L6+6.13 | Quatro acervos públicos, uma consulta só (o que há do outro lado do endereço) | DADOS ABERTOS | novo |
+| 10 | L6+6.1 | Caso 1: onze contratos vencem até dezembro | DADOS ABERTOS | 31 |
+| 11 | L6+L8 | Caso 2: a empresa inteira em uma pergunta | DADOS ABERTOS | 33 |
+| 12 | L6+L8 | Caso 3: sobre-estadia, de 14 para 72 acórdãos por ano | DADOS ABERTOS | novo |
+| 13 | L6+L8 | Caso 4: onze tetos na forma genérica, um na específica | DADOS ABERTOS | novo |
+| 14 | L6+6.1 | Caso 5: a maior carteira não é a de maior valor | DADOS ABERTOS | novo |
+| 15 | L6+L4 | Demonstração ao vivo: o panorama do art. 34 da Res. 62/2021, em PDF | DADOS ABERTOS | novo |
+| 16 | L6+6.8 | Traga a pergunta da sua unidade, com faixa-âncora | DADOS ABERTOS | 37 |
+| 17 | L11 | Contato, material, endereço do conector e código de leitura óptica | sem tag | 41 |
 
 A coluna "Vinha de" traz a numeração no deck de 21/09/2026. Ela existe para que quem
 comparar os dois materiais encontre o slide equivalente sem procurar.

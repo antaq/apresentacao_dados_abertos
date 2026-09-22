@@ -4,11 +4,11 @@ Situação em: **22/09/2026, manhã** · Apresentação marcada para **22/09/202
 
 > Não há marcador `[CONFIRMAR]`, `[DATA]` ou `[CAPTURA]` em aberto no deck. A página já está
 > publicada em **https://antaq.github.io/apresentacao_dados_abertos/**, e o código de leitura
-> óptica do slide 16 aponta para ela. A reconferência dos números **foi feita em 22/09/2026**
+> óptica do slide 17 aponta para ela. A reconferência dos números **foi feita em 22/09/2026**
 > (seção 3) e o bloco central foi refeito pela segunda vez, com cinco casos em vez de quatro
-> (seção 4, item 7). O deck passou a ter **16 slides**: entraram a demonstração ao vivo
-> (hoje slide 14, seção 4, item 10) e os dois slides de campo de instrução, 3 e 4
-> (seção 4, item 12). O que sobra é uma fala que não está em tela nenhuma
+> (seção 4, item 7). O deck passou a ter **17 slides**: entraram a demonstração ao vivo
+> (hoje slide 15, seção 4, item 10), os dois slides de campo de instrução, 3 e 4
+> (seção 4, item 12) e o slide de acervo, hoje o 9 (item 17). O que sobra é uma fala que não está em tela nenhuma
 > (seção 2) e o acervo de atos publicados, que **não** foi atualizado e continua congelado
 > em 27/08/2026.
 
@@ -31,7 +31,7 @@ Situação em: **22/09/2026, manhã** · Apresentação marcada para **22/09/202
 | **2** | Que quem não esteve no dia 21 não fica para trás, e que o material completo daquele dia está no endereço da linha de fonte. |
 
 Resolvido em 21/09/2026: a oferta de montar a primeira consulta junto com a unidade que
-pedir **passou a estar projetada**, na caixa azul-clara do slide 15. O deck não termina
+pedir **passou a estar projetada**, na caixa azul-clara do slide 16. O deck não termina
 mais sem próximo passo em tela.
 
 ---
@@ -40,13 +40,13 @@ mais sem próximo passo em tela.
 
 | Onde | O quê |
 |---|---|
-| **Slide 8** | O conector é **projeto pessoal do apresentador**, com recurso próprio e sem fins lucrativos, e o slide declara isso em tela, junto com as quatro fontes que ele consome. Confirmar que a declaração está redigida como você quer dizer em voz alta, porque ela é lida por colegas num evento oficial da Superintendência e é ela que separa o método da pessoa. |
-| **Deck inteiro** | ✅ Reconferido em **22/09/2026**, sobre a captura dos painéis da madrugada do mesmo dia (Fiscalização 02:29, Administração Portuária 02:26, Estatístico Aquaviário 02:51, Portos Públicos 02:25). Os valores que mudaram foram trocados no slide: frota da empresa do caso 2 de 57 para **61**, campo de outorga de 3.169 para **3.185** linhas e de 1.350 para **1.362** extintas, e os arquivados sem irregularidade de 11.876 para **11.926** (slides 10 e 13 na numeração de hoje). Os demais se mantiveram. Como a captura e a consulta são do mesmo dia, a **cláusula de captura saiu de todas as linhas de fonte**. |
-| **Slide 11** | ⚠️ O acervo de atos publicados **não foi atualizado**: o conector responde `copiado_em: 2026-08-27`. A linha de fonte voltou a citar a cópia (`copiado até 27/08/2026`) e a faixa vermelha passou a dizer que a contagem de 2026 se encerra onde a cópia termina, porque sem isso o slide afirmaria algo falso. Se o acervo for recarregado antes das 10h20, refazer a busca por "sobre-estadia" em 2026 (hoje **42**) e o total de **21.091 atos**, e reavaliar se a data ainda precisa aparecer. |
-| **Nomes de empresa** | Dois números do deck têm nome de empresa por trás que **não é projetado**: os onze contratos do caso 1 (slide 9) e a carteira por unidade do caso 5 (slide 13), em que o maior autuado não aparece. Se a sala perguntar, a resposta vem da consulta ao vivo, não do slide. |
-| **Slide 14** | Os números do panorama do art. 34 foram lidos em 22/09/2026: **44 linhas julgadas, 42 processos, 40 empresas, R$ 97.925,25 em multa**, com 6 multas, 19 advertências e 19 arquivamentos. A base é recapturada; se a consulta ao vivo divergir, o procedimento é dizer em voz alta que divergiu e seguir pelos números do slide, não corrigir o slide no palco. |
-| **Slide 13** | A soma de processos distintos por unidade dá **17.568**, um a mais do que os **17.567** distintos da base inteira: há um processo registrado em duas unidades. O slide projeta só o total da base, e por isso a coluna não é somável em tela. |
-| **Demonstração ao vivo** | O conector `dados-antaq` atende em `https://antaq.dadosabertos.dev/mcp` e precisa estar acessível da máquina da apresentação, inclusive pela rede da Agência. Confirmar isso antes de subir ao palco, porque o endereço está projetado nos slides 8, 14 e 16 e a sala vai tentar. **O slide 14 é o único que depende da rede**: se ela cair, o procedimento é narrar o que está projetado, e os números da coluna esquerda são os que a consulta devolve. |
+| **Slide 8** | O conector é **projeto pessoal do apresentador**, com recurso próprio e sem fins lucrativos, e o slide declara isso em tela. As quatro fontes que ele consome saíram dali e passaram a ocupar o slide 9 inteiro. Confirmar que a declaração está redigida como você quer dizer em voz alta, porque ela é lida por colegas num evento oficial da Superintendência e é ela que separa o método da pessoa. |
+| **Deck inteiro** | ✅ Reconferido em **22/09/2026**, sobre a captura dos painéis da madrugada do mesmo dia (Fiscalização 02:29, Administração Portuária 02:26, Estatístico Aquaviário 02:51, Portos Públicos 02:25). Os valores que mudaram foram trocados no slide: frota da empresa do caso 2 de 57 para **61**, campo de outorga de 3.169 para **3.185** linhas e de 1.350 para **1.362** extintas, e os arquivados sem irregularidade de 11.876 para **11.926** (slides 11 e 14 na numeração de hoje). Os demais se mantiveram. Como a captura e a consulta são do mesmo dia, a **cláusula de captura saiu de todas as linhas de fonte**. |
+| **Slide 12** | ⚠️ O acervo de atos publicados **não foi atualizado**: o conector responde `copiado_em: 2026-08-27`. A linha de fonte voltou a citar a cópia (`copiado até 27/08/2026`) e a faixa vermelha passou a dizer que a contagem de 2026 se encerra onde a cópia termina, porque sem isso o slide afirmaria algo falso. Se o acervo for recarregado antes das 10h20, refazer a busca por "sobre-estadia" em 2026 (hoje **42**) e o total de **21.091 atos**, e reavaliar se a data ainda precisa aparecer. |
+| **Nomes de empresa** | Dois números do deck têm nome de empresa por trás que **não é projetado**: os onze contratos do caso 1 (slide 10) e a carteira por unidade do caso 5 (slide 14), em que o maior autuado não aparece. Se a sala perguntar, a resposta vem da consulta ao vivo, não do slide. |
+| **Slide 15** | Os números do panorama do art. 34 foram lidos em 22/09/2026: **44 linhas julgadas, 42 processos, 40 empresas, R$ 97.925,25 em multa**, com 6 multas, 19 advertências e 19 arquivamentos. A base é recapturada; se a consulta ao vivo divergir, o procedimento é dizer em voz alta que divergiu e seguir pelos números do slide, não corrigir o slide no palco. |
+| **Slide 14** | A soma de processos distintos por unidade dá **17.568**, um a mais do que os **17.567** distintos da base inteira: há um processo registrado em duas unidades. O slide projeta só o total da base, e por isso a coluna não é somável em tela. |
+| **Demonstração ao vivo** | O conector `dados-antaq` atende em `https://antaq.dadosabertos.dev/mcp` e precisa estar acessível da máquina da apresentação, inclusive pela rede da Agência. Confirmar isso antes de subir ao palco, porque o endereço está projetado nos slides 8, 15 e 17 e a sala vai tentar. **O slide 15 é o único que depende da rede**: se ela cair, o procedimento é narrar o que está projetado, e os números da coluna esquerda são os que a consulta devolve. |
 
 ---
 
@@ -156,6 +156,11 @@ mais sem próximo passo em tela.
    tratamento e cruzamento não completa a transparência ativa; o que a completa é o menor
    esforço até o melhor resultado.
 
+14. **O slide de encerramento passou a trazer um nome só em 22/09/2026.** A pedido do
+   apresentador, ficou apenas Pedro Henrique Soares no bloco de contato. O `README.md`
+   ainda descreve a apresentação como conjunta das duas gerências: se a autoria mudou de
+   verdade, essa linha também precisa mudar.
+
 15. **O slide de impacto saiu do fim do bloco e virou declaração de abertura, em
    22/09/2026.** Ele era a conclusão dos cinco casos; passou a ser o **slide 7**, entre a
    comparação com e sem conector e a declaração de interesse. A ordem passou a ser: por que
@@ -169,7 +174,31 @@ mais sem próximo passo em tela.
    mantido em linha inteira embaixo, que é o que a plateia fotografa. Ganharam corpo: texto
    de 28 para 30px, o cartão de ênfase para 34px e o endereço para 52px.
 
-14. **O slide de encerramento passou a trazer um nome só em 22/09/2026.** A pedido do
-   apresentador, ficou apenas Pedro Henrique Soares no bloco de contato. O `README.md`
-   ainda descreve a apresentação como conjunta das duas gerências: se a autoria mudou de
-   verdade, essa linha também precisa mudar.
+17. **O acervo do conector virou slide próprio em 22/09/2026, e o deck foi para 17
+   slides.** Os quatro sinetes de fonte que ficavam sob um cartão do slide do conector
+   saíram, e o conteúdo deles virou o **slide 9**: quatro acervos públicos com volume,
+   tamanho em disco, período, origem e cadência. Os antigos slides 9 a 16 viraram 10 a 17.
+   **Três acervos do conector ficaram de fora do slide de propósito** (cadastro de
+   embarcações, vínculo de outorga com travessia e instrumento de outorga): são base
+   interna, e projá-los contradiria o que o slide 8 declara em tela, que o conector consome
+   apenas dado publicado. O total de 142,9 milhões de linhas não depende deles.
+   O slide também foi reescrito para público não técnico: saíram interface, protocolo e
+   endereço de hospedagem, a pedido do apresentador.
+
+18. **O slide de acervo ficou sem data, e os tamanhos entraram em 22/09/2026.** A coluna de
+   tamanho em disco foi medida na base do conector (`pg_total_relation_size` por tabela):
+   painéis 0,7 GB, comércio exterior 13,4 GB, publicações 0,8 GB e normas 16 MB, com 15 GB
+   no total do acervo. A data de medição saiu do subtítulo e da linha de fonte, a pedido do
+   apresentador, para que o slide não envelheça: o acervo cresce e a ordem de grandeza é o
+   que importa na sala. A cadência das publicações e das normas passou de "manual" para
+   **semanal**, também a pedido do apresentador, que vai passar a atualizar nesse ritmo.
+   **Enquanto a atualização semanal não começar, o slide promete mais do que entrega.**
+
+19. **A capa deixou de prometer armadilha em 22/09/2026.** O subtítulo terminava em "e a
+   armadilha de cada resposta", que sobrou de quando os casos traziam faixa vermelha
+   (item 9). Passou a "e o que cada resposta permite decidir". A mesma troca foi feita nas
+   metaetiquetas Open Graph do `index.html` e no molde `Imagens/og-fonte.html`, que ainda
+   dizia "Quatro perguntas" quando já são cinco. A imagem `Imagens/og-capa.jpg` foi gerada
+   de novo (1200x630, 123 KB) e já traz o texto novo. A prévia fica em cache no WhatsApp e
+   no Teams por alguns dias: quem colou o endereço antes de hoje ainda vai ver o cartão
+   antigo.
