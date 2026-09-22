@@ -20,10 +20,10 @@ Apresentação conjunta de duas gerências da SFC:
 ## Sobre
 
 - **Subtítulo:** como a ferramenta alcança o dado oficial da Agência, o que ela acha em segundos, e o que o dado não diz
-- **Duração prevista:** 30 minutos (18 de exposição, conforme o chip de tempo da divisória, e o restante em demonstração ao vivo e perguntas)
+- **Duração prevista:** 30 minutos (24 de exposição e demonstração, conforme o chip de tempo da divisória, e o restante em perguntas)
 - **Plateia:** toda a SFC - gerências da sede (GCOR, GPF, GRAT) e Gerências e Unidades Regionais
 - **Data:** 22 de setembro de 2026, às 10h20
-- **Formato:** 13 slides em sequência única, em HTML 1920×1080
+- **Formato:** 14 slides em sequência única, em HTML 1920×1080
 
 ## Como usar
 
@@ -53,8 +53,8 @@ python3 -m http.server 8130
 | Slides | Bloco | Tempo |
 |---|---|---|
 | 1 a 2 | Abertura e recapitulação | 3 min |
-| 3 a 12 | Bloco 1 · Cinco perguntas da rotina | 20 min |
-| 13 | Encerramento | perguntas |
+| 3 a 13 | Bloco 1 · Cinco perguntas e uma ao vivo | 24 min |
+| 14 | Encerramento | perguntas |
 
 ## Os cinco casos
 
@@ -67,14 +67,26 @@ python3 -m http.server 8130
 | 10 | A carteira da unidade | As 22 unidades lado a lado, e por que a maior carteira não é a de maior valor |
 
 Os cinco seguem o mesmo molde: a pergunta como se digita, a resposta com número e fonte,
-e a armadilha que o dado esconde.
+e a armadilha que o dado esconde. Nenhum deles traz a armadilha em tela: ela é dita em voz
+alta, e está escrita na nota do apresentador de cada slide.
+
+## A demonstração ao vivo
+
+O **slide 12** é o único que depende da rede. Ele projeta a pergunta a ser colada
+(`"Preciso de um panorama, em PDF, sobre os autos de infração lavrados sobre o art. 34 da
+Resolução 62/2021"`), os números que a consulta deve devolver (44 linhas julgadas, 42
+processos distintos, 6 terminando em multa) e o passo a passo para reproduzir. Se a rede
+cair, o slide se narra sozinho: os números projetados são os mesmos que a consulta devolve.
+
+O **slide 13** fecha o bloco com quatro perguntas reais, com porto, município e número de
+infração escritos em tela, para a plateia copiar e trocar só o nome.
 
 ## Arquivos
 
 | Arquivo | Conteúdo |
 |---|---|
 | [`index.html`](index.html) | Navegador dos slides (escala, teclado, notas, progresso) |
-| `slide-01.html` … `slide-13.html` | Os 13 slides |
+| `slide-01.html` … `slide-14.html` | Os 14 slides |
 | [`KIT.md`](KIT.md) | Sistema visual (paleta, tipografia, componentes, mapa dos slides) |
 | `Imagens/og-capa.jpg` | Cartão 1200x630 que aparece ao compartilhar o endereço |
 | `Imagens/og-fonte.html` | Página que gera o cartão. Não faz parte da apresentação |

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Bloco 1 · Cinco perguntas da rotina</title>
+<title>Bloco 1 · Cinco perguntas e uma ao vivo</title>
 <link rel="icon" href="favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
@@ -30,12 +30,16 @@
   .module-num { font-family:'Montserrat', sans-serif; font-weight:900; line-height:0.9;
     font-size:188px; letter-spacing:-4px; color:#FFD700; text-shadow:0 8px 24px rgba(0,0,0,0.35); }
 
-  .chip { display:flex; flex-direction:column; align-items:flex-start; gap:15px;
+  .chip { display:flex; flex-direction:column; align-items:flex-start; gap:14px;
     background:rgba(255,255,255,0.07);
-    border:1px solid rgba(255,255,255,0.14); border-radius:16px; padding:22px 22px; }
+    border:1px solid rgba(255,255,255,0.14); border-radius:16px; padding:20px 20px; }
+  .chip-vivo { background:rgba(255,215,0,0.10); border-color:rgba(255,215,0,0.40); }
+  .chip-vivo .chip-icon { background:rgba(255,215,0,0.22); color:#FFD700; }
+  .chip-sel { display:block; font-family:'Montserrat',sans-serif; font-weight:800; font-size:17px;
+    color:#FFD700; text-transform:uppercase; letter-spacing:.12em; margin-top:7px; }
   .chip-icon { width:60px; height:60px; border-radius:14px; flex-shrink:0; display:flex;
     align-items:center; justify-content:center; font-size:26px; background:rgba(0,102,204,0.30); color:#7CC0FF; }
-  .chip p { font-family:'Montserrat',sans-serif; font-weight:600; color:#fff; font-size:22px; line-height:1.25; }
+  .chip p { font-family:'Montserrat',sans-serif; font-weight:600; color:#fff; font-size:21px; line-height:1.25; }
 
   .pilula-tempo { display:inline-flex; align-items:center; gap:16px;
     border:2px solid rgba(255,215,0,.55);
@@ -86,15 +90,15 @@
       <span class="module-num">01</span>
       <div class="pb-3" style="border-left:5px solid rgba(255,215,0,0.55); padding-left:36px;">
         <h1 class="font-montserrat font-black text-white leading-tight" style="font-size:78px; letter-spacing:-1.5px;">
-          Cinco perguntas da rotina
+          Cinco perguntas e uma ao vivo
         </h1>
         <p class="font-montserrat font-light mt-4" style="font-size:30px; color:#DBEAFE; max-width:1250px; line-height:1.4;">
-          Cada caso mostra a pergunta como se digita, o que volta em segundos e a armadilha que o dado esconde.
+          Cada caso traz a pergunta como se digita, o que volta em segundos e como ler o número sem errar. A última roda na hora.
         </p>
       </div>
     </div>
 
-    <div class="grid grid-cols-5 gap-5" style="max-width:1660px;">
+    <div class="grid grid-cols-6 gap-4" style="max-width:1680px;">
       <div class="chip">
         <div class="chip-icon"><i class="fas fa-file-contract"></i></div>
         <p>Contratos que vencem</p>
@@ -115,12 +119,16 @@
         <div class="chip-icon"><i class="fas fa-sitemap"></i></div>
         <p>A carteira da unidade</p>
       </div>
+      <div class="chip chip-vivo">
+        <div class="chip-icon"><i class="fas fa-file-pdf"></i></div>
+        <p>Um artigo em PDF<span class="chip-sel">ao vivo</span></p>
+      </div>
     </div>
 
     <div class="mt-10">
       <span class="pilula-tempo">
         <i class="fas fa-clock" style="color:#FFD700; font-size:30px;"></i>
-        <span class="font-montserrat" style="font-size:30px; font-weight:800; color:#fff;">20 minutos</span>
+        <span class="font-montserrat" style="font-size:30px; font-weight:800; color:#fff;">24 minutos</span>
       </span>
     </div>
 
@@ -132,7 +140,7 @@
       <p class="font-montserrat" style="font-size:18px; color:#BFDBFE; opacity:.75;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
       <p style="font-size:17px; color:#BFDBFE; opacity:.6;">Fonte: tempo estimado no roteiro desta apresentação (GPF e GRAT/SFC).</p>
     </div>
-    <p class="font-mono" style="font-size:18px; color:#BFDBFE; opacity:.75;">3 / 13</p>
+    <p class="font-mono" style="font-size:18px; color:#BFDBFE; opacity:.75;">3 / 14</p>
   </div>
 </div>
 

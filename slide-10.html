@@ -25,13 +25,6 @@
   .instrucao i { color:#7CC0FF; font-size:26px; flex-shrink:0; }
   .instrucao code { font-family:'Courier New', monospace; font-size:27px; color:#E2E8F0; line-height:1.35; }
 
-  /* Faixa de armadilha (KIT 6.6) */
-  .faixa { background:#FEF2F2; border:3px solid #FCA5A5; border-left:12px solid #DC2626;
-    border-radius:0 16px 16px 0; padding:18px 32px; display:flex; align-items:center; gap:22px; }
-  .faixa-rotulo { font-family:'Montserrat',sans-serif; font-weight:800; font-size:19px; color:#B91C1C;
-    text-transform:uppercase; letter-spacing:.06em; line-height:1.2; flex-shrink:0; white-space:nowrap;
-    border-right:2px solid #FCA5A5; padding-right:22px; }
-  .faixa p { font-size:23px; color:#7F1D1D; line-height:1.32; font-weight:600; }
 
   .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
 
@@ -55,10 +48,11 @@
   .u-cab .c-val { width:138px; text-align:right; flex-shrink:0; }
   .u-cab .c-sigla { flex:1; }
 
-  .resumo { display:flex; align-items:center; gap:18px; padding:15px 26px; border-radius:12px;
+  .resumo { display:flex; align-items:center; gap:20px; padding:18px 28px; border-radius:12px;
             background:#003366; color:#FFFFFF; }
-  .resumo i { font-size:26px; color:#FFD700; flex-shrink:0; }
-  .resumo p { font-family:'Montserrat',sans-serif; font-weight:800; font-size:23px; line-height:1.25; }
+  .resumo i { font-size:30px; color:#FFD700; flex-shrink:0; }
+  .resumo-topo { font-family:'Montserrat',sans-serif; font-weight:800; font-size:24px; line-height:1.25; }
+  .resumo-leitura { font-size:21px; line-height:1.32; color:#BAE6FD; margin-top:8px; }
   .nq { white-space:nowrap; }
 </style>
 </head>
@@ -89,7 +83,7 @@
 
     <div class="instrucao">
       <i class="fas fa-terminal"></i>
-      <code>"Quantas infrações julgadas e quanto de multa tem cada unidade regional?"</code>
+      <code>Quantas infrações julgadas e quanto de multa tem cada unidade regional?</code>
     </div>
 
     <div class="grade">
@@ -125,14 +119,11 @@
 
     <div class="resumo">
       <i class="fas fa-layer-group"></i>
-      <p>22 unidades &middot; 19.771 linhas &middot; 17.567 processos distintos &middot; R$ 106,4 milhões em multas</p>
-    </div>
-
-    <div class="faixa">
-      <p class="faixa-rotulo">A armadilha</p>
-      <p>Uma linha é uma infração, não um processo: contar linhas infla a carteira em 12,5%. E 11.926
-      delas trazem hífen, que é arquivado sem irregularidade, mais 4.525 vazias, que é decisão sem
-      multa. Nenhuma das duas é multa de zero real.</p>
+      <div>
+        <p class="resumo-topo">22 unidades &middot; 19.771 linhas &middot; 17.567 processos distintos &middot; R$ 106,4 milhões em multas</p>
+        <p class="resumo-leitura">Uma linha é uma infração, não um processo. E 11.926 delas trazem hífen, que é arquivado
+        sem irregularidade, mais 4.525 vazias: nenhuma das duas é multa de zero real.</p>
+      </div>
     </div>
   </div>
 
@@ -142,7 +133,7 @@
       <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
       <p class="text-gray-400" style="font-size:17px;">Fonte: painel Fiscalização da ANTAQ, quadro "Base de Dados", via conector MCP independente, em 22 de setembro de 2026. A soma é piso: o painel conta R$ 110,3 milhões.</p>
     </div>
-    <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">10 / 13</p>
+    <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">10 / 14</p>
   </div>
 
   <div class="bg-marca"><i class="fas fa-sitemap"></i></div>

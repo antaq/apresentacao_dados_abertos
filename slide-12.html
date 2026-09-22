@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Traga a pergunta da sua unidade</title>
+<title>O panorama de um artigo, ao vivo</title>
 <link rel="icon" href="favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
@@ -25,36 +25,47 @@
   .instrucao i { color:#7CC0FF; font-size:26px; flex-shrink:0; }
   .instrucao code { font-family:'Courier New', monospace; font-size:27px; color:#E2E8F0; line-height:1.35; }
 
-  /* Faixa de armadilha (KIT 6.6) */
-  .faixa { background:#FEF2F2; border:3px solid #FCA5A5; border-left:12px solid #DC2626;
-    border-radius:0 16px 16px 0; padding:18px 32px; display:flex; align-items:center; gap:22px; }
-  .faixa-rotulo { font-family:'Montserrat',sans-serif; font-weight:800; font-size:19px; color:#B91C1C;
-    text-transform:uppercase; letter-spacing:.06em; line-height:1.2; flex-shrink:0; white-space:nowrap;
-    border-right:2px solid #FCA5A5; padding-right:22px; }
-  .faixa p { font-size:23px; color:#7F1D1D; line-height:1.32; font-weight:600; }
 
   .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
 
-  .malha { display:grid; grid-template-columns:1fr 1fr; gap:26px; }
-  .cartao-p { background:#F8FAFC; border:2px solid #E2E8F0; border-left:9px solid #0066CC;
-              border-radius:0 16px 16px 0; padding:26px 32px; }
-  .cp-topo { display:flex; align-items:center; gap:14px; }
-  .cp-topo i { font-size:29px; color:#0066CC; flex-shrink:0; width:32px; text-align:center; }
-  .cp-area { font-family:'Montserrat',sans-serif; font-weight:800; font-size:20px; color:#0066CC;
-             text-transform:uppercase; letter-spacing:.11em; }
-  .cp-perg { font-family:'Courier New', monospace; font-size:25px; color:#1F2937; line-height:1.34;
-             margin-top:12px; }
+  .instrucao code { font-size:24px; }
 
-  .oferta { display:flex; align-items:center; gap:22px; background:#F0F9FF; border:3px solid #BAE6FD;
-            border-radius:16px; padding:26px 34px; }
-  .oferta i { font-size:40px; color:#0066CC; flex-shrink:0; }
-  .oferta p { font-size:28px; line-height:1.32; color:#003366; font-weight:600; }
+  .quatro { display:flex; gap:22px; }
+  .q-item { flex:1; background:#F8FAFC; border:2px solid #E2E8F0; border-top:8px solid #0066CC;
+            border-radius:0 0 16px 16px; padding:20px 24px 22px 24px; text-align:center; }
+  .q-forte { background:#F0F9FF; border-color:#BAE6FD; border-top-color:#003366; }
+  .q-num { font-family:'Montserrat',sans-serif; font-weight:900; font-size:62px; color:#003366;
+           line-height:1; letter-spacing:-2.5px; }
+  .q-num-p { font-size:46px; letter-spacing:-1.5px; }
+  .q-rot { font-size:21px; color:#64748B; line-height:1.24; margin-top:10px; }
 
-  .faixa-ancora { background:linear-gradient(90deg,#002244 0%,#004488 100%);
-    border-left:12px solid #FFD700; border-radius:0 14px 14px 0; padding:28px 42px;
-    display:flex; align-items:center; gap:24px; }
-  .faixa-ancora p { color:#FFFFFF; font-size:36px; font-weight:800; line-height:1.2;
-    font-family:'Montserrat', sans-serif; }
+  .tab { border:2px solid #E2E8F0; border-radius:14px; overflow:hidden; }
+  .t-cab { display:flex; align-items:center; gap:18px; background:#F1F5F9; padding:11px 28px;
+           border-bottom:2px solid #E2E8F0; }
+  .t-cab span { font-family:'Montserrat',sans-serif; font-weight:800; font-size:18px; color:#64748B;
+                text-transform:uppercase; letter-spacing:.11em; }
+  .t-linha { display:flex; align-items:center; gap:18px; padding:15px 28px;
+             border-bottom:1px solid #EAEFF5; }
+  .t-linha:last-child { border-bottom:none; }
+  .t-vazio { background:#FAFBFC; }
+  .c-inc { width:150px; flex-shrink:0; font-family:'Montserrat',sans-serif; font-weight:800;
+           font-size:25px; color:#0066CC; white-space:nowrap; }
+  .c-txt { flex:1; font-size:23px; color:#374151; line-height:1.26; }
+  .c-num { width:110px; text-align:right; flex-shrink:0; font-family:'Montserrat',sans-serif;
+           font-weight:800; font-size:27px; color:#1F2937; }
+  .c-val { width:230px; text-align:right; flex-shrink:0; font-family:'Montserrat',sans-serif;
+           font-weight:800; font-size:25px; color:#003366; white-space:nowrap; }
+  .t-vazio .c-inc, .t-vazio .c-txt, .t-vazio .c-num, .t-vazio .c-val { color:#94A3B8; }
+  .t-cab .h-inc { width:150px; flex-shrink:0; }
+  .t-cab .h-txt { flex:1; }
+  .t-cab .h-num { width:110px; text-align:right; flex-shrink:0; }
+  .t-cab .h-val { width:230px; text-align:right; flex-shrink:0; }
+
+  .resumo { display:flex; align-items:flex-start; gap:20px; padding:20px 28px; border-radius:12px;
+            background:#003366; color:#FFFFFF; }
+  .resumo i { font-size:30px; color:#FFD700; flex-shrink:0; margin-top:3px; }
+  .resumo-topo { font-family:'Montserrat',sans-serif; font-weight:800; font-size:25px; line-height:1.25; }
+  .resumo-leitura { font-size:22px; line-height:1.32; color:#BAE6FD; margin-top:8px; }
   .nq { white-space:nowrap; }
 </style>
 </head>
@@ -69,10 +80,10 @@
       <div class="flex items-center gap-3">
         <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
         <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:46px; line-height:1.12; letter-spacing:-0.02em;">
-          Traga a pergunta da sua unidade
+          O panorama de um artigo, ao vivo
         </h1>
       </div>
-      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">Quatro perguntas prontas para adaptar, uma por área</p>
+      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">Demonstração &middot; autos julgados sobre o art. 34 da Resolução 62/2021</p>
     </div>
     <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
       <i class="fas fa-plug" style="font-size:26px;"></i>
@@ -81,36 +92,55 @@
   </div>
 
   <!-- Conteúdo -->
-  <div class="flex-1 flex flex-col justify-center px-16 pb-4 z-10 min-h-0" style="gap:26px;">
+  <div class="flex-1 flex flex-col justify-center px-16 pb-4 z-10 min-h-0" style="gap:20px;">
 
-    <div class="malha">
-      <div class="cartao-p">
-        <div class="cp-topo"><i class="fas fa-anchor"></i><span class="cp-area">Portos</span></div>
-        <p class="cp-perg">"Quais contratos do meu porto vencem nos próximos 24 meses?"</p>
+    <div class="instrucao">
+      <i class="fas fa-keyboard"></i>
+      <code>Preciso de um panorama, em PDF, sobre os autos de infração lavrados sobre o art. 34 da Resolução 62/2021</code>
+    </div>
+
+    <div class="quatro">
+      <div class="q-item"><p class="q-num">44</p><p class="q-rot">linhas julgadas</p></div>
+      <div class="q-item"><p class="q-num">42</p><p class="q-rot">processos distintos</p></div>
+      <div class="q-item"><p class="q-num">40</p><p class="q-rot">empresas</p></div>
+      <div class="q-item q-forte"><p class="q-num q-num-p">R$ 97.925,25</p><p class="q-rot">em multa, em 6 das 44 linhas</p></div>
+    </div>
+
+    <div class="tab">
+      <div class="t-cab">
+        <span class="h-inc">Inciso</span><span class="h-txt">O que ele tipifica</span>
+        <span class="h-num">Linhas</span><span class="h-val">Multa</span>
       </div>
-      <div class="cartao-p">
-        <div class="cp-topo"><i class="fas fa-water"></i><span class="cp-area">Navegação interior</span></div>
-        <p class="cp-perg">"Esta empresa de travessia tem outorga vigente? Desde quando?"</p>
+      <div class="t-linha">
+        <p class="c-inc">Inciso I</p>
+        <p class="c-txt">afretamento não registrado na ANTAQ em 15 dias</p>
+        <p class="c-num">41</p><p class="c-val">R$ 57.662,50</p>
       </div>
-      <div class="cartao-p">
-        <div class="cp-topo"><i class="fas fa-ship"></i><span class="cp-area">Navegação marítima</span></div>
-        <p class="cp-perg">"O que a Diretoria decidiu sobre <span class="nq">sobre-estadia</span> em 2026?"</p>
+      <div class="t-linha">
+        <p class="c-inc">Inciso IV</p>
+        <p class="c-txt">devolução da embarcação afretada não informada</p>
+        <p class="c-num">2</p><p class="c-val">sem multa</p>
       </div>
-      <div class="cartao-p">
-        <div class="cp-topo"><i class="fas fa-gavel"></i><span class="cp-area">Sancionador</span></div>
-        <p class="cp-perg">"Como terminaram os julgamentos desta infração nos últimos cinco anos?"</p>
+      <div class="t-linha">
+        <p class="c-inc">Inciso VII</p>
+        <p class="c-txt">cópia do contrato de afretamento não encaminhada em 60 dias</p>
+        <p class="c-num">1</p><p class="c-val">R$ 40.262,75</p>
+      </div>
+      <div class="t-linha t-vazio">
+        <p class="c-inc">Inciso III</p>
+        <p class="c-txt">cancelamento do afretamento não comunicado em 5 dias</p>
+        <p class="c-num">0</p><p class="c-val">nunca julgado</p>
       </div>
     </div>
 
-    <div class="oferta">
-      <i class="fas fa-handshake"></i>
-      <p>A primeira consulta, montamos junto com a unidade que pedir. É ajuda entre colegas,
-      não suporte de sistema da Agência.</p>
-    </div>
-
-    <div class="faixa-ancora">
-      <i class="fas fa-signature" style="color:#FFD700; font-size:40px; flex-shrink:0;"></i>
-      <p>A IA não assina. Quem assina é você - e quem assina responde.</p>
+    <div class="resumo">
+      <i class="fas fa-triangle-exclamation"></i>
+      <div>
+        <p class="resumo-topo">Julgados, não lavrados. O painel só publica processo que já teve decisão.</p>
+        <p class="resumo-leitura">"Auto de Infração" ali é a origem do processo, e vale para 12 das 44 linhas: as outras 32
+        vieram de fiscalização extraordinária ou programada. Das 44, só 6 terminaram em multa: as outras 38 são 19 advertências
+        e 19 arquivamentos, em 8 unidades, de 2022 a 2026.</p>
+      </div>
     </div>
   </div>
 
@@ -118,19 +148,23 @@
   <div class="px-16 pb-5 flex justify-between items-end z-10">
     <div style="max-width:1620px;">
       <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
-
+      <p class="text-gray-400" style="font-size:17px;">Fonte: painel Fiscalização da ANTAQ, quadros "Base de Dados" e "Objeto das Normas", via conector MCP independente, em 22 de setembro de 2026. Só processo julgado; o que tramita fica fora.</p>
     </div>
-    <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">12 / 13</p>
+    <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">12 / 14</p>
   </div>
 
-  <div class="bg-marca"><i class="fas fa-comments"></i></div>
+  <div class="bg-marca"><i class="fas fa-file-pdf"></i></div>
 </div>
 
 <div id="notas-apresentador" style="display:none;">
-  <p>Este é o próximo passo, que antes só existia na fala. Cada cartão é uma variação de um dos casos de hoje, adaptada a uma área. Peça que troquem "meu porto" pelo porto de vocês.</p>
-  <p>A oferta está em tela: quem quiser monta a primeira consulta com a gente, na mesa da unidade. É ajuda entre colegas, não suporte de um sistema da casa, porque o conector é projeto pessoal, como foi dito no slide 5.</p>
-  <p>Nada do que foi mostrado hoje exigiu processo em tramitação, dado pessoal ou sigilo. Tudo veio de base pública, e foi de propósito.</p>
-  <p>Feche com a frase âncora, pela segunda e última vez nesta apresentação, dita exatamente igual: a IA não assina, quem assina é você, e quem assina responde. Cerca de um minuto.</p>
+  <p>Esta é a demonstração, e a essa altura a tela do conector já está aberta há um tempo. Colem a pergunta exatamente como ela está projetada, sem melhorar no palco e sem tirar o número do artigo nem o da Resolução.</p>
+  <p>Enquanto roda, narrem o que está acontecendo, porque é isso que a sala precisa aprender. São duas leituras: primeiro o catálogo de infrações, para saber quais incisos do artigo 34 existem, e depois a base de fiscalização, para as linhas julgadas de cada inciso. O PDF quem monta é a ferramenta, não o conector: ele entrega o dado.</p>
+  <p>Quando o resultado aparecer, confiram contra o que está projetado antes de comentar: quarenta e quatro linhas julgadas, quarenta e dois processos distintos, quarenta empresas e noventa e sete mil novecentos e vinte e cinco reais em multa. Se bater, sigam. Se não bater, digam em voz alta que não bateu e sigam pelos números do slide, porque a base é recapturada e pode ter andado.</p>
+  <p>O inciso I concentra quase tudo, quarenta e uma das quarenta e quatro linhas, e é afretamento não registrado em quinze dias. O inciso III, que é o do cancelamento não comunicado, está no catálogo e nunca chegou a julgamento: zero é resposta, não é falha da consulta.</p>
+  <p>E reparem na linha do inciso sete: uma única linha, quarenta mil duzentos e sessenta e dois reais. É quase tanto quanto as quarenta e uma do inciso um somadas. Contar linha não mede gravidade.</p>
+  <p>Agora a armadilha, e é a que dá nome ao slide. A pergunta diz autos lavrados, e o painel só publica processo que já teve decisão. O que está em tramitação não está ali, e continua no SFIS. Digam isso antes que alguém leve o número para uma peça.</p>
+  <p>A segunda parte é o campo: Auto de Infração, no painel, é a origem do processo, não o documento. Ele vale para doze das quarenta e quatro linhas; as outras trinta e duas vieram de fiscalização extraordinária ou programada. Quem filtrar por esse campo achando que separa auto lavrado perde setenta por cento do artigo.</p>
+  <p>E fechem pelo número que veio do slide anterior: das quarenta e quatro, só seis terminaram em multa. As outras trinta e oito são dezenove advertências e dezenove arquivamentos. Numa planilha, trinta e oito delas virariam multa de zero real. Cerca de quatro minutos, com a consulta rodando.</p>
 </div>
 <script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
 <script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>

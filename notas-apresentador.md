@@ -23,9 +23,9 @@ Não edite este arquivo: edite o slide e gere de novo.
 
 ---
 
-## Bloco 1 · Cinco perguntas da rotina
+## Bloco 1 · Cinco perguntas e uma ao vivo
 
-### Slide 3 · Bloco 1 · Cinco perguntas da rotina
+### Slide 3 · Bloco 1 · Cinco perguntas e uma ao vivo
 
 - Placa de sinalização. Quinze a vinte segundos.
 - Anunciem os cinco casos apontando para os rótulos e digam o molde: a pergunta como se digita, a resposta e a armadilha. É o mesmo desenho nos cinco.
@@ -55,7 +55,7 @@ Não edite este arquivo: edite o slide e gere de novo.
 - Peça que cada regional procure o seu porto na lista. É nesse momento que a sala deixa de assistir e passa a conferir.
 - Para que serve: os dois cartões em destaque são arrendamentos longos, em Aratu e em Rio Grande, e terminam no fim de dezembro. Instruir a classificação dos bens e a reversibilidade é competência das Gerências e Unidades Regionais (Regimento Interno, art. 84, XII). Saber com cerca de cem dias de antecedência é o que permite programar a vistoria.
 - Se perguntarem pelo ano: no histórico do próprio painel, 2026 concentra 42 vencimentos, contra 12 em 2025 e 9 em 2027.
-- A armadilha: a data é a do último instrumento publicado até 18 de agosto. Se houve aditivo depois, o painel não sabe. A resposta é ponto de partida; antes de qualquer ofício, confira no processo do contrato.
+- **A armadilha não está em tela, e é de vocês dizer em voz alta.** A data é a do último instrumento publicado até a captura do painel: se houve aditivo depois, o painel não sabe. E o quadro de situação do próprio painel classifica só 491 dos 559 contratos. A resposta é ponto de partida; antes de qualquer ofício, confira no processo do contrato.
 - Se a rede permitir, este é o melhor caso para rodar ao vivo. Cerca de três minutos.
 
 ### Slide 7 · A empresa inteira em uma pergunta
@@ -63,7 +63,7 @@ Não edite este arquivo: edite o slide e gere de novo.
 - Segundo caso, e é o que a sala costuma achar mais imediato. Antes de uma fiscalização, alguém abre três painéis e monta uma planilha. Aqui é uma pergunta, pelo CNPJ.
 - A empresa é grande e pública de propósito. Se for rodar ao vivo, usem uma empresa que vocês conheçam e testem antes; não improvisem o nome na hora.
 - O segundo cartão já é uma armadilha, e ela é de conta: cabotagem e longo curso foram outorgadas no mesmo dia, então somar as linhas dá 49 anos. O tempo real de outorga é 21 anos e 11 meses.
-- A faixa vermelha é a armadilha que pode virar erro de fiscalização. O campo "Outorga Vigente" diz Sim em todas as linhas do painel. Quem filtra por ele trata outorga extinta como viva. A vigência tem de sair da data de extinção.
+- **A armadilha não está em tela, e é a que pode virar erro de fiscalização.** Digam com o número: a outorga de navegação interior do processo 50300.002696/2014-14 foi extinta em 08/08/2016 e o painel ainda diz "Outorga Vigente: Sim". O campo diz Sim em 3.185 de 3.185 linhas, e 1.362 delas já estão extintas. Quem filtra por ele trata outorga extinta como viva. A vigência tem de sair da data de extinção.
 - O que não aparece aqui: processo em curso. O painel de Fiscalização só traz processo julgado ou arquivado; para o histórico completo, o SFIS continua sendo a fonte. Cerca de três minutos.
 
 ### Slide 8 · Sobre-estadia: de 14 para 72 acórdãos por ano
@@ -72,7 +72,7 @@ Não edite este arquivo: edite o slide e gere de novo.
 - Leia o gráfico da esquerda para a direita: 14, 40, 72. Em dois anos, cinco vezes mais acórdãos citando sobre-estadia. E 2026, ano em curso, já passou de 2024 inteiro.
 - Agora os cartões, que é o que interessa a esta sala. Nas cautelares de sobre-estadia, a Diretoria decide o pedido e manda a SFC apurar o mérito. Em fevereiro deste ano, mandou continuar o banco de dados de denúncias conduzido pela SFC. A demanda vem para cá, e está crescendo.
 - Para que serve: antes de instruir a próxima denúncia, ler em minutos o que a Diretoria já decidiu em casos parecidos. A busca acha o acórdão; o texto que vai para a peça vem do documento no SEI.
-- A armadilha é de contagem: citar não é julgar denúncia. Um acórdão que só menciona o tema também entra. O número mostra a tendência, e é para isso que ele serve aqui. Cerca de dois minutos e meio.
+- **A armadilha não está em tela.** Ela é de contagem: citar não é julgar denúncia. Um acórdão que só menciona o tema também entra. O número mostra a tendência, e é para isso que ele serve aqui. Cerca de dois minutos e meio.
 
 ### Slide 9 · Onze tetos na forma genérica, um na específica
 
@@ -99,9 +99,21 @@ Não edite este arquivo: edite o slide e gere de novo.
 - E então o fecho, olhando para a plateia: essa desconfiança é a competência de vocês, e ela acabou de ficar mais valiosa. Se você acertar o tom aqui, o resto da apresentação corre sozinho.
 - Pausa antes de avançar.
 
-### Slide 12 · Traga a pergunta da sua unidade
+### Slide 12 · O panorama de um artigo, ao vivo
 
-- Este é o próximo passo, que antes só existia na fala. Cada cartão é uma variação de um dos casos de hoje, adaptada a uma área. Peça que troquem "meu porto" pelo porto de vocês.
+- Esta é a demonstração, e a essa altura a tela do conector já está aberta há um tempo. Colem a pergunta exatamente como ela está projetada, sem melhorar no palco e sem tirar o número do artigo nem o da Resolução.
+- Enquanto roda, narrem o que está acontecendo, porque é isso que a sala precisa aprender. São duas leituras: primeiro o catálogo de infrações, para saber quais incisos do artigo 34 existem, e depois a base de fiscalização, para as linhas julgadas de cada inciso. O PDF quem monta é a ferramenta, não o conector: ele entrega o dado.
+- Quando o resultado aparecer, confiram contra o que está projetado antes de comentar: quarenta e quatro linhas julgadas, quarenta e dois processos distintos, quarenta empresas e noventa e sete mil novecentos e vinte e cinco reais em multa. Se bater, sigam. Se não bater, digam em voz alta que não bateu e sigam pelos números do slide, porque a base é recapturada e pode ter andado.
+- O inciso I concentra quase tudo, quarenta e uma das quarenta e quatro linhas, e é afretamento não registrado em quinze dias. O inciso III, que é o do cancelamento não comunicado, está no catálogo e nunca chegou a julgamento: zero é resposta, não é falha da consulta.
+- E reparem na linha do inciso sete: uma única linha, quarenta mil duzentos e sessenta e dois reais. É quase tanto quanto as quarenta e uma do inciso um somadas. Contar linha não mede gravidade.
+- Agora a armadilha, e é a que dá nome ao slide. A pergunta diz autos lavrados, e o painel só publica processo que já teve decisão. O que está em tramitação não está ali, e continua no SFIS. Digam isso antes que alguém leve o número para uma peça.
+- A segunda parte é o campo: Auto de Infração, no painel, é a origem do processo, não o documento. Ele vale para doze das quarenta e quatro linhas; as outras trinta e duas vieram de fiscalização extraordinária ou programada. Quem filtrar por esse campo achando que separa auto lavrado perde setenta por cento do artigo.
+- E fechem pelo número que veio do slide anterior: das quarenta e quatro, só seis terminaram em multa. As outras trinta e oito são dezenove advertências e dezenove arquivamentos. Numa planilha, trinta e oito delas virariam multa de zero real. Cerca de quatro minutos, com a consulta rodando.
+
+### Slide 13 · Traga a pergunta da sua unidade
+
+- Este é o próximo passo, que antes só existia na fala. Os quatro cartões não são exemplos genéricos: são perguntas reais, com porto, cidade e número de infração escritos, e cada uma devolve resposta hoje. A de Suape devolve três contratos, a de Manaus devolve sessenta e nove instalações.
+- Peça que troquem o nome e mais nada: Suape pelo porto da regional, Manaus pelo município de vocês, o número da infração pelo que a unidade julga mais. A forma da pergunta é que faz ela funcionar, e ela está em amarelo justamente no pedaço que se troca.
 - A oferta está em tela: quem quiser monta a primeira consulta com a gente, na mesa da unidade. É ajuda entre colegas, não suporte de um sistema da casa, porque o conector é projeto pessoal, como foi dito no slide 5.
 - Nada do que foi mostrado hoje exigiu processo em tramitação, dado pessoal ou sigilo. Tudo veio de base pública, e foi de propósito.
 - Feche com a frase âncora, pela segunda e última vez nesta apresentação, dita exatamente igual: a IA não assina, quem assina é você, e quem assina responde. Cerca de um minuto.
@@ -110,7 +122,7 @@ Não edite este arquivo: edite o slide e gere de novo.
 
 ## Encerramento
 
-### Slide 13 · Material e contato
+### Slide 14 · Material e contato
 
 - Slide de contato e último da apresentação. Deixem-no projetado durante todas as perguntas: é ele que fica na tela enquanto a sala conversa.
 - Peçam que peguem o telefone e apontem a câmera para o código: ele abre esta mesma apresentação, com as notas. Digam o endereço em voz alta também, para quem preferir anotar.

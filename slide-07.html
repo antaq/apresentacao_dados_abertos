@@ -25,33 +25,26 @@
   .instrucao i { color:#7CC0FF; font-size:26px; flex-shrink:0; }
   .instrucao code { font-family:'Courier New', monospace; font-size:27px; color:#E2E8F0; line-height:1.35; }
 
-  /* Faixa de armadilha (KIT 6.6) */
-  .faixa { background:#FEF2F2; border:3px solid #FCA5A5; border-left:12px solid #DC2626;
-    border-radius:0 16px 16px 0; padding:18px 32px; display:flex; align-items:center; gap:22px; }
-  .faixa-rotulo { font-family:'Montserrat',sans-serif; font-weight:800; font-size:19px; color:#B91C1C;
-    text-transform:uppercase; letter-spacing:.06em; line-height:1.2; flex-shrink:0; white-space:nowrap;
-    border-right:2px solid #FCA5A5; padding-right:22px; }
-  .faixa p { font-size:23px; color:#7F1D1D; line-height:1.32; font-weight:600; }
 
   .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
 
-  .empresa { display:flex; align-items:center; gap:18px; padding:14px 26px; border-radius:14px;
+  .empresa { display:flex; align-items:center; gap:18px; padding:20px 30px; border-radius:14px;
              background:#F0F9FF; border:2px solid #BAE6FD; }
-  .empresa i { font-size:28px; color:#0066CC; flex-shrink:0; }
-  .empresa .nome { font-family:'Montserrat',sans-serif; font-weight:800; font-size:27px; color:#003366; }
-  .empresa .local { font-size:22px; color:#6B7280; }
+  .empresa i { font-size:32px; color:#0066CC; flex-shrink:0; }
+  .empresa .nome { font-family:'Montserrat',sans-serif; font-weight:800; font-size:30px; color:#003366; }
+  .empresa .local { font-size:24px; color:#6B7280; }
 
   .cartoes { display:flex; gap:22px; align-items:stretch; }
   .cartao { flex:1; background:#FFFFFF; border:2px solid #E2E8F0; border-top:8px solid #0066CC;
-            border-radius:0 0 16px 16px; padding:22px 24px 18px 24px; display:flex; flex-direction:column;
+            border-radius:0 0 16px 16px; padding:30px 28px 24px 28px; display:flex; flex-direction:column;
             box-shadow:0 6px 18px -10px rgba(0,0,0,.2); }
-  .cartao .num { font-family:'Montserrat',sans-serif; font-weight:900; font-size:62px; color:#003366;
+  .cartao .num { font-family:'Montserrat',sans-serif; font-weight:900; font-size:78px; color:#003366;
                  line-height:1; letter-spacing:-2px; }
-  .cartao .rot { font-family:'Montserrat',sans-serif; font-weight:700; font-size:23px; color:#0066CC;
-                 line-height:1.22; margin-top:8px; }
-  .cartao .sub { font-size:20px; color:#4B5563; line-height:1.34; margin-top:12px; }
+  .cartao .rot { font-family:'Montserrat',sans-serif; font-weight:700; font-size:26px; color:#0066CC;
+                 line-height:1.22; margin-top:10px; }
+  .cartao .sub { font-size:22px; color:#4B5563; line-height:1.38; margin-top:16px; }
   .cartao .origem { font-family:'Montserrat',sans-serif; font-weight:800; font-size:17px; color:#0066CC;
-                    text-transform:uppercase; letter-spacing:.1em; margin-top:auto; padding-top:16px;
+                    text-transform:uppercase; letter-spacing:.1em; margin-top:auto; padding-top:20px;
                     border-top:1px solid #E5E7EB; }
 </style>
 </head>
@@ -121,13 +114,6 @@
       </div>
     </div>
 
-    <!-- Armadilha -->
-    <div class="faixa">
-      <p class="faixa-rotulo">A armadilha</p>
-      <p>A outorga de navegação interior do processo 50300.002696/2014-14 foi extinta em
-      08/08/2016, e o painel ainda diz "Outorga Vigente: Sim". O campo diz Sim em 3.185 de
-      3.185 linhas, e 1.362 delas já estão extintas.</p>
-    </div>
   </div>
 
   <!-- Rodapé -->
@@ -136,7 +122,7 @@
       <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
       <p class="text-gray-400" style="font-size:17px;">Fonte: painéis Outorgas de Navegação (quadros de outorgas e de frota) e Fiscalização da ANTAQ, via conector MCP independente, em 22 de setembro de 2026. Vigência pela data de extinção.</p>
     </div>
-    <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">7 / 13</p>
+    <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">7 / 14</p>
   </div>
 
   <div class="bg-marca"><i class="fas fa-building-circle-check"></i></div>
@@ -146,7 +132,7 @@
   <p>Segundo caso, e é o que a sala costuma achar mais imediato. Antes de uma fiscalização, alguém abre três painéis e monta uma planilha. Aqui é uma pergunta, pelo CNPJ.</p>
   <p>A empresa é grande e pública de propósito. Se for rodar ao vivo, usem uma empresa que vocês conheçam e testem antes; não improvisem o nome na hora.</p>
   <p>O segundo cartão já é uma armadilha, e ela é de conta: cabotagem e longo curso foram outorgadas no mesmo dia, então somar as linhas dá 49 anos. O tempo real de outorga é 21 anos e 11 meses.</p>
-  <p>A faixa vermelha é a armadilha que pode virar erro de fiscalização. O campo "Outorga Vigente" diz Sim em todas as linhas do painel. Quem filtra por ele trata outorga extinta como viva. A vigência tem de sair da data de extinção.</p>
+  <p><strong>A armadilha não está em tela, e é a que pode virar erro de fiscalização.</strong> Digam com o número: a outorga de navegação interior do processo 50300.002696/2014-14 foi extinta em 08/08/2016 e o painel ainda diz "Outorga Vigente: Sim". O campo diz Sim em 3.185 de 3.185 linhas, e 1.362 delas já estão extintas. Quem filtra por ele trata outorga extinta como viva. A vigência tem de sair da data de extinção.</p>
   <p>O que não aparece aqui: processo em curso. O painel de Fiscalização só traz processo julgado ou arquivado; para o histórico completo, o SFIS continua sendo a fonte. Cerca de três minutos.</p>
 </div>
 <script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>

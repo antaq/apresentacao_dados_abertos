@@ -25,35 +25,28 @@
   .instrucao i { color:#7CC0FF; font-size:26px; flex-shrink:0; }
   .instrucao code { font-family:'Courier New', monospace; font-size:27px; color:#E2E8F0; line-height:1.35; }
 
-  /* Faixa de armadilha (KIT 6.6) */
-  .faixa { background:#FEF2F2; border:3px solid #FCA5A5; border-left:12px solid #DC2626;
-    border-radius:0 16px 16px 0; padding:18px 32px; display:flex; align-items:center; gap:22px; }
-  .faixa-rotulo { font-family:'Montserrat',sans-serif; font-weight:800; font-size:19px; color:#B91C1C;
-    text-transform:uppercase; letter-spacing:.06em; line-height:1.2; flex-shrink:0; white-space:nowrap;
-    border-right:2px solid #FCA5A5; padding-right:22px; }
-  .faixa p { font-size:23px; color:#7F1D1D; line-height:1.32; font-weight:600; }
 
   .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
 
   .grade { display:flex; gap:26px; align-items:stretch; }
-  .coluna-c { flex:1; display:flex; flex-direction:column; gap:11px; }
+  .coluna-c { flex:1; display:flex; flex-direction:column; gap:15px; }
 
-  .linha { display:flex; align-items:center; gap:16px; padding:12px 20px; border-radius:12px;
+  .linha { display:flex; align-items:center; gap:18px; padding:17px 24px; border-radius:12px;
            background:#F8FAFC; border:2px solid #E2E8F0; }
   .linha-destaque { background:#F0F9FF; border:3px solid #0066CC; }
 
-  .data { font-family:'Montserrat',sans-serif; font-weight:900; font-size:26px; color:#003366;
-          width:92px; flex-shrink:0; letter-spacing:-0.5px; }
-  .porto { font-size:24px; color:#1F2937; font-weight:600; flex:1; line-height:1.2; }
+  .data { font-family:'Montserrat',sans-serif; font-weight:900; font-size:28px; color:#003366;
+          width:100px; flex-shrink:0; letter-spacing:-0.5px; }
+  .porto { font-size:26px; color:#1F2937; font-weight:600; flex:1; line-height:1.2; }
   .tipo { font-family:'Montserrat',sans-serif; font-weight:700; font-size:18px; border-radius:999px;
           padding:5px 16px; white-space:nowrap; flex-shrink:0;
           background:#E2E8F0; color:#475569; }
   .tipo-escura { background:#003366; color:#FFFFFF; }
 
-  .resumo { display:flex; align-items:center; gap:16px; padding:14px 22px; border-radius:12px;
+  .resumo { display:flex; align-items:center; gap:18px; padding:19px 26px; border-radius:12px;
             background:#003366; color:#FFFFFF; margin-top:auto; }
   .resumo i { font-size:26px; color:#FFD700; flex-shrink:0; }
-  .resumo p { font-family:'Montserrat',sans-serif; font-weight:800; font-size:23px; line-height:1.25; }
+  .resumo p { font-family:'Montserrat',sans-serif; font-weight:800; font-size:25px; line-height:1.25; }
 </style>
 </head>
 <body>
@@ -154,13 +147,6 @@
       </div>
     </div>
 
-    <!-- Armadilha -->
-    <div class="faixa">
-      <p class="faixa-rotulo">A armadilha</p>
-      <p>A data é a do último instrumento publicado até a captura do painel: um aditivo
-      assinado depois não aparece. E o quadro de situação do próprio painel classifica só
-      491 dos 559 contratos.</p>
-    </div>
   </div>
 
   <!-- Rodapé -->
@@ -169,7 +155,7 @@
       <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
       <p class="text-gray-400" style="font-size:17px;">Fonte: painel Portos Públicos da ANTAQ, quadro "Portos Públicos" (559 contratos), via conector MCP independente, em 22 de setembro de 2026. Vencimento pela data de expiração do último instrumento.</p>
     </div>
-    <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">6 / 13</p>
+    <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">6 / 14</p>
   </div>
 
   <div class="bg-marca"><i class="fas fa-file-contract"></i></div>
@@ -180,7 +166,7 @@
   <p>Peça que cada regional procure o seu porto na lista. É nesse momento que a sala deixa de assistir e passa a conferir.</p>
   <p>Para que serve: os dois cartões em destaque são arrendamentos longos, em Aratu e em Rio Grande, e terminam no fim de dezembro. Instruir a classificação dos bens e a reversibilidade é competência das Gerências e Unidades Regionais (Regimento Interno, art. 84, XII). Saber com cerca de cem dias de antecedência é o que permite programar a vistoria.</p>
   <p>Se perguntarem pelo ano: no histórico do próprio painel, 2026 concentra 42 vencimentos, contra 12 em 2025 e 9 em 2027.</p>
-  <p>A armadilha: a data é a do último instrumento publicado até 18 de agosto. Se houve aditivo depois, o painel não sabe. A resposta é ponto de partida; antes de qualquer ofício, confira no processo do contrato.</p>
+  <p><strong>A armadilha não está em tela, e é de vocês dizer em voz alta.</strong> A data é a do último instrumento publicado até a captura do painel: se houve aditivo depois, o painel não sabe. E o quadro de situação do próprio painel classifica só 491 dos 559 contratos. A resposta é ponto de partida; antes de qualquer ofício, confira no processo do contrato.</p>
   <p>Se a rede permitir, este é o melhor caso para rodar ao vivo. Cerca de três minutos.</p>
 </div>
 <script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>

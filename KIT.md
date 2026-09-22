@@ -4,7 +4,7 @@ Sistema visual EXATO desta apresentação. Deriva do KIT da Trilha Técnica (mod
 **Referência de ouro:** `../GPFTrilhaTecnico/apresentacao/` (KIT.md + slide-01, 04, 20, 29, 61).
 Onde a especificação de conteúdo divergir deste KIT, **prevalece o KIT**.
 
-Total de arquivos: **13**: `slide-01.html` a `slide-13.html`, em sequência única.
+Total de arquivos: **14**: `slide-01.html` a `slide-14.html`, em sequência única.
 Não há slides de reserva.
 
 Este deck nasceu do bloco 4 da apresentação "IA no dia a dia da Fiscalização"
@@ -63,7 +63,7 @@ pelo `index.html`, que escala para a tela e navega por `postMessage`.
 | Cartão azul claro | `#F0F9FF` + borda `#BAE6FD` | Caixas de destaque |
 | Texto corpo | `#374151` / `#4B5563` | Parágrafos |
 | Texto suave | `#6B7280` / `#9CA3AF` | Legendas e rodapé |
-| Proibição | `#FEE2E2` / borda `#DC2626` / texto `#991B1B` | Slide 11 e vetos |
+| Proibição | `#FEE2E2` / borda `#DC2626` / texto `#991B1B` | Vetos do slide 14. **Não é mais usado para armadilha** (ver 6.6) |
 | Marcador pendente | `#FEF3C7` / borda tracejada `#D97706` / texto `#92400E` | (não há marcador em aberto no deck) |
 
 Gradiente escuro (capa, divisórias, frases de impacto, encerramento):
@@ -160,7 +160,7 @@ em conteúdo (só no rodapé, e ainda assim com `px` explícito).
       <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
       <!-- linha de fonte, quando o slide exibir números (ver 5.4) -->
     </div>
-    <p class="text-gray-300 font-mono" style="font-size:18px;">NN / 13</p>
+    <p class="text-gray-300 font-mono" style="font-size:18px;">NN / 14</p>
   </div>
 </div>
 ```
@@ -178,7 +178,7 @@ Slides sem tag: 1, 3, 11 e 13 (capa, divisória, frase L2 e encerramento).
 
 ### 5.2 Numeração no rodapé
 
-- Slides 2 a 13: `NN / 13` (sem zero à esquerda; use `7 / 13`, `12 / 13`).
+- Slides 2 a 14: `NN / 14` (sem zero à esquerda; use `7 / 14`, `12 / 14`).
 - Capa (slide 1): sem numeração.
 
 ### 5.3 Rodapé de slides escuros
@@ -211,14 +211,16 @@ consulta. A exceção é o acervo de atos publicados, que é cópia manual e est
   `Fonte: painel Administração Portuária da ANTAQ, quadros de tarifas-teto e de tarifas homologadas, via conector MCP independente, em 22 de setembro de 2026. Teto aprovado não é preço cobrado.`
 - Painel de Fiscalização (slides 10 e 11):
   `Fonte: painel Fiscalização da ANTAQ, quadro "Base de Dados", via conector MCP independente, em 22 de setembro de 2026.` No slide 10, acrescentar: `A soma é piso: o painel conta R$ 110,3 milhões.`
+- Demonstração ao vivo, art. 34 da Res. 62/2021 (slide 12), única que cita dois quadros:
+  `Fonte: painel Fiscalização da ANTAQ, quadros "Base de Dados" e "Objeto das Normas", via conector MCP independente, em 22 de setembro de 2026. Só processo julgado; o que tramita fica fora.`
 - Recapitulação do encontro anterior (slide 2):
   `Fonte: apresentação "IA no dia a dia da Fiscalização", SFC, 21 de setembro de 2026 (antaq.github.io/apresentacao_ia_sfc).`
 - Roteiro (slide 3): `Fonte: tempo estimado no roteiro desta apresentação (GPF e GRAT/SFC).`
-- **Sem linha de fonte:** slides 1, 5, 12 e 13, porque não exibem número.
+- **Sem linha de fonte:** slides 1, 5, 13 e 14, porque não exibem número.
 
-**Endereço do conector (slides 5 e 13):** `https://antaq.dadosabertos.dev/mcp`. Aparece
+**Endereço do conector (slides 5 e 14):** `https://antaq.dadosabertos.dev/mcp`. Aparece
 projetado nos dois slides, em `'Courier New', monospace`, sempre com o `https://`, porque a
-plateia copia isso para a configuração da própria ferramenta. No slide 13 ele é um cartão
+plateia copia isso para a configuração da própria ferramenta. No slide 14 ele é um cartão
 **sem link**: clicar abre a resposta crua do servidor no projetor, e não uma página.
 Endereço trocado em 21/09/2026; se mudar de novo, os dois slides mudam juntos.
 
@@ -230,7 +232,8 @@ Endereço trocado em 21/09/2026; se mudar de novo, os dois slides mudam juntos.
 >   "sem custo de contratação" nem atribuição a GPF, GRAT ou SFC;
 > - nas linhas de fonte, a forma canônica é **`via conector MCP independente`**;
 > - o domínio `dadosabertos.dev` **não** é domínio da Agência, e isso é dito junto com o
->   endereço, nos slides 5 e 13.
+>   endereço, nos slides 5 e 14. No slide 12 ele reaparece sem o `https://`, como passo da
+>   demonstração, e não como cartão para copiar.
 >
 > Corrigido em 21/09/2026: até então o slide 5 dizia "feito dentro da própria Superintendência"
 > e cinco linhas de fonte atribuíam o conector à GPF.
@@ -292,11 +295,20 @@ Valor que precisa saltar aos olhos: `font-weight:800; color:#B91C1C`.
 Realce de trecho dentro do bloco: `<span style="color:#FCD34D;font-weight:700;">`.
 Barra de título do bloco (opcional): faixa `#1E293B` com três círculos e o nome do arquivo.
 
-### 6.6 Leiaute L7 (captura de tela): não usado
+### 6.6 Faixa vermelha de armadilha: aposentada neste deck
 
-O deck foi entregue **sem capturas de tela**: os quadros tracejados que ocupavam o lugar
-das imagens foram removidos e o conteúdo redistribuído em largura cheia. O leiaute L7 fica
-registrado no vocabulário para uso futuro, mas nenhum slide o emprega.
+Até 22/09/2026 os slides 6 a 10 traziam a armadilha numa faixa vermelha
+(`#FEF2F2` / borda `#DC2626`), rotulada "A ARMADILHA" ou "ANTES DE CONCLUIR". **Elas
+foram removidas**: a armadilha passou a ser dita em voz alta, e está escrita na nota do
+apresentador de cada slide. O motivo é de leitura: cinco faixas vermelhas seguidas
+treinavam a plateia a pular o vermelho, e o alerta perdia o efeito justo onde ele importa.
+
+Quando a leitura precisa ficar em tela, use a **faixa escura** (fundo `#003366`, ícone
+`#FFD700`), como nos slides 10 e 12: ela sustenta duas linhas, a manchete em Montserrat
+800 e a explicação em `#BAE6FD`.
+
+O **leiaute L7 (captura de tela)** também segue sem uso: o deck foi entregue sem capturas,
+com o conteúdo em largura cheia.
 
 ### 6.7 Chip de marcador pendente
 
@@ -311,7 +323,7 @@ marcador hoje:** todos foram preenchidos ou removidos em 5 de agosto de 2026.
 Em fundo escuro: `background:rgba(253,224,71,.14); color:#FDE68A; border-color:#FDE68A;`.
 Marcador dentro de linha de rodapé pode usar 19px.
 
-### 6.8 Faixa-âncora (slides 5 e 12, idêntica nos dois)
+### 6.8 Faixa-âncora (slides 5 e 13)
 
 ```html
 <div style="margin-top:34px;background:linear-gradient(90deg,#002244 0%,#004488 100%);
@@ -319,7 +331,7 @@ Marcador dentro de linha de rodapé pode usar 19px.
             display:flex;align-items:center;gap:24px;">
   <i class="fas fa-signature" style="color:#FFD700;font-size:40px;"></i>
   <p class="font-montserrat" style="color:#FFFFFF;font-size:36px;font-weight:800;line-height:1.2;">
-    A IA não assina. Quem assina é você - e quem assina responde.</p>
+    A IA não assina. Quem assina é você, e quem assina responde.</p>
 </div>
 ```
 
@@ -336,7 +348,7 @@ com rótulo em caixa alta 26px acima e explicação 26px abaixo.
   letter-spacing:.06em;">Passo 1</span>
 ```
 
-### 6.11 Item de proibição (slide 13)
+### 6.11 Item de proibição (slide 14)
 
 ```html
 <div style="background:#FEF2F2;border:3px solid #FCA5A5;border-left:10px solid #DC2626;
@@ -345,7 +357,7 @@ com rótulo em caixa alta 26px acima e explicação 26px abaixo.
   <p style="font-size:30px;color:#7F1D1D;font-weight:600;line-height:1.3;">Texto do veto.</p>
 </div>
 ```
-Slides 11, 13, 14 e 15 serão fotografados pela plateia: **contraste alto, texto grande,
+Slides 5, 11, 12 e 14 serão fotografados pela plateia: **contraste alto, texto grande,
 sem elementos decorativos que roubem espaço**.
 
 ---
@@ -421,7 +433,7 @@ Se a especificação não trouxer NOTAS para o slide, escreva uma nota curta e �
 |---|---|---|---|---|
 | 1 | L1 | Capa | sem tag | novo |
 | 2 | L3 | O que ficou dito ontem (recapitulação) | ABERTURA | novo |
-| 3 | L10 | Divisória bloco 1, Cinco perguntas da rotina (20 min) | sem tag | 28 |
+| 3 | L10 | Divisória bloco 1, Cinco perguntas e uma ao vivo (24 min) | sem tag | 28 |
 | 4 | L6+L4 | A mesma pergunta, com e sem conector | DADOS ABERTOS | 29 |
 | 5 | L3 | O conector não é um sistema da ANTAQ, endereço e faixa-âncora | DADOS ABERTOS | 30 |
 | 6 | L6+6.1 | Caso 1: onze contratos vencem até dezembro | DADOS ABERTOS | 31 |
@@ -430,8 +442,9 @@ Se a especificação não trouxer NOTAS para o slide, escreva uma nota curta e �
 | 9 | L6+L8 | Caso 4: onze tetos na forma genérica, um na específica | DADOS ABERTOS | novo |
 | 10 | L6+6.1 | Caso 5: a maior carteira não é a de maior valor | DADOS ABERTOS | novo |
 | 11 | L2 | Conclusão do bloco | sem tag | 36 |
-| 12 | 6.1+6.8 | Traga a pergunta da sua unidade, com faixa-âncora | DADOS ABERTOS | 37 |
-| 13 | L11 | Contato, material, endereço do conector e código de leitura óptica | sem tag | 41 |
+| 12 | L6+L4 | Demonstração ao vivo: o panorama do art. 34 da Res. 62/2021, em PDF | DADOS ABERTOS | novo |
+| 13 | L6+6.8 | Traga a pergunta da sua unidade, com faixa-âncora | DADOS ABERTOS | 37 |
+| 14 | L11 | Contato, material, endereço do conector e código de leitura óptica | sem tag | 41 |
 
 A coluna "Vinha de" traz a numeração no deck de 21/09/2026. Ela existe para que quem
 comparar os dois materiais encontre o slide equivalente sem procurar.
