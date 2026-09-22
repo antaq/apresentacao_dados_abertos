@@ -89,15 +89,15 @@ Não edite este arquivo: edite o slide e gere de novo.
 - Digam isso com todas as letras, porque a sala vai ler como ranking: não é ranking de desempenho. O valor depende do tipo de infração e do porte do autuado, não do esforço da unidade.
 - Agora a armadilha, em duas partes. A primeira: uma linha é uma infração, não um processo. São dezenove mil setecentas e setenta e uma linhas para dezessete mil quinhentos e sessenta e sete processos, doze e meio por cento a mais. Quem conta linhas e chama de processo já errou o tamanho da carteira.
 - A segunda é a que vale a apresentação inteira: onze mil novecentas e vinte e seis linhas trazem hífen, que é arquivado sem irregularidade, e outras quatro mil quinhentas e vinte e cinco vêm vazias, que é decisão sem multa. Numa planilha as duas viram zero, e nascem dezesseis mil multas de zero real que não existem.
-- Guardem esse número, porque o próximo slide começa por ele. Cerca de dois minutos e meio.
+- Guardem esse número: dezesseis mil multas que não existem, num painel que está no ar há anos. É por isso que o próximo slide diz que a leitura é de vocês. Cerca de dois minutos e meio.
 
-### Slide 11 · A IA acelera o acesso, não substitui a desconfiança
+### Slide 11 · O dado sempre esteve público
 
-- Conclusão do bloco, logo depois do slide mais forte da apresentação. Esta é a resposta ao medo que ninguém verbaliza na sala: o de ser substituído.
-- Diga devagar. A ferramenta acelera o acesso ao dado. Ela não substitui quem olha para onze mil novecentas e vinte e seis multas de valor zero e desconfia.
-- Vale lembrar em uma frase por que essa desconfiança é justamente de vocês: quem já arquivou processo sem irregularidade sabe, sem pensar, que aquilo não é multa de zero real. Quem só tem a planilha não sabe.
-- E então o fecho, olhando para a plateia: essa desconfiança é a competência de vocês, e ela acabou de ficar mais valiosa. Se você acertar o tom aqui, o resto da apresentação corre sozinho.
-- Pausa antes de avançar.
+- Conclusão do bloco, e é o slide em que se muda o tom. Os cinco casos foram sobre cuidado; este é sobre o que se ganha. Diga devagar, e deixe a frase respirar antes de completar.
+- O dado sempre esteve público. A ANTAQ publica há mais de vinte anos, e nada do que foi mostrado hoje é novidade de conteúdo: são os mesmos painéis que estão no ar. O que mudou é que agora ele responde. A distância entre a pergunta e o número deixou de ser uma tarde de trabalho.
+- E então o fecho, olhando para a plateia: quem sabe o que perguntar a ele são vocês. Essa é a parte que nenhuma ferramenta traz pronta. Quem já arquivou processo sem irregularidade sabe, sem pensar, o que uma planilha não sabe.
+- Se quiser reforçar, cabe uma frase: o que este bloco mostrou não foi a ferramenta ficando esperta, foi a pergunta de vocês ficando mais barata de fazer. Quanto mais barata, mais perguntas cabem no dia.
+- Pausa antes de avançar. O próximo slide é ao vivo.
 
 ### Slide 12 · O panorama de um artigo, ao vivo
 
@@ -108,7 +108,7 @@ Não edite este arquivo: edite o slide e gere de novo.
 - E reparem na linha do inciso sete: uma única linha, quarenta mil duzentos e sessenta e dois reais. É quase tanto quanto as quarenta e uma do inciso um somadas. Contar linha não mede gravidade.
 - Agora a armadilha, e é a que dá nome ao slide. A pergunta diz autos lavrados, e o painel só publica processo que já teve decisão. O que está em tramitação não está ali, e continua no SFIS. Digam isso antes que alguém leve o número para uma peça.
 - A segunda parte é o campo: Auto de Infração, no painel, é a origem do processo, não o documento. Ele vale para doze das quarenta e quatro linhas; as outras trinta e duas vieram de fiscalização extraordinária ou programada. Quem filtrar por esse campo achando que separa auto lavrado perde setenta por cento do artigo.
-- E fechem pelo número que veio do slide anterior: das quarenta e quatro, só seis terminaram em multa. As outras trinta e oito são dezenove advertências e dezenove arquivamentos. Numa planilha, trinta e oito delas virariam multa de zero real. Cerca de quatro minutos, com a consulta rodando.
+- E fechem pelo que interessa a quem for usar isso amanhã: das quarenta e quatro, só seis terminaram em multa. As outras trinta e oito são dezenove advertências e dezenove arquivamentos. Numa planilha, trinta e oito delas virariam multa de zero real. Cerca de quatro minutos, com a consulta rodando.
 
 ### Slide 13 · Traga a pergunta da sua unidade
 

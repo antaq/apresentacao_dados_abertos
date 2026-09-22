@@ -209,14 +209,14 @@ consulta. A exceção é o acervo de atos publicados, que é cópia manual e est
   `Fonte: atos publicados pela ANTAQ (acervo da Biblioteca, copiado até 27/08/2026), espécie Acórdão, busca por "sobre-estadia" em cada ano, via conector MCP independente, em 22 de setembro de 2026.`
 - Tarifas-teto (slide 9):
   `Fonte: painel Administração Portuária da ANTAQ, quadros de tarifas-teto e de tarifas homologadas, via conector MCP independente, em 22 de setembro de 2026. Teto aprovado não é preço cobrado.`
-- Painel de Fiscalização (slides 10 e 11):
+- Painel de Fiscalização (slide 10):
   `Fonte: painel Fiscalização da ANTAQ, quadro "Base de Dados", via conector MCP independente, em 22 de setembro de 2026.` No slide 10, acrescentar: `A soma é piso: o painel conta R$ 110,3 milhões.`
 - Demonstração ao vivo, art. 34 da Res. 62/2021 (slide 12), única que cita dois quadros:
   `Fonte: painel Fiscalização da ANTAQ, quadros "Base de Dados" e "Objeto das Normas", via conector MCP independente, em 22 de setembro de 2026. Só processo julgado; o que tramita fica fora.`
 - Recapitulação do encontro anterior (slide 2):
   `Fonte: apresentação "IA no dia a dia da Fiscalização", SFC, 21 de setembro de 2026 (antaq.github.io/apresentacao_ia_sfc).`
 - Roteiro (slide 3): `Fonte: tempo estimado no roteiro desta apresentação (GPF e GRAT/SFC).`
-- **Sem linha de fonte:** slides 1, 5, 13 e 14, porque não exibem número.
+- **Sem linha de fonte:** slides 1, 5, 11, 13 e 14, porque não exibem número.
 
 **Endereço do conector (slides 5 e 14):** `https://antaq.dadosabertos.dev/mcp`. Aparece
 projetado nos dois slides, em `'Courier New', monospace`, sempre com o `https://`, porque a
@@ -441,7 +441,7 @@ Se a especificação não trouxer NOTAS para o slide, escreva uma nota curta e �
 | 8 | L6+L8 | Caso 3: sobre-estadia, de 14 para 72 acórdãos por ano | DADOS ABERTOS | novo |
 | 9 | L6+L8 | Caso 4: onze tetos na forma genérica, um na específica | DADOS ABERTOS | novo |
 | 10 | L6+6.1 | Caso 5: a maior carteira não é a de maior valor | DADOS ABERTOS | novo |
-| 11 | L2 | Conclusão do bloco | sem tag | 36 |
+| 11 | L2 | Conclusão do bloco: o dado sempre esteve público | sem tag | 36 |
 | 12 | L6+L4 | Demonstração ao vivo: o panorama do art. 34 da Res. 62/2021, em PDF | DADOS ABERTOS | novo |
 | 13 | L6+6.8 | Traga a pergunta da sua unidade, com faixa-âncora | DADOS ABERTOS | 37 |
 | 14 | L11 | Contato, material, endereço do conector e código de leitura óptica | sem tag | 41 |
