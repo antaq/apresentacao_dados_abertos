@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Cinco perguntas antes de usar um número</title>
+<title>A maior carteira não é a de maior valor</title>
 <link rel="icon" href="favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
@@ -35,30 +35,31 @@
 
   .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
 
-  .tabela { width:100%; border-collapse:separate; border-spacing:0; }
-  .tabela thead th { background:#003366; color:#fff; font-family:'Montserrat',sans-serif; font-weight:700;
-    font-size:22px; letter-spacing:.04em; text-transform:uppercase; padding:16px 26px; text-align:left; }
-  .tabela thead th i { margin-right:12px; opacity:.85; }
-  .tabela tbody td { padding:16px 26px; font-size:23px; color:#374151; border-bottom:1px solid #E5E7EB;
-    vertical-align:middle; line-height:1.32; }
-  .tabela tbody tr:nth-child(even) td { background:#F8FAFC; }
-  .tabela tbody tr:last-child td { border-bottom:none; }
+  .grade { display:flex; gap:30px; align-items:flex-start; }
+  .coluna-u { flex:1; }
+  .u-cab { display:flex; align-items:flex-end; gap:14px; padding:0 16px 7px 16px;
+           border-bottom:2px solid #CBD5E1; }
+  .u-cab span { font-family:'Montserrat',sans-serif; font-weight:800; font-size:17px; color:#64748B;
+                text-transform:uppercase; letter-spacing:.1em; }
+  .u-linha { display:flex; align-items:center; gap:14px; padding:4px 16px;
+             border-bottom:1px solid #EAEFF5; }
+  .u-forte { background:#F0F9FF; border-bottom-color:#BAE6FD; border-radius:8px; }
+  .u-sigla { flex:1; font-family:'Montserrat',sans-serif; font-weight:700; font-size:22px;
+             color:#1F2937; line-height:1.15; }
+  .u-forte .u-sigla { color:#0066CC; font-weight:800; }
+  .u-num { width:88px; text-align:right; font-family:'Montserrat',sans-serif; font-weight:700;
+           font-size:22px; color:#374151; flex-shrink:0; }
+  .u-val { width:138px; text-align:right; font-family:'Montserrat',sans-serif; font-weight:700;
+           font-size:22px; color:#0066CC; flex-shrink:0; white-space:nowrap; }
+  .u-cab .c-num { width:88px; text-align:right; flex-shrink:0; }
+  .u-cab .c-val { width:138px; text-align:right; flex-shrink:0; }
+  .u-cab .c-sigla { flex:1; }
 
-  .num-cx { display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px;
-    border-radius:10px; background:#E0F2FE; color:#003366; font-family:'Montserrat',sans-serif;
-    font-weight:900; font-size:22px; margin-right:16px; flex-shrink:0; }
-  .celula-pergunta { display:flex; align-items:center; }
-  .celula-pergunta span.txt { font-family:'Montserrat',sans-serif; font-weight:700; font-size:24px;
-    color:#003366; line-height:1.25; }
-
-  .grava { font-family:'Courier New', monospace; font-weight:800; font-size:25px; color:#003366;
-    background:#E0F2FE; border-radius:8px; padding:2px 13px; white-space:nowrap; }
-
-  .faixa-fecho { background:linear-gradient(90deg,#002244 0%,#004488 100%); border-left:12px solid #FFD700;
-    border-radius:0 14px 14px 0; padding:20px 34px; display:flex; align-items:center; gap:22px; }
-  .faixa-fecho i { color:#FFD700; font-size:34px; flex-shrink:0; }
-  .faixa-fecho p { color:#FFFFFF; font-family:'Montserrat',sans-serif; font-weight:800; font-size:29px;
-    line-height:1.28; }
+  .resumo { display:flex; align-items:center; gap:18px; padding:15px 26px; border-radius:12px;
+            background:#003366; color:#FFFFFF; }
+  .resumo i { font-size:26px; color:#FFD700; flex-shrink:0; }
+  .resumo p { font-family:'Montserrat',sans-serif; font-weight:800; font-size:23px; line-height:1.25; }
+  .nq { white-space:nowrap; }
 </style>
 </head>
 <body>
@@ -72,10 +73,10 @@
       <div class="flex items-center gap-3">
         <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
         <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:46px; line-height:1.12; letter-spacing:-0.02em;">
-          Cinco perguntas antes de usar um número
+          A maior carteira não é a de maior valor
         </h1>
       </div>
-      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">O que os quatro casos ensinaram, para levar para a mesa</p>
+      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">Caso 5 &middot; Sancionador &middot; as 22 unidades, lado a lado</p>
     </div>
     <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
       <i class="fas fa-plug" style="font-size:26px;"></i>
@@ -84,42 +85,54 @@
   </div>
 
   <!-- Conteúdo -->
-  <div class="flex-1 flex flex-col justify-center px-16 pb-4 z-10 min-h-0" style="gap:20px;">
+  <div class="flex-1 flex flex-col justify-center px-16 pb-4 z-10 min-h-0" style="gap:12px;">
 
-    <table class="tabela">
-      <thead>
-        <tr>
-          <th style="width:37%;"><i class="fas fa-circle-question"></i>Pergunte</th>
-          <th><i class="fas fa-magnifying-glass-chart"></i>O exemplo, no dado de hoje</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="width:37%;"><span class="celula-pergunta"><span class="num-cx">1</span><span class="txt">De quando é o dado?</span></span></td>
-          <td>Painéis capturados em 18/08/2026; os atos publicados vêm do acervo do dia. O que foi assinado depois não está no painel.</td>
-        </tr>
-        <tr>
-          <td style="width:37%;"><span class="celula-pergunta"><span class="num-cx">2</span><span class="txt">O que é uma linha?</span></span></td>
-          <td>No sancionador, uma infração julgada: 19.708 linhas para 17.505 processos.</td>
-        </tr>
-        <tr>
-          <td style="width:37%;"><span class="celula-pergunta"><span class="num-cx">3</span><span class="txt">O que diz a célula sem número?</span></span></td>
-          <td><span class="grava">-</span> é arquivado sem irregularidade (11.876); vazia é decisão sem multa (4.513). Nenhuma das duas é multa zero.</td>
-        </tr>
-        <tr>
-          <td style="width:37%;"><span class="celula-pergunta"><span class="num-cx">4</span><span class="txt">O campo diz o que promete?</span></span></td>
-          <td>"Outorga Vigente: Sim" em 3.169 de 3.169 linhas, e 1.350 já estão extintas.</td>
-        </tr>
-        <tr>
-          <td style="width:37%;"><span class="celula-pergunta"><span class="num-cx">5</span><span class="txt">É um número só?</span></span></td>
-          <td>Tarifa de acesso aquaviário em Paranaguá: 11 tetos, de R$ 300,00 a R$ 13.003,24, sem coluna que diga qual vale.</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="instrucao">
+      <i class="fas fa-terminal"></i>
+      <code>"Quantas infrações julgadas e quanto de multa tem cada unidade regional?"</code>
+    </div>
 
-    <div class="faixa-fecho">
-      <i class="fas fa-file-signature"></i>
-      <p>A busca localiza. O que vai para a peça vem da fonte primária: DOU, SEI ou o próprio painel.</p>
+    <div class="grade">
+      <div class="coluna-u">
+        <div class="u-cab"><span class="c-sigla">Unidade</span><span class="c-num">Linhas</span><span class="c-val">Multas</span></div>
+        <div class="u-linha u-forte"><p class="u-sigla">GREBL</p><p class="u-num">3.156</p><p class="u-val">R$ 11,4 mi</p></div>
+        <div class="u-linha"><p class="u-sigla">GREMN</p><p class="u-num">2.599</p><p class="u-val">R$ 11,9 mi</p></div>
+        <div class="u-linha u-forte"><p class="u-sigla">GRERJ</p><p class="u-num">2.435</p><p class="u-val">R$ 21,9 mi</p></div>
+        <div class="u-linha"><p class="u-sigla">GREST</p><p class="u-num">2.337</p><p class="u-val">R$ 13,1 mi</p></div>
+        <div class="u-linha"><p class="u-sigla">URESV</p><p class="u-num">1.500</p><p class="u-val">R$ 3,4 mi</p></div>
+        <div class="u-linha"><p class="u-sigla">GRERE</p><p class="u-num">1.182</p><p class="u-val">R$ 4,9 mi</p></div>
+        <div class="u-linha"><p class="u-sigla">URESL</p><p class="u-num">1.150</p><p class="u-val">R$ 2,1 mi</p></div>
+        <div class="u-linha"><p class="u-sigla">GREFL</p><p class="u-num">1.140</p><p class="u-val">R$ 10,3 mi</p></div>
+        <div class="u-linha"><p class="u-sigla">URECB</p><p class="u-num">820</p><p class="u-val">R$ 1,2 mi</p></div>
+        <div class="u-linha u-forte"><p class="u-sigla">UREPL</p><p class="u-num">759</p><p class="u-val">R$ 15,7 mi</p></div>
+        <div class="u-linha"><p class="u-sigla">UREPV</p><p class="u-num">756</p><p class="u-val">R$ 834,2 mil</p></div>
+      </div>
+      <div class="coluna-u">
+        <div class="u-cab"><span class="c-sigla">Unidade</span><span class="c-num">Linhas</span><span class="c-val">Multas</span></div>
+        <div class="u-linha"><p class="u-sigla">UREVT</p><p class="u-num">685</p><p class="u-val">R$ 5,3 mi</p></div>
+        <div class="u-linha"><p class="u-sigla">UREFT</p><p class="u-num">620</p><p class="u-val">R$ 2,0 mi</p></div>
+        <div class="u-linha"><p class="u-sigla">GFN</p><p class="u-num">240</p><p class="u-val">R$ 1,2 mi</p></div>
+        <div class="u-linha"><p class="u-sigla">SFC</p><p class="u-num">107</p><p class="u-val">R$ 59,5 mil</p></div>
+        <div class="u-linha"><p class="u-sigla">URECO</p><p class="u-num">105</p><p class="u-val">R$ 359,8 mil</p></div>
+        <div class="u-linha"><p class="u-sigla">GEF Investimentos</p><p class="u-num">72</p><p class="u-val">R$ 0,00</p></div>
+        <div class="u-linha"><p class="u-sigla">GFP</p><p class="u-num">51</p><p class="u-val">R$ 542,5 mil</p></div>
+        <div class="u-linha"><p class="u-sigla">URESN</p><p class="u-num">49</p><p class="u-val">R$ 167,3 mil</p></div>
+        <div class="u-linha"><p class="u-sigla">GCOR</p><p class="u-num">5</p><p class="u-val">R$ 302,50</p></div>
+        <div class="u-linha"><p class="u-sigla">GEF Contêineres</p><p class="u-num">2</p><p class="u-val">R$ 0,00</p></div>
+        <div class="u-linha"><p class="u-sigla">GRAT</p><p class="u-num">1</p><p class="u-val">R$ 0,00</p></div>
+      </div>
+    </div>
+
+    <div class="resumo">
+      <i class="fas fa-layer-group"></i>
+      <p>22 unidades &middot; 19.771 linhas &middot; 17.567 processos distintos &middot; R$ 106,4 milhões em multas</p>
+    </div>
+
+    <div class="faixa">
+      <p class="faixa-rotulo">A armadilha</p>
+      <p>Uma linha é uma infração, não um processo: contar linhas infla a carteira em 12,5%. E 11.926
+      delas trazem hífen, que é arquivado sem irregularidade, mais 4.525 vazias, que é decisão sem
+      multa. Nenhuma das duas é multa de zero real.</p>
     </div>
   </div>
 
@@ -127,20 +140,21 @@
   <div class="px-16 pb-5 flex justify-between items-end z-10">
     <div style="max-width:1620px;">
       <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
-      <p class="text-gray-400" style="font-size:17px;">Fonte: painéis Fiscalização, Outorgas de Navegação e Administração Portuária da ANTAQ (captura de 18/08/2026) e atos publicados, via conector MCP independente, em 21 de setembro de 2026.</p>
+      <p class="text-gray-400" style="font-size:17px;">Fonte: painel Fiscalização da ANTAQ, quadro "Base de Dados", via conector MCP independente, em 22 de setembro de 2026. A soma é piso: o painel conta R$ 110,3 milhões.</p>
     </div>
     <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">10 / 13</p>
   </div>
 
-  <div class="bg-marca"><i class="fas fa-list-check"></i></div>
+  <div class="bg-marca"><i class="fas fa-sitemap"></i></div>
 </div>
 
 <div id="notas-apresentador" style="display:none;">
-  <p>Slide para fotografar. É o resumo prático do bloco, e cada linha já apareceu em um dos casos, menos a quinta, que vem do painel de tarifas.</p>
-  <p>Passe pelas cinco em ritmo de conferência, uma frase cada. A primeira é a que mais se esquece: o dado tem data, e o que aconteceu depois da captura não está nele.</p>
-  <p>A terceira é a das multas de valor zero: numa planilha, o hífen e a célula vazia viram zero, e nascem dezesseis mil multas de zero real que não existem.</p>
-  <p>A quinta: para a mesma forma de incidência, em Paranaguá, o painel publica onze tetos diferentes e não diz qual vale para quem. Quem recebe denúncia de cobrança acima do teto precisa da tabela homologada, não do painel.</p>
-  <p>Feche lembrando que nenhuma das cinco é sobre a IA. Todas são sobre o dado, e valem do mesmo jeito para quem abre o painel no navegador. Cerca de dois minutos.</p>
+  <p>Quinto e último caso, e é o mais fácil de levar para a mesa: a carteira de cada unidade, as vinte e duas de uma vez. Deixem a sala procurar a própria sigla antes de dizer qualquer coisa.</p>
+  <p>O título é a leitura do slide. A GREBL tem a maior carteira, três mil cento e cinquenta e seis linhas, e onze vírgula quatro milhões em multa. A GRERJ tem menos linhas e quase o dobro em valor. E a UREPL, que é a décima em carteira, é a segunda em valor, com quinze vírgula sete milhões.</p>
+  <p>Digam isso com todas as letras, porque a sala vai ler como ranking: não é ranking de desempenho. O valor depende do tipo de infração e do porte do autuado, não do esforço da unidade.</p>
+  <p>Agora a armadilha, em duas partes. A primeira: uma linha é uma infração, não um processo. São dezenove mil setecentas e setenta e uma linhas para dezessete mil quinhentos e sessenta e sete processos, doze e meio por cento a mais. Quem conta linhas e chama de processo já errou o tamanho da carteira.</p>
+  <p>A segunda é a que vale a apresentação inteira: onze mil novecentas e vinte e seis linhas trazem hífen, que é arquivado sem irregularidade, e outras quatro mil quinhentas e vinte e cinco vêm vazias, que é decisão sem multa. Numa planilha as duas viram zero, e nascem dezesseis mil multas de zero real que não existem.</p>
+  <p>Guardem esse número, porque o próximo slide começa por ele. Cerca de dois minutos e meio.</p>
 </div>
 <script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
 <script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>

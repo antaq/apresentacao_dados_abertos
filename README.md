@@ -53,19 +53,20 @@ python3 -m http.server 8130
 | Slides | Bloco | Tempo |
 |---|---|---|
 | 1 a 2 | Abertura e recapitulação | 3 min |
-| 3 a 12 | Bloco 1 · Quatro perguntas da rotina | 18 min |
+| 3 a 12 | Bloco 1 · Cinco perguntas da rotina | 20 min |
 | 13 | Encerramento | perguntas |
 
-## Os quatro casos
+## Os cinco casos
 
 | Slide | Caso | O que ele mostra |
 |---|---|---|
-| 6 | Contratos que vencem | Onze contratos de arrendamento e de adesão vencem até dezembro, em dez portos |
-| 7 | A empresa antes da fiscalização | Outorgas, frota e fiscalizações de um CNPJ em uma pergunta, e o campo de vigência que mente |
+| 6 | Contratos que vencem | Onze contratos vencem entre hoje e 31 de dezembro, em dez portos, dois deles arrendamentos |
+| 7 | A empresa pelo CNPJ | Outorgas, frota e fiscalizações de um CNPJ em uma pergunta, e o campo de vigência que mente |
 | 8 | O que a Diretoria decide | Acórdãos que citam sobre-estadia passam de 14 para 72 por ano, e o que eles determinam à SFC |
-| 9 | O tipo residual | O enquadramento genérico arquiva quase o dobro da média, e o número grande vem de uma empresa só |
+| 9 | O teto da tarifa | A forma genérica devolve onze tetos; a específica devolve um, e a peça se instrui pela tabela homologada |
+| 10 | A carteira da unidade | As 22 unidades lado a lado, e por que a maior carteira não é a de maior valor |
 
-Os quatro seguem o mesmo molde: a pergunta como se digita, a resposta com número e fonte,
+Os cinco seguem o mesmo molde: a pergunta como se digita, a resposta com número e fonte,
 e a armadilha que o dado esconde.
 
 ## Arquivos
@@ -94,9 +95,9 @@ vai rodar, porque a sala vai tentar. Se o endereço mudar, os dois slides mudam 
 seção 5 do [`KIT.md`](KIT.md) registra o que precisa ser trocado.
 
 Leia o [`PENDENCIAS.md`](PENDENCIAS.md). Os números do deck foram lidos do conector em
-**21/09/2026**, sobre uma captura do painel de **18/08/2026**; se a data da apresentação
-escorregar, reconfira, porque a base é atualizada. Os atos publicados vêm de um acervo
-atualizado com o dia, e por isso os números do slide 8 mudam a cada consulta.
+**22/09/2026**, sobre a captura dos painéis da madrugada do mesmo dia; se a data da
+apresentação escorregar, reconfira, porque os painéis são recapturados. Os atos publicados
+do slide 8 vêm de um acervo copiado até **27/08/2026**, que é o teto daquela contagem.
 
 ## Publicação (GitHub Pages)
 

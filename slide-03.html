@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Bloco 1 · Quatro perguntas da rotina</title>
+<title>Bloco 1 · Cinco perguntas da rotina</title>
 <link rel="icon" href="favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
@@ -30,8 +30,9 @@
   .module-num { font-family:'Montserrat', sans-serif; font-weight:900; line-height:0.9;
     font-size:188px; letter-spacing:-4px; color:#FFD700; text-shadow:0 8px 24px rgba(0,0,0,0.35); }
 
-  .chip { display:flex; align-items:center; gap:18px; background:rgba(255,255,255,0.07);
-    border:1px solid rgba(255,255,255,0.14); border-radius:16px; padding:24px 24px; }
+  .chip { display:flex; flex-direction:column; align-items:flex-start; gap:15px;
+    background:rgba(255,255,255,0.07);
+    border:1px solid rgba(255,255,255,0.14); border-radius:16px; padding:22px 22px; }
   .chip-icon { width:60px; height:60px; border-radius:14px; flex-shrink:0; display:flex;
     align-items:center; justify-content:center; font-size:26px; background:rgba(0,102,204,0.30); color:#7CC0FF; }
   .chip p { font-family:'Montserrat',sans-serif; font-weight:600; color:#fff; font-size:22px; line-height:1.25; }
@@ -85,7 +86,7 @@
       <span class="module-num">01</span>
       <div class="pb-3" style="border-left:5px solid rgba(255,215,0,0.55); padding-left:36px;">
         <h1 class="font-montserrat font-black text-white leading-tight" style="font-size:78px; letter-spacing:-1.5px;">
-          Quatro perguntas da rotina
+          Cinco perguntas da rotina
         </h1>
         <p class="font-montserrat font-light mt-4" style="font-size:30px; color:#DBEAFE; max-width:1250px; line-height:1.4;">
           Cada caso mostra a pergunta como se digita, o que volta em segundos e a armadilha que o dado esconde.
@@ -93,29 +94,33 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-4 gap-5" style="max-width:1500px;">
+    <div class="grid grid-cols-5 gap-5" style="max-width:1660px;">
       <div class="chip">
         <div class="chip-icon"><i class="fas fa-file-contract"></i></div>
         <p>Contratos que vencem</p>
       </div>
       <div class="chip">
         <div class="chip-icon"><i class="fas fa-building-circle-check"></i></div>
-        <p>A empresa antes da fiscalização</p>
+        <p>A empresa pelo CNPJ</p>
       </div>
       <div class="chip">
         <div class="chip-icon"><i class="fas fa-landmark"></i></div>
         <p>O que a Diretoria decide</p>
       </div>
       <div class="chip">
-        <div class="chip-icon"><i class="fas fa-gavel"></i></div>
-        <p>O tipo residual</p>
+        <div class="chip-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+        <p>O teto da tarifa</p>
+      </div>
+      <div class="chip">
+        <div class="chip-icon"><i class="fas fa-sitemap"></i></div>
+        <p>A carteira da unidade</p>
       </div>
     </div>
 
     <div class="mt-10">
       <span class="pilula-tempo">
         <i class="fas fa-clock" style="color:#FFD700; font-size:30px;"></i>
-        <span class="font-montserrat" style="font-size:30px; font-weight:800; color:#fff;">18 minutos</span>
+        <span class="font-montserrat" style="font-size:30px; font-weight:800; color:#fff;">20 minutos</span>
       </span>
     </div>
 
@@ -133,7 +138,7 @@
 
 <div id="notas-apresentador" style="display:none;">
   <p>Placa de sinalização. Quinze a vinte segundos.</p>
-  <p>Anunciem os quatro casos apontando para os rótulos e digam o molde: a pergunta como se digita, a resposta e a armadilha. É o mesmo desenho nos quatro.</p>
+  <p>Anunciem os cinco casos apontando para os rótulos e digam o molde: a pergunta como se digita, a resposta e a armadilha. É o mesmo desenho nos cinco.</p>
   <p>Digam a frase que prende a sala: os números que vocês vão ver são de vocês. No primeiro caso, cada regional vai achar o próprio porto na lista.</p>
 </div>
 <script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>

@@ -194,22 +194,23 @@ Logo abaixo do texto-base do rodapé, em 17px, `#9CA3AF`:
 ```
 
 Fontes canônicas desta apresentação (use exatamente). Os números foram lidos em
-**21 de setembro de 2026**, sobre captura dos painéis de **18/08/2026**; a linha de fonte
-diz as duas datas. O acervo de atos publicados é atualizado com o dia, e por isso **não
-leva data de cópia**: basta a data da consulta.
+**22 de setembro de 2026**, sobre a captura dos painéis da madrugada do mesmo dia. Como as
+duas datas coincidem, **a linha de fonte não repete a data de captura**: basta a data da
+consulta. A exceção é o acervo de atos publicados, que é cópia manual e está congelado em
+**27/08/2026**: ali a data de cópia entra na linha de fonte, porque ela é o teto da contagem.
 
 - Movimentação portuária (slide 4):
-  `Fonte: painel Estatístico Aquaviário da ANTAQ, quadro de movimentação portuária por tipo de navegação, captura de 18/08/2026, via conector MCP independente, em 21 de setembro de 2026.`
+  `Fonte: painel Estatístico Aquaviário da ANTAQ, quadro de movimentação portuária por tipo de navegação, via conector MCP independente, em 22 de setembro de 2026.`
 - Contratos de porto público (slide 6):
-  `Fonte: painel Portos Públicos da ANTAQ, quadro "Portos Públicos" (559 contratos), captura de 18/08/2026, via conector MCP independente, em 21 de setembro de 2026. Vencimento pela data de expiração do último instrumento.`
+  `Fonte: painel Portos Públicos da ANTAQ, quadro "Portos Públicos" (559 contratos), via conector MCP independente, em 22 de setembro de 2026. Vencimento pela data de expiração do último instrumento.`
 - Outorgas, frota e fiscalização por CNPJ (slide 7):
-  `Fonte: painéis Outorgas de Navegação (quadros de outorgas e de frota) e Fiscalização da ANTAQ, captura de 18/08/2026, via conector MCP independente, em 21 de setembro de 2026. Vigência pela data de extinção.`
-- Atos publicados (slide 8):
-  `Fonte: atos publicados pela ANTAQ (acervo da Biblioteca), espécie Acórdão, busca textual por "sobre-estadia" em cada ano, via conector MCP independente, em 21 de setembro de 2026.`
-- Painel de Fiscalização (slides 9 e 11):
-  `Fonte: painel Fiscalização da ANTAQ, quadro "Base de Dados", captura de 18/08/2026, via conector MCP independente, em 21 de setembro de 2026.` No slide 9, acrescentar: `Percentuais sobre infrações julgadas, excluídos os arquivados sem irregularidade.`
-- Vários painéis em um só slide (slide 10):
-  `Fonte: painéis Fiscalização, Outorgas de Navegação e Administração Portuária da ANTAQ (captura de 18/08/2026) e atos publicados pela Agência, via conector MCP independente, em 21 de setembro de 2026.`
+  `Fonte: painéis Outorgas de Navegação (quadros de outorgas e de frota) e Fiscalização da ANTAQ, via conector MCP independente, em 22 de setembro de 2026. Vigência pela data de extinção.`
+- Atos publicados (slide 8), única linha que leva data de cópia:
+  `Fonte: atos publicados pela ANTAQ (acervo da Biblioteca, copiado até 27/08/2026), espécie Acórdão, busca por "sobre-estadia" em cada ano, via conector MCP independente, em 22 de setembro de 2026.`
+- Tarifas-teto (slide 9):
+  `Fonte: painel Administração Portuária da ANTAQ, quadros de tarifas-teto e de tarifas homologadas, via conector MCP independente, em 22 de setembro de 2026. Teto aprovado não é preço cobrado.`
+- Painel de Fiscalização (slides 10 e 11):
+  `Fonte: painel Fiscalização da ANTAQ, quadro "Base de Dados", via conector MCP independente, em 22 de setembro de 2026.` No slide 10, acrescentar: `A soma é piso: o painel conta R$ 110,3 milhões.`
 - Recapitulação do encontro anterior (slide 2):
   `Fonte: apresentação "IA no dia a dia da Fiscalização", SFC, 21 de setembro de 2026 (antaq.github.io/apresentacao_ia_sfc).`
 - Roteiro (slide 3): `Fonte: tempo estimado no roteiro desta apresentação (GPF e GRAT/SFC).`
@@ -420,14 +421,14 @@ Se a especificação não trouxer NOTAS para o slide, escreva uma nota curta e �
 |---|---|---|---|---|
 | 1 | L1 | Capa | sem tag | novo |
 | 2 | L3 | O que ficou dito ontem (recapitulação) | ABERTURA | novo |
-| 3 | L10 | Divisória bloco 1, Quatro perguntas da rotina (18 min) | sem tag | 28 |
+| 3 | L10 | Divisória bloco 1, Cinco perguntas da rotina (20 min) | sem tag | 28 |
 | 4 | L6+L4 | A mesma pergunta, com e sem conector | DADOS ABERTOS | 29 |
 | 5 | L3 | O conector não é um sistema da ANTAQ, endereço e faixa-âncora | DADOS ABERTOS | 30 |
 | 6 | L6+6.1 | Caso 1: onze contratos vencem até dezembro | DADOS ABERTOS | 31 |
 | 7 | L6+L8 | Caso 2: a empresa inteira em uma pergunta | DADOS ABERTOS | 33 |
 | 8 | L6+L8 | Caso 3: sobre-estadia, de 14 para 72 acórdãos por ano | DADOS ABERTOS | novo |
-| 9 | L6+L8 | Caso 4: o tipo residual arquiva quase o dobro | DADOS ABERTOS | 34 |
-| 10 | L5 | Cinco perguntas antes de usar um número | DADOS ABERTOS | 35 |
+| 9 | L6+L8 | Caso 4: onze tetos na forma genérica, um na específica | DADOS ABERTOS | novo |
+| 10 | L6+6.1 | Caso 5: a maior carteira não é a de maior valor | DADOS ABERTOS | novo |
 | 11 | L2 | Conclusão do bloco | sem tag | 36 |
 | 12 | 6.1+6.8 | Traga a pergunta da sua unidade, com faixa-âncora | DADOS ABERTOS | 37 |
 | 13 | L11 | Contato, material, endereço do conector e código de leitura óptica | sem tag | 41 |

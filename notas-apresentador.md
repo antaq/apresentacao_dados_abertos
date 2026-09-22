@@ -10,7 +10,7 @@ Não edite este arquivo: edite o slide e gere de novo.
 ### Slide 1 · Dados Abertos da ANTAQ para análise técnica · Capa
 
 - **Não comecem pelo assunto.** Fiquem poucos segundos nesta tela, só o tempo de agradecer e de os dois se apresentarem.
-- Esta apresentação continua a de ontem: ontem foi sobre como usar a ferramenta com segurança; hoje são quatro perguntas da rotina, respondidas com o dado que a Agência publica.
+- Esta apresentação continua a de ontem: ontem foi sobre como usar a ferramenta com segurança; hoje são cinco perguntas da rotina, respondidas com o dado que a Agência publica.
 - Avisem já que quem não esteve ontem não fica para trás: o slide 2 recapitula as quatro regras que importam, em dois minutos.
 - A data está na capa: **22 de setembro de 2026, 10h20**. Comecem de verdade pelo slide 2.
 
@@ -23,12 +23,12 @@ Não edite este arquivo: edite o slide e gere de novo.
 
 ---
 
-## Bloco 1 · Quatro perguntas da rotina
+## Bloco 1 · Cinco perguntas da rotina
 
-### Slide 3 · Bloco 1 · Quatro perguntas da rotina
+### Slide 3 · Bloco 1 · Cinco perguntas da rotina
 
 - Placa de sinalização. Quinze a vinte segundos.
-- Anunciem os quatro casos apontando para os rótulos e digam o molde: a pergunta como se digita, a resposta e a armadilha. É o mesmo desenho nos quatro.
+- Anunciem os cinco casos apontando para os rótulos e digam o molde: a pergunta como se digita, a resposta e a armadilha. É o mesmo desenho nos cinco.
 - Digam a frase que prende a sala: os números que vocês vão ver são de vocês. No primeiro caso, cada regional vai achar o próprio porto na lista.
 
 ### Slide 4 · A mesma pergunta, com e sem conector
@@ -36,7 +36,7 @@ Não edite este arquivo: edite o slide e gere de novo.
 - Slide de virada. Ontem a ferramenta era boa de texto; a partir daqui ela alcança o dado oficial da Agência.
 - Antes de mostrar a coluna da direita, pergunte à sala: quanto vocês acham que os portos brasileiros movimentaram em 2025? Deixe dois ou três palpites.
 - A coluna da esquerda não é crítica a ferramenta nenhuma: é como elas funcionam. O conhecimento para numa data, e a ferramenta não avisa quando a pergunta passou dessa data. É o que foi dito ontem sobre errar onde é mais convincente.
-- A coluna da direita traz três coisas juntas: o número, a fonte com a data da captura e a ressalva de leitura. É esse trio que vai aparecer nos quatro casos. Se perguntarem pela ressalva: em 2025, a cabotagem movimentou 303,7 milhões de toneladas e transportou 223,0 milhões.
+- A coluna da direita traz três coisas juntas: o número, a fonte e a ressalva de leitura. É esse trio que vai aparecer nos cinco casos. Se perguntarem pela ressalva: em 2025, a cabotagem movimentou 303,7 milhões de toneladas e transportou 223,0 milhões.
 - É o mesmo painel público da Central de Painéis. O conector não dá acesso a nada novo: ele torna a consulta barata. Cerca de um minuto e meio.
 
 ### Slide 5 · O conector não é um sistema da ANTAQ
@@ -46,8 +46,8 @@ Não edite este arquivo: edite o slide e gere de novo.
 - Segundo, e é o ponto que não pode ser contornado: **o conector é um projeto pessoal de quem está falando**, feito com recurso próprio, sem fins lucrativos e fora do expediente. A ANTAQ não contratou, não desenvolveu, não homologou e não mantém. Não é sistema da casa, não substitui nenhum, e usá-lo não é recomendação institucional. Digam isso com todas as letras, mesmo que soe repetitivo, porque a plateia é composta de colegas e o mal-entendido aqui é caro. Se perguntarem por que então está sendo apresentado num evento da Superintendência, a resposta honesta é: porque o método interessa ao trabalho de vocês, e porque a alternativa, que é usar sem saber de onde vem, é pior.
 - Terceiro: o que é da ANTAQ é o dado, não a ferramenta. Ele só consome o que é publicado, e vale nomear as fontes: os painéis públicos da Agência, os painéis do ONTL, o Comex Stat do MDIC e os atos e normas publicados.
 - O quarto ponto é o que importa a esta sala, e é o que torna o terceiro suportável: o conector não enxerga processo em tramitação. Ele lê o painel público, que só tem processo já julgado. Nada do SFIS, nada do SEI, nada em sigilo.
-- Antes da faixa dourada, leiam o endereço em voz alta: o conector fica em *antaq.dadosabertos.dev barra mcp*. É um endereço particular, não é domínio da Agência, e isso deve ser dito junto com o endereço, não depois. Qualquer ferramenta compatível se conecta ali, sem instalação. Quem quiser anotar, este é o momento; o endereço volta no último slide.
-- Fechem na faixa dourada. Quem esteve ontem já ouviu esta frase, e ela volta uma última vez no slide 12: a IA não assina, quem assina é você, e quem assina responde.
+- O endereço é o ponto alto do slide, e é o que a sala vai querer anotar: o conector fica em *antaq.dadosabertos.dev barra mcp*. Leiam em voz alta, devagar, e digam junto que é um endereço particular, não é domínio da Agência. Isso vai junto com o endereço, nunca depois. Deem alguns segundos de silêncio para quem estiver anotando; o endereço volta no último slide.
+- A frase do rodapé é só um lembrete de ontem, dita em voz baixa e sem parar no slide: a IA não assina, quem assina é você, e quem assina responde. Ela volta inteira, e com peso, no slide 12.
 
 ### Slide 6 · Onze contratos vencem até dezembro
 
@@ -68,32 +68,33 @@ Não edite este arquivo: edite o slide e gere de novo.
 
 ### Slide 8 · Sobre-estadia: de 14 para 72 acórdãos por ano
 
-- Terceiro caso, e ele sai do painel de números. O conector também lê os atos publicados da Agência, com texto integral: 21.091 acórdãos, resoluções, portarias e deliberações, de 2000 até hoje.
+- Terceiro caso, e ele sai do painel de números. O conector também lê os atos publicados da Agência, com texto integral: 21.091 acórdãos, resoluções, portarias e deliberações, de 2000 até agosto deste ano.
 - Leia o gráfico da esquerda para a direita: 14, 40, 72. Em dois anos, cinco vezes mais acórdãos citando sobre-estadia. E 2026, ano em curso, já passou de 2024 inteiro.
 - Agora os cartões, que é o que interessa a esta sala. Nas cautelares de sobre-estadia, a Diretoria decide o pedido e manda a SFC apurar o mérito. Em fevereiro deste ano, mandou continuar o banco de dados de denúncias conduzido pela SFC. A demanda vem para cá, e está crescendo.
 - Para que serve: antes de instruir a próxima denúncia, ler em minutos o que a Diretoria já decidiu em casos parecidos. A busca acha o acórdão; o texto que vai para a peça vem do documento no SEI.
 - A armadilha é de contagem: citar não é julgar denúncia. Um acórdão que só menciona o tema também entra. O número mostra a tendência, e é para isso que ele serve aqui. Cerca de dois minutos e meio.
 
-### Slide 9 · O tipo residual arquiva quase o dobro
+### Slide 9 · Onze tetos na forma genérica, um na específica
 
-- Quarto caso, conduzido pela GRAT, e ele começou como outro slide. A primeira versão desta apresentação dizia que o enquadramento genérico está entre as maiores fontes de nulidade. Fomos conferir no dado antes de dizer isso em público, e o dado não sustenta: anulação de 6,0% no inciso e de 6,2% no conjunto das infrações julgadas.
-- O que o dado mostra é outra coisa: 57% das infrações julgadas nesse inciso terminam em arquivamento, contra 32% no conjunto. Quase o dobro. E a multa cai de 42% para 31%.
-- A caixa de cima responde a quem lembrar do número grande: R$ 18,7 milhões é a maior soma da série, mas 39% vêm de uma empresa só. Número grande não é padrão; olhem a distribuição antes de concluir.
-- Não concluam pela sala. O inciso vai do contrato de arrendamento à determinação da Autoridade Portuária, casos que podem ser mais difíceis de provar. A pergunta fica aberta para as regionais: por que ele arquiva quase o dobro? A GRAT quer ouvir quem instruiu esses processos.
-- Esta é a lição do bloco em um caso: a ferramenta tornou barato conferir a própria tese antes de defendê-la. Os percentuais excluem os 11.876 registros arquivados sem irregularidade, em que nenhuma infração chegou a ser imputada. Cerca de três minutos.
+- Quarto caso, e ele começa com uma denúncia: alguém diz que o porto cobrou acima do teto. A primeira pergunta é sempre a mesma, e é a errada.
+- O que volta são onze valores para a mesma forma de incidência, de R$ 300,00 a R$ 13.003,24. O painel publica os onze e não publica a coluna que diria qual deles vale. Quem escolhe um está chutando, e o chute tem cara de resposta.
+- A saída não é abandonar o painel: é descer um nível. Na forma específica o valor é único, R$ 7.463,70 no longo curso e R$ 5.597,78 na cabotagem ou na navegação interior. A pergunta específica tem resposta; a genérica não tem.
+- E o que vai na peça não é nenhum dos dois: é a tabela homologada. O painel diz onde ela está, com o processo e o mês da homologação. A consulta economiza a procura, não a leitura do documento.
+- A armadilha vale para o país inteiro, não só para Paranaguá: em quinze por cento dos pares de porto e forma de incidência o painel publica mais de um teto. E lembrem de uma coisa que a sala confunde: teto aprovado não é preço cobrado. Cerca de dois minutos e meio.
 
-### Slide 10 · Cinco perguntas antes de usar um número
+### Slide 10 · A maior carteira não é a de maior valor
 
-- Slide para fotografar. É o resumo prático do bloco, e cada linha já apareceu em um dos casos, menos a quinta, que vem do painel de tarifas.
-- Passe pelas cinco em ritmo de conferência, uma frase cada. A primeira é a que mais se esquece: o dado tem data, e o que aconteceu depois da captura não está nele.
-- A terceira é a das multas de valor zero: numa planilha, o hífen e a célula vazia viram zero, e nascem dezesseis mil multas de zero real que não existem.
-- A quinta: para a mesma forma de incidência, em Paranaguá, o painel publica onze tetos diferentes e não diz qual vale para quem. Quem recebe denúncia de cobrança acima do teto precisa da tabela homologada, não do painel.
-- Feche lembrando que nenhuma das cinco é sobre a IA. Todas são sobre o dado, e valem do mesmo jeito para quem abre o painel no navegador. Cerca de dois minutos.
+- Quinto e último caso, e é o mais fácil de levar para a mesa: a carteira de cada unidade, as vinte e duas de uma vez. Deixem a sala procurar a própria sigla antes de dizer qualquer coisa.
+- O título é a leitura do slide. A GREBL tem a maior carteira, três mil cento e cinquenta e seis linhas, e onze vírgula quatro milhões em multa. A GRERJ tem menos linhas e quase o dobro em valor. E a UREPL, que é a décima em carteira, é a segunda em valor, com quinze vírgula sete milhões.
+- Digam isso com todas as letras, porque a sala vai ler como ranking: não é ranking de desempenho. O valor depende do tipo de infração e do porte do autuado, não do esforço da unidade.
+- Agora a armadilha, em duas partes. A primeira: uma linha é uma infração, não um processo. São dezenove mil setecentas e setenta e uma linhas para dezessete mil quinhentos e sessenta e sete processos, doze e meio por cento a mais. Quem conta linhas e chama de processo já errou o tamanho da carteira.
+- A segunda é a que vale a apresentação inteira: onze mil novecentas e vinte e seis linhas trazem hífen, que é arquivado sem irregularidade, e outras quatro mil quinhentas e vinte e cinco vêm vazias, que é decisão sem multa. Numa planilha as duas viram zero, e nascem dezesseis mil multas de zero real que não existem.
+- Guardem esse número, porque o próximo slide começa por ele. Cerca de dois minutos e meio.
 
 ### Slide 11 · A IA acelera o acesso, não substitui a desconfiança
 
 - Conclusão do bloco, logo depois do slide mais forte da apresentação. Esta é a resposta ao medo que ninguém verbaliza na sala: o de ser substituído.
-- Diga devagar. A ferramenta acelera o acesso ao dado. Ela não substitui quem olha para onze mil oitocentas e setenta e seis multas de valor zero e desconfia.
+- Diga devagar. A ferramenta acelera o acesso ao dado. Ela não substitui quem olha para onze mil novecentas e vinte e seis multas de valor zero e desconfia.
 - Vale lembrar em uma frase por que essa desconfiança é justamente de vocês: quem já arquivou processo sem irregularidade sabe, sem pensar, que aquilo não é multa de zero real. Quem só tem a planilha não sabe.
 - E então o fecho, olhando para a plateia: essa desconfiança é a competência de vocês, e ela acabou de ficar mais valiosa. Se você acertar o tom aqui, o resto da apresentação corre sozinho.
 - Pausa antes de avançar.

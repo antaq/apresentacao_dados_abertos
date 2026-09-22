@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>O tipo residual arquiva quase o dobro</title>
+<title>Onze tetos na forma genérica, um na específica</title>
 <link rel="icon" href="favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
@@ -35,35 +35,33 @@
 
   .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
 
-  .duplo { display:flex; gap:30px; align-items:stretch; }
+  .duplo { display:flex; gap:28px; align-items:stretch; }
+  .pain { flex:1; border-radius:16px; padding:22px 28px 20px 28px; display:flex; flex-direction:column; }
+  .pain-cinza { background:#F8FAFC; border:2px solid #E2E8F0; }
+  .pain-azul  { background:#F0F9FF; border:3px solid #BAE6FD; }
+  .p-rot { font-family:'Montserrat',sans-serif; font-weight:800; font-size:19px;
+           text-transform:uppercase; letter-spacing:.09em; }
+  .p-rot-cinza { color:#64748B; }
+  .p-rot-azul  { color:#0066CC; }
+  .forma { font-family:'Courier New', monospace; font-size:21px; color:#334155;
+           margin-top:12px; line-height:1.32; }
+  .chips { display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; }
+  .chip-v { font-family:'Montserrat',sans-serif; font-weight:700; font-size:21px; color:#475569;
+            background:#FFFFFF; border:2px solid #CBD5E1; border-radius:999px; padding:5px 15px;
+            white-space:nowrap; }
+  .chip-borda { border-color:#94A3B8; color:#1F2937; }
+  .p-nota { font-size:20px; color:#64748B; line-height:1.32; margin-top:auto; padding-top:18px; }
+  .p-nota-azul { color:#1E3A5F; }
 
-  .painel-cmp { flex:1.45; background:#F8FAFC; border:2px solid #E2E8F0; border-radius:16px;
-                padding:18px 26px 20px 26px; display:flex; flex-direction:column; }
-  .legenda { display:flex; gap:26px; align-items:center; flex-wrap:wrap; }
-  .leg { display:flex; align-items:center; gap:10px; font-family:'Montserrat',sans-serif;
-         font-weight:700; font-size:19px; color:#374151; }
-  .leg span.amostra { width:22px; height:14px; border-radius:3px; flex-shrink:0; }
-
-  .pares { display:flex; flex-direction:column; gap:14px; margin-top:16px; }
-  .par-rot { font-family:'Montserrat',sans-serif; font-weight:800; font-size:21px; color:#003366; }
-  .trilho { display:flex; align-items:center; gap:12px; margin-top:5px; }
-  .canal { flex:1; }
-  .b { height:22px; border-radius:0 6px 6px 0; }
-  .b-inciso { background:#003366; }
-  .b-alerta { background:#B91C1C; }
-  .b-todas { background:#94A3B8; }
-  .pct { font-family:'Montserrat',sans-serif; font-weight:800; font-size:20px; width:74px;
-         text-align:right; flex-shrink:0; color:#003366; }
-  .pct-cinza { color:#64748B; }
-
-  .painel-cx { flex:1; display:flex; flex-direction:column; gap:18px; justify-content:center; }
-  .cx { border-radius:16px; padding:22px 26px; }
-  .cx-azul { background:#F0F9FF; border:3px solid #BAE6FD; }
-  .cx-branca { background:#FFFFFF; border:2px solid #E2E8F0; }
-  .cx-num { font-family:'Montserrat',sans-serif; font-weight:900; font-size:46px; color:#003366;
-            line-height:1.05; letter-spacing:-1.5px; }
-  .cx-txt { font-size:22px; line-height:1.36; color:#374151; margin-top:10px; }
-  .cx-txt strong { color:#B91C1C; font-weight:800; }
+  .resps { display:flex; flex-direction:column; gap:14px; margin-top:16px; }
+  .resp { display:flex; align-items:center; gap:20px; background:#FFFFFF; border:2px solid #BAE6FD;
+          border-left:9px solid #0066CC; border-radius:0 14px 14px 0; padding:14px 24px; }
+  .resp-txt { flex:1; font-size:21px; color:#1F2937; line-height:1.28; }
+  .resp-val { font-family:'Montserrat',sans-serif; font-weight:900; font-size:33px; color:#003366;
+              white-space:nowrap; letter-spacing:-0.5px; }
+  .resp-sel { font-family:'Montserrat',sans-serif; font-weight:800; font-size:17px; color:#0066CC;
+              text-transform:uppercase; letter-spacing:.08em; display:block; margin-top:3px; }
+  .nq { white-space:nowrap; }
 </style>
 </head>
 <body>
@@ -77,10 +75,10 @@
       <div class="flex items-center gap-3">
         <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
         <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:46px; line-height:1.12; letter-spacing:-0.02em;">
-          O tipo residual arquiva quase o dobro
+          Onze tetos na forma genérica, um na específica
         </h1>
       </div>
-      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">Caso 4 · Sancionador · Res. ANTAQ nº 3.274/2014, art. 32, XXXVIII</p>
+      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">Caso 4 &middot; Tarifas portuárias &middot; denúncia de cobrança acima do teto em Paranaguá</p>
     </div>
     <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
       <i class="fas fa-plug" style="font-size:26px;"></i>
@@ -91,88 +89,55 @@
   <!-- Conteúdo -->
   <div class="flex-1 flex flex-col justify-center px-16 pb-4 z-10 min-h-0" style="gap:18px;">
 
-    <!-- Instrução usada -->
     <div class="instrucao">
-      <i class="fas fa-keyboard"></i>
-      <code>Como terminam os julgamentos do art. 32, XXXVIII, comparados com todas as infrações?</code>
+      <i class="fas fa-terminal"></i>
+      <code>"Chegou denúncia de cobrança acima do teto em Paranaguá. Qual é o teto do acesso aquaviário?"</code>
     </div>
 
     <div class="duplo">
 
-      <!-- Comparativo -->
-      <div class="painel-cmp">
-        <div class="legenda">
-          <span class="leg"><span class="amostra" style="background:#003366;"></span>Art. 32, XXXVIII (281 julgadas)</span>
-          <span class="leg"><span class="amostra" style="background:#94A3B8;"></span>Todas as julgadas (7.832)</span>
+      <div class="pain pain-cinza">
+        <p class="p-rot p-rot-cinza">Forma genérica &middot; I.1</p>
+        <p class="forma">I.1. Tarifa fixa por acesso aquaviário (entrada e saída) de uma embarcação.</p>
+        <div class="chips">
+        <span class="chip-v chip-borda">R$ 300,00</span>
+        <span class="chip-v">R$ 525,00</span>
+        <span class="chip-v">R$ 995,00</span>
+        <span class="chip-v">R$ 1.890,00</span>
+        <span class="chip-v">R$ 2.070,00</span>
+        <span class="chip-v">R$ 2.613,27</span>
+        <span class="chip-v">R$ 3.402,07</span>
+        <span class="chip-v">R$ 5.000,00</span>
+        <span class="chip-v">R$ 6.415,00</span>
+        <span class="chip-v">R$ 7.000,68</span>
+        <span class="chip-v chip-borda">R$ 13.003,24</span>
         </div>
-        <div class="pares">
-        <div class="par">
-          <p class="par-rot">Arquivamento</p>
-          <div class="trilho">
-            <div class="canal"><div class="b b-alerta" style="width:95.5%;"></div></div>
-            <span class="pct">57,3%</span>
-          </div>
-          <div class="trilho">
-            <div class="canal"><div class="b b-todas" style="width:53.3%;"></div></div>
-            <span class="pct pct-cinza">32,0%</span>
-          </div>
-        </div>
-        <div class="par">
-          <p class="par-rot">Multa</p>
-          <div class="trilho">
-            <div class="canal"><div class="b b-inciso" style="width:51.0%;"></div></div>
-            <span class="pct">30,6%</span>
-          </div>
-          <div class="trilho">
-            <div class="canal"><div class="b b-todas" style="width:70.7%;"></div></div>
-            <span class="pct pct-cinza">42,4%</span>
-          </div>
-        </div>
-        <div class="par">
-          <p class="par-rot">Advertência</p>
-          <div class="trilho">
-            <div class="canal"><div class="b b-inciso" style="width:10.0%;"></div></div>
-            <span class="pct">6,0%</span>
-          </div>
-          <div class="trilho">
-            <div class="canal"><div class="b b-todas" style="width:32.0%;"></div></div>
-            <span class="pct pct-cinza">19,2%</span>
-          </div>
-        </div>
-        <div class="par">
-          <p class="par-rot">Anulação</p>
-          <div class="trilho">
-            <div class="canal"><div class="b b-inciso" style="width:10.0%;"></div></div>
-            <span class="pct">6,0%</span>
-          </div>
-          <div class="trilho">
-            <div class="canal"><div class="b b-todas" style="width:10.3%;"></div></div>
-            <span class="pct pct-cinza">6,2%</span>
-          </div>
-        </div>
-        </div>
+        <p class="p-nota">Onze linhas, onze valores, e nenhuma coluna que diga qual deles vale.</p>
       </div>
 
-      <!-- O que o número grande esconde -->
-      <div class="painel-cx">
-        <div class="cx cx-azul">
-          <p class="cx-num">R$ 18,7 mi</p>
-          <p class="cx-txt">em multas nesse inciso, a maior soma da série. <strong>39% vêm de uma única empresa.</strong></p>
+      <div class="pain pain-azul">
+        <p class="p-rot p-rot-azul">Forma específica &middot; um nível abaixo</p>
+        <div class="resps">
+          <div class="resp">
+            <p class="resp-txt">I.1.1. Para operações de longo curso<span class="resp-sel">valor único</span></p>
+            <p class="resp-val">R$ 7.463,70</p>
+          </div>
+          <div class="resp">
+            <p class="resp-txt">I.1.2. Para operação de cabotagem ou navegação interior<span class="resp-sel">valor único</span></p>
+            <p class="resp-val">R$ 5.597,78</p>
+          </div>
         </div>
-        <div class="cx cx-branca">
-          <p class="cx-num">6,0% e 6,2%</p>
-          <p class="cx-txt">de anulação, no inciso e no conjunto. O dado não mostra mais nulidade no residual.</p>
-        </div>
+        <p class="p-nota p-nota-azul">O que instrui a denúncia é a tabela homologada, não o painel. A última
+        homologação de Paranaguá é de 10/2024, processo <span class="nq">50300.012520/2024-34</span>.</p>
       </div>
 
     </div>
 
-    <!-- Ressalva -->
     <div class="faixa">
-      <p class="faixa-rotulo">Antes de concluir</p>
-      <p>Correlação não é causa. O inciso vai do contrato de arrendamento à determinação da
-      Autoridade Portuária, e os maiores valores incluem autoridades portuárias. Por que ele
-      arquiva quase o dobro, só os processos dizem.</p>
+      <p class="faixa-rotulo">A armadilha</p>
+      <p>Em 5.565 dos 36.820 pares de porto e forma de incidência (15,1%) o painel publica mais de um
+      teto e não publica a coluna que separaria os valores. Nesses casos não existe "a tarifa do porto":
+      escolher um número tem cara de resposta e não é uma.</p>
     </div>
   </div>
 
@@ -180,20 +145,20 @@
   <div class="px-16 pb-5 flex justify-between items-end z-10">
     <div style="max-width:1620px;">
       <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
-      <p class="text-gray-400" style="font-size:17px;">Fonte: painel Fiscalização da ANTAQ, quadro "Base de Dados", captura de 18/08/2026, via conector MCP independente, em 21 de setembro de 2026. Percentuais sobre infrações julgadas, excluídos os arquivados sem irregularidade.</p>
+      <p class="text-gray-400" style="font-size:17px;">Fonte: painel Administração Portuária da ANTAQ, quadros de tarifas-teto e de tarifas homologadas, via conector MCP independente, em 22 de setembro de 2026. Teto aprovado não é preço cobrado.</p>
     </div>
     <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">9 / 13</p>
   </div>
 
-  <div class="bg-marca"><i class="fas fa-gavel"></i></div>
+  <div class="bg-marca"><i class="fas fa-file-invoice-dollar"></i></div>
 </div>
 
 <div id="notas-apresentador" style="display:none;">
-  <p>Quarto caso, conduzido pela GRAT, e ele começou como outro slide. A primeira versão desta apresentação dizia que o enquadramento genérico está entre as maiores fontes de nulidade. Fomos conferir no dado antes de dizer isso em público, e o dado não sustenta: anulação de 6,0% no inciso e de 6,2% no conjunto das infrações julgadas.</p>
-  <p>O que o dado mostra é outra coisa: 57% das infrações julgadas nesse inciso terminam em arquivamento, contra 32% no conjunto. Quase o dobro. E a multa cai de 42% para 31%.</p>
-  <p>A caixa de cima responde a quem lembrar do número grande: R$ 18,7 milhões é a maior soma da série, mas 39% vêm de uma empresa só. Número grande não é padrão; olhem a distribuição antes de concluir.</p>
-  <p>Não concluam pela sala. O inciso vai do contrato de arrendamento à determinação da Autoridade Portuária, casos que podem ser mais difíceis de provar. A pergunta fica aberta para as regionais: por que ele arquiva quase o dobro? A GRAT quer ouvir quem instruiu esses processos.</p>
-  <p>Esta é a lição do bloco em um caso: a ferramenta tornou barato conferir a própria tese antes de defendê-la. Os percentuais excluem os 11.876 registros arquivados sem irregularidade, em que nenhuma infração chegou a ser imputada. Cerca de três minutos.</p>
+  <p>Quarto caso, e ele começa com uma denúncia: alguém diz que o porto cobrou acima do teto. A primeira pergunta é sempre a mesma, e é a errada.</p>
+  <p>O que volta são onze valores para a mesma forma de incidência, de R$ 300,00 a R$ 13.003,24. O painel publica os onze e não publica a coluna que diria qual deles vale. Quem escolhe um está chutando, e o chute tem cara de resposta.</p>
+  <p>A saída não é abandonar o painel: é descer um nível. Na forma específica o valor é único, R$ 7.463,70 no longo curso e R$ 5.597,78 na cabotagem ou na navegação interior. A pergunta específica tem resposta; a genérica não tem.</p>
+  <p>E o que vai na peça não é nenhum dos dois: é a tabela homologada. O painel diz onde ela está, com o processo e o mês da homologação. A consulta economiza a procura, não a leitura do documento.</p>
+  <p>A armadilha vale para o país inteiro, não só para Paranaguá: em quinze por cento dos pares de porto e forma de incidência o painel publica mais de um teto. E lembrem de uma coisa que a sala confunde: teto aprovado não é preço cobrado. Cerca de dois minutos e meio.</p>
 </div>
 <script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
 <script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>
