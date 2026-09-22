@@ -54,9 +54,18 @@ Não edite este arquivo: edite o slide e gere de novo.
 - Antes de mostrar a coluna da direita, pergunte à sala: quanto vocês acham que os portos brasileiros movimentaram em 2025? Deixe dois ou três palpites.
 - A coluna da esquerda não é crítica a ferramenta nenhuma: é como elas funcionam. O conhecimento para numa data, e a ferramenta não avisa quando a pergunta passou dessa data. É o que foi dito ontem sobre errar onde é mais convincente.
 - A coluna da direita traz três coisas juntas: o número, a fonte e a ressalva de leitura. É esse trio que vai aparecer nos cinco casos. Se perguntarem pela ressalva: em 2025, a cabotagem movimentou 303,7 milhões de toneladas e transportou 223,0 milhões.
-- É o mesmo painel público da Central de Painéis. O conector não dá acesso a nada novo: ele torna a consulta barata. Cerca de um minuto e meio.
+- É o mesmo painel público da Central de Painéis. O conector não dá acesso a nada novo: ele torna a consulta barata. Guardem essa palavra, barata, porque o próximo slide é inteiro sobre ela. Cerca de um minuto e meio.
 
-### Slide 7 · O conector não é um sistema da ANTAQ
+### Slide 7 · Transparência ativa se mede em esforço
+
+- Este slide é uma declaração, e vem antes do conector de propósito: primeiro se diz por que isso importa, depois se diz o que é a ferramenta. Diga devagar, e deixe a primeira frase respirar antes de completar.
+- A primeira frase é uma provocação, e ela é sobre a Agência, não sobre a ferramenta: dado público que ninguém consegue usar é transparência no papel. A ANTAQ publica há mais de vinte anos, e nada do que vai ser mostrado hoje é conteúdo novo. São os mesmos painéis que já estão no ar. O que falta não é publicação, é alcance.
+- A linha do meio é o argumento, e ela é sobre atrito: baixar a base, limpar, cruzar, conferir. Cada uma dessas camadas parece técnica, mas é política de transparência: quanto mais camadas entre a pergunta e a resposta, menos gente chega até o fim. O painel que só responde a quem sabe montar planilha está publicado, e mesmo assim não alcança. O slide anterior já deu o exemplo concreto: a mesma pergunta, com e sem o caminho curto.
+- Aí vem o fecho, e é ele que dá sentido ao bloco inteiro: transparência ativa se mede em esforço, e hoje o esforço é uma pergunta. Publicar é o começo da obrigação, não o fim dela; o que a completa é encurtar o caminho até a resposta. Diga a última linha olhando para a sala, porque quem encurta esse caminho é quem está ali.
+- Se quiser reforçar, cabe uma frase: encurtar o caminho não dispensa quem sabe ler, faz o contrário. Libera o tempo dessa pessoa para a parte que só ela faz, que é exatamente o que os cinco casos a seguir vão mostrar.
+- Pausa antes de avançar. O próximo slide diz o que é, e sobretudo o que não é, a ferramenta que encurta esse caminho.
+
+### Slide 8 · O conector não é um sistema da ANTAQ
 
 - Este é o slide da declaração de interesse, e ele existe para que ninguém saia da sala com a impressão errada. Não o apressem, e não o suavizem: é ele que protege vocês.
 - Primeiro: MCP é protocolo aberto, não é produto. Funciona com qualquer ferramenta compatível, de qualquer fornecedor.
@@ -66,7 +75,7 @@ Não edite este arquivo: edite o slide e gere de novo.
 - O endereço é o ponto alto do slide, e é o que a sala vai querer anotar: o conector fica em *antaq.dadosabertos.dev barra mcp*. Leiam em voz alta, devagar, e digam junto que é um endereço particular, não é domínio da Agência. Isso vai junto com o endereço, nunca depois. Deem alguns segundos de silêncio para quem estiver anotando; o endereço volta no último slide.
 - A frase do rodapé é só um lembrete de ontem, dita em voz baixa e sem parar no slide: a IA não assina, quem assina é você, e quem assina responde. Ela volta inteira, e com peso, no slide 15.
 
-### Slide 8 · Onze contratos vencem até dezembro
+### Slide 9 · Onze contratos vencem até dezembro
 
 - Primeiro caso, e ele abre com uma pergunta para a sala: quantos contratos de porto público vencem até dezembro? Espere um palpite. A resposta é onze, e o primeiro vence em 24 de setembro, depois de amanhã, em Fortaleza.
 - Peça que cada regional procure o seu porto na lista. É nesse momento que a sala deixa de assistir e passa a conferir.
@@ -75,7 +84,7 @@ Não edite este arquivo: edite o slide e gere de novo.
 - **A armadilha não está em tela, e é de vocês dizer em voz alta.** A data é a do último instrumento publicado até a captura do painel: se houve aditivo depois, o painel não sabe. E o quadro de situação do próprio painel classifica só 491 dos 559 contratos. A resposta é ponto de partida; antes de qualquer ofício, confira no processo do contrato.
 - Se a rede permitir, este é o melhor caso para rodar ao vivo. Cerca de três minutos.
 
-### Slide 9 · A empresa inteira em uma pergunta
+### Slide 10 · A empresa inteira em uma pergunta
 
 - Segundo caso, e é o que a sala costuma achar mais imediato. Antes de uma fiscalização, alguém abre três painéis e monta uma planilha. Aqui é uma pergunta, pelo CNPJ.
 - A empresa é grande e pública de propósito. Se for rodar ao vivo, usem uma empresa que vocês conheçam e testem antes; não improvisem o nome na hora.
@@ -83,7 +92,7 @@ Não edite este arquivo: edite o slide e gere de novo.
 - **A armadilha não está em tela, e é a que pode virar erro de fiscalização.** Digam com o número: a outorga de navegação interior do processo 50300.002696/2014-14 foi extinta em 08/08/2016 e o painel ainda diz "Outorga Vigente: Sim". O campo diz Sim em 3.185 de 3.185 linhas, e 1.362 delas já estão extintas. Quem filtra por ele trata outorga extinta como viva. A vigência tem de sair da data de extinção.
 - O que não aparece aqui: processo em curso. O painel de Fiscalização só traz processo julgado ou arquivado; para o histórico completo, o SFIS continua sendo a fonte. Cerca de três minutos.
 
-### Slide 10 · Sobre-estadia: de 14 para 72 acórdãos por ano
+### Slide 11 · Sobre-estadia: de 14 para 72 acórdãos por ano
 
 - Terceiro caso, e ele sai do painel de números. O conector também lê os atos publicados da Agência, com texto integral: 21.091 acórdãos, resoluções, portarias e deliberações, de 2000 até agosto deste ano.
 - Leia o gráfico da esquerda para a direita: 14, 40, 72. Em dois anos, cinco vezes mais acórdãos citando sobre-estadia. E 2026, ano em curso, já passou de 2024 inteiro.
@@ -91,7 +100,7 @@ Não edite este arquivo: edite o slide e gere de novo.
 - Para que serve: antes de instruir a próxima denúncia, ler em minutos o que a Diretoria já decidiu em casos parecidos. A busca acha o acórdão; o texto que vai para a peça vem do documento no SEI.
 - **A armadilha não está em tela.** Ela é de contagem: citar não é julgar denúncia. Um acórdão que só menciona o tema também entra. O número mostra a tendência, e é para isso que ele serve aqui. Cerca de dois minutos e meio.
 
-### Slide 11 · Onze tetos na forma genérica, um na específica
+### Slide 12 · Onze tetos na forma genérica, um na específica
 
 - Quarto caso, e ele começa com uma denúncia: alguém diz que o porto cobrou acima do teto. A primeira pergunta é sempre a mesma, e é a errada.
 - O que volta são onze valores para a mesma forma de incidência, de R$ 300,00 a R$ 13.003,24. O painel publica os onze e não publica a coluna que diria qual deles vale. Quem escolhe um está chutando, e o chute tem cara de resposta.
@@ -99,23 +108,14 @@ Não edite este arquivo: edite o slide e gere de novo.
 - E o que vai na peça não é nenhum dos dois: é a tabela homologada. O painel diz onde ela está, com o processo e o mês da homologação. A consulta economiza a procura, não a leitura do documento.
 - A armadilha vale para o país inteiro, não só para Paranaguá: em quinze por cento dos pares de porto e forma de incidência o painel publica mais de um teto. E lembrem de uma coisa que a sala confunde: teto aprovado não é preço cobrado. Cerca de dois minutos e meio.
 
-### Slide 12 · A maior carteira não é a de maior valor
+### Slide 13 · A maior carteira não é a de maior valor
 
 - Quinto e último caso, e é o mais fácil de levar para a mesa: a carteira de cada unidade, as vinte e duas de uma vez. Deixem a sala procurar a própria sigla antes de dizer qualquer coisa.
 - O título é a leitura do slide. A GREBL tem a maior carteira, três mil cento e cinquenta e seis linhas, e onze vírgula quatro milhões em multa. A GRERJ tem menos linhas e quase o dobro em valor. E a UREPL, que é a décima em carteira, é a segunda em valor, com quinze vírgula sete milhões.
 - Digam isso com todas as letras, porque a sala vai ler como ranking: não é ranking de desempenho. O valor depende do tipo de infração e do porte do autuado, não do esforço da unidade.
 - Agora a armadilha, em duas partes. A primeira: uma linha é uma infração, não um processo. São dezenove mil setecentas e setenta e uma linhas para dezessete mil quinhentos e sessenta e sete processos, doze e meio por cento a mais. Quem conta linhas e chama de processo já errou o tamanho da carteira.
 - A segunda é a que vale a apresentação inteira: onze mil novecentas e vinte e seis linhas trazem hífen, que é arquivado sem irregularidade, e outras quatro mil quinhentas e vinte e cinco vêm vazias, que é decisão sem multa. Numa planilha as duas viram zero, e nascem dezesseis mil multas de zero real que não existem.
-- Guardem esse número: dezesseis mil multas que não existem, num painel que está no ar há anos. É por isso que o próximo slide diz que transparência ativa se mede em esforço: publicar é o começo, e o que completa é encurtar o caminho até a resposta. Cerca de dois minutos e meio.
-
-### Slide 13 · Transparência ativa se mede em esforço
-
-- Conclusão do bloco, e é o slide em que se muda o tom. Os cinco casos foram sobre cuidado; este é sobre para que serve o cuidado. Diga devagar, e deixe a primeira frase respirar antes de completar.
-- A primeira frase é uma provocação, e ela é sobre a Agência, não sobre a ferramenta: dado público que ninguém consegue usar é transparência no papel. A ANTAQ publica há mais de vinte anos, e nada do que foi mostrado hoje é conteúdo novo. São os mesmos painéis que já estão no ar. O que faltava não era publicação, era alcance.
-- A linha do meio é o argumento, e ela é sobre atrito: baixar a base, limpar, cruzar, conferir. Cada uma dessas camadas parece técnica, mas é política de transparência: quanto mais camadas entre a pergunta e a resposta, menos gente chega até o fim. O painel que só responde a quem sabe montar planilha está publicado, e mesmo assim não alcança.
-- Aí vem o fecho, e é ele que dá sentido ao bloco inteiro: transparência ativa se mede em esforço, e hoje o esforço é uma pergunta. Publicar é o começo da obrigação, não o fim dela; o que a completa é encurtar o caminho até a resposta. Diga a última linha olhando para a sala, porque quem encurta esse caminho é quem está ali.
-- Se quiser reforçar, cabe uma frase: cada uma das cinco armadilhas de hoje era invisível para quem só tem a planilha, e imediata para quem já fez o trabalho. Encurtar o caminho não dispensa quem sabe ler, faz o contrário: libera o tempo dessa pessoa para a parte que só ela faz.
-- Pausa antes de avançar. O próximo slide é ao vivo.
+- Guardem esse número: dezesseis mil multas que não existem, num painel que está no ar há anos. E fechem o bloco aqui: os cinco casos mostraram a mesma coisa por cinco caminhos, que a resposta certa depende de quem sabe o que perguntar e o que conferir. O próximo slide sai do exemplo pronto e roda ao vivo. Cerca de dois minutos e meio.
 
 ### Slide 14 · O panorama de um artigo, ao vivo
 
@@ -132,7 +132,7 @@ Não edite este arquivo: edite o slide e gere de novo.
 
 - Este é o próximo passo, que antes só existia na fala. Os quatro cartões não são exemplos genéricos: são perguntas reais, com porto, cidade e número de infração escritos, e cada uma devolve resposta hoje. A de Suape devolve três contratos, a de Manaus devolve sessenta e nove instalações.
 - Peça que troquem o nome e mais nada: Suape pelo porto da regional, Manaus pelo município de vocês, o número da infração pelo que a unidade julga mais. A forma da pergunta é que faz ela funcionar, e ela está em amarelo justamente no pedaço que se troca.
-- A oferta está em tela: quem quiser monta a primeira consulta com a gente, na mesa da unidade. É ajuda entre colegas, não suporte de um sistema da casa, porque o conector é projeto pessoal, como foi dito no slide 7.
+- A oferta está em tela: quem quiser monta a primeira consulta com a gente, na mesa da unidade. É ajuda entre colegas, não suporte de um sistema da casa, porque o conector é projeto pessoal, como foi dito no slide 8.
 - Nada do que foi mostrado hoje exigiu processo em tramitação, dado pessoal ou sigilo. Tudo veio de base pública, e foi de propósito.
 - Feche com a frase âncora, pela segunda e última vez nesta apresentação, dita exatamente igual: a IA não assina, quem assina é você, e quem assina responde. Cerca de um minuto.
 
@@ -144,6 +144,6 @@ Não edite este arquivo: edite o slide e gere de novo.
 
 - Slide de contato e último da apresentação. Deixem-no projetado durante todas as perguntas: é ele que fica na tela enquanto a sala conversa.
 - Peçam que peguem o telefone e apontem a câmera para o código: ele abre esta mesma apresentação, com as notas. Digam o endereço em voz alta também, para quem preferir anotar.
-- Ofereçam o que não está projetado em lugar nenhum: quem quiser experimentar monta a primeira consulta junto com vocês, na mesa da unidade que pedir. Deixem claro que é ajuda entre colegas, e não suporte de um sistema da casa, porque o conector é projeto pessoal, como foi dito no slide 7. Sem essa frase, a apresentação termina sem próximo passo.
-- Apontem para o terceiro cartão e leiam o endereço devagar, porque é ele que transforma a oferta em algo que a pessoa faz sozinha na mesa dela: o conector atende em *antaq.dadosabertos.dev barra mcp*. Repitam aqui, em uma frase, o que o slide 7 já disse: endereço particular, projeto pessoal, não é domínio nem sistema da Agência. Basta apontar para lá qualquer ferramenta compatível com MCP. Não cliquem no endereço na hora, porque o que abre no navegador é a resposta crua do servidor, e não uma página.
+- Ofereçam o que não está projetado em lugar nenhum: quem quiser experimentar monta a primeira consulta junto com vocês, na mesa da unidade que pedir. Deixem claro que é ajuda entre colegas, e não suporte de um sistema da casa, porque o conector é projeto pessoal, como foi dito no slide 8. Sem essa frase, a apresentação termina sem próximo passo.
+- Apontem para o terceiro cartão e leiam o endereço devagar, porque é ele que transforma a oferta em algo que a pessoa faz sozinha na mesa dela: o conector atende em *antaq.dadosabertos.dev barra mcp*. Repitam aqui, em uma frase, o que o slide 8 já disse: endereço particular, projeto pessoal, não é domínio nem sistema da Agência. Basta apontar para lá qualquer ferramenta compatível com MCP. Não cliquem no endereço na hora, porque o que abre no navegador é a resposta crua do servidor, e não uma página.
 - Lembrem também do material de ontem, para quem chegou só hoje: antaq.github.io/apresentacao_ia_sfc traz as regras de uso seguro que este deck só recapitula no slide 2.

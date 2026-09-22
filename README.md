@@ -68,15 +68,23 @@ mostram texto pronto para copiar, sem aspas ao redor:
 - o **slide 4** mostra as instruções da conta do apresentador, em Configurações > Conta,
   que valem para toda conversa. É um exemplo de uso, não recomendação da Agência.
 
+## A declaração antes do conector
+
+O **slide 7** vem antes de o conector ser anunciado, de propósito: primeiro se diz por que
+dado aberto importa, depois se diz o que é a ferramenta. Ele não traz número. Traz a
+provocação ("dado público que ninguém consegue usar é transparência no papel"), a linha
+de atrito (baixar a base, limpar, cruzar, conferir) e o fecho: transparência ativa se mede
+em esforço, e hoje o esforço é uma pergunta.
+
 ## Os cinco casos
 
 | Slide | Caso | O que ele mostra |
 |---|---|---|
-| 8 | Contratos que vencem | Onze contratos vencem entre hoje e 31 de dezembro, em dez portos, dois deles arrendamentos |
-| 9 | A empresa pelo CNPJ | Outorgas, frota e fiscalizações de um CNPJ em uma pergunta, e o campo de vigência que mente |
-| 10 | O que a Diretoria decide | Acórdãos que citam sobre-estadia passam de 14 para 72 por ano, e o que eles determinam à SFC |
-| 11 | O teto da tarifa | A forma genérica devolve onze tetos; a específica devolve um, e a peça se instrui pela tabela homologada |
-| 12 | A carteira da unidade | As 22 unidades lado a lado, e por que a maior carteira não é a de maior valor |
+| 9 | Contratos que vencem | Onze contratos vencem entre hoje e 31 de dezembro, em dez portos, dois deles arrendamentos |
+| 10 | A empresa pelo CNPJ | Outorgas, frota e fiscalizações de um CNPJ em uma pergunta, e o campo de vigência que mente |
+| 11 | O que a Diretoria decide | Acórdãos que citam sobre-estadia passam de 14 para 72 por ano, e o que eles determinam à SFC |
+| 12 | O teto da tarifa | A forma genérica devolve onze tetos; a específica devolve um, e a peça se instrui pela tabela homologada |
+| 13 | A carteira da unidade | As 22 unidades lado a lado, e por que a maior carteira não é a de maior valor |
 
 Os cinco seguem o mesmo molde: a pergunta como se digita, a resposta com número e fonte,
 e a armadilha que o dado esconde. Nenhum deles traz a armadilha em tela: ela é dita em voz
@@ -109,10 +117,10 @@ infração escritos em tela, para a plateia copiar e trocar só o nome.
 
 O conector é **projeto pessoal do apresentador**, com recurso próprio e sem fins lucrativos,
 sobre dados que a ANTAQ publica. Não foi contratado, desenvolvido nem homologado pela
-Agência, e o slide 7 declara isso em tela. A seção 5 do [`KIT.md`](KIT.md) traz a regra de
+Agência, e o slide 8 declara isso em tela. A seção 5 do [`KIT.md`](KIT.md) traz a regra de
 escrita que mantém essa distinção em todo texto projetado.
 
-O endereço está projetado nos slides 7 e 16:
+O endereço está projetado nos slides 8 e 16:
 **`https://antaq.dadosabertos.dev/mcp`**. Atende por MCP e serve a qualquer
 ferramenta compatível. Confirme que ele responde da máquina e da rede onde a apresentação
 vai rodar, porque a sala vai tentar. Se o endereço mudar, os dois slides mudam juntos, e a
@@ -121,7 +129,7 @@ seção 5 do [`KIT.md`](KIT.md) registra o que precisa ser trocado.
 Leia o [`PENDENCIAS.md`](PENDENCIAS.md). Os números do deck foram lidos do conector em
 **22/09/2026**, sobre a captura dos painéis da madrugada do mesmo dia; se a data da
 apresentação escorregar, reconfira, porque os painéis são recapturados. Os atos publicados
-do slide 10 vêm de um acervo copiado até **27/08/2026**, que é o teto daquela contagem.
+do slide 11 vêm de um acervo copiado até **27/08/2026**, que é o teto daquela contagem.
 
 ## Publicação (GitHub Pages)
 

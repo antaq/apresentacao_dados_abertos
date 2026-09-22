@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>O conector não é um sistema da ANTAQ</title>
+<title>Transparência ativa se mede em esforço</title>
 <link rel="icon" href="favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
@@ -14,145 +14,90 @@
 <style>
   html { font-size: 26px; }
   body { margin:0; padding:0; background-color:#f3f4f6; overflow:hidden; font-family:'Open Sans', sans-serif; }
-  .slide-container { width:100vw; height:100vh; position:relative; display:flex; flex-direction:column; background-color:#ffffff; overflow:hidden; }
+  .slide-container {
+    width:100vw; height:100vh; position:relative; display:flex; flex-direction:column;
+    background: linear-gradient(135deg, #002244 0%, #003366 50%, #004488 100%);
+    overflow:hidden; color:white;
+  }
   .font-montserrat { font-family:'Montserrat', sans-serif; }
-  .text-brand-primary { color:#003366; } .bg-brand-primary { background-color:#003366; }
-  .text-brand-secondary { color:#0066CC; } .bg-brand-secondary { background-color:#0066CC; }
+  .bg-brand-secondary { background-color:#0066CC; }
 
-  .lista { display:flex; flex-direction:column; gap:14px; }
-  .item { display:flex; align-items:center; gap:24px; background:#F8FAFC;
-          border:2px solid #E8EDF3; border-left:8px solid #0066CC; border-radius:0 14px 14px 0;
-          padding:16px 30px; }
-  .item-icone { width:58px; height:58px; border-radius:15px; flex-shrink:0; display:flex;
-                align-items:center; justify-content:center; font-size:27px;
-                background:#DBEAFE; color:#0066CC; }
-  .item-txt { font-size:28px; line-height:1.34; color:#374151; }
+  .shape-circle { position:absolute; border-radius:50%; z-index:0; }
+  .shape-1 { width:600px; height:600px; top:-190px; right:-170px; border:60px solid rgba(255,255,255,0.03); }
+  .shape-2 { width:420px; height:420px; bottom:-150px; right:16%; border:40px solid rgba(255,255,255,0.03); }
+  .bg-pattern { background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px); background-size:22px 22px; }
 
-  .item-forte { background:#F0F9FF; border-color:#BAE6FD; border-left-color:#003366; }
-  .item-forte .item-icone { background:#003366; color:#FFFFFF; }
-  .item-forte .item-txt { font-family:'Montserrat',sans-serif; font-weight:800; color:#003366;
-                          font-size:30px; }
-
-  .realce { background:#DBEAFE; color:#003366; font-weight:800; border-radius:8px; padding:2px 10px; }
-
-  .fontes { display:flex; flex-wrap:wrap; gap:12px; margin-top:12px; }
-  .fonte-chip { display:inline-flex; align-items:center; gap:10px; background:#EFF6FF; border:2px solid #BFDBFE;
-          border-radius:999px; padding:7px 18px; font-family:'Montserrat',sans-serif; font-weight:700;
-          font-size:20px; color:#1E40AF; }
-
-  .endereco { margin-top:22px; display:flex; align-items:center; gap:28px;
-    background:linear-gradient(90deg,#002244 0%,#004488 100%);
-    border-left:12px solid #FFD700; border-radius:0 16px 16px 0; padding:26px 40px; }
-  .endereco i { font-size:38px; color:#FFD700; flex-shrink:0; }
-  .endereco-rot { font-family:'Montserrat',sans-serif; font-weight:800; font-size:18px;
-    text-transform:uppercase; letter-spacing:.15em; color:#8EC5FF; }
-  .endereco-url { font-family:'Courier New', monospace; font-weight:700; font-size:48px;
-    color:#FFFFFF; line-height:1.14; letter-spacing:-0.5px; margin-top:3px; }
-  .endereco-nota { font-size:19px; color:#BAE6FD; line-height:1.3; margin-top:6px; }
-
-  .frase-ancora { margin-top:16px; display:flex; align-items:center; justify-content:center; gap:14px; }
-  .frase-ancora i { font-size:21px; color:#94A3B8; flex-shrink:0; }
-  .frase-ancora p { font-family:'Montserrat', sans-serif; font-weight:700; font-size:24px;
-    color:#64748B; line-height:1.25; }
-
-  .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
+  .frase { font-family:'Montserrat', sans-serif; font-weight:800; font-size:54px; line-height:1.28;
+           color:#FFFFFF; letter-spacing:-0.015em; }
+  .atrito { font-family:'Open Sans', sans-serif; font-weight:400; font-size:30px; line-height:1.42;
+            color:#BFDBFE; }
+  .atrito b { font-weight:700; color:#FFFFFF; }
+  .fecho { font-family:'Montserrat', sans-serif; font-weight:900; font-size:52px; line-height:1.26;
+           color:#FFD700; letter-spacing:-0.015em; }
 </style>
 </head>
 <body>
 <div class="slide-container">
-  <div style="height:12px;background:#003366;width:100%;"></div>
-  <div style="height:6px;background:#0066CC;width:100%;"></div>
+  <!-- Acentos à esquerda -->
+  <div class="absolute left-0 top-0 h-full w-3 z-20" style="background:#FFD700;"></div>
+  <div class="absolute left-3 top-0 h-full w-1 bg-brand-secondary z-20"></div>
 
-  <!-- Cabeçalho -->
-  <div class="flex items-center justify-between px-16 pt-8 pb-3 z-10">
-    <div>
-      <div class="flex items-center gap-3">
-        <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
-        <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:46px; line-height:1.12; letter-spacing:-0.02em;">
-          O conector não é um sistema da ANTAQ
-        </h1>
-      </div>
-    </div>
-    <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
-      <i class="fas fa-plug" style="font-size:26px;"></i>
-      <p class="font-montserrat font-bold text-gray-400" style="font-size:19px; letter-spacing:.16em;">DADOS ABERTOS</p>
-    </div>
+  <!-- Fundo decorativo -->
+  <div class="shape-circle shape-1"></div>
+  <div class="shape-circle shape-2"></div>
+  <div class="absolute inset-0 bg-pattern"></div>
+
+  <!-- Marca d'água -->
+  <img src="Imagens/logo-antaq-branca.png" alt="" class="absolute"
+       style="top:54%; left:72%; width:40vw; max-width:600px; transform:translate(-50%,-50%);
+              opacity:0.045; z-index:0; pointer-events:none;" />
+
+  <!-- Ícone decorativo gigante -->
+  <div class="absolute text-white z-0"
+       style="bottom:-70px; right:-50px; font-size:460px; line-height:0; opacity:0.05;">
+    <i class="fas fa-eye"></i>
   </div>
 
   <!-- Conteúdo -->
-  <div class="flex-1 flex flex-col justify-center px-16 pb-6 z-10 min-h-0">
-    <div class="lista">
+  <div class="relative z-10 flex-1 flex flex-col justify-center" style="padding-left:130px; padding-right:110px;">
 
-      <div class="item">
-        <div class="item-icone"><i class="fas fa-code-branch"></i></div>
-        <p class="item-txt">
-          <span class="realce">MCP é protocolo aberto.</span> Funciona com qualquer ferramenta compatível, de qualquer fornecedor.
-        </p>
-      </div>
+    <i class="fa-solid fa-quote-left" style="color:#FFD700; opacity:.5; font-size:84px; margin-bottom:28px;"></i>
 
-      <div class="item">
-        <div class="item-icone"><i class="fas fa-user-pen"></i></div>
-        <p class="item-txt">
-          <span class="realce">Projeto pessoal do apresentador</span>, com recurso próprio e sem fins lucrativos.
-          Não foi contratado, desenvolvido nem homologado pela Agência.
-        </p>
-      </div>
+    <p class="frase" style="max-width:1580px;">
+      Dado público que ninguém consegue usar<br/>
+      é transparência no papel.
+    </p>
 
-      <div class="item" style="align-items:flex-start;">
-        <div class="item-icone" style="margin-top:2px;"><i class="fas fa-globe"></i></div>
-        <div>
-          <p class="item-txt">Consome <span class="realce">apenas dado publicado</span> pela ANTAQ e pelo Governo Federal:</p>
-          <div class="fontes">
-            <span class="fonte-chip"><i class="fas fa-chart-column"></i>Painéis públicos da ANTAQ</span>
-            <span class="fonte-chip"><i class="fas fa-ship"></i>Painéis do ONTL (Infra S.A.)</span>
-            <span class="fonte-chip"><i class="fas fa-globe"></i>Comex Stat (MDIC)</span>
-            <span class="fonte-chip"><i class="fas fa-scale-balanced"></i>Atos e normas publicados</span>
-          </div>
-        </div>
-      </div>
+    <p class="atrito" style="max-width:1560px; margin-top:32px;">
+      Baixar a base, limpar, cruzar, conferir:<br/>
+      <b>cada camada entre a pergunta e a resposta é alcance que se perde.</b>
+    </p>
 
-      <div class="item item-forte">
-        <div class="item-icone"><i class="fas fa-lock"></i></div>
-        <p class="item-txt">Nenhum processo em tramitação sai daqui.</p>
-      </div>
+    <div style="width:120px; height:8px; background:#FFD700; margin:36px 0 34px 0;"></div>
 
-    </div>
-
-    <!-- Endereço do conector -->
-    <div class="endereco">
-      <i class="fas fa-plug"></i>
-      <div>
-        <p class="endereco-rot">Endereço do conector</p>
-        <p class="endereco-url">https://antaq.dadosabertos.dev/mcp</p>
-        <p class="endereco-nota">Endereço particular, não é domínio da Agência. Qualquer ferramenta compatível se conecta ali, sem instalação.</p>
-      </div>
-    </div>
-
-    <!-- Frase-âncora, em voz baixa: ela volta inteira no slide 15 -->
-    <div class="frase-ancora">
-      <i class="fas fa-signature"></i>
-      <p>A IA não assina. Quem assina é você, e quem assina responde.</p>
-    </div>
+    <p class="fecho" style="max-width:1580px;">
+      Transparência ativa se mede em esforço.<br/>
+      E hoje o esforço é uma pergunta.
+    </p>
 
   </div>
 
   <!-- Rodapé -->
-  <div class="px-16 pb-6 flex justify-between items-end z-10">
-    <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
-    <p class="text-gray-300 font-mono" style="font-size:18px;">7 / 16</p>
+  <div class="relative z-10 flex justify-between items-end" style="padding:0 110px 30px 130px;">
+    <div>
+      <p class="font-montserrat" style="font-size:18px; color:#BFDBFE; opacity:.75;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
+    </div>
+    <p class="font-mono" style="font-size:18px; color:#BFDBFE; opacity:.75;">7 / 16</p>
   </div>
-
-  <div class="bg-marca"><i class="fas fa-code-branch"></i></div>
 </div>
 
 <div id="notas-apresentador" style="display:none;">
-  <p>Este é o slide da declaração de interesse, e ele existe para que ninguém saia da sala com a impressão errada. Não o apressem, e não o suavizem: é ele que protege vocês.</p>
-  <p>Primeiro: MCP é protocolo aberto, não é produto. Funciona com qualquer ferramenta compatível, de qualquer fornecedor.</p>
-  <p>Segundo, e é o ponto que não pode ser contornado: <strong>o conector é um projeto pessoal de quem está falando</strong>, feito com recurso próprio, sem fins lucrativos e fora do expediente. A ANTAQ não contratou, não desenvolveu, não homologou e não mantém. Não é sistema da casa, não substitui nenhum, e usá-lo não é recomendação institucional. Digam isso com todas as letras, mesmo que soe repetitivo, porque a plateia é composta de colegas e o mal-entendido aqui é caro. Se perguntarem por que então está sendo apresentado num evento da Superintendência, a resposta honesta é: porque o método interessa ao trabalho de vocês, e porque a alternativa, que é usar sem saber de onde vem, é pior.</p>
-  <p>Terceiro: o que é da ANTAQ é o dado, não a ferramenta. Ele só consome o que é publicado, e vale nomear as fontes: os painéis públicos da Agência, os painéis do ONTL, o Comex Stat do MDIC e os atos e normas publicados.</p>
-  <p>O quarto ponto é o que importa a esta sala, e é o que torna o terceiro suportável: o conector não enxerga processo em tramitação. Ele lê o painel público, que só tem processo já julgado. Nada do SFIS, nada do SEI, nada em sigilo.</p>
-  <p>O endereço é o ponto alto do slide, e é o que a sala vai querer anotar: o conector fica em <em>antaq.dadosabertos.dev barra mcp</em>. Leiam em voz alta, devagar, e digam junto que é um endereço particular, não é domínio da Agência. Isso vai junto com o endereço, nunca depois. Deem alguns segundos de silêncio para quem estiver anotando; o endereço volta no último slide.</p>
-  <p>A frase do rodapé é só um lembrete de ontem, dita em voz baixa e sem parar no slide: a IA não assina, quem assina é você, e quem assina responde. Ela volta inteira, e com peso, no slide 15.</p>
+  <p>Este slide é uma declaração, e vem antes do conector de propósito: primeiro se diz por que isso importa, depois se diz o que é a ferramenta. Diga devagar, e deixe a primeira frase respirar antes de completar.</p>
+  <p>A primeira frase é uma provocação, e ela é sobre a Agência, não sobre a ferramenta: dado público que ninguém consegue usar é transparência no papel. A ANTAQ publica há mais de vinte anos, e nada do que vai ser mostrado hoje é conteúdo novo. São os mesmos painéis que já estão no ar. O que falta não é publicação, é alcance.</p>
+  <p>A linha do meio é o argumento, e ela é sobre atrito: baixar a base, limpar, cruzar, conferir. Cada uma dessas camadas parece técnica, mas é política de transparência: quanto mais camadas entre a pergunta e a resposta, menos gente chega até o fim. O painel que só responde a quem sabe montar planilha está publicado, e mesmo assim não alcança. O slide anterior já deu o exemplo concreto: a mesma pergunta, com e sem o caminho curto.</p>
+  <p>Aí vem o fecho, e é ele que dá sentido ao bloco inteiro: transparência ativa se mede em esforço, e hoje o esforço é uma pergunta. Publicar é o começo da obrigação, não o fim dela; o que a completa é encurtar o caminho até a resposta. Diga a última linha olhando para a sala, porque quem encurta esse caminho é quem está ali.</p>
+  <p>Se quiser reforçar, cabe uma frase: encurtar o caminho não dispensa quem sabe ler, faz o contrário. Libera o tempo dessa pessoa para a parte que só ela faz, que é exatamente o que os cinco casos a seguir vão mostrar.</p>
+  <p>Pausa antes de avançar. O próximo slide diz o que é, e sobretudo o que não é, a ferramenta que encurta esse caminho.</p>
 </div>
 <script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
 <script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>

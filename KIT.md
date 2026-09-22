@@ -173,9 +173,9 @@ Se o título for longo, reduza para 44px em vez de quebrar o leiaute.
 | Slides | Tag | Ícone |
 |---|---|---|
 | 2 | `ABERTURA` | `fa-clock-rotate-left` |
-| 6 a 12, 14 e 15 | `DADOS ABERTOS` | `fa-plug` |
+| 6 e 8 a 15 | `DADOS ABERTOS` | `fa-plug` |
 
-Slides sem tag: 1, 3, 4, 5, 13 e 16 (capa, os dois de campo de instrução, divisória,
+Slides sem tag: 1, 3, 4, 5, 7 e 16 (capa, os dois de campo de instrução, divisória,
 frase L2 e encerramento).
 
 ### 5.2 Numeração no rodapé
@@ -203,16 +203,16 @@ consulta. A exceção é o acervo de atos publicados, que é cópia manual e est
 
 - Movimentação portuária (slide 6):
   `Fonte: painel Estatístico Aquaviário da ANTAQ, quadro de movimentação portuária por tipo de navegação, via conector MCP independente, em 22 de setembro de 2026.`
-- Contratos de porto público (slide 8):
+- Contratos de porto público (slide 9):
   `Fonte: painel Portos Públicos da ANTAQ, quadro "Portos Públicos" (559 contratos), via conector MCP independente, em 22 de setembro de 2026. Vencimento pela data de expiração do último instrumento.`
-- Outorgas, frota e fiscalização por CNPJ (slide 9):
+- Outorgas, frota e fiscalização por CNPJ (slide 10):
   `Fonte: painéis Outorgas de Navegação (quadros de outorgas e de frota) e Fiscalização da ANTAQ, via conector MCP independente, em 22 de setembro de 2026. Vigência pela data de extinção.`
-- Atos publicados (slide 10), única linha que leva data de cópia:
+- Atos publicados (slide 11), única linha que leva data de cópia:
   `Fonte: atos publicados pela ANTAQ (acervo da Biblioteca, copiado até 27/08/2026), espécie Acórdão, busca por "sobre-estadia" em cada ano, via conector MCP independente, em 22 de setembro de 2026.`
-- Tarifas-teto (slide 11):
+- Tarifas-teto (slide 12):
   `Fonte: painel Administração Portuária da ANTAQ, quadros de tarifas-teto e de tarifas homologadas, via conector MCP independente, em 22 de setembro de 2026. Teto aprovado não é preço cobrado.`
-- Painel de Fiscalização (slide 12):
-  `Fonte: painel Fiscalização da ANTAQ, quadro "Base de Dados", via conector MCP independente, em 22 de setembro de 2026.` No slide 12, acrescentar: `A soma é piso: o painel conta R$ 110,3 milhões.`
+- Painel de Fiscalização (slide 13):
+  `Fonte: painel Fiscalização da ANTAQ, quadro "Base de Dados", via conector MCP independente, em 22 de setembro de 2026.` No slide 13, acrescentar: `A soma é piso: o painel conta R$ 110,3 milhões.`
 - Demonstração ao vivo, art. 34 da Res. 62/2021 (slide 14), única que cita dois quadros:
   `Fonte: painel Fiscalização da ANTAQ, quadros "Base de Dados" e "Objeto das Normas", via conector MCP independente, em 22 de setembro de 2026. Só processo julgado; o que tramita fica fora.`
 - Recapitulação do encontro anterior (slide 2):
@@ -220,9 +220,9 @@ consulta. A exceção é o acervo de atos publicados, que é cópia manual e est
 - Campo de instrução (slide 3): `Fonte: instrução sugerida no roteiro desta apresentação (GPF e GRAT/SFC), para uso na demonstração.`
 - Instruções da conta (slide 4): `Fonte: campo Instruções para o Claude, em Configurações > Conta, na conta pessoal do apresentador, em 22 de setembro de 2026. Exemplo de uso, não é recomendação da Agência.`
 - Roteiro (slide 5): `Fonte: tempo estimado no roteiro desta apresentação (GPF e GRAT/SFC).`
-- **Sem linha de fonte:** slides 1, 7, 13, 15 e 16, porque não exibem número.
+- **Sem linha de fonte:** slides 1, 7, 8, 15 e 16, porque não exibem número.
 
-**Endereço do conector (slides 7 e 16):** `https://antaq.dadosabertos.dev/mcp`. Aparece
+**Endereço do conector (slides 8 e 16):** `https://antaq.dadosabertos.dev/mcp`. Aparece
 projetado nos dois slides, em `'Courier New', monospace`, sempre com o `https://`, porque a
 plateia copia isso para a configuração da própria ferramenta. No slide 16 ele é um cartão
 **sem link**: clicar abre a resposta crua do servidor no projetor, e não uma página.
@@ -236,10 +236,10 @@ Endereço trocado em 21/09/2026; se mudar de novo, os dois slides mudam juntos.
 >   "sem custo de contratação" nem atribuição a GPF, GRAT ou SFC;
 > - nas linhas de fonte, a forma canônica é **`via conector MCP independente`**;
 > - o domínio `dadosabertos.dev` **não** é domínio da Agência, e isso é dito junto com o
->   endereço, nos slides 7 e 16. No slide 14 ele reaparece sem o `https://`, como passo da
+>   endereço, nos slides 8 e 16. No slide 14 ele reaparece sem o `https://`, como passo da
 >   demonstração, e não como cartão para copiar.
 >
-> Corrigido em 21/09/2026: até então o slide 7 dizia "feito dentro da própria Superintendência"
+> Corrigido em 21/09/2026: até então o slide 8 dizia "feito dentro da própria Superintendência"
 > e cinco linhas de fonte atribuíam o conector à GPF.
 
 > Regra que não muda: **todo número projetado tem linha de fonte**. Neste deck, que é todo
@@ -301,14 +301,14 @@ Barra de título do bloco (opcional): faixa `#1E293B` com três círculos e o no
 
 ### 6.6 Faixa vermelha de armadilha: aposentada neste deck
 
-Até 22/09/2026 os slides 8 a 12 traziam a armadilha numa faixa vermelha
+Até 22/09/2026 os slides 9 a 13 traziam a armadilha numa faixa vermelha
 (`#FEF2F2` / borda `#DC2626`), rotulada "A ARMADILHA" ou "ANTES DE CONCLUIR". **Elas
 foram removidas**: a armadilha passou a ser dita em voz alta, e está escrita na nota do
 apresentador de cada slide. O motivo é de leitura: cinco faixas vermelhas seguidas
 treinavam a plateia a pular o vermelho, e o alerta perdia o efeito justo onde ele importa.
 
 Quando a leitura precisa ficar em tela, use a **faixa escura** (fundo `#003366`, ícone
-`#FFD700`), como nos slides 12 e 14: ela sustenta duas linhas, a manchete em Montserrat
+`#FFD700`), como nos slides 13 e 14: ela sustenta duas linhas, a manchete em Montserrat
 800 e a explicação em `#BAE6FD`.
 
 O **leiaute L7 (captura de tela)** também segue sem uso: o deck foi entregue sem capturas,
@@ -327,7 +327,7 @@ marcador hoje:** todos foram preenchidos ou removidos em 5 de agosto de 2026.
 Em fundo escuro: `background:rgba(253,224,71,.14); color:#FDE68A; border-color:#FDE68A;`.
 Marcador dentro de linha de rodapé pode usar 19px.
 
-### 6.8 Faixa-âncora (slides 7 e 15)
+### 6.8 Faixa-âncora (slides 8 e 15)
 
 ```html
 <div style="margin-top:34px;background:linear-gradient(90deg,#002244 0%,#004488 100%);
@@ -361,7 +361,7 @@ com rótulo em caixa alta 26px acima e explicação 26px abaixo.
   <p style="font-size:30px;color:#7F1D1D;font-weight:600;line-height:1.3;">Texto do veto.</p>
 </div>
 ```
-Slides 4, 7, 13, 14 e 16 serão fotografados pela plateia: **contraste alto, texto grande,
+Slides 4, 7, 8, 14 e 16 serão fotografados pela plateia: **contraste alto, texto grande,
 sem elementos decorativos que roubem espaço**.
 
 ### 6.12 Campo de instrução (slides 3 e 4)
@@ -435,7 +435,7 @@ linha-resumo 30px; e, no lugar dos "chips", **uma pílula de tempo estimado**:
 ```
 Mais 3 a 4 "chips" com os pontos do bloco (padrão do slide-04 de referência, 22px).
 
-### 7.2 Frase de impacto em tela cheia (L2), slide 13
+### 7.2 Frase de impacto em tela cheia (L2), slide 7
 
 Fundo escuro, sem header. Texto centralizado verticalmente, alinhado à esquerda a partir
 de `padding-left:130px`, largura máxima 1560px. Aspas decorativas `fa-quote-left` em
@@ -480,13 +480,13 @@ Se a especificação não trouxer NOTAS para o slide, escreva uma nota curta e �
 | 4 | L2+6.12 | Instruções para o Claude, em Configurações > Conta | sem tag | novo |
 | 5 | L10 | Divisória bloco 1, Cinco perguntas e uma ao vivo (24 min) | sem tag | 28 |
 | 6 | L6+L4 | A mesma pergunta, com e sem conector | DADOS ABERTOS | 29 |
-| 7 | L3 | O conector não é um sistema da ANTAQ, endereço e faixa-âncora | DADOS ABERTOS | 30 |
-| 8 | L6+6.1 | Caso 1: onze contratos vencem até dezembro | DADOS ABERTOS | 31 |
-| 9 | L6+L8 | Caso 2: a empresa inteira em uma pergunta | DADOS ABERTOS | 33 |
-| 10 | L6+L8 | Caso 3: sobre-estadia, de 14 para 72 acórdãos por ano | DADOS ABERTOS | novo |
-| 11 | L6+L8 | Caso 4: onze tetos na forma genérica, um na específica | DADOS ABERTOS | novo |
-| 12 | L6+6.1 | Caso 5: a maior carteira não é a de maior valor | DADOS ABERTOS | novo |
-| 13 | L2 | Conclusão do bloco: transparência ativa se mede em esforço | sem tag | 36 |
+| 7 | L2 | Declaração: transparência ativa se mede em esforço | sem tag | 36 |
+| 8 | L3 | O conector não é um sistema da ANTAQ, endereço e faixa-âncora | DADOS ABERTOS | 30 |
+| 9 | L6+6.1 | Caso 1: onze contratos vencem até dezembro | DADOS ABERTOS | 31 |
+| 10 | L6+L8 | Caso 2: a empresa inteira em uma pergunta | DADOS ABERTOS | 33 |
+| 11 | L6+L8 | Caso 3: sobre-estadia, de 14 para 72 acórdãos por ano | DADOS ABERTOS | novo |
+| 12 | L6+L8 | Caso 4: onze tetos na forma genérica, um na específica | DADOS ABERTOS | novo |
+| 13 | L6+6.1 | Caso 5: a maior carteira não é a de maior valor | DADOS ABERTOS | novo |
 | 14 | L6+L4 | Demonstração ao vivo: o panorama do art. 34 da Res. 62/2021, em PDF | DADOS ABERTOS | novo |
 | 15 | L6+6.8 | Traga a pergunta da sua unidade, com faixa-âncora | DADOS ABERTOS | 37 |
 | 16 | L11 | Contato, material, endereço do conector e código de leitura óptica | sem tag | 41 |
