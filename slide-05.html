@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>O conector não é um sistema da ANTAQ</title>
+<title>Bloco 1 · Cinco perguntas e uma ao vivo</title>
 <link rel="icon" href="favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
@@ -14,145 +14,140 @@
 <style>
   html { font-size: 26px; }
   body { margin:0; padding:0; background-color:#f3f4f6; overflow:hidden; font-family:'Open Sans', sans-serif; }
-  .slide-container { width:100vw; height:100vh; position:relative; display:flex; flex-direction:column; background-color:#ffffff; overflow:hidden; }
+  .slide-container {
+    width:100vw; height:100vh; position:relative; display:flex; flex-direction:column;
+    background: linear-gradient(135deg, #002244 0%, #003366 50%, #004488 100%);
+    overflow:hidden; color:white;
+  }
   .font-montserrat { font-family:'Montserrat', sans-serif; }
-  .text-brand-primary { color:#003366; } .bg-brand-primary { background-color:#003366; }
-  .text-brand-secondary { color:#0066CC; } .bg-brand-secondary { background-color:#0066CC; }
+  .bg-brand-secondary { background-color:#0066CC; }
 
-  .lista { display:flex; flex-direction:column; gap:14px; }
-  .item { display:flex; align-items:center; gap:24px; background:#F8FAFC;
-          border:2px solid #E8EDF3; border-left:8px solid #0066CC; border-radius:0 14px 14px 0;
-          padding:16px 30px; }
-  .item-icone { width:58px; height:58px; border-radius:15px; flex-shrink:0; display:flex;
-                align-items:center; justify-content:center; font-size:27px;
-                background:#DBEAFE; color:#0066CC; }
-  .item-txt { font-size:28px; line-height:1.34; color:#374151; }
+  .shape-circle { position:absolute; border-radius:50%; z-index:0; }
+  .shape-1 { width:620px; height:620px; top:-180px; right:-160px; border:60px solid rgba(255,255,255,0.03); }
+  .shape-2 { width:420px; height:420px; bottom:-140px; right:18%; border:40px solid rgba(255,255,255,0.03); }
+  .bg-pattern { background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px); background-size:22px 22px; }
 
-  .item-forte { background:#F0F9FF; border-color:#BAE6FD; border-left-color:#003366; }
-  .item-forte .item-icone { background:#003366; color:#FFFFFF; }
-  .item-forte .item-txt { font-family:'Montserrat',sans-serif; font-weight:800; color:#003366;
-                          font-size:30px; }
+  .module-num { font-family:'Montserrat', sans-serif; font-weight:900; line-height:0.9;
+    font-size:188px; letter-spacing:-4px; color:#FFD700; text-shadow:0 8px 24px rgba(0,0,0,0.35); }
 
-  .realce { background:#DBEAFE; color:#003366; font-weight:800; border-radius:8px; padding:2px 10px; }
+  .chip { display:flex; flex-direction:column; align-items:flex-start; gap:14px;
+    background:rgba(255,255,255,0.07);
+    border:1px solid rgba(255,255,255,0.14); border-radius:16px; padding:20px 20px; }
+  .chip-vivo { background:rgba(255,215,0,0.10); border-color:rgba(255,215,0,0.40); }
+  .chip-vivo .chip-icon { background:rgba(255,215,0,0.22); color:#FFD700; }
+  .chip-sel { display:block; font-family:'Montserrat',sans-serif; font-weight:800; font-size:17px;
+    color:#FFD700; text-transform:uppercase; letter-spacing:.12em; margin-top:7px; }
+  .chip-icon { width:60px; height:60px; border-radius:14px; flex-shrink:0; display:flex;
+    align-items:center; justify-content:center; font-size:26px; background:rgba(0,102,204,0.30); color:#7CC0FF; }
+  .chip p { font-family:'Montserrat',sans-serif; font-weight:600; color:#fff; font-size:21px; line-height:1.25; }
 
-  .fontes { display:flex; flex-wrap:wrap; gap:12px; margin-top:12px; }
-  .fonte-chip { display:inline-flex; align-items:center; gap:10px; background:#EFF6FF; border:2px solid #BFDBFE;
-          border-radius:999px; padding:7px 18px; font-family:'Montserrat',sans-serif; font-weight:700;
-          font-size:20px; color:#1E40AF; }
-
-  .endereco { margin-top:22px; display:flex; align-items:center; gap:28px;
-    background:linear-gradient(90deg,#002244 0%,#004488 100%);
-    border-left:12px solid #FFD700; border-radius:0 16px 16px 0; padding:26px 40px; }
-  .endereco i { font-size:38px; color:#FFD700; flex-shrink:0; }
-  .endereco-rot { font-family:'Montserrat',sans-serif; font-weight:800; font-size:18px;
-    text-transform:uppercase; letter-spacing:.15em; color:#8EC5FF; }
-  .endereco-url { font-family:'Courier New', monospace; font-weight:700; font-size:48px;
-    color:#FFFFFF; line-height:1.14; letter-spacing:-0.5px; margin-top:3px; }
-  .endereco-nota { font-size:19px; color:#BAE6FD; line-height:1.3; margin-top:6px; }
-
-  .frase-ancora { margin-top:16px; display:flex; align-items:center; justify-content:center; gap:14px; }
-  .frase-ancora i { font-size:21px; color:#94A3B8; flex-shrink:0; }
-  .frase-ancora p { font-family:'Montserrat', sans-serif; font-weight:700; font-size:24px;
-    color:#64748B; line-height:1.25; }
-
-  .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
+  .pilula-tempo { display:inline-flex; align-items:center; gap:16px;
+    border:2px solid rgba(255,215,0,.55);
+    background:linear-gradient(90deg, rgba(255,215,0,.16), rgba(255,215,0,.04));
+    border-radius:999px; padding:18px 36px; }
 </style>
 </head>
 <body>
 <div class="slide-container">
-  <div style="height:12px;background:#003366;width:100%;"></div>
-  <div style="height:6px;background:#0066CC;width:100%;"></div>
+  <!-- Acentos à esquerda -->
+  <div class="absolute left-0 top-0 h-full w-3 z-20" style="background:#FFD700;"></div>
+  <div class="absolute left-3 top-0 h-full w-1 bg-brand-secondary z-20"></div>
 
-  <!-- Cabeçalho -->
-  <div class="flex items-center justify-between px-16 pt-8 pb-3 z-10">
-    <div>
-      <div class="flex items-center gap-3">
-        <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
-        <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:46px; line-height:1.12; letter-spacing:-0.02em;">
-          O conector não é um sistema da ANTAQ
-        </h1>
-      </div>
-    </div>
-    <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
-      <i class="fas fa-plug" style="font-size:26px;"></i>
-      <p class="font-montserrat font-bold text-gray-400" style="font-size:19px; letter-spacing:.16em;">DADOS ABERTOS</p>
+  <!-- Fundo decorativo -->
+  <div class="shape-circle shape-1"></div>
+  <div class="shape-circle shape-2"></div>
+  <div class="absolute inset-0 bg-pattern"></div>
+
+  <!-- Marca d'água -->
+  <img src="Imagens/logo-antaq-branca.png" alt="" class="absolute"
+       style="top:44%; left:72%; width:42vw; max-width:620px; transform:translate(-50%,-50%);
+              opacity:0.045; z-index:0; pointer-events:none;" />
+
+  <!-- Ícone decorativo gigante -->
+  <div class="absolute text-white z-0"
+       style="bottom:-70px; right:-50px; font-size:490px; line-height:0; opacity:0.05;">
+    <i class="fas fa-plug"></i>
+  </div>
+
+  <!-- Logo ANTAQ topo -->
+  <div class="absolute z-10 flex items-center gap-4" style="top:56px; left:110px;">
+    <img src="Imagens/logo-antaq-branca.png" alt="Logo ANTAQ" style="height:46px; width:auto;" />
+    <div style="border-left:1px solid rgba(255,255,255,0.20); padding-left:18px;">
+      <p class="font-montserrat font-bold uppercase" style="font-size:19px; color:#BFDBFE; letter-spacing:.16em;">Dados Abertos da ANTAQ</p>
+      <p class="font-montserrat font-semibold uppercase" style="font-size:17px; color:#93C5FD; letter-spacing:.12em; opacity:.85;">SFC · ANTAQ</p>
     </div>
   </div>
 
-  <!-- Conteúdo -->
-  <div class="flex-1 flex flex-col justify-center px-16 pb-6 z-10 min-h-0">
-    <div class="lista">
+  <!-- Conteúdo central -->
+  <div class="relative z-10 flex-1 flex flex-col justify-center" style="padding-left:110px; padding-right:96px; padding-top:96px; padding-bottom:20px;">
 
-      <div class="item">
-        <div class="item-icone"><i class="fas fa-code-branch"></i></div>
-        <p class="item-txt">
-          <span class="realce">MCP é protocolo aberto.</span> Funciona com qualquer ferramenta compatível, de qualquer fornecedor.
-        </p>
-      </div>
-
-      <div class="item">
-        <div class="item-icone"><i class="fas fa-user-pen"></i></div>
-        <p class="item-txt">
-          <span class="realce">Projeto pessoal do apresentador</span>, com recurso próprio e sem fins lucrativos.
-          Não foi contratado, desenvolvido nem homologado pela Agência.
-        </p>
-      </div>
-
-      <div class="item" style="align-items:flex-start;">
-        <div class="item-icone" style="margin-top:2px;"><i class="fas fa-globe"></i></div>
-        <div>
-          <p class="item-txt">Consome <span class="realce">apenas dado publicado</span> pela ANTAQ e pelo Governo Federal:</p>
-          <div class="fontes">
-            <span class="fonte-chip"><i class="fas fa-chart-column"></i>Painéis públicos da ANTAQ</span>
-            <span class="fonte-chip"><i class="fas fa-ship"></i>Painéis do ONTL (Infra S.A.)</span>
-            <span class="fonte-chip"><i class="fas fa-globe"></i>Comex Stat (MDIC)</span>
-            <span class="fonte-chip"><i class="fas fa-scale-balanced"></i>Atos e normas publicados</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="item item-forte">
-        <div class="item-icone"><i class="fas fa-lock"></i></div>
-        <p class="item-txt">Nenhum processo em tramitação sai daqui.</p>
-      </div>
-
+    <div class="flex items-center gap-4 mb-6">
+      <div style="width:72px; height:4px; background:#FFD700;"></div>
+      <p class="font-montserrat font-semibold uppercase" style="font-size:22px; color:#BFDBFE; letter-spacing:.3em;">Bloco</p>
     </div>
 
-    <!-- Endereço do conector -->
-    <div class="endereco">
-      <i class="fas fa-plug"></i>
-      <div>
-        <p class="endereco-rot">Endereço do conector</p>
-        <p class="endereco-url">https://antaq.dadosabertos.dev/mcp</p>
-        <p class="endereco-nota">Endereço particular, não é domínio da Agência. Qualquer ferramenta compatível se conecta ali, sem instalação.</p>
+    <div class="flex items-end gap-10 mb-10">
+      <span class="module-num">01</span>
+      <div class="pb-3" style="border-left:5px solid rgba(255,215,0,0.55); padding-left:36px;">
+        <h1 class="font-montserrat font-black text-white leading-tight" style="font-size:78px; letter-spacing:-1.5px;">
+          Cinco perguntas e uma ao vivo
+        </h1>
+        <p class="font-montserrat font-light mt-4" style="font-size:30px; color:#DBEAFE; max-width:1250px; line-height:1.4;">
+          Cada caso traz a pergunta como se digita, o que volta em segundos e como ler o número sem errar. A última roda na hora.
+        </p>
       </div>
     </div>
 
-    <!-- Frase-âncora, em voz baixa: ela volta inteira no slide 12 -->
-    <div class="frase-ancora">
-      <i class="fas fa-signature"></i>
-      <p>A IA não assina. Quem assina é você, e quem assina responde.</p>
+    <div class="grid grid-cols-6 gap-4" style="max-width:1680px;">
+      <div class="chip">
+        <div class="chip-icon"><i class="fas fa-file-contract"></i></div>
+        <p>Contratos que vencem</p>
+      </div>
+      <div class="chip">
+        <div class="chip-icon"><i class="fas fa-building-circle-check"></i></div>
+        <p>A empresa pelo CNPJ</p>
+      </div>
+      <div class="chip">
+        <div class="chip-icon"><i class="fas fa-landmark"></i></div>
+        <p>O que a Diretoria decide</p>
+      </div>
+      <div class="chip">
+        <div class="chip-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+        <p>O teto da tarifa</p>
+      </div>
+      <div class="chip">
+        <div class="chip-icon"><i class="fas fa-sitemap"></i></div>
+        <p>A carteira da unidade</p>
+      </div>
+      <div class="chip chip-vivo">
+        <div class="chip-icon"><i class="fas fa-file-pdf"></i></div>
+        <p>Um artigo em PDF<span class="chip-sel">ao vivo</span></p>
+      </div>
+    </div>
+
+    <div class="mt-10">
+      <span class="pilula-tempo">
+        <i class="fas fa-clock" style="color:#FFD700; font-size:30px;"></i>
+        <span class="font-montserrat" style="font-size:30px; font-weight:800; color:#fff;">24 minutos</span>
+      </span>
     </div>
 
   </div>
 
   <!-- Rodapé -->
-  <div class="px-16 pb-6 flex justify-between items-end z-10">
-    <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
-    <p class="text-gray-300 font-mono" style="font-size:18px;">5 / 14</p>
+  <div class="relative z-10 flex justify-between items-end" style="padding:0 96px 30px 110px;">
+    <div>
+      <p class="font-montserrat" style="font-size:18px; color:#BFDBFE; opacity:.75;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
+      <p style="font-size:17px; color:#BFDBFE; opacity:.6;">Fonte: tempo estimado no roteiro desta apresentação (GPF e GRAT/SFC).</p>
+    </div>
+    <p class="font-mono" style="font-size:18px; color:#BFDBFE; opacity:.75;">5 / 16</p>
   </div>
-
-  <div class="bg-marca"><i class="fas fa-code-branch"></i></div>
 </div>
 
 <div id="notas-apresentador" style="display:none;">
-  <p>Este é o slide da declaração de interesse, e ele existe para que ninguém saia da sala com a impressão errada. Não o apressem, e não o suavizem: é ele que protege vocês.</p>
-  <p>Primeiro: MCP é protocolo aberto, não é produto. Funciona com qualquer ferramenta compatível, de qualquer fornecedor.</p>
-  <p>Segundo, e é o ponto que não pode ser contornado: <strong>o conector é um projeto pessoal de quem está falando</strong>, feito com recurso próprio, sem fins lucrativos e fora do expediente. A ANTAQ não contratou, não desenvolveu, não homologou e não mantém. Não é sistema da casa, não substitui nenhum, e usá-lo não é recomendação institucional. Digam isso com todas as letras, mesmo que soe repetitivo, porque a plateia é composta de colegas e o mal-entendido aqui é caro. Se perguntarem por que então está sendo apresentado num evento da Superintendência, a resposta honesta é: porque o método interessa ao trabalho de vocês, e porque a alternativa, que é usar sem saber de onde vem, é pior.</p>
-  <p>Terceiro: o que é da ANTAQ é o dado, não a ferramenta. Ele só consome o que é publicado, e vale nomear as fontes: os painéis públicos da Agência, os painéis do ONTL, o Comex Stat do MDIC e os atos e normas publicados.</p>
-  <p>O quarto ponto é o que importa a esta sala, e é o que torna o terceiro suportável: o conector não enxerga processo em tramitação. Ele lê o painel público, que só tem processo já julgado. Nada do SFIS, nada do SEI, nada em sigilo.</p>
-  <p>O endereço é o ponto alto do slide, e é o que a sala vai querer anotar: o conector fica em <em>antaq.dadosabertos.dev barra mcp</em>. Leiam em voz alta, devagar, e digam junto que é um endereço particular, não é domínio da Agência. Isso vai junto com o endereço, nunca depois. Deem alguns segundos de silêncio para quem estiver anotando; o endereço volta no último slide.</p>
-  <p>A frase do rodapé é só um lembrete de ontem, dita em voz baixa e sem parar no slide: a IA não assina, quem assina é você, e quem assina responde. Ela volta inteira, e com peso, no slide 12.</p>
+  <p>Placa de sinalização. Quinze a vinte segundos.</p>
+  <p>Anunciem os cinco casos apontando para os rótulos e digam o molde: a pergunta como se digita, a resposta e a armadilha. É o mesmo desenho nos cinco.</p>
+  <p>Digam a frase que prende a sala: os números que vocês vão ver são de vocês. No primeiro caso, cada regional vai achar o próprio porto na lista.</p>
 </div>
 <script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
 <script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>

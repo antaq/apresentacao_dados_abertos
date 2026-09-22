@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>A mesma pergunta, com e sem conector</title>
+<title>A instrução que vale para toda conversa</title>
 <link rel="icon" href="favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
@@ -14,122 +14,112 @@
 <style>
   html { font-size: 26px; }
   body { margin:0; padding:0; background-color:#f3f4f6; overflow:hidden; font-family:'Open Sans', sans-serif; }
-  .slide-container { width:100vw; height:100vh; position:relative; display:flex; flex-direction:column; background-color:#ffffff; overflow:hidden; }
+  .slide-container {
+    width:100vw; height:100vh; position:relative; display:flex; flex-direction:column;
+    background: linear-gradient(135deg, #002244 0%, #003366 50%, #004488 100%);
+    overflow:hidden; color:white;
+  }
   .font-montserrat { font-family:'Montserrat', sans-serif; }
-  .text-brand-primary { color:#003366; } .bg-brand-primary { background-color:#003366; }
-  .text-brand-secondary { color:#0066CC; } .bg-brand-secondary { background-color:#0066CC; }
+  .bg-brand-secondary { background-color:#0066CC; }
 
-  /* Instrução digitada (KIT 6.2) */
-  .instrucao { background:#0F172A; border-radius:14px; padding:22px 32px; display:flex;
-               align-items:center; gap:18px; }
-  .instrucao i { color:#7CC0FF; font-size:26px; flex-shrink:0; }
-  .instrucao code { font-family:'Courier New', monospace; font-size:27px; color:#E2E8F0; line-height:1.35; }
+  .shape-circle { position:absolute; border-radius:50%; z-index:0; }
+  .shape-1 { width:600px; height:600px; top:-190px; right:-170px; border:60px solid rgba(255,255,255,0.03); }
+  .shape-2 { width:420px; height:420px; bottom:-150px; right:16%; border:40px solid rgba(255,255,255,0.03); }
+  .bg-pattern { background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px); background-size:22px 22px; }
 
+  .campo { background:rgba(255,255,255,0.07); border:2px solid rgba(255,255,255,0.24);
+    border-radius:22px; padding:30px 44px 36px 44px; max-width:1700px;
+    box-shadow:0 22px 48px -18px rgba(0,0,0,0.55); }
+  .campo-topo { display:flex; align-items:center; gap:16px; padding-bottom:18px;
+    border-bottom:1px solid rgba(255,255,255,0.16); margin-bottom:26px; }
+  .campo-rotulo { font-family:'Montserrat',sans-serif; font-weight:800; font-size:20px;
+    text-transform:uppercase; letter-spacing:.2em; color:#BFDBFE; }
 
-  .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
+  .instrucao { font-family:'Montserrat', sans-serif; font-weight:600; font-size:33px;
+    line-height:1.4; color:#FFFFFF; letter-spacing:-0.01em; }
+  .instrucao + .instrucao { margin-top:26px; }
+  .instrucao b { color:#FFD700; font-weight:700; }
 
-  .comparativo { display:flex; align-items:stretch; gap:30px; }
-  .coluna { flex:1; border-radius:18px; padding:30px 34px; display:flex; flex-direction:column; }
-  .coluna-neutra { background:#F8FAFC; border:3px solid #E2E8F0; }
-  .coluna-certa  { background:#F0F9FF; border:3px solid #0066CC; box-shadow:0 12px 28px -12px rgba(0,102,204,.35); }
+  .cursor { display:inline-block; width:13px; height:30px; background:#FFD700;
+    margin-left:10px; vertical-align:-5px; animation:pisca 1.1s step-end infinite; }
+  @keyframes pisca { 0%,100% { opacity:1; } 50% { opacity:0; } }
 
-  .pilula { display:inline-flex; align-items:center; gap:13px; align-self:flex-start;
-            font-family:'Montserrat', sans-serif; font-weight:700; font-size:24px;
-            text-transform:uppercase; letter-spacing:.06em; border-radius:999px; padding:9px 26px; }
-  .pilula-neutra { background:#E2E8F0; color:#475569; }
-  .pilula-certa  { background:#003366; color:#FFFFFF; }
-
-  .col-titulo { font-family:'Montserrat',sans-serif; font-weight:800; font-size:27px; line-height:1.28;
-                color:#1F2937; margin-top:20px; }
-  .col-txt { font-size:23px; line-height:1.36; color:#4B5563; margin-top:12px; }
-
-  .numerao { font-family:'Montserrat',sans-serif; font-weight:900; font-size:96px; color:#003366;
-             letter-spacing:-3px; line-height:1; margin-top:16px; }
-  .numerao-rot { font-family:'Montserrat',sans-serif; font-weight:700; font-size:24px; color:#0066CC;
-                 line-height:1.25; margin-top:6px; }
-  .linha-fonte-col { display:flex; align-items:center; gap:13px; margin-top:18px;
-                     font-size:21px; color:#1E40AF; font-weight:600; line-height:1.3; }
-
-  .pe-col { display:flex; align-items:flex-start; gap:13px; margin-top:auto; padding-top:20px;
-            font-size:21px; line-height:1.32; }
-  .pe-neutro { color:#64748B; } .pe-neutro i { color:#94A3B8; font-size:23px; margin-top:2px; }
-  .pe-certo  { color:#1F2937; } .pe-certo i  { color:#0066CC; font-size:23px; margin-top:2px; }
-
-  .seta { display:flex; align-items:center; justify-content:center; flex-shrink:0; width:52px; }
+  .fecho { font-family:'Montserrat', sans-serif; font-weight:800; font-size:40px;
+    line-height:1.25; color:#FFD700; letter-spacing:-0.01em; }
 </style>
 </head>
 <body>
 <div class="slide-container">
-  <div style="height:12px;background:#003366;width:100%;"></div>
-  <div style="height:6px;background:#0066CC;width:100%;"></div>
+  <!-- Acentos à esquerda -->
+  <div class="absolute left-0 top-0 h-full w-3 z-20" style="background:#FFD700;"></div>
+  <div class="absolute left-3 top-0 h-full w-1 bg-brand-secondary z-20"></div>
 
-  <!-- Cabeçalho -->
-  <div class="flex items-center justify-between px-16 pt-7 pb-2 z-10">
-    <div>
-      <div class="flex items-center gap-3">
-        <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
-        <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:46px; line-height:1.12; letter-spacing:-0.02em;">
-          A mesma pergunta, com e sem conector
-        </h1>
-      </div>
-      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">O que muda quando a ferramenta lê o painel na hora da pergunta</p>
-    </div>
-    <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
-      <i class="fas fa-plug" style="font-size:26px;"></i>
-      <p class="font-montserrat font-bold text-gray-400" style="font-size:19px; letter-spacing:.16em;">DADOS ABERTOS</p>
-    </div>
+  <!-- Fundo decorativo -->
+  <div class="shape-circle shape-1"></div>
+  <div class="shape-circle shape-2"></div>
+  <div class="absolute inset-0 bg-pattern"></div>
+
+  <!-- Marca d'água -->
+  <img src="Imagens/logo-antaq-branca.png" alt="" class="absolute"
+       style="top:19%; left:76%; width:38vw; max-width:580px; transform:translate(-50%,-50%);
+              opacity:0.05; z-index:0; pointer-events:none;" />
+
+  <!-- Ícone decorativo gigante -->
+  <div class="absolute text-white z-0"
+       style="bottom:-90px; right:-60px; font-size:470px; line-height:0; opacity:0.05;">
+    <i class="fas fa-sliders"></i>
   </div>
 
   <!-- Conteúdo -->
-  <div class="flex-1 flex flex-col justify-center px-16 pb-4 z-10 min-h-0" style="gap:22px;">
+  <div class="relative z-10 flex-1 flex flex-col justify-center" style="padding-left:130px; padding-right:90px;">
 
-    <!-- Instrução usada -->
-    <div class="instrucao">
-      <i class="fas fa-keyboard"></i>
-      <code>Quanto os portos brasileiros movimentaram em 2025?</code>
+    <div class="flex items-center gap-4" style="margin-bottom:30px;">
+      <div style="width:72px; height:4px; background:#FFD700;"></div>
+      <p class="font-montserrat font-semibold uppercase" style="font-size:22px; color:#BFDBFE; letter-spacing:.3em;">A instrução que fica</p>
     </div>
 
-    <!-- Comparativo -->
-    <div class="comparativo">
-
-      <div class="coluna coluna-neutra">
-        <span class="pilula pilula-neutra"><i class="fas fa-cloud"></i>Sem conector</span>
-        <p class="col-titulo">Responde com o que leu até a data em que foi treinada.</p>
-        <p class="col-txt">Pode entregar o número de outro ano com a mesma segurança, e sem avisar que ele é de outro ano.</p>
-        <p class="pe-col pe-neutro"><i class="fas fa-circle-xmark"></i><span>Sem fonte consultada, sem data de captura, sem ressalva de leitura.</span></p>
+    <div class="campo">
+      <div class="campo-topo">
+        <i class="fas fa-user-gear" style="color:#FFD700; font-size:32px;"></i>
+        <span class="campo-rotulo">Instruções para o Claude &middot; Configurações &gt; Conta</span>
       </div>
-
-      <div class="seta"><i class="fas fa-arrow-right-long" style="font-size:44px; color:#0066CC;"></i></div>
-
-      <div class="coluna coluna-certa">
-        <span class="pilula pilula-certa"><i class="fas fa-plug"></i>Com conector</span>
-        <p class="numerao">1.402,7</p>
-        <p class="numerao-rot">milhões de toneladas movimentadas em 2025</p>
-        <p class="linha-fonte-col"><i class="fas fa-database" style="font-size:23px;"></i><span>Estatístico Aquaviário da ANTAQ</span></p>
-        <p class="pe-col pe-certo"><i class="fas fa-circle-info"></i><span>E vem com a ressalva: a cabotagem entra duas vezes na movimentação, no embarque e no desembarque.</span></p>
-      </div>
-
+      <p class="instrucao">
+        Seja meu parceiro de debate, seja crítico comigo, ache meus pontos fracos, e ache meus pontos
+        cegos, pare de concordar comigo e busque sempre a verdade: <b>o que é melhor pra mim não o que
+        eu quero ouvir.</b>
+      </p>
+      <p class="instrucao">
+        Seja direto e duro, se precisar me contrariar, contrarie
+      </p>
+      <p class="instrucao">
+        Se não tiver certeza de algo, <b>diga que não tem certeza</b> e verifique na Internet antes de
+        afirmar.<span class="cursor"></span>
+      </p>
     </div>
+
+    <div class="flex items-center" style="gap:24px; margin-top:38px;">
+      <div style="width:90px; height:8px; background:#FFD700; flex-shrink:0;"></div>
+      <p class="fecho">Escrita uma vez, vale em toda conversa.</p>
+    </div>
+
   </div>
 
   <!-- Rodapé -->
-  <div class="px-16 pb-5 flex justify-between items-end z-10">
-    <div style="max-width:1620px;">
-      <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
-      <p class="text-gray-400" style="font-size:17px;">Fonte: painel Estatístico Aquaviário da ANTAQ, quadro de movimentação portuária por tipo de navegação, via conector MCP independente, em 22 de setembro de 2026.</p>
+  <div class="relative z-10 flex justify-between items-end" style="padding:0 90px 30px 130px;">
+    <div>
+      <p class="font-montserrat" style="font-size:18px; color:#BFDBFE; opacity:.75;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
+      <p style="font-size:17px; color:#BFDBFE; opacity:.6;">Fonte: campo Instruções para o Claude, em Configurações &gt; Conta, na conta pessoal do apresentador, em 22 de setembro de 2026. Exemplo de uso, não é recomendação da Agência.</p>
     </div>
-    <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">4 / 14</p>
+    <p class="font-mono" style="font-size:18px; color:#BFDBFE; opacity:.75;">4 / 16</p>
   </div>
-
-  <div class="bg-marca"><i class="fas fa-plug"></i></div>
 </div>
 
 <div id="notas-apresentador" style="display:none;">
-  <p>Slide de virada. Ontem a ferramenta era boa de texto; a partir daqui ela alcança o dado oficial da Agência.</p>
-  <p>Antes de mostrar a coluna da direita, pergunte à sala: quanto vocês acham que os portos brasileiros movimentaram em 2025? Deixe dois ou três palpites.</p>
-  <p>A coluna da esquerda não é crítica a ferramenta nenhuma: é como elas funcionam. O conhecimento para numa data, e a ferramenta não avisa quando a pergunta passou dessa data. É o que foi dito ontem sobre errar onde é mais convincente.</p>
-  <p>A coluna da direita traz três coisas juntas: o número, a fonte e a ressalva de leitura. É esse trio que vai aparecer nos cinco casos. Se perguntarem pela ressalva: em 2025, a cabotagem movimentou 303,7 milhões de toneladas e transportou 223,0 milhões.</p>
-  <p>É o mesmo painel público da Central de Painéis. O conector não dá acesso a nada novo: ele torna a consulta barata. Cerca de um minuto e meio.</p>
+  <p>O slide anterior foi sobre a instrução de um projeto. Este é sobre a instrução que vale para tudo: existe um campo na conta, em Configurações e depois Conta, que entra em toda conversa, em todo projeto, sem você repetir nada.</p>
+  <p>O que está em tela é a minha configuração de verdade, não um exemplo inventado. Digam isso, porque é o que dá peso ao slide.</p>
+  <p>Leiam as três em voz alta e parem na primeira, que é a que importa para fiscalização: pare de concordar comigo e busque sempre a verdade, o que é melhor pra mim não o que eu quero ouvir. Ferramenta de IA tende a concordar, e concordância é exatamente o que não serve a quem instrui processo.</p>
+  <p>A terceira fecha o par com a regra de ontem: se não tiver certeza, diga que não tem e verifique antes de afirmar. É a mesma ideia do slide 2, só que escrita uma vez e valendo sempre. Não substitui a conferência na fonte, reduz a quantidade de vezes que ela pega erro.</p>
+  <p>Avisem que o texto está sem aspas de propósito, para copiar e colar do material publicado, e que cada um deve adaptar ao próprio jeito de trabalhar. Cerca de um minuto e meio. Em seguida abre o bloco 1.</p>
 </div>
 <script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
 <script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>

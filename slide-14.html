@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Material e contato</title>
+<title>O panorama de um artigo, ao vivo</title>
 <link rel="icon" href="favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
@@ -14,174 +14,157 @@
 <style>
   html { font-size: 26px; }
   body { margin:0; padding:0; background-color:#f3f4f6; overflow:hidden; font-family:'Open Sans', sans-serif; }
-  .slide-container {
-    width:100vw; height:100vh; position:relative; display:flex; flex-direction:column;
-    background: linear-gradient(135deg, #002244 0%, #003366 50%, #004488 100%);
-    overflow:hidden; color:white;
-  }
+  .slide-container { width:100vw; height:100vh; position:relative; display:flex; flex-direction:column; background-color:#ffffff; overflow:hidden; }
   .font-montserrat { font-family:'Montserrat', sans-serif; }
-  .font-opensans { font-family:'Open Sans', sans-serif; }
-  .bg-brand-secondary { background-color:#0066CC; }
+  .text-brand-primary { color:#003366; } .bg-brand-primary { background-color:#003366; }
+  .text-brand-secondary { color:#0066CC; } .bg-brand-secondary { background-color:#0066CC; }
 
-  .thanks-title { font-family:'Montserrat', sans-serif; font-size:88px; font-weight:900;
-    letter-spacing:-3px; line-height:1; color:#FFFFFF; text-shadow:0 4px 12px rgba(0,0,0,0.35); }
+  /* Instrução digitada (KIT 6.2) */
+  .instrucao { background:#0F172A; border-radius:14px; padding:22px 32px; display:flex;
+               align-items:center; gap:18px; }
+  .instrucao i { color:#7CC0FF; font-size:26px; flex-shrink:0; }
+  .instrucao code { font-family:'Courier New', monospace; font-size:27px; color:#E2E8F0; line-height:1.35; }
 
-  .contact-card { background-color: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 16px; padding: 20px 26px; display: flex; align-items: center;
-    text-decoration: none; color: white; }
-  .contact-icon { width: 52px; height: 52px; border-radius: 13px; display:flex; align-items:center;
-    justify-content:center; font-size: 22px; margin-right: 20px; flex-shrink:0; }
 
-  .card-endereco { font-family:'Courier New', monospace; font-size:27px; font-weight:700; color:#FFFFFF; }
+  .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
 
-  .qr-caixa { width:250px; height:250px; border-radius:18px; background:#FFFFFF; padding:14px;
-    box-shadow:0 10px 30px -8px rgba(0,0,0,.45); flex-shrink:0; }
+  .instrucao code { font-size:24px; }
 
-  .shape-circle { position:absolute; border-radius:50%; z-index:0; }
-  .shape-1 { width:600px; height:600px; top:-160px; right:-160px; border:60px solid rgba(255,255,255,0.03); }
-  .shape-2 { width:420px; height:420px; bottom:-120px; left:-120px; border:40px solid rgba(255,255,255,0.03); }
-  .bg-pattern { background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px); background-size: 22px 22px; }
+  .quatro { display:flex; gap:22px; }
+  .q-item { flex:1; background:#F8FAFC; border:2px solid #E2E8F0; border-top:8px solid #0066CC;
+            border-radius:0 0 16px 16px; padding:20px 24px 22px 24px; text-align:center; }
+  .q-forte { background:#F0F9FF; border-color:#BAE6FD; border-top-color:#003366; }
+  .q-num { font-family:'Montserrat',sans-serif; font-weight:900; font-size:62px; color:#003366;
+           line-height:1; letter-spacing:-2.5px; }
+  .q-num-p { font-size:46px; letter-spacing:-1.5px; }
+  .q-rot { font-size:21px; color:#64748B; line-height:1.24; margin-top:10px; }
+
+  .tab { border:2px solid #E2E8F0; border-radius:14px; overflow:hidden; }
+  .t-cab { display:flex; align-items:center; gap:18px; background:#F1F5F9; padding:11px 28px;
+           border-bottom:2px solid #E2E8F0; }
+  .t-cab span { font-family:'Montserrat',sans-serif; font-weight:800; font-size:18px; color:#64748B;
+                text-transform:uppercase; letter-spacing:.11em; }
+  .t-linha { display:flex; align-items:center; gap:18px; padding:15px 28px;
+             border-bottom:1px solid #EAEFF5; }
+  .t-linha:last-child { border-bottom:none; }
+  .t-vazio { background:#FAFBFC; }
+  .c-inc { width:150px; flex-shrink:0; font-family:'Montserrat',sans-serif; font-weight:800;
+           font-size:25px; color:#0066CC; white-space:nowrap; }
+  .c-txt { flex:1; font-size:23px; color:#374151; line-height:1.26; }
+  .c-num { width:110px; text-align:right; flex-shrink:0; font-family:'Montserrat',sans-serif;
+           font-weight:800; font-size:27px; color:#1F2937; }
+  .c-val { width:230px; text-align:right; flex-shrink:0; font-family:'Montserrat',sans-serif;
+           font-weight:800; font-size:25px; color:#003366; white-space:nowrap; }
+  .t-vazio .c-inc, .t-vazio .c-txt, .t-vazio .c-num, .t-vazio .c-val { color:#94A3B8; }
+  .t-cab .h-inc { width:150px; flex-shrink:0; }
+  .t-cab .h-txt { flex:1; }
+  .t-cab .h-num { width:110px; text-align:right; flex-shrink:0; }
+  .t-cab .h-val { width:230px; text-align:right; flex-shrink:0; }
+
+  .resumo { display:flex; align-items:flex-start; gap:20px; padding:20px 28px; border-radius:12px;
+            background:#003366; color:#FFFFFF; }
+  .resumo i { font-size:30px; color:#FFD700; flex-shrink:0; margin-top:3px; }
+  .resumo-topo { font-family:'Montserrat',sans-serif; font-weight:800; font-size:25px; line-height:1.25; }
+  .resumo-leitura { font-size:22px; line-height:1.32; color:#BAE6FD; margin-top:8px; }
+  .nq { white-space:nowrap; }
 </style>
 </head>
 <body>
 <div class="slide-container">
+  <div style="height:12px;background:#003366;width:100%;"></div>
+  <div style="height:6px;background:#0066CC;width:100%;"></div>
 
-  <!-- Acentos à esquerda -->
-  <div class="absolute left-0 top-0 h-full w-3 z-20" style="background:#FFD700;"></div>
-  <div class="absolute left-3 top-0 h-full w-1 bg-brand-secondary z-20"></div>
-
-  <!-- Fundo decorativo -->
-  <div class="shape-circle shape-1"></div>
-  <div class="shape-circle shape-2"></div>
-  <div class="absolute inset-0 bg-pattern"></div>
-
-  <!-- Marca d'água -->
-  <img src="Imagens/logo-antaq-azul.png" alt="" class="absolute top-1/2 left-1/2"
-       style="width:48vw; max-width:760px; transform:translate(-50%,-50%); opacity:0.07; z-index:0;
-              pointer-events:none; filter:brightness(0) invert(1);" />
-
-  <!-- Ícone decorativo gigante -->
-  <div class="absolute text-white z-0"
-       style="bottom:-40px; right:-30px; font-size:440px; line-height:0; opacity:0.05;">
-    <i class="fas fa-robot"></i>
+  <!-- Cabeçalho -->
+  <div class="flex items-center justify-between px-16 pt-7 pb-2 z-10">
+    <div>
+      <div class="flex items-center gap-3">
+        <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
+        <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:46px; line-height:1.12; letter-spacing:-0.02em;">
+          O panorama de um artigo, ao vivo
+        </h1>
+      </div>
+      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">Demonstração &middot; autos julgados sobre o art. 34 da Resolução 62/2021</p>
+    </div>
+    <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
+      <i class="fas fa-plug" style="font-size:26px;"></i>
+      <p class="font-montserrat font-bold text-gray-400" style="font-size:19px; letter-spacing:.16em;">DADOS ABERTOS</p>
+    </div>
   </div>
 
   <!-- Conteúdo -->
-  <div class="relative z-10 flex-1 flex items-center" style="padding-left:110px; padding-right:96px; padding-top:20px;">
+  <div class="flex-1 flex flex-col justify-center px-16 pb-4 z-10 min-h-0" style="gap:20px;">
 
-    <div style="flex:1;">
-      <img src="Imagens/logo-antaq-branca.png" alt="Logo ANTAQ" style="height:56px; width:auto; margin-bottom:22px;" />
+    <div class="instrucao">
+      <i class="fas fa-keyboard"></i>
+      <code>Preciso de um panorama, em PDF, sobre os autos de infração lavrados sobre o art. 34 da Resolução 62/2021</code>
+    </div>
 
-      <h1 class="thanks-title">OBRIGADO</h1>
-      <div style="width:120px; height:8px; background:#FFD700; margin:20px 0 26px 0;"></div>
+    <div class="quatro">
+      <div class="q-item"><p class="q-num">44</p><p class="q-rot">linhas julgadas</p></div>
+      <div class="q-item"><p class="q-num">42</p><p class="q-rot">processos distintos</p></div>
+      <div class="q-item"><p class="q-num">40</p><p class="q-rot">empresas</p></div>
+      <div class="q-item q-forte"><p class="q-num q-num-p">R$ 97.925,25</p><p class="q-rot">em multa, em 6 das 44 linhas</p></div>
+    </div>
 
-      <p class="font-montserrat" style="font-size:36px; font-weight:800; color:#FFD700; margin-bottom:20px;">Material e contato</p>
-
-      <div class="pl-6" style="border-left:4px solid rgba(255,255,255,0.25); display:flex; gap:54px; flex-wrap:wrap;">
-        <div>
-          <p class="font-montserrat" style="font-size:30px; font-weight:800; color:#FFFFFF; line-height:1.25;">
-            Pedro Henrique Soares
-          </p>
-          <p class="font-opensans" style="font-size:21px; color:#BFDBFE; margin-top:8px; line-height:1.35;">
-            Planejamento e Inteligência da Fiscalização
-            <span style="color:#FFD700; font-weight:700;">- GPF</span>
-          </p>
-        </div>
-        <div>
-          <p class="font-montserrat" style="font-size:30px; font-weight:800; color:#FFFFFF; line-height:1.25;">
-            Fábio Queiroz Fonseca
-          </p>
-          <p class="font-opensans" style="font-size:21px; color:#BFDBFE; margin-top:8px; line-height:1.35;">
-            Recursos e de Apoio Técnico
-            <span style="color:#FFD700; font-weight:700;">- GRAT</span>
-          </p>
-        </div>
+    <div class="tab">
+      <div class="t-cab">
+        <span class="h-inc">Inciso</span><span class="h-txt">O que ele tipifica</span>
+        <span class="h-num">Linhas</span><span class="h-val">Multa</span>
       </div>
-      <p class="font-opensans" style="font-size:20px; color:#93C5FD; margin-top:14px; padding-left:26px; line-height:1.35;">
-        Superintendência de Fiscalização e Coordenação das Unidades Regionais - SFC
-      </p>
-
-      <div class="flex flex-col gap-4" style="margin-top:28px; max-width:980px;">
-        <a href="mailto:sfc@antaq.gov.br" class="contact-card">
-          <div class="contact-icon" style="background-color:rgba(0,102,204,0.28); color:#93c5fd;">
-            <i class="fa-solid fa-envelope"></i>
-          </div>
-          <div class="text-left">
-            <p class="font-montserrat" style="font-size:17px; color:#93c5fd; text-transform:uppercase; letter-spacing:.12em; font-weight:700; margin-bottom:6px;">Contato</p>
-            <p class="font-montserrat" style="font-size:28px; font-weight:700; color:#FFFFFF;">sfc@antaq.gov.br</p>
-          </div>
-        </a>
-
-        <a href="https://antaq.github.io/apresentacao_dados_abertos/" target="_blank" rel="noopener noreferrer" class="contact-card">
-          <div class="contact-icon" style="background-color:rgba(0,102,204,0.28); color:#60a5fa;">
-            <i class="fa-solid fa-folder-open"></i>
-          </div>
-          <div class="text-left">
-            <p class="font-montserrat" style="font-size:17px; color:#93c5fd; text-transform:uppercase; letter-spacing:.12em; font-weight:700; margin-bottom:6px;">Material de apoio</p>
-            <p class="font-montserrat" style="font-size:28px; font-weight:700; color:#FFFFFF;">antaq.github.io/apresentacao_dados_abertos</p>
-          </div>
-        </a>
-
-        <div class="contact-card">
-          <div class="contact-icon" style="background-color:rgba(255,215,0,0.20); color:#FFD700;">
-            <i class="fa-solid fa-plug"></i>
-          </div>
-          <div class="text-left">
-            <p class="font-montserrat" style="font-size:17px; color:#FDE68A; text-transform:uppercase; letter-spacing:.12em; font-weight:700; margin-bottom:6px;">Endereço do conector · projeto pessoal</p>
-            <p class="card-endereco">https://antaq.dadosabertos.dev/mcp</p>
-          </div>
-        </div>
+      <div class="t-linha">
+        <p class="c-inc">Inciso I</p>
+        <p class="c-txt">afretamento não registrado na ANTAQ em 15 dias</p>
+        <p class="c-num">41</p><p class="c-val">R$ 57.662,50</p>
+      </div>
+      <div class="t-linha">
+        <p class="c-inc">Inciso IV</p>
+        <p class="c-txt">devolução da embarcação afretada não informada</p>
+        <p class="c-num">2</p><p class="c-val">sem multa</p>
+      </div>
+      <div class="t-linha">
+        <p class="c-inc">Inciso VII</p>
+        <p class="c-txt">cópia do contrato de afretamento não encaminhada em 60 dias</p>
+        <p class="c-num">1</p><p class="c-val">R$ 40.262,75</p>
+      </div>
+      <div class="t-linha t-vazio">
+        <p class="c-inc">Inciso III</p>
+        <p class="c-txt">cancelamento do afretamento não comunicado em 5 dias</p>
+        <p class="c-num">0</p><p class="c-val">nunca julgado</p>
       </div>
     </div>
 
-    <!-- Código de leitura óptica -->
-    <div style="flex-shrink:0; margin-left:70px; display:flex; flex-direction:column; align-items:center; gap:16px;">
-      <div class="qr-caixa">
-        <img src="Imagens/qr-material-apoio.svg" alt="Código de leitura óptica para o material de apoio" style="width:100%; height:100%; display:block;"/>
+    <div class="resumo">
+      <i class="fas fa-triangle-exclamation"></i>
+      <div>
+        <p class="resumo-topo">Julgados, não lavrados. O painel só publica processo que já teve decisão.</p>
+        <p class="resumo-leitura">"Auto de Infração" ali é a origem do processo, e vale para 12 das 44 linhas: as outras 32
+        vieram de fiscalização extraordinária ou programada. Das 44, só 6 terminaram em multa: as outras 38 são 19 advertências
+        e 19 arquivamentos, em 8 unidades, de 2022 a 2026.</p>
       </div>
-      <p class="font-montserrat" style="font-size:19px; color:#BFDBFE; text-align:center; max-width:260px; line-height:1.35;">
-        Aponte a câmera<br/>para abrir o material
-      </p>
-    </div>
-
-  </div>
-
-  <!-- Rodapé com canais oficiais -->
-  <div class="relative z-10 flex justify-between items-end" style="padding:16px 96px 26px 110px; border-top:1px solid rgba(255,255,255,0.12);">
-    <div class="flex flex-col gap-1" style="color:#BFDBFE; font-size:17px;">
-      <span class="font-montserrat font-semibold uppercase" style="letter-spacing:.1em; color:#DBEAFE; font-size:18px;">Canais oficiais ANTAQ</span>
-      <div class="flex flex-wrap items-center gap-5" style="margin-top:4px;">
-        <a href="https://www.facebook.com/ANTAQ.oficial" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white transition-colors" style="color:#BFDBFE;">
-          <i class="fa-brands fa-facebook"></i><span>ANTAQ.oficial</span>
-        </a>
-        <a href="https://www.instagram.com/antaq_oficial/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white transition-colors" style="color:#BFDBFE;">
-          <i class="fa-brands fa-instagram"></i><span>@antaq_oficial</span>
-        </a>
-        <a href="https://www.youtube.com/c/CanalANTAQ/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white transition-colors" style="color:#BFDBFE;">
-          <i class="fa-brands fa-youtube"></i><span>CanalANTAQ</span>
-        </a>
-        <a href="https://www.linkedin.com/company/antaq" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white transition-colors" style="color:#BFDBFE;">
-          <i class="fa-brands fa-linkedin"></i><span>company/antaq</span>
-        </a>
-        <a href="https://x.com/ANTAQ_oficial" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white transition-colors" style="color:#BFDBFE;">
-          <i class="fa-brands fa-twitter"></i><span>@ANTAQ_oficial</span>
-        </a>
-      </div>
-    </div>
-    <div class="flex items-center gap-5">
-      <p class="font-montserrat" style="font-size:18px; color:#BFDBFE; opacity:.75;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
-      <p class="font-mono" style="font-size:18px; color:#BFDBFE; opacity:.75;">14 / 14</p>
     </div>
   </div>
 
+  <!-- Rodapé -->
+  <div class="px-16 pb-5 flex justify-between items-end z-10">
+    <div style="max-width:1620px;">
+      <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
+      <p class="text-gray-400" style="font-size:17px;">Fonte: painel Fiscalização da ANTAQ, quadros "Base de Dados" e "Objeto das Normas", via conector MCP independente, em 22 de setembro de 2026. Só processo julgado; o que tramita fica fora.</p>
+    </div>
+    <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">14 / 16</p>
+  </div>
+
+  <div class="bg-marca"><i class="fas fa-file-pdf"></i></div>
 </div>
 
 <div id="notas-apresentador" style="display:none;">
-  <p>Slide de contato e último da apresentação. Deixem-no projetado durante todas as perguntas: é ele que fica na tela enquanto a sala conversa.</p>
-  <p>Peçam que peguem o telefone e apontem a câmera para o código: ele abre esta mesma apresentação, com as notas. Digam o endereço em voz alta também, para quem preferir anotar.</p>
-  <p>Ofereçam o que não está projetado em lugar nenhum: quem quiser experimentar monta a primeira consulta junto com vocês, na mesa da unidade que pedir. Deixem claro que é ajuda entre colegas, e não suporte de um sistema da casa, porque o conector é projeto pessoal, como foi dito no slide 5. Sem essa frase, a apresentação termina sem próximo passo.</p>
-  <p>Apontem para o terceiro cartão e leiam o endereço devagar, porque é ele que transforma a oferta em algo que a pessoa faz sozinha na mesa dela: o conector atende em <em>antaq.dadosabertos.dev barra mcp</em>. Repitam aqui, em uma frase, o que o slide 5 já disse: endereço particular, projeto pessoal, não é domínio nem sistema da Agência. Basta apontar para lá qualquer ferramenta compatível com MCP. Não cliquem no endereço na hora, porque o que abre no navegador é a resposta crua do servidor, e não uma página.</p>
-  <p>Lembrem também do material de ontem, para quem chegou só hoje: antaq.github.io/apresentacao_ia_sfc traz as regras de uso seguro que este deck só recapitula no slide 2.</p>
+  <p>Esta é a demonstração, e a essa altura a tela do conector já está aberta há um tempo. Colem a pergunta exatamente como ela está projetada, sem melhorar no palco e sem tirar o número do artigo nem o da Resolução.</p>
+  <p>Enquanto roda, narrem o que está acontecendo, porque é isso que a sala precisa aprender. São duas leituras: primeiro o catálogo de infrações, para saber quais incisos do artigo 34 existem, e depois a base de fiscalização, para as linhas julgadas de cada inciso. O PDF quem monta é a ferramenta, não o conector: ele entrega o dado.</p>
+  <p>Quando o resultado aparecer, confiram contra o que está projetado antes de comentar: quarenta e quatro linhas julgadas, quarenta e dois processos distintos, quarenta empresas e noventa e sete mil novecentos e vinte e cinco reais em multa. Se bater, sigam. Se não bater, digam em voz alta que não bateu e sigam pelos números do slide, porque a base é recapturada e pode ter andado.</p>
+  <p>O inciso I concentra quase tudo, quarenta e uma das quarenta e quatro linhas, e é afretamento não registrado em quinze dias. O inciso III, que é o do cancelamento não comunicado, está no catálogo e nunca chegou a julgamento: zero é resposta, não é falha da consulta.</p>
+  <p>E reparem na linha do inciso sete: uma única linha, quarenta mil duzentos e sessenta e dois reais. É quase tanto quanto as quarenta e uma do inciso um somadas. Contar linha não mede gravidade.</p>
+  <p>Agora a armadilha, e é a que dá nome ao slide. A pergunta diz autos lavrados, e o painel só publica processo que já teve decisão. O que está em tramitação não está ali, e continua no SFIS. Digam isso antes que alguém leve o número para uma peça.</p>
+  <p>A segunda parte é o campo: Auto de Infração, no painel, é a origem do processo, não o documento. Ele vale para doze das quarenta e quatro linhas; as outras trinta e duas vieram de fiscalização extraordinária ou programada. Quem filtrar por esse campo achando que separa auto lavrado perde setenta por cento do artigo.</p>
+  <p>E fechem pelo que interessa a quem for usar isso amanhã: das quarenta e quatro, só seis terminaram em multa. As outras trinta e oito são dezenove advertências e dezenove arquivamentos. Numa planilha, trinta e oito delas virariam multa de zero real. Cerca de quatro minutos, com a consulta rodando.</p>
 </div>
 <script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
 <script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>

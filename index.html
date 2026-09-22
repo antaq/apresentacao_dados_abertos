@@ -202,7 +202,7 @@
     <div class="nav-dots" id="navDots"></div>
     <button onclick="next()" id="btnNext" title="Próximo"><i class="fa-solid fa-chevron-right"></i></button>
     <button onclick="toggleNotes()" id="btnNotes" title="Notas do apresentador (N)"><i class="fa-solid fa-microphone-lines"></i></button>
-    <span class="page-info" id="pageInfo">1 / 14</span>
+    <span class="page-info" id="pageInfo">1 / 16</span>
   </div>
 
   <button class="fs-btn" onclick="toggleFullscreen()" title="Tela Cheia (F)"><i class="fa-solid fa-expand" id="fsIcon"></i></button>
@@ -210,16 +210,16 @@
   <div class="progress-wrap" id="progressWrap"></div>
 
   <script>
-    const total = 14;
+    const total = 16;
     const frame = document.getElementById('slideFrame');
     let current = 1;
     let notesOpen = false;
 
     // Blocos: [primeiro, ultimo, rótulo]
     const BLOCOS = [
-      [1,  2,  'Abertura'],
-      [3,  13, 'Bloco 1 · Cinco perguntas e uma ao vivo'],
-      [14, 14, 'Encerramento']
+      [1,  4,  'Abertura'],
+      [5,  15, 'Bloco 1 · Cinco perguntas e uma ao vivo'],
+      [16, 16, 'Encerramento']
     ];
 
     function blocoDe(n) { return BLOCOS.find(b => n >= b[0] && n <= b[1]) || BLOCOS[0]; }

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Traga a pergunta da sua unidade</title>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
+<link rel="apple-touch-icon" href="Imagens/apple-touch-icon.png"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+  html { font-size: 26px; }
+  body { margin:0; padding:0; background-color:#f3f4f6; overflow:hidden; font-family:'Open Sans', sans-serif; }
+  .slide-container { width:100vw; height:100vh; position:relative; display:flex; flex-direction:column; background-color:#ffffff; overflow:hidden; }
+  .font-montserrat { font-family:'Montserrat', sans-serif; }
+  .text-brand-primary { color:#003366; } .bg-brand-primary { background-color:#003366; }
+  .text-brand-secondary { color:#0066CC; } .bg-brand-secondary { background-color:#0066CC; }
+
+  /* Instrução digitada (KIT 6.2) */
+  .instrucao { background:#0F172A; border-radius:14px; padding:22px 32px; display:flex;
+               align-items:center; gap:18px; }
+  .instrucao i { color:#7CC0FF; font-size:26px; flex-shrink:0; }
+  .instrucao code { font-family:'Courier New', monospace; font-size:27px; color:#E2E8F0; line-height:1.35; }
+
+
+  .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
+
+  .malha { display:grid; grid-template-columns:1fr 1fr; gap:26px; }
+  .cartao-p { background:#0F172A; border-left:10px solid #0066CC;
+              border-radius:0 16px 16px 0; padding:28px 34px 30px 34px; }
+  .cp-topo { display:flex; align-items:center; gap:14px; }
+  .cp-topo i { font-size:27px; color:#7CC0FF; flex-shrink:0; width:30px; text-align:center; }
+  .cp-area { font-family:'Montserrat',sans-serif; font-weight:800; font-size:20px; color:#7CC0FF;
+             text-transform:uppercase; letter-spacing:.12em; }
+  .cp-perg { font-family:'Courier New', monospace; font-size:24px; color:#E2E8F0; line-height:1.42;
+             margin-top:18px; }
+  .cp-perg b { color:#FFD700; font-weight:700; }
+
+  .oferta { display:flex; align-items:center; gap:22px; background:#F0F9FF; border:3px solid #BAE6FD;
+            border-radius:16px; padding:30px 36px; }
+  .oferta i { font-size:40px; color:#0066CC; flex-shrink:0; }
+  .oferta p { font-size:28px; line-height:1.32; color:#003366; font-weight:600; }
+
+  .faixa-ancora { background:linear-gradient(90deg,#002244 0%,#004488 100%);
+    border-left:12px solid #FFD700; border-radius:0 14px 14px 0; padding:28px 42px;
+    display:flex; align-items:center; gap:24px; }
+  .faixa-ancora p { color:#FFFFFF; font-size:36px; font-weight:800; line-height:1.2;
+    font-family:'Montserrat', sans-serif; }
+  .nq { white-space:nowrap; }
+</style>
+</head>
+<body>
+<div class="slide-container">
+  <div style="height:12px;background:#003366;width:100%;"></div>
+  <div style="height:6px;background:#0066CC;width:100%;"></div>
+
+  <!-- Cabeçalho -->
+  <div class="flex items-center justify-between px-16 pt-7 pb-2 z-10">
+    <div>
+      <div class="flex items-center gap-3">
+        <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
+        <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:46px; line-height:1.12; letter-spacing:-0.02em;">
+          Traga a pergunta da sua unidade
+        </h1>
+      </div>
+      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">Quatro perguntas reais, prontas para copiar e trocar o nome</p>
+    </div>
+    <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
+      <i class="fas fa-plug" style="font-size:26px;"></i>
+      <p class="font-montserrat font-bold text-gray-400" style="font-size:19px; letter-spacing:.16em;">DADOS ABERTOS</p>
+    </div>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="flex-1 flex flex-col justify-center px-16 pb-4 z-10 min-h-0" style="gap:26px;">
+
+    <div class="malha">
+      <div class="cartao-p">
+        <div class="cp-topo"><i class="fas fa-anchor"></i><span class="cp-area">Portos</span></div>
+        <p class="cp-perg">Quais contratos do <b>Porto de Suape</b> vencem entre hoje e 31 de dezembro de 2027?</p>
+      </div>
+      <div class="cartao-p">
+        <div class="cp-topo"><i class="fas fa-water"></i><span class="cp-area">Navegação interior</span></div>
+        <p class="cp-perg">Quais instalações portuárias privadas existem em <b>Manaus</b>, e quantas são terminal de uso privado?</p>
+      </div>
+      <div class="cartao-p">
+        <div class="cp-topo"><i class="fas fa-ship"></i><span class="cp-area">Navegação marítima</span></div>
+        <p class="cp-perg">O que a Diretoria da ANTAQ decidiu sobre <b><span class="nq">sobre-estadia</span> de contêiner</b> em 2026?</p>
+      </div>
+      <div class="cartao-p">
+        <div class="cp-topo"><i class="fas fa-gavel"></i><span class="cp-area">Sancionador</span></div>
+        <p class="cp-perg">Como terminaram os julgamentos da infração <b>Res. 3274/2014 art. 32 XXXVIII</b> nos últimos cinco anos?</p>
+      </div>
+    </div>
+
+    <div class="oferta">
+      <i class="fas fa-handshake"></i>
+      <p>A primeira consulta, montamos junto com a unidade que pedir. É ajuda entre colegas,
+      não suporte de sistema da Agência.</p>
+    </div>
+
+    <div class="faixa-ancora">
+      <i class="fas fa-signature" style="color:#FFD700; font-size:40px; flex-shrink:0;"></i>
+      <p>A IA não assina. Quem assina é você, e quem assina responde.</p>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <div class="px-16 pb-5 flex justify-between items-end z-10">
+    <div style="max-width:1620px;">
+      <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
+
+    </div>
+    <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">15 / 16</p>
+  </div>
+
+  <div class="bg-marca"><i class="fas fa-comments"></i></div>
+</div>
+
+<div id="notas-apresentador" style="display:none;">
+  <p>Este é o próximo passo, que antes só existia na fala. Os quatro cartões não são exemplos genéricos: são perguntas reais, com porto, cidade e número de infração escritos, e cada uma devolve resposta hoje. A de Suape devolve três contratos, a de Manaus devolve sessenta e nove instalações.</p>
+  <p>Peça que troquem o nome e mais nada: Suape pelo porto da regional, Manaus pelo município de vocês, o número da infração pelo que a unidade julga mais. A forma da pergunta é que faz ela funcionar, e ela está em amarelo justamente no pedaço que se troca.</p>
+  <p>A oferta está em tela: quem quiser monta a primeira consulta com a gente, na mesa da unidade. É ajuda entre colegas, não suporte de um sistema da casa, porque o conector é projeto pessoal, como foi dito no slide 7.</p>
+  <p>Nada do que foi mostrado hoje exigiu processo em tramitação, dado pessoal ou sigilo. Tudo veio de base pública, e foi de propósito.</p>
+  <p>Feche com a frase âncora, pela segunda e última vez nesta apresentação, dita exatamente igual: a IA não assina, quem assina é você, e quem assina responde. Cerca de um minuto.</p>
+</div>
+<script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
+<script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>
+</body>
+</html>

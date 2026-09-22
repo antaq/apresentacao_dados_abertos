@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Bloco 1 · Cinco perguntas e uma ao vivo</title>
+<title>Como começar sem saber por onde</title>
 <link rel="icon" href="favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
@@ -23,28 +23,27 @@
   .bg-brand-secondary { background-color:#0066CC; }
 
   .shape-circle { position:absolute; border-radius:50%; z-index:0; }
-  .shape-1 { width:620px; height:620px; top:-180px; right:-160px; border:60px solid rgba(255,255,255,0.03); }
-  .shape-2 { width:420px; height:420px; bottom:-140px; right:18%; border:40px solid rgba(255,255,255,0.03); }
+  .shape-1 { width:600px; height:600px; top:-190px; right:-170px; border:60px solid rgba(255,255,255,0.03); }
+  .shape-2 { width:420px; height:420px; bottom:-150px; right:16%; border:40px solid rgba(255,255,255,0.03); }
   .bg-pattern { background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px); background-size:22px 22px; }
 
-  .module-num { font-family:'Montserrat', sans-serif; font-weight:900; line-height:0.9;
-    font-size:188px; letter-spacing:-4px; color:#FFD700; text-shadow:0 8px 24px rgba(0,0,0,0.35); }
+  .campo { background:rgba(255,255,255,0.07); border:2px solid rgba(255,255,255,0.24);
+    border-radius:22px; padding:32px 44px 40px 44px; max-width:1700px;
+    box-shadow:0 22px 48px -18px rgba(0,0,0,0.55); }
+  .campo-topo { display:flex; align-items:center; gap:16px; padding-bottom:20px;
+    border-bottom:1px solid rgba(255,255,255,0.16); margin-bottom:28px; }
+  .campo-rotulo { font-family:'Montserrat',sans-serif; font-weight:800; font-size:20px;
+    text-transform:uppercase; letter-spacing:.2em; color:#BFDBFE; }
 
-  .chip { display:flex; flex-direction:column; align-items:flex-start; gap:14px;
-    background:rgba(255,255,255,0.07);
-    border:1px solid rgba(255,255,255,0.14); border-radius:16px; padding:20px 20px; }
-  .chip-vivo { background:rgba(255,215,0,0.10); border-color:rgba(255,215,0,0.40); }
-  .chip-vivo .chip-icon { background:rgba(255,215,0,0.22); color:#FFD700; }
-  .chip-sel { display:block; font-family:'Montserrat',sans-serif; font-weight:800; font-size:17px;
-    color:#FFD700; text-transform:uppercase; letter-spacing:.12em; margin-top:7px; }
-  .chip-icon { width:60px; height:60px; border-radius:14px; flex-shrink:0; display:flex;
-    align-items:center; justify-content:center; font-size:26px; background:rgba(0,102,204,0.30); color:#7CC0FF; }
-  .chip p { font-family:'Montserrat',sans-serif; font-weight:600; color:#fff; font-size:21px; line-height:1.25; }
+  .instrucao { font-family:'Montserrat', sans-serif; font-weight:600; font-size:46px;
+    line-height:1.34; color:#FFFFFF; letter-spacing:-0.01em; }
 
-  .pilula-tempo { display:inline-flex; align-items:center; gap:16px;
-    border:2px solid rgba(255,215,0,.55);
-    background:linear-gradient(90deg, rgba(255,215,0,.16), rgba(255,215,0,.04));
-    border-radius:999px; padding:18px 36px; }
+  .cursor { display:inline-block; width:15px; height:42px; background:#FFD700;
+    margin-left:12px; vertical-align:-7px; animation:pisca 1.1s step-end infinite; }
+  @keyframes pisca { 0%,100% { opacity:1; } 50% { opacity:0; } }
+
+  .fecho { font-family:'Montserrat', sans-serif; font-weight:800; font-size:40px;
+    line-height:1.25; color:#FFD700; letter-spacing:-0.01em; }
 </style>
 </head>
 <body>
@@ -60,94 +59,59 @@
 
   <!-- Marca d'água -->
   <img src="Imagens/logo-antaq-branca.png" alt="" class="absolute"
-       style="top:44%; left:72%; width:42vw; max-width:620px; transform:translate(-50%,-50%);
-              opacity:0.045; z-index:0; pointer-events:none;" />
+       style="top:19%; left:76%; width:38vw; max-width:580px; transform:translate(-50%,-50%);
+              opacity:0.05; z-index:0; pointer-events:none;" />
 
   <!-- Ícone decorativo gigante -->
   <div class="absolute text-white z-0"
-       style="bottom:-70px; right:-50px; font-size:490px; line-height:0; opacity:0.05;">
-    <i class="fas fa-plug"></i>
+       style="bottom:-90px; right:-60px; font-size:470px; line-height:0; opacity:0.05;">
+    <i class="fas fa-keyboard"></i>
   </div>
 
-  <!-- Logo ANTAQ topo -->
-  <div class="absolute z-10 flex items-center gap-4" style="top:56px; left:110px;">
-    <img src="Imagens/logo-antaq-branca.png" alt="Logo ANTAQ" style="height:46px; width:auto;" />
-    <div style="border-left:1px solid rgba(255,255,255,0.20); padding-left:18px;">
-      <p class="font-montserrat font-bold uppercase" style="font-size:19px; color:#BFDBFE; letter-spacing:.16em;">Dados Abertos da ANTAQ</p>
-      <p class="font-montserrat font-semibold uppercase" style="font-size:17px; color:#93C5FD; letter-spacing:.12em; opacity:.85;">SFC · ANTAQ</p>
-    </div>
-  </div>
+  <!-- Conteúdo -->
+  <div class="relative z-10 flex-1 flex flex-col justify-center" style="padding-left:130px; padding-right:90px;">
 
-  <!-- Conteúdo central -->
-  <div class="relative z-10 flex-1 flex flex-col justify-center" style="padding-left:110px; padding-right:96px; padding-top:96px; padding-bottom:20px;">
-
-    <div class="flex items-center gap-4 mb-6">
+    <div class="flex items-center gap-4" style="margin-bottom:34px;">
       <div style="width:72px; height:4px; background:#FFD700;"></div>
-      <p class="font-montserrat font-semibold uppercase" style="font-size:22px; color:#BFDBFE; letter-spacing:.3em;">Bloco</p>
+      <p class="font-montserrat font-semibold uppercase" style="font-size:22px; color:#BFDBFE; letter-spacing:.3em;">Como começar</p>
     </div>
 
-    <div class="flex items-end gap-10 mb-10">
-      <span class="module-num">01</span>
-      <div class="pb-3" style="border-left:5px solid rgba(255,215,0,0.55); padding-left:36px;">
-        <h1 class="font-montserrat font-black text-white leading-tight" style="font-size:78px; letter-spacing:-1.5px;">
-          Cinco perguntas e uma ao vivo
-        </h1>
-        <p class="font-montserrat font-light mt-4" style="font-size:30px; color:#DBEAFE; max-width:1250px; line-height:1.4;">
-          Cada caso traz a pergunta como se digita, o que volta em segundos e como ler o número sem errar. A última roda na hora.
-        </p>
+    <div class="campo">
+      <div class="campo-topo">
+        <i class="fas fa-keyboard" style="color:#FFD700; font-size:34px;"></i>
+        <span class="campo-rotulo">Campo de instrução</span>
       </div>
+      <p class="instrucao">
+        Vou criar um projeto para a minha Unidade Regional, que fiscaliza navegação interior.<br/>
+        Me entreviste com 5 perguntas e depois proponha<br/>
+        as instruções do projeto.<span class="cursor"></span>
+      </p>
     </div>
 
-    <div class="grid grid-cols-6 gap-4" style="max-width:1680px;">
-      <div class="chip">
-        <div class="chip-icon"><i class="fas fa-file-contract"></i></div>
-        <p>Contratos que vencem</p>
-      </div>
-      <div class="chip">
-        <div class="chip-icon"><i class="fas fa-building-circle-check"></i></div>
-        <p>A empresa pelo CNPJ</p>
-      </div>
-      <div class="chip">
-        <div class="chip-icon"><i class="fas fa-landmark"></i></div>
-        <p>O que a Diretoria decide</p>
-      </div>
-      <div class="chip">
-        <div class="chip-icon"><i class="fas fa-file-invoice-dollar"></i></div>
-        <p>O teto da tarifa</p>
-      </div>
-      <div class="chip">
-        <div class="chip-icon"><i class="fas fa-sitemap"></i></div>
-        <p>A carteira da unidade</p>
-      </div>
-      <div class="chip chip-vivo">
-        <div class="chip-icon"><i class="fas fa-file-pdf"></i></div>
-        <p>Um artigo em PDF<span class="chip-sel">ao vivo</span></p>
-      </div>
-    </div>
-
-    <div class="mt-10">
-      <span class="pilula-tempo">
-        <i class="fas fa-clock" style="color:#FFD700; font-size:30px;"></i>
-        <span class="font-montserrat" style="font-size:30px; font-weight:800; color:#fff;">24 minutos</span>
-      </span>
+    <div class="flex items-center" style="gap:24px; margin-top:46px;">
+      <div style="width:90px; height:8px; background:#FFD700; flex-shrink:0;"></div>
+      <p class="fecho">Funciona. E resolve o &ldquo;não sei o que escrever&rdquo;.</p>
     </div>
 
   </div>
 
   <!-- Rodapé -->
-  <div class="relative z-10 flex justify-between items-end" style="padding:0 96px 30px 110px;">
+  <div class="relative z-10 flex justify-between items-end" style="padding:0 90px 30px 130px;">
     <div>
       <p class="font-montserrat" style="font-size:18px; color:#BFDBFE; opacity:.75;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
-      <p style="font-size:17px; color:#BFDBFE; opacity:.6;">Fonte: tempo estimado no roteiro desta apresentação (GPF e GRAT/SFC).</p>
+      <p style="font-size:17px; color:#BFDBFE; opacity:.6;">Fonte: instrução sugerida no roteiro desta apresentação (GPF e GRAT/SFC), para uso na demonstração.</p>
     </div>
-    <p class="font-mono" style="font-size:18px; color:#BFDBFE; opacity:.75;">3 / 14</p>
+    <p class="font-mono" style="font-size:18px; color:#BFDBFE; opacity:.75;">3 / 16</p>
   </div>
 </div>
 
 <div id="notas-apresentador" style="display:none;">
-  <p>Placa de sinalização. Quinze a vinte segundos.</p>
-  <p>Anunciem os cinco casos apontando para os rótulos e digam o molde: a pergunta como se digita, a resposta e a armadilha. É o mesmo desenho nos cinco.</p>
-  <p>Digam a frase que prende a sala: os números que vocês vão ver são de vocês. No primeiro caso, cada regional vai achar o próprio porto na lista.</p>
+  <p>Retomada do que ficou de ontem, e é a técnica de maior retorno do deck anterior: projeto com instruções. Voltamos a ela porque tudo que vem depois, no bloco de hoje, funciona melhor dentro de um projeto bem instruído.</p>
+  <p>Este slide responde à objeção que sempre aparece: tudo bem, mas eu não sei o que escrever nas instruções.</p>
+  <p>Leia a instrução em voz alta, exatamente como está na tela, e avise que ela está sem aspas de propósito, para copiar e colar do material publicado. É curta, e qualquer pessoa da sala consegue digitar isso hoje mesmo.</p>
+  <p>Explique o mecanismo em uma frase: em vez de você escrever as instruções, a ferramenta entrevista você e escreve a primeira versão. Você revisa, corta o que não serve, acrescenta as vedações que o slide 2 recapitulou e guarda.</p>
+  <p>Escolhi navegação interior no exemplo porque cobre boa parte das regionais. Se der tempo, faça ao vivo com a unidade que a sala indicar: portuária, marítima ou uma URE específica.</p>
+  <p>Cerca de um minuto. O próximo slide mostra a outra ponta da mesma ideia: a instrução que vale para todas as conversas, não só para um projeto.</p>
 </div>
 <script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
 <script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>

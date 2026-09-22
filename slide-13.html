@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Traga a pergunta da sua unidade</title>
+<title>Transparência que passa a funcionar</title>
 <link rel="icon" href="favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16.png"/>
@@ -14,118 +14,81 @@
 <style>
   html { font-size: 26px; }
   body { margin:0; padding:0; background-color:#f3f4f6; overflow:hidden; font-family:'Open Sans', sans-serif; }
-  .slide-container { width:100vw; height:100vh; position:relative; display:flex; flex-direction:column; background-color:#ffffff; overflow:hidden; }
+  .slide-container {
+    width:100vw; height:100vh; position:relative; display:flex; flex-direction:column;
+    background: linear-gradient(135deg, #002244 0%, #003366 50%, #004488 100%);
+    overflow:hidden; color:white;
+  }
   .font-montserrat { font-family:'Montserrat', sans-serif; }
-  .text-brand-primary { color:#003366; } .bg-brand-primary { background-color:#003366; }
-  .text-brand-secondary { color:#0066CC; } .bg-brand-secondary { background-color:#0066CC; }
+  .bg-brand-secondary { background-color:#0066CC; }
 
-  /* Instrução digitada (KIT 6.2) */
-  .instrucao { background:#0F172A; border-radius:14px; padding:22px 32px; display:flex;
-               align-items:center; gap:18px; }
-  .instrucao i { color:#7CC0FF; font-size:26px; flex-shrink:0; }
-  .instrucao code { font-family:'Courier New', monospace; font-size:27px; color:#E2E8F0; line-height:1.35; }
+  .shape-circle { position:absolute; border-radius:50%; z-index:0; }
+  .shape-1 { width:600px; height:600px; top:-190px; right:-170px; border:60px solid rgba(255,255,255,0.03); }
+  .shape-2 { width:420px; height:420px; bottom:-150px; right:16%; border:40px solid rgba(255,255,255,0.03); }
+  .bg-pattern { background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px); background-size:22px 22px; }
 
-
-  .bg-marca { position:absolute; bottom:-70px; right:-40px; font-size:21rem; opacity:.035; z-index:0; color:#003366; pointer-events:none; line-height:0; }
-
-  .malha { display:grid; grid-template-columns:1fr 1fr; gap:26px; }
-  .cartao-p { background:#0F172A; border-left:10px solid #0066CC;
-              border-radius:0 16px 16px 0; padding:28px 34px 30px 34px; }
-  .cp-topo { display:flex; align-items:center; gap:14px; }
-  .cp-topo i { font-size:27px; color:#7CC0FF; flex-shrink:0; width:30px; text-align:center; }
-  .cp-area { font-family:'Montserrat',sans-serif; font-weight:800; font-size:20px; color:#7CC0FF;
-             text-transform:uppercase; letter-spacing:.12em; }
-  .cp-perg { font-family:'Courier New', monospace; font-size:24px; color:#E2E8F0; line-height:1.42;
-             margin-top:18px; }
-  .cp-perg b { color:#FFD700; font-weight:700; }
-
-  .oferta { display:flex; align-items:center; gap:22px; background:#F0F9FF; border:3px solid #BAE6FD;
-            border-radius:16px; padding:30px 36px; }
-  .oferta i { font-size:40px; color:#0066CC; flex-shrink:0; }
-  .oferta p { font-size:28px; line-height:1.32; color:#003366; font-weight:600; }
-
-  .faixa-ancora { background:linear-gradient(90deg,#002244 0%,#004488 100%);
-    border-left:12px solid #FFD700; border-radius:0 14px 14px 0; padding:28px 42px;
-    display:flex; align-items:center; gap:24px; }
-  .faixa-ancora p { color:#FFFFFF; font-size:36px; font-weight:800; line-height:1.2;
-    font-family:'Montserrat', sans-serif; }
-  .nq { white-space:nowrap; }
+  .frase { font-family:'Montserrat', sans-serif; font-weight:800; font-size:54px; line-height:1.28;
+           color:#FFFFFF; letter-spacing:-0.015em; }
+  .fecho { font-family:'Montserrat', sans-serif; font-weight:900; font-size:52px; line-height:1.26;
+           color:#FFD700; letter-spacing:-0.015em; }
 </style>
 </head>
 <body>
 <div class="slide-container">
-  <div style="height:12px;background:#003366;width:100%;"></div>
-  <div style="height:6px;background:#0066CC;width:100%;"></div>
+  <!-- Acentos à esquerda -->
+  <div class="absolute left-0 top-0 h-full w-3 z-20" style="background:#FFD700;"></div>
+  <div class="absolute left-3 top-0 h-full w-1 bg-brand-secondary z-20"></div>
 
-  <!-- Cabeçalho -->
-  <div class="flex items-center justify-between px-16 pt-7 pb-2 z-10">
-    <div>
-      <div class="flex items-center gap-3">
-        <div class="w-1.5 h-9 bg-brand-secondary flex-shrink-0"></div>
-        <h1 class="font-montserrat font-bold text-brand-primary uppercase" style="font-size:46px; line-height:1.12; letter-spacing:-0.02em;">
-          Traga a pergunta da sua unidade
-        </h1>
-      </div>
-      <p class="text-gray-500 font-medium ml-4" style="font-size:25px; margin-top:4px;">Quatro perguntas reais, prontas para copiar e trocar o nome</p>
-    </div>
-    <div class="flex items-center gap-3 opacity-80 text-brand-secondary flex-shrink-0 ml-8">
-      <i class="fas fa-plug" style="font-size:26px;"></i>
-      <p class="font-montserrat font-bold text-gray-400" style="font-size:19px; letter-spacing:.16em;">DADOS ABERTOS</p>
-    </div>
+  <!-- Fundo decorativo -->
+  <div class="shape-circle shape-1"></div>
+  <div class="shape-circle shape-2"></div>
+  <div class="absolute inset-0 bg-pattern"></div>
+
+  <!-- Marca d'água -->
+  <img src="Imagens/logo-antaq-branca.png" alt="" class="absolute"
+       style="top:54%; left:72%; width:40vw; max-width:600px; transform:translate(-50%,-50%);
+              opacity:0.045; z-index:0; pointer-events:none;" />
+
+  <!-- Ícone decorativo gigante -->
+  <div class="absolute text-white z-0"
+       style="bottom:-70px; right:-50px; font-size:460px; line-height:0; opacity:0.05;">
+    <i class="fas fa-eye"></i>
   </div>
 
   <!-- Conteúdo -->
-  <div class="flex-1 flex flex-col justify-center px-16 pb-4 z-10 min-h-0" style="gap:26px;">
+  <div class="relative z-10 flex-1 flex flex-col justify-center" style="padding-left:130px; padding-right:110px;">
 
-    <div class="malha">
-      <div class="cartao-p">
-        <div class="cp-topo"><i class="fas fa-anchor"></i><span class="cp-area">Portos</span></div>
-        <p class="cp-perg">Quais contratos do <b>Porto de Suape</b> vencem entre hoje e 31 de dezembro de 2027?</p>
-      </div>
-      <div class="cartao-p">
-        <div class="cp-topo"><i class="fas fa-water"></i><span class="cp-area">Navegação interior</span></div>
-        <p class="cp-perg">Quais instalações portuárias privadas existem em <b>Manaus</b>, e quantas são terminal de uso privado?</p>
-      </div>
-      <div class="cartao-p">
-        <div class="cp-topo"><i class="fas fa-ship"></i><span class="cp-area">Navegação marítima</span></div>
-        <p class="cp-perg">O que a Diretoria da ANTAQ decidiu sobre <b><span class="nq">sobre-estadia</span> de contêiner</b> em 2026?</p>
-      </div>
-      <div class="cartao-p">
-        <div class="cp-topo"><i class="fas fa-gavel"></i><span class="cp-area">Sancionador</span></div>
-        <p class="cp-perg">Como terminaram os julgamentos da infração <b>Res. 3274/2014 art. 32 XXXVIII</b> nos últimos cinco anos?</p>
-      </div>
-    </div>
+    <i class="fa-solid fa-quote-left" style="color:#FFD700; opacity:.5; font-size:84px; margin-bottom:28px;"></i>
 
-    <div class="oferta">
-      <i class="fas fa-handshake"></i>
-      <p>A primeira consulta, montamos junto com a unidade que pedir. É ajuda entre colegas,
-      não suporte de sistema da Agência.</p>
-    </div>
+    <p class="frase" style="max-width:1580px;">
+      Dado público que ninguém consegue usar<br/>
+      é transparência no papel.
+    </p>
 
-    <div class="faixa-ancora">
-      <i class="fas fa-signature" style="color:#FFD700; font-size:40px; flex-shrink:0;"></i>
-      <p>A IA não assina. Quem assina é você, e quem assina responde.</p>
-    </div>
+    <div style="width:120px; height:8px; background:#FFD700; margin:34px 0;"></div>
+
+    <p class="fecho" style="max-width:1580px;">
+      Hoje o dado sai do papel.<br/>
+      E quem tira é quem pergunta.
+    </p>
+
   </div>
 
   <!-- Rodapé -->
-  <div class="px-16 pb-5 flex justify-between items-end z-10">
-    <div style="max-width:1620px;">
-      <p class="text-gray-400 font-montserrat" style="font-size:18px;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
-
+  <div class="relative z-10 flex justify-between items-end" style="padding:0 110px 30px 130px;">
+    <div>
+      <p class="font-montserrat" style="font-size:18px; color:#BFDBFE; opacity:.75;">Dados Abertos da ANTAQ para análise técnica · SFC · ANTAQ</p>
     </div>
-    <p class="text-gray-300 font-mono" style="font-size:18px; flex-shrink:0; margin-left:28px; white-space:nowrap;">13 / 14</p>
+    <p class="font-mono" style="font-size:18px; color:#BFDBFE; opacity:.75;">13 / 16</p>
   </div>
-
-  <div class="bg-marca"><i class="fas fa-comments"></i></div>
 </div>
 
 <div id="notas-apresentador" style="display:none;">
-  <p>Este é o próximo passo, que antes só existia na fala. Os quatro cartões não são exemplos genéricos: são perguntas reais, com porto, cidade e número de infração escritos, e cada uma devolve resposta hoje. A de Suape devolve três contratos, a de Manaus devolve sessenta e nove instalações.</p>
-  <p>Peça que troquem o nome e mais nada: Suape pelo porto da regional, Manaus pelo município de vocês, o número da infração pelo que a unidade julga mais. A forma da pergunta é que faz ela funcionar, e ela está em amarelo justamente no pedaço que se troca.</p>
-  <p>A oferta está em tela: quem quiser monta a primeira consulta com a gente, na mesa da unidade. É ajuda entre colegas, não suporte de um sistema da casa, porque o conector é projeto pessoal, como foi dito no slide 5.</p>
-  <p>Nada do que foi mostrado hoje exigiu processo em tramitação, dado pessoal ou sigilo. Tudo veio de base pública, e foi de propósito.</p>
-  <p>Feche com a frase âncora, pela segunda e última vez nesta apresentação, dita exatamente igual: a IA não assina, quem assina é você, e quem assina responde. Cerca de um minuto.</p>
+  <p>Conclusão do bloco, e é o slide em que se muda o tom. Os cinco casos foram sobre cuidado; este é sobre para que serve o cuidado. Diga devagar, e deixe a primeira frase respirar antes de completar.</p>
+  <p>A primeira frase é uma provocação, e ela é sobre a Agência, não sobre a ferramenta: dado público que ninguém consegue usar é transparência no papel. A ANTAQ publica há mais de vinte anos, e nada do que foi mostrado hoje é conteúdo novo. São os mesmos painéis que já estão no ar. O que faltava não era publicação, era alcance.</p>
+  <p>Aí vem o fecho, e é ele que dá sentido ao bloco inteiro: hoje o dado sai do papel, e quem tira é quem pergunta. Não é a ferramenta que tira; é a pergunta de alguém que sabe o que procurar. Diga a última linha olhando para a sala, porque ela é sobre as pessoas que estão ali.</p>
+  <p>Se quiser reforçar, cabe uma frase: cada uma das cinco armadilhas de hoje era invisível para quem só tem a planilha, e imediata para quem já fez o trabalho. É essa diferença que transforma dado publicado em transparência de verdade.</p>
+  <p>Pausa antes de avançar. O próximo slide é ao vivo.</p>
 </div>
 <script>window.addEventListener("load",function(){var n=document.getElementById("notas-apresentador");window.parent.postMessage({type:"slide-notes",html:n?n.innerHTML:""},"*");});</script>
 <script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F","n","N"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>
