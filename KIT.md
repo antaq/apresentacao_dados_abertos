@@ -194,8 +194,9 @@ Logo abaixo do texto-base do rodapé, em 17px, `#9CA3AF`:
 ```
 
 Fontes canônicas desta apresentação (use exatamente). Os números foram lidos em
-**21 de setembro de 2026**, sobre captura dos painéis de **18/08/2026** e cópia dos atos
-publicados de **27/08/2026**; a linha de fonte diz as duas datas.
+**21 de setembro de 2026**, sobre captura dos painéis de **18/08/2026**; a linha de fonte
+diz as duas datas. O acervo de atos publicados é atualizado com o dia, e por isso **não
+leva data de cópia**: basta a data da consulta.
 
 - Movimentação portuária (slide 4):
   `Fonte: painel Estatístico Aquaviário da ANTAQ, quadro de movimentação portuária por tipo de navegação, captura de 18/08/2026, via conector MCP independente, em 21 de setembro de 2026.`
@@ -204,11 +205,11 @@ publicados de **27/08/2026**; a linha de fonte diz as duas datas.
 - Outorgas, frota e fiscalização por CNPJ (slide 7):
   `Fonte: painéis Outorgas de Navegação (quadros de outorgas e de frota) e Fiscalização da ANTAQ, captura de 18/08/2026, via conector MCP independente, em 21 de setembro de 2026. Vigência pela data de extinção.`
 - Atos publicados (slide 8):
-  `Fonte: atos publicados pela ANTAQ (acervo da Biblioteca), espécie Acórdão, busca textual por "sobre-estadia" em cada ano, cópia de 27/08/2026, via conector MCP independente, em 21 de setembro de 2026.`
+  `Fonte: atos publicados pela ANTAQ (acervo da Biblioteca), espécie Acórdão, busca textual por "sobre-estadia" em cada ano, via conector MCP independente, em 21 de setembro de 2026.`
 - Painel de Fiscalização (slides 9 e 11):
   `Fonte: painel Fiscalização da ANTAQ, quadro "Base de Dados", captura de 18/08/2026, via conector MCP independente, em 21 de setembro de 2026.` No slide 9, acrescentar: `Percentuais sobre infrações julgadas, excluídos os arquivados sem irregularidade.`
 - Vários painéis em um só slide (slide 10):
-  `Fonte: painéis Fiscalização, Outorgas de Navegação e Administração Portuária da ANTAQ (captura de 18/08/2026) e atos publicados (cópia de 27/08/2026), via conector MCP independente, em 21 de setembro de 2026.`
+  `Fonte: painéis Fiscalização, Outorgas de Navegação e Administração Portuária da ANTAQ (captura de 18/08/2026) e atos publicados pela Agência, via conector MCP independente, em 21 de setembro de 2026.`
 - Recapitulação do encontro anterior (slide 2):
   `Fonte: apresentação "IA no dia a dia da Fiscalização", SFC, 21 de setembro de 2026 (antaq.github.io/apresentacao_ia_sfc).`
 - Roteiro (slide 3): `Fonte: tempo estimado no roteiro desta apresentação (GPF e GRAT/SFC).`

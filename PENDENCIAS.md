@@ -38,7 +38,8 @@ mais sem próximo passo em tela.
 | Onde | O quê |
 |---|---|
 | **Slide 5** | O conector é **projeto pessoal do apresentador**, com recurso próprio e sem fins lucrativos, e o slide declara isso em tela, junto com as quatro fontes que ele consome. Confirmar que a declaração está redigida como você quer dizer em voz alta, porque ela é lida por colegas num evento oficial da Superintendência e é ela que separa o método da pessoa. |
-| **Deck inteiro** | Todos os números foram lidos do conector em **21/09/2026**, sobre captura dos painéis de **18/08/2026** e cópia dos atos publicados de **27/08/2026**. Na manhã de 22/09, repetir as chamadas e comparar: se algum valor mudar, trocar no slide e na linha de fonte. |
+| **Deck inteiro** | Todos os números foram lidos do conector em **21/09/2026**, sobre captura dos painéis de **18/08/2026**. Na manhã de 22/09, repetir as chamadas e comparar: se algum valor mudar, trocar no slide e na linha de fonte. |
+| **Slide 8** | ⚠️ O acervo de atos publicados é **atualizado com o dia**, e por isso a linha de fonte não cita data de cópia. Em troca, os números deste slide mudam a cada consulta: **21.091 atos** no subtítulo e a **barra de 2026**, que é ano em curso. São os dois valores que a reconferência de 22/09 precisa refazer. |
 | **Nomes de empresa** | Dois números do deck têm nome de empresa por trás que **não é projetado**: os onze contratos do caso 1 (slide 6) e a concentração de multa do caso 4 (slide 9). Se a sala perguntar, a resposta vem da consulta ao vivo, não do slide. |
 | **Demonstração ao vivo** | O conector `dados-antaq` atende em `https://antaq.dadosabertos.dev/mcp` e precisa estar acessível da máquina da apresentação, inclusive pela rede da Agência. Confirmar isso antes de subir ao palco, porque o endereço está projetado nos slides 5 e 13 e a sala vai tentar. Se a rede cair, o procedimento é narrar o que está projetado; os quatro slides de demonstração se sustentam sozinhos. |
 

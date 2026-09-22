@@ -68,8 +68,8 @@ Não edite este arquivo: edite o slide e gere de novo.
 
 ### Slide 8 · Sobre-estadia: de 14 para 72 acórdãos por ano
 
-- Terceiro caso, e ele sai do painel de números. O conector também lê os atos publicados da Agência, com texto integral: 21.091 acórdãos, resoluções, portarias e deliberações, de 2000 a agosto de 2026.
-- Leia o gráfico da esquerda para a direita: 14, 40, 72. Em dois anos, cinco vezes mais acórdãos citando sobre-estadia. E 2026, só até agosto, já passou de 2024 inteiro.
+- Terceiro caso, e ele sai do painel de números. O conector também lê os atos publicados da Agência, com texto integral: 21.091 acórdãos, resoluções, portarias e deliberações, de 2000 até hoje.
+- Leia o gráfico da esquerda para a direita: 14, 40, 72. Em dois anos, cinco vezes mais acórdãos citando sobre-estadia. E 2026, ano em curso, já passou de 2024 inteiro.
 - Agora os cartões, que é o que interessa a esta sala. Nas cautelares de sobre-estadia, a Diretoria decide o pedido e manda a SFC apurar o mérito. Em fevereiro deste ano, mandou continuar o banco de dados de denúncias conduzido pela SFC. A demanda vem para cá, e está crescendo.
 - Para que serve: antes de instruir a próxima denúncia, ler em minutos o que a Diretoria já decidiu em casos parecidos. A busca acha o acórdão; o texto que vai para a peça vem do documento no SEI.
 - A armadilha é de contagem: citar não é julgar denúncia. Um acórdão que só menciona o tema também entra. O número mostra a tendência, e é para isso que ele serve aqui. Cerca de dois minutos e meio.
